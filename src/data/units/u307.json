@@ -1,0 +1,216 @@
+{
+  "n": 7,
+  "hue": [35, 0.55, 0.24],
+  "tag": "Module 3 · Unit 7",
+  "en": "Raising a blocker without sounding lost",
+  "fa": "گفتنِ گیر کار — کمک خواستن بدون این‌که بی‌کفایت به‌نظر برسی",
+  "src": [
+    ["Grammar", "GIU 120–124 · verb/adjective + preposition · GIU 27–29 · might/could/may"],
+    ["Colloc.", "Units 84–86 · problems, help and progress"],
+    ["Words", "WS 75 + 76 · ability, necessity & obligation"],
+    ["Listen", "TfL Developing U13 · asking for and giving help"]
+  ],
+  "books": {
+    "col": [84, 85, 86],
+    "giu": [27, 28, 29, 120, 121, 124],
+    "ws": [75, 76],
+    "dev": [13]
+  },
+  "chain": {
+    "prev": "Unit 6 · Explaining a trade-off to your team",
+    "next": "Unit 8 · Giving and taking code review feedback"
+  },
+  "story": "روز سوم روی تیکت جدید هستی و یک هفته است [[c:stuck on]] یک باگ عجیب در sync هستی. استندآپ فردا صبح است. سؤال این نیست که آیا کمک بخواهی — سؤال این است که چطور بگویی <b>گیر کجاست</b> بدون این‌که به‌نظر برسد تازه‌کار بی‌تجربه‌ای. اینجا حرف‌اضافه‌های وابسته به فعل و صفت (depend on، responsible for، capable of) دقیقاً همان چیزی‌اند که مرز بین «گم‌شده‌ام» و «دقیقاً می‌دانم کجا گیر کرده‌ام» را می‌کشند.",
+  "dialog": {
+    "h": "دیالوگ — استندآپ صبح، پیش از جلسه",
+    "lab": "Dialogue · GIU 120–124, 27–29",
+    "lines": [
+      ["Lead", "How's the sync ticket going?", "تیکت sync چطور پیش می‌رود؟"],
+      ["Arash", "I'm [[g:stuck on]] one part. The retry logic [[g:depends on]] a timestamp that [[c:doesn't line up]] across time zones.", "روی یک بخش [[g:گیر کرده‌ام]]. منطقِ تلاش‌مجدد [[g:به یک timestamp بستگی دارد]] که بین منطقه‌های زمانی [[c:جور در نمی‌آید]]."],
+      ["Lead", "That [[g:might be]] the UTC conversion. Are you [[g:responsible for]] that part, or does the platform team own it?", "[[g:ممکن است]] تبدیل UTC باشد. تو [[g:مسئولِ]] آن بخشی، یا تیمِ پلتفرم صاحبش است؟"],
+      ["Arash", "[[c:As far as I know]], it's mine. I [[g:'m capable of]] fixing it, but I [[g:'m not sure]] whether the bug [[g:is related to]] our code or their API.", "[[c:تا جایی که می‌دانم]]، مالِ من است. [[g:از پسِ]] درستش کردن برمی‌آیم، ولی [[g:مطمئن نیستم]] باگ [[g:مربوط به]] کد ماست یا API آن‌ها."],
+      ["Lead", "It [[g:could be]] either. Have you [[g:looked into]] the raw payloads?", "[[g:ممکن است]] هرکدام باشد. payloadهای خام را [[g:بررسی کرده‌ای]]؟"],
+      ["Arash", "Not yet — I didn't want to [[c:go down that path]] before checking with you. I [[g:'m worried about]] breaking the retry for the accounts that already work.", "هنوز نه — نمی‌خواستم قبل از هماهنگی با تو [[c:آن مسیر را بروم]]. [[g:نگرانِ]] خراب‌شدنِ تلاش‌مجدد برای حساب‌هایی هستم که الان درست کار می‌کنند."],
+      ["Lead", "Good instinct. That [[g:may]] save you a day. Loop in the platform team — they're [[g:familiar with]] that API.", "غریزه‌ی خوبی است. این [[g:شاید]] یک روز نجاتت بدهد. تیم پلتفرم را وارد کن — آن‌ها با آن API [[g:آشنا هستند]]."],
+      ["Arash", "Will do. I'm [[g:interested in]] a second opinion anyway — I don't want to guess my way through a race condition.", "حتماً. به هر حال [[g:علاقه‌مندم]] به یک نظر دوم — نمی‌خواهم توی یک race condition حدسی جلو بروم."],
+      ["Lead", "That's exactly the right call. Flag it in standup — it's not a weakness, it [[g:'s just]] the honest state of the ticket.", "دقیقاً تصمیمِ درستی است. در استندآپ مطرحش کن — ضعف نیست، فقط وضعیتِ صادقانه‌ی تیکت است."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — حرف‌اضافه‌ی ثابتِ فعل/صفت + might/could/may",
+    "lab": "Grammar in Use · 120–124, 27–29",
+    "rows": [
+      ["فعل + حرف‌اضافه‌ی ثابت", "It [[g:depends on]] the time zone.", "It depends of the time zone"],
+      ["صفت + حرف‌اضافه‌ی ثابت", "I'm [[g:responsible for]] this part, and [[g:worried about]] the edge case.", "I'm responsible of this part"],
+      ["صفت + حرف‌اضافه‌ی دیگر", "I'm [[g:capable of]] fixing it; I'm [[g:familiar with]] the API.", "I'm capable to fix it"],
+      ["احتمالِ نه‌چندان‌مطمئن — الان", "The bug [[g:might be]] a timezone bug. It [[g:could be]] their API.", "The bug can be a timezone bug"],
+      ["اجازه‌ی مؤدبانه یا احتمالِ رسمی", "This [[g:may]] save a day, if we check first.", "This can save a day, if we check first*"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:depends]] · that [[g:relates]] to · risk [[g:is]] flagged", "it depend · that relate to · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + standup",
+    "errors": [
+      ["depends of", "depends on"],
+      ["responsible of", "responsible for"],
+      ["capable to fix", "capable of fixing"],
+      ["interested to", "interested in"],
+      ["it depend", "it depends"],
+      ["I stuck in", "I'm stuck on"]
+    ],
+    "trigger": "<b class='en'>What's this blocked on?</b> جواب خوب یک فعل/صفت + حرف‌اضافه‌ی درست دارد: <span class='en'>depends on · related to · responsible for · capable of · worried about</span>. برای احتمال، از <span class='en'>might/could</span> استفاده کن، نه can — چون هنوز مطمئن نیستی."
+  },
+  "colls": {
+    "h": "کالوکیشن — مشکل، کمک، و پیشرفت",
+    "lab": "Collocations in Use · Units 84–86",
+    "groups": [
+      {"h": "get stuck", "n": "گیر کردن روی چیزی", "ok": ["get stuck on", "hit a wall"], "no": "get stuck with a problem"},
+      {"h": "line up / add up", "n": "جور درآمدن داده‌ها", "ok": ["line up", "add up"], "no": "line up with each other*"},
+      {"h": "look into / dig into", "n": "دقیق بررسی کردن", "ok": ["look into", "dig into the logs"], "no": "look into of"},
+      {"h": "loop sb in / flag sth", "n": "کسی را وارد کردن، چیزی را مطرح کردن", "ok": ["loop sb in", "flag it in standup"], "no": "loop in to sb"}
+    ],
+    "rows": [
+      ["get stuck on sth", "روی چیزی گیر کردن", "get stuck with sth"],
+      ["hit a wall", "به بن‌بست خوردن", "hit a block"],
+      ["line up (data)", "جور درآمدن (داده)", "line each other up"],
+      ["not add up", "جور در نیامدن (اعداد)", "not add together"],
+      ["look into sth", "چیزی را بررسی کردن", "look into of sth"],
+      ["dig into the logs", "لاگ‌ها را زیرورو کردن", "dig in the logs"],
+      ["loop sb in", "کسی را در جریان گذاشتن", "loop in to sb"],
+      ["flag sth in standup", "چیزی را در استندآپ مطرح کردن", "flag up in standup"],
+      ["go down a path", "یک مسیر را دنبال کردن", "go down on a path"],
+      ["a race condition", "شرایط رقابتی (باگ زمان‌بندی)", "a racing condition"],
+      ["a second opinion", "نظرِ دوم", "a second opinion of"],
+      ["make progress on sth", "روی چیزی پیشرفت کردن", "make a progress on sth"]
+    ],
+    "ex": [
+      ["I [[c:hit a wall]] on the retry logic, so I [[c:looped in]] the platform team before I [[c:went down]] the wrong path.", "روی منطقِ تلاش‌مجدد [[c:به بن‌بست خوردم]]، پس قبل از این‌که [[c:مسیر اشتباه را بروم]] تیمِ پلتفرم را [[c:وارد کردم]]."],
+      ["The numbers [[c:didn't add up]], so I [[c:dug into the logs]] and [[c:flagged it in standup]] the same morning.", "عددها [[c:جور در نمی‌آمدند]]، پس [[c:لاگ‌ها را زیرورو کردم]] و همان صبح [[c:در استندآپ مطرحش کردم]]."],
+      ["Asking for a [[c:second opinion]] isn't a weakness — it's how you [[c:make progress on]] a real race condition.", "خواستنِ [[c:نظرِ دوم]] ضعف نیست — همین‌طوری روی یک race condition واقعی [[c:پیشرفت می‌کنی]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — توانایی، الزام و اجازه",
+    "lab": "Word Skills · 75 + 76",
+    "sets": [
+      {"u": "75 · Ability", "chips": [
+        ["competent", "دارای صلاحیت", "B2", "adj"],
+        ["proficient", "مسلط", "C1", "adj"],
+        ["out of your depth", "فراتر از توانت", "C1", "phr"],
+        ["get the hang of sth", "دستت آمدن چیزی", "B2", "phr"],
+        ["a steep learning curve", "یادگیریِ شیب‌دار و سخت", "C1", "n"],
+        ["capable of", "قادر به", "B2", "prep"],
+        ["struggle with sth", "با چیزی دست‌وپنجه نرم کردن", "B2", "v"],
+        ["pick sth up quickly", "سریع یاد گرفتن", "B1", "phr"],
+        ["draw on sth", "از چیزی (تجربه) بهره‌گرفتن", "C1", "v"],
+        ["versed in sth", "آگاه و باتجربه در", "C1", "adj"]
+      ]},
+      {"u": "76 · Necessity, obligation and permission", "chips": [
+        ["mandatory", "اجباری", "C1", "adj"],
+        ["optional", "اختیاری", "B1", "adj"],
+        ["it's up to you", "به خودت بستگی دارد", "B1", "phr"],
+        ["obliged to do sth", "موظف به انجام کاری", "C1", "adj"],
+        ["at your discretion", "به تشخیص خودت", "C1", "phr"],
+        ["waive a requirement", "از یک الزام صرف‌نظر کردن", "C1", "v"],
+        ["compulsory", "الزامی", "B2", "adj"],
+        ["exempt from sth", "معاف از چیزی", "C1", "adj"],
+        ["a prerequisite", "پیش‌نیاز", "C1", "n"],
+        ["sign off on sth", "چیزی را تأیید نهایی کردن", "B2", "phr"]
+      ]}
+    ],
+    "ex": [
+      ["I don't feel [[w:out of my depth]] anymore — I [[w:got the hang of]] the sync module in a week.", "دیگر حس نمی‌کنم [[w:فراتر از توانم]] است — ظرف یک هفته [[w:دستم آمد]] ماژول sync."],
+      ["Reviewing raw payloads is [[w:mandatory]] before a fix; a design doc is only [[w:optional]] for small bugs.", "بررسیِ payloadهای خام قبل از رفع باگ [[w:اجباری]] است؛ سند طراحی برای باگ‌های کوچک فقط [[w:اختیاری]] است."],
+      ["It's a [[w:steep learning curve]], but I [[w:draw on]] what I learned debugging the ledger view.", "یادگیری‌اش [[w:شیب‌دار]] است، ولی از چیزی که در دیباگِ ویوی دفترکل یاد گرفتم [[w:بهره می‌گیرم]]."],
+      ["I'm not yet [[w:versed in]] time-zone edge cases, so I asked someone who is to [[w:sign off on]] the fix.", "هنوز در موردهای خاصِ منطقه‌ی زمانی [[w:باتجربه]] نیستم، پس از کسی که هست خواستم رفع باگ را [[w:تأیید نهایی کند]]."],
+      ["A senior engineer can often [[w:waive]] a strict [[w:prerequisite]] if the risk is genuinely low.", "یک مهندس ارشد اغلب می‌تواند یک [[w:پیش‌نیازِ]] سخت را [[w:نادیده بگیرد]] اگر ریسک واقعاً پایین باشد."],
+      ["Whether you pair on this bug or solve it alone is [[w:at your discretion]] — it's [[w:up to you]].", "این‌که روی این باگ جفتی کار کنی یا تنها، [[w:به تشخیص خودت]] است — [[w:به خودت بستگی دارد]]."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: دیباگِ یک race condition",
+    "lab": "Microsoft PL-400 · reading",
+    "exam": "PL-400",
+    "areas": ["Implement Power Apps improvements (debug, optimise, Monitor)", "Develop integrations"],
+    "terms": [
+      ["race condition", "شرایط رقابتیِ زمان‌بندی", "PL-400"],
+      ["eventual consistency", "سازگاریِ نهایی", "PL-400"],
+      ["timestamp", "برچسبِ زمانی", "PL-400"],
+      ["UTC", "زمانِ هماهنگ جهانی", "PL-400"],
+      ["payload", "بارِ داده‌ی پیام", "PL-400"],
+      ["concurrency control", "کنترلِ همروندی", "PL-400"],
+      ["dependency", "وابستگی", "PL-400"],
+      ["root cause", "علتِ ریشه‌ای", "PL-400"]
+    ],
+    "read": {
+      "t": "Why the same bug depends on where you look",
+      "body": [
+        ["A sync bug that only [[c:shows up]] sometimes is usually a [[x:race condition]]: two processes [[g:depend on]] the same [[x:timestamp]], and whichever writes last wins — even if it's wrong. The fix is [[g:related to]] ordering, not to the data itself.", "باگی که در sync فقط بعضی‌وقت‌ها [[c:بروز می‌کند]] معمولاً یک [[x:شرایط رقابتیِ زمان‌بندی]] است: دو فرایند [[g:به همان]] [[x:برچسبِ زمانی]] [[g:وابسته‌اند]]، و هرکدام آخر بنویسد برنده است — حتی اگر غلط باشد. راه‌حل [[g:مربوط به]] ترتیب است، نه خودِ داده."],
+        ["If the systems are in different time zones, comparing local timestamps directly is unsafe. Every [[x:payload]] should carry its time in [[x:UTC]], and comparisons should happen only after conversion — otherwise a fix [[g:might]] work in one region and fail in another.", "اگر سیستم‌ها در منطقه‌های زمانیِ مختلف باشند، مقایسه‌ی مستقیمِ زمان‌های محلی ناامن است. هر [[x:بار دادهِ پیام]] باید زمانش را به [[x:UTC]] حمل کند، و مقایسه فقط بعد از تبدیل انجام شود — وگرنه یک رفع باگ [[g:ممکن است]] در یک منطقه کار کند و در منطقه‌ی دیگر نکند."],
+        ["This is where [[x:eventual consistency]] matters: two systems [[g:may]] disagree for a short window before they settle. A good design assumes that window exists and adds [[x:concurrency control]] — a version number or a lock — [[g:so that]] the last write can't silently overwrite a newer one.", "اینجاست که [[x:سازگاریِ نهایی]] اهمیت پیدا می‌کند: دو سیستم [[g:ممکن است]] برای یک بازه‌ی کوتاه با هم اختلاف داشته باشند تا ته‌نشین شوند. طراحیِ خوب فرض می‌کند این بازه وجود دارد و [[x:کنترلِ همروندی]] اضافه می‌کند — یک شماره‌ی نسخه یا یک قفل — [[g:تا]] نوشتنِ آخر نتواند بی‌سروصدا نوشتنِ تازه‌تر را از بین ببرد."],
+        ["Before changing anything, the [[x:root cause]] must be separated from the symptom: is the bug [[g:related to]] the [[x:dependency]] on raw timestamps, or to how one side reads them? Reading the raw payload first — not guessing — is the only reliable way to tell.", "قبل از تغییرِ چیزی، [[x:علتِ ریشه‌ای]] باید از نشانه جدا شود: باگ [[g:مربوط به]] [[x:وابستگی]] به زمان‌های خام است، یا به شکلِ خواندنش در یک طرف؟ خواندنِ خودِ payload خام — نه حدس‌زدن — تنها راهِ مطمئن برای فهمیدن است."]
+      ],
+      "qs": ["Why is comparing local timestamps across time zones unsafe?", "What does concurrency control protect against?", "In two sentences: how would you separate the root cause from the symptom in this bug?"]
+    },
+    "why": "این متن دقیقاً همان مسیرِ ذهنیِ دیباگ کردن است که در استندآپ توضیح می‌دهی — با اصطلاح‌های آزمون. سؤال سوم را بلند و با because/related to جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: فعل اول، حرف‌اضافه‌ی بعدش",
+    "lab": "Tactics for Listening · Developing · Unit 13 · Asking for help",
+    "tactic": "خیلی از افعال و صفت‌های انگلیسی یک حرف‌اضافه‌ی ثابت دارند که همیشه با هم می‌آیند: <span class='en'>depend ON · responsible FOR · capable OF · worried ABOUT</span>. جفتِ فعل/صفت + حرف‌اضافه را با هم بشنو و یادداشت کن — نه جدا از هم.",
+    "where": "<div class='en'>Book: Unit 13 “Favours” · pages 50–53</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 22–26</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-22</span> — فقط همین یک ترک:</b> هر بار یک جفتِ فعل/صفت+حرف‌اضافه شنیدی، هر دو کلمه را با هم بنویس، نه تنها فعل را."
+    ],
+    "rec": {
+      "h": "ضبط خودت — گزارشِ گیر کار در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> به سؤال <span class='en'>“What's this ticket blocked on?”</span> جواب بده. ۶۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار حرف‌اضافه را انداختی یا اشتباه گفتی (depend of به‌جای depend on).",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی depends on · یک جمله‌ی responsible for/related to · یک جمله‌ی might/could برای حدست.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["depend of", "depend on", "on نه of"],
+        ["responsible of", "responsible for", "for نه of"],
+        ["capable to", "capable of", "of + gerund"],
+        ["interested for", "interested in", "in نه for"],
+        ["a race condiction", "a race condition", "کان-دیشن"],
+        ["you-tee-see", "UTC", "یو-تی-سی، سه حرف جدا"],
+        ["time zoon", "time zone", "زون، نه زوون"]
+      ],
+      "compare": [
+        ["I'm stuck on the retry logic — it depends on a timestamp that doesn't line up across time zones.", "روی منطقِ تلاش‌مجدد گیر کرده‌ام — به یک زمانِ که بین منطقه‌های زمانی جور در نمی‌آید بستگی دارد."],
+        ["I'm not sure whether this is related to our code or their API.", "مطمئن نیستم این به کدِ ما مربوط است یا API آن‌ها."],
+        ["It might be the UTC conversion, but it could also be a race condition.", "ممکن است تبدیل UTC باشد، ولی ممکن است شرایط رقابتیِ زمان‌بندی هم باشد."],
+        ["I'm worried about breaking the accounts that already work, so I want a second opinion first.", "نگرانِ خراب‌شدنِ حساب‌هایی هستم که الان درست کار می‌کنند، پس اول یک نظرِ دوم می‌خواهم."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Standup · Email · Hard question",
+    "tasks": [
+      {"k": "Standup · 60 sec", "t": "گزارشِ گیرِ کار را بازی کن: یک جمله‌ی <span class='en'>stuck on / depends on</span>، یک جمله‌ی <span class='en'>might/could</span> برای حدس، و یک جمله‌ی درخواستِ کمکِ روشن. ضبط کن."},
+      {"k": "Email · 4 lines", "t": "ایمیل به تیمِ پلتفرم: خط اول چه چیزی گیر است، خط دوم چرا فکر می‌کنی به آن‌ها مربوط است، خط سوم چه چیزی را خودت بررسی کردی، خط چهارم چه چیزی از آن‌ها می‌خواهی.", "lines": 4},
+      {"k": "Hard question", "t": "مدیرت می‌پرسد <span class='en'>“Why didn't you flag this yesterday?”</span> — جوابی بنویس که مسئولیت را بپذیرد، نه بهانه بیاورد، و بگوید از این به بعد چه کار می‌کنی.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "I'm stuck on one part — it depends on a timestamp that doesn't line up across time zones, and I'm not sure yet whether it's related to our code or their API.",
+  "quiz": [
+    {"k": "G", "q": "This bug ______ a timestamp that doesn't line up across time zones.", "op": ["depends on", "depends of", "depends to"], "qfa": "این باگ به یک زمانِ ناجور بستگی دارد.", "a": "depends on", "afa": "depend on"},
+    {"k": "G", "q": "I'm not ______ that part of the system — the platform team owns it.", "op": ["responsible for", "responsible of", "responsible to"], "qfa": "من مسئولِ آن بخش نیستم.", "a": "responsible for", "afa": "responsible for"},
+    {"k": "G", "q": "It ______ be the UTC conversion, but I'm not certain yet.", "op": ["might", "must", "can"], "qfa": "ممکن است تبدیلِ UTC باشد، ولی هنوز مطمئن نیستم.", "a": "might", "afa": "احتمالِ نامطمئن ← might/could، نه can"},
+    {"k": "G", "q": "Correct it: <i>I'm capable to fix it, and I'm interested to a second opinion.</i>", "lines": true, "qfa": "حرف‌اضافه‌های ثابت را درست کن.", "a": "I'm capable of fixing it, and I'm interested in a second opinion.", "afa": "capable of + gerund · interested in"},
+    {"k": "C", "q": "I ______ on the retry logic for two days before asking for help.", "op": ["hit a wall", "got stuck", "went down"], "qfa": "دو روز روی منطقِ تلاش‌مجدد گیر کردم.", "a": "got stuck", "afa": "get stuck on"},
+    {"k": "C", "q": "The numbers didn't ______, so I dug into the raw logs.", "qfa": "عددها جور در نمی‌آمدند.", "a": "add up", "afa": "add up"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["get stuck on", "get stuck with a problem", "hit a wall", "loop sb in"], "a": "get stuck with a problem", "afa": "درست: get stuck on sth"},
+    {"k": "W", "q": "I don't feel out of my depth anymore — I finally ______ the sync module.", "op": ["got the hang of", "picked down", "drew off"], "qfa": "بالاخره دستم آمد چطور کار می‌کند.", "a": "got the hang of", "afa": "get the hang of sth"},
+    {"k": "W", "q": "Match: (a) mandatory  (b) at your discretion  (c) exempt from", "qfa": "۱) به تشخیص خودت  ۲) اجباری  ۳) معاف از", "a": "a-2 · b-1 · c-3", "afa": "mandatory اجباری · at your discretion به تشخیص خودت · exempt from معاف از"},
+    {"k": "X", "q": "Why can two systems briefly disagree under eventual consistency?", "op": ["one of them is broken", "there's a short window before both sides settle", "the network is always down"], "qfa": "چرا دو سیستم می‌توانند کوتاه‌مدت اختلاف داشته باشند؟", "a": "there's a short window before both sides settle", "afa": "PL-400 — eventual consistency"},
+    {"k": "L", "q": "Write the four verb/adjective + preposition pairs from the favours audio.", "qfa": "چهار جفتِ فعل/صفت + حرف‌اضافه را بنویس.", "a": "depend on · responsible for · capable of · worried about", "afa": "ترک ۲-۲۲"},
+    {"k": "G", "old": true, "q": "Correct it: <i>Despite it's slower, the team preferred it.</i>", "lines": true, "qfa": "از درس ۶.", "a": "Despite being slower, the team preferred it.", "afa": "از درس ۶ — despite + gerund"},
+    {"k": "P", "q": "One sentence: <i>The bug is intermittent. It might be a timezone issue. It might be a race condition. I need a second opinion.</i>", "lines": true, "qfa": "با might / not sure whether یک جمله بساز.", "a": "Model: The bug is intermittent, and I'm not sure whether it's a timezone issue or a race condition, so I'd like a second opinion.", "afa": "نمونه: باگ گاه‌به‌گاه است، و مطمئن نیستم مشکلِ منطقه‌ی زمانی است یا race condition، پس یک نظرِ دوم می‌خواهم."}
+  ],
+  "_id": "u307"
+}

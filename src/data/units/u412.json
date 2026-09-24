@@ -1,0 +1,215 @@
+{
+  "n": 12,
+  "hue": [210, 0.4, 0.26],
+  "tag": "Module 4 · Unit 12",
+  "en": "Writing a technical design doc",
+  "fa": "نوشتنِ سندِ طراحیِ فنی — با جمله‌واره‌های موصولیِ درست",
+  "src": [
+    ["Grammar", "GIU 92–95 · defining & non-defining relative clauses"],
+    ["Colloc.", "Units 107–109 · writing and documentation"],
+    ["Words", "WS 85 + 86 · written communication, structure & organisation"],
+    ["Listen", "TfL Developing U18 · following a written proposal aloud"]
+  ],
+  "books": {
+    "col": [107, 108, 109],
+    "giu": [92, 93, 94, 95],
+    "ws": [85, 86],
+    "dev": [18]
+  },
+  "chain": {
+    "prev": "Unit 11 · Estimating work you've never done before",
+    "next": "Unit 13 · Mentoring the new hire"
+  },
+  "story": "قبل از این‌که یک خط کد بنویسی، باید یک ADR (سندِ تصمیمِ معماری) بنویسی برای این‌که چرا منطق را به یک Azure Function منتقل می‌کنی. اینجا جمله‌واره‌ی موصولی — کلمه‌های <b>that / which / who / whose</b> — همان چیزی است که یک سندِ فنی را دقیق می‌کند یا مبهم. یک ویرگولِ جاافتاده می‌تواند معنای جمله را کاملاً عوض کند.",
+  "dialog": {
+    "h": "دیالوگ — بازبینیِ سندِ طراحی با تیم‌لید",
+    "lab": "Dialogue · GIU 92–95",
+    "lines": [
+      ["Lead", "I read the draft. The function [[g:that]] handles retries — is that the same one [[g:that]] writes to the ledger?", "پیش‌نویس را خواندم. تابعی [[g:که]] تلاشِ مجدد را مدیریت می‌کند — همان است [[g:که]] در دفترکل می‌نویسد؟"],
+      ["Arash", "No, they're separate. Azure Functions, [[g:which]] scale automatically, run the retry logic. The stored procedure, [[g:which]] I wrote last month, handles the write.", "نه، جدایند. Azure Functions، [[g:که]] خودکار مقیاس می‌گیرند، منطقِ تلاشِ مجدد را اجرا می‌کنند. رویه‌ی ذخیره‌شده، [[g:که]] ماهِ پیش نوشتم، نوشتن را مدیریت می‌کند."],
+      ["Lead", "Got it. What about the API [[g:—]] we call for validation — is it still the old one?", "فهمیدم. آن API [[g:—]] که برای اعتبارسنجی صدا می‌زنیم — همان قدیمی است؟"],
+      ["Arash", "Yes, the one [[g:whose]] rate limit we hit last quarter. That's exactly [[c:the reason]] I'm proposing this change.", "بله، همان که [[g:محدودیتِ نرخش]] را فصلِ پیش رد کردیم. دقیقاً همان [[c:دلیلی]] است که این تغییر را پیشنهاد می‌دهم."],
+      ["Lead", "Makes sense. The section [[g:where]] you compare the two approaches — can you [[c:flesh it out]] a bit more?", "منطقی است. بخشی [[g:که]] دو رویکرد را مقایسه می‌کنی — می‌توانی کمی [[c:تفصیل بیشتری بدهی]]؟"],
+      ["Arash", "Sure. I'll add a table [[g:—]] you can scan quickly [[g:—]] instead of another paragraph.", "حتماً. یک جدول اضافه می‌کنم [[g:که]] سریع می‌توانی مرور کنی، به‌جای یک پاراگرافِ دیگر."],
+      ["Lead", "One more thing: the risk section, [[g:which]] is currently one line, needs more detail before I can [[c:sign off on]] it.", "یک چیزِ دیگر: بخشِ ریسک، [[g:که]] الان یک خط است، قبل از این‌که بتوانم [[c:تأییدِ نهایی]] بدهم، به جزئیاتِ بیشتری نیاز دارد."],
+      ["Arash", "Understood. I'll [[c:circulate]] the updated draft by tomorrow so everyone [[g:who]] needs to comment has time.", "متوجه‌ام. پیش‌نویسِ به‌روزشده را تا فردا [[c:پخش می‌کنم]] تا هر کسی [[g:که]] باید نظر بدهد وقت داشته باشد."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — جمله‌واره‌ی موصولی: تعریفی یا توضیحی؟",
+    "lab": "Grammar in Use · 92–95",
+    "rows": [
+      ["تعریفی — می‌گوید کدام‌یک، بدونِ ویرگول", "The function [[g:that]] handles retries is separate.", "The function, that handles retries, is separate"],
+      ["توضیحی — اطلاعاتِ اضافه، با ویرگول", "Azure Functions, [[g:which]] scale automatically, run the retry logic.", "Azure Functions which scale automatically run the retry logic"],
+      ["حذفِ ضمیرِ موصولی وقتی مفعول است", "The API [[g:—]] we call for validation — is old.", "The API which we call it for validation is old"],
+      ["مالکیت — whose", "The API [[g:whose]] rate limit we hit is old.", "The API that's rate limit we hit is old"],
+      ["مکان — where", "The section [[g:where]] you compare the two — add a table.", "The section that you compare the two in it"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:handles]] · that [[g:scales]] · risk [[g:is]] flagged", "it handle · that scale · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + design doc review",
+    "errors": [
+      ["The function, that handles retries,", "The function that handles retries (بدونِ ویرگول، چون تعریفی است)"],
+      ["Functions which scale automatically run it (بدونِ ویرگول، ولی معنا توضیحی است)", "Functions, which scale automatically, run it"],
+      ["The API which we call it for validation", "The API we call for validation (which/that حذف می‌شود چون مفعول است)"],
+      ["the API that's rate limit", "the API whose rate limit"],
+      ["it handle", "it handles"],
+      ["that scale", "that scales"]
+    ],
+    "trigger": "اگر ویرگول را برداری و معنا عوض شود، جمله‌واره <b>تعریفی</b> است — بدونِ ویرگول، و <span class='en'>that</span> مجاز است. اگر ویرگول را برداری و معنا فرقی نکند، جمله‌واره <b>توضیحی</b> است — همیشه با ویرگول، و <span class='en'>that</span> ممنوع (فقط which/who)."
+  },
+  "colls": {
+    "h": "کالوکیشن — نوشتن و مستندسازی",
+    "lab": "Collocations in Use · Units 107–109",
+    "groups": [
+      {"h": "draft / circulate", "n": "نوشتنِ پیش‌نویس و پخشِ آن", "ok": ["draft a proposal", "circulate for comments"], "no": "draft up a proposal"},
+      {"h": "sign off / supersede", "n": "تأییدِ نهایی، جایگزینیِ سندِ قدیمی", "ok": ["sign off on sth", "supersede a decision"], "no": "sign off sth"},
+      {"h": "flesh out / tighten up", "n": "بسط‌دادن یا فشرده‌کردنِ متن", "ok": ["flesh out a section", "tighten up the wording"], "no": "flesh a section out fully*"},
+      {"h": "single source of truth", "n": "یک مرجعِ واحد و معتبر", "ok": ["a single source of truth", "the canonical version"], "no": "a single truth source"}
+    ],
+    "rows": [
+      ["draft a proposal", "پیش‌نویسِ یک پیشنهاد نوشتن", "draft up a proposal"],
+      ["circulate for comments", "برای نظرخواهی پخش کردن", "circulate to comments"],
+      ["sign off on sth", "چیزی را تأیید نهایی کردن", "sign off sth"],
+      ["supersede a decision", "تصمیمِ قبلی را جایگزین کردن", "supersede over a decision"],
+      ["flesh out a section", "یک بخش را بسط دادن", "flesh a section"],
+      ["tighten up the wording", "عبارت‌بندی را فشرده‌تر کردن", "tighten the wording up fully"],
+      ["a single source of truth", "یک مرجعِ واحد و معتبر", "a single truth source"],
+      ["the canonical version", "نسخه‌ی رسمی و مرجع", "the canonic version"],
+      ["a living document", "سندی که مدام به‌روز می‌شود", "a live document"],
+      ["scan quickly", "سریع مرور کردن", "scan fastly"],
+      ["a paper trail", "ردِ مکتوبِ تصمیم‌ها", "a paper track"],
+      ["put sth in writing", "چیزی را مکتوب کردن", "put sth into writing down"]
+    ],
+    "ex": [
+      ["I [[c:drafted a proposal]] and [[c:circulated it for comments]] before anyone [[c:signed off on]] the final version.", "[[c:پیش‌نویسِ یک پیشنهاد]] نوشتم و قبل از این‌که کسی نسخه‌ی نهایی را [[c:تأیید کند]] [[c:برایِ نظرخواهی پخشش کردم]]."],
+      ["This ADR [[c:supersedes]] the old one — treat the wiki page as [[c:a single source of truth]] from now on.", "این ADR تصمیمِ قبلی را [[c:جایگزین می‌کند]] — از این به بعد صفحه‌ی ویکی را [[c:مرجعِ واحد]] بدان."],
+      ["I [[c:tightened up the wording]] and [[c:fleshed out]] the risk section so reviewers could [[c:scan it quickly]].", "[[c:عبارت‌بندی را فشرده‌تر کردم]] و بخشِ ریسک را [[c:بسط دادم]] تا بازبین‌ها بتوانند [[c:سریع مرورش کنند]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — نوشتارِ رسمی و ساختاردهی",
+    "lab": "Word Skills · 85 + 86",
+    "sets": [
+      {"u": "85 · Written communication", "chips": [
+        ["concise", "کوتاه و رسا", "B2", "adj"],
+        ["ambiguous", "دوپهلو، مبهم", "C1", "adj"],
+        ["explicit", "صریح، روشن", "C1", "adj"],
+        ["implicit", "ضمنی", "C1", "adj"],
+        ["a caveat", "یک نکته‌ی احتیاطی", "C1", "n"],
+        ["for the record", "برای این‌که ثبت شده باشد", "B2", "phr"],
+        ["boilerplate", "متنِ آماده و تکراری", "C1", "n"],
+        ["redundant (wording)", "زائد، تکراری", "C1", "adj"],
+        ["a rationale", "منطقِ پشتِ تصمیم", "C1", "n"],
+        ["state sth explicitly", "چیزی را صریح بیان کردن", "C1", "phr"]
+      ]},
+      {"u": "86 · Structure and organisation", "chips": [
+        ["a table of contents", "فهرستِ مطالب", "B1", "n"],
+        ["a heading", "عنوانِ بخش", "B1", "n"],
+        ["an appendix", "پیوست", "B2", "n"],
+        ["cross-reference", "ارجاعِ متقابل", "C1", "n"],
+        ["a placeholder", "جانگهدار (متنِ موقت)", "B2", "n"],
+        ["chronological order", "ترتیبِ زمانی", "B2", "n"],
+        ["at a glance", "با یک نگاه", "B2", "phr"],
+        ["self-contained", "خودبسنده، مستقل", "C1", "adj"],
+        ["a summary up front", "خلاصه در ابتدا", "B2", "phr"],
+        ["nested (sections)", "تودرتو", "C1", "adj"]
+      ]}
+    ],
+    "ex": [
+      ["Keep it [[w:concise]]: an [[w:ambiguous]] sentence in a design doc costs more time than a long, [[w:explicit]] one.", "کوتاه و رسا بنویس: یک جمله‌ی [[w:مبهم]] در سندِ طراحی بیشتر از یک جمله‌ی طولانیِ [[w:صریح]] وقت تلف می‌کند."],
+      ["I added [[w:a caveat]] — [[w:for the record]] — that this estimate assumes the old API stays available.", "یک [[w:نکته‌ی احتیاطی]] اضافه کردم — [[w:برای ثبت‌شدن]] — که این تخمین فرض می‌کند API قدیمی همچنان دردسترس می‌ماند."],
+      ["I cut the [[w:boilerplate]] and [[w:redundant]] wording, and put the [[w:rationale]] right after the heading.", "متنِ [[w:آماده و تکراری]] و عبارت‌بندیِ [[w:زائد]] را حذف کردم و [[w:منطقِ]] تصمیم را درست بعدِ عنوان گذاشتم."],
+      ["The doc has [[w:a table of contents]] and an [[w:appendix]] for the raw benchmark numbers.", "سند یک [[w:فهرستِ مطالب]] و یک [[w:پیوست]] برای عددهای خامِ محک دارد."],
+      ["Each section is [[w:self-contained]], with [[w:a summary up front]] so a reviewer gets the point [[w:at a glance]].", "هر بخش [[w:خودبسنده]] است، با [[w:خلاصه در ابتدا]] تا بازبین با یک نگاه اصلِ مطلب را بگیرد."],
+      ["I used a [[w:cross-reference]] instead of repeating the same paragraph in two [[w:nested]] sections.", "به‌جای تکرارِ همان پاراگراف در دو بخشِ [[w:تودرتو]]، از یک [[w:ارجاعِ متقابل]] استفاده کردم."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: ADR یعنی چه، و چرا مهم است",
+    "lab": "Microsoft AZ-400 · reading",
+    "exam": "AZ-400",
+    "areas": ["Design and implement branch strategies", "Manage source control"],
+    "terms": [
+      ["ADR (architecture decision record)", "سندِ تصمیمِ معماری", "AZ-400"],
+      ["branching strategy", "استراتژیِ شاخه‌بندی", "AZ-400"],
+      ["trunk-based development", "توسعه‌ی مبتنی‌بر تنه", "AZ-400"],
+      ["pull request", "درخواستِ ادغام", "AZ-400"],
+      ["gated check-in", "ورودِ کنترل‌شده", "AZ-400"],
+      ["artifact feed", "فیدِ آرتیفکت", "AZ-400"],
+      ["pipeline as code", "پایپ‌لاین به‌شکلِ کد", "AZ-400"],
+      ["service connection", "اتصالِ سرویس", "AZ-400"]
+    ],
+    "read": {
+      "t": "Why the doc matters as much as the code",
+      "body": [
+        ["An [[x:ADR]] is a short document [[g:that]] records one decision: what was chosen, what was rejected, and why. Teams [[g:who]] skip this end up re-litigating the same [[c:trade-off]] every few months, because nobody remembers [[g:the]] original reasoning.", "یک سندِ تصمیمِ معماری سندی کوتاه است [[g:که]] یک تصمیم را ثبت می‌کند: چه چیزی انتخاب شد، چه چیزی رد شد، و چرا. تیم‌هایی [[g:که]] این را رد می‌کنند، هر چند ماه یک‌بار همان معامله را دوباره به بحث می‌گذارند، چون کسی استدلالِ اصلی را به یاد ندارد."],
+        ["A good [[x:branching strategy]] is a common ADR topic. In [[x:trunk-based development]], which most AZ-400 scenarios favour, short-lived branches merge back through a [[x:pull request]] within a day or two — [[g:which]] keeps conflicts small.", "یک استراتژیِ شاخه‌بندیِ خوب موضوعِ رایجِ یک ADR است. در توسعه‌ی مبتنی‌بر تنه، که بیشترِ سناریوهای AZ-400 آن را ترجیح می‌دهند، شاخه‌های کوتاه‌عمر ظرفِ یکی دو روز از طریقِ یک درخواستِ ادغام برمی‌گردند — که تعارض‌ها را کوچک نگه می‌دارد."],
+        ["A [[x:gated check-in]] is the enforcement side: code [[g:that]] fails a build or a policy simply can't merge, [[g:which]] means the ADR's decision is protected by tooling, not just documentation.", "یک ورودِ کنترل‌شده سمتِ اجرایی ماجراست: کدی [[g:که]] بیلد یا یک سیاست را رد کند، ساده نمی‌تواند ادغام شود، [[g:که]] یعنی تصمیمِ ADR با ابزار محافظت می‌شود، نه فقط با مستندات."],
+        ["Every [[x:pipeline as code]] file and every [[x:service connection]] used by it should trace back to an ADR [[g:that]] explains why it exists. That's the difference between a config file [[g:—]] nobody understands — and one a new hire can read in five minutes.", "هر فایلِ پایپ‌لاینِ کد و هر اتصالِ سرویسی که استفاده می‌کند باید به یک ADR برگردد که توضیح می‌دهد چرا وجود دارد. همین فرقِ یک فایلِ پیکربندی است که کسی نمی‌فهمدش، با فایلی که یک نیرویِ تازه می‌تواند در پنج دقیقه بخواندش."]
+      ],
+      "qs": ["What problem does an ADR solve that code comments alone don't?", "Why does trunk-based development keep merge conflicts small?", "In two sentences, describe your own function-migration decision as if it were an ADR."]
+    },
+    "why": "نوشتنِ این سند دقیقاً همان مهارتی است که AZ-400 امتحان می‌کند: نه فقط دانستنِ ابزار، بلکه توضیحِ چرایی‌اش. سؤالِ سوم را با جمله‌واره‌ی موصولی جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: مکث یعنی ویرگول",
+    "lab": "Tactics for Listening · Developing · Unit 18 · Reading proposals aloud",
+    "tactic": "وقتی کسی یک سند را بلند می‌خواند، یک جمله‌واره‌ی <b>توضیحی</b> را با یک مکثِ کوتاه قبل و بعدش می‌خواند — دقیقاً جایی که ویرگول می‌آید. جمله‌واره‌ی <b>تعریفی</b> بدونِ مکث و یک‌نفس خوانده می‌شود. به همین مکث گوش بده تا نوعِ جمله‌واره را بدونِ دیدنِ متن تشخیص بدهی.",
+    "where": "<div class='en'>Book: Unit 18 “Proposals” · pages 70–73</div><div class='en'>Audio: folder 03 (Unit 17-24) · files 06–10</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>3-6</span> — فقط همین یک ترک:</b> هر بار مکثی قبل و بعدِ یک جمله‌واره شنیدی، بنویس «توضیحی»؛ اگر بدونِ مکث بود، بنویس «تعریفی»."
+    ],
+    "rec": {
+      "h": "ضبط خودت — توضیحِ بخشی از سندِ طراحی در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> یکی از تصمیم‌های فنیِ پروژه‌ات را توضیح بده، طوری که انگار داری از یک سند می‌خوانی. ۶۰ ثانیه.",
+        "<b>۲ · گوش بده و بشمار:</b> چند جمله‌واره‌ی موصولی داشتی؛ آیا مکثِ درست را قبل و بعدِ توضیحی‌ها گذاشتی.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی تعریفی (بدونِ مکث) · یک جمله‌ی توضیحی (با مکث) · یک جمله‌ی whose یا where.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["the function that, handles retries", "the function that handles retries", "تعریفی، بدونِ مکث"],
+        ["Azure Functions which scale automatically run it (بدونِ مکث، معنا اشتباه)", "Azure Functions, which scale automatically, run it", "توضیحی، با مکث"],
+        ["a A-D-R", "an ADR", "an قبل از مصوت"],
+        ["trunk base development", "trunk-based development", "با -based"],
+        ["pull the request", "a pull request", "بدونِ the اضافه"],
+        ["gated check in", "a gated check-in", "با خط‌تیره"],
+        ["pipe-line as code", "pipeline as code", "یک کلمه"]
+      ],
+      "compare": [
+        ["The function that handles retries is separate from the one that writes to the ledger.", "تابعی که تلاشِ مجدد را مدیریت می‌کند از تابعی که در دفترکل می‌نویسد جداست."],
+        ["Azure Functions, which scale automatically, run the retry logic.", "Azure Functions، که خودکار مقیاس می‌گیرند، منطقِ تلاشِ مجدد را اجرا می‌کنند."],
+        ["The API whose rate limit we hit last quarter is the one I'm replacing.", "همان API که محدودیتِ نرخش را فصلِ پیش رد کردیم، همانی است که دارم جایگزینش می‌کنم."],
+        ["I'll add a table you can scan quickly instead of another paragraph.", "یک جدول اضافه می‌کنم که سریع می‌توانی مرور کنی، به‌جای یک پاراگرافِ دیگر."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Doc excerpt · Email · Hard question",
+    "tasks": [
+      {"k": "Doc excerpt · 5 lines", "t": "یک بخشِ کوتاه از یک ADR بنویس: یک جمله‌ی تعریفی با that، یک جمله‌ی توضیحی با which و ویرگول، و یک جمله‌ی whose یا where.", "lines": 5},
+      {"k": "Email · 4 lines", "t": "ایمیلِ پخشِ سند برای بازبینی: خط اول چه سندی، خط دوم چرا الان مهم است، خط سوم چه چیزی نیاز به نظر دارد، خط چهارم ددلاینِ نظردادن.", "lines": 4},
+      {"k": "Hard question", "t": "یک بازبین می‌گوید <span class='en'>“This risk section is too vague.”</span> — جوابی بنویس که با یک جمله‌واره‌ی موصولیِ دقیق، ریسک را روشن‌تر بیان کند.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "The function that handles retries is separate from the stored procedure, which I wrote last month and which handles the write itself.",
+  "quiz": [
+    {"k": "G", "q": "The function ______ handles retries is separate from the one that writes to the ledger.", "op": ["that", ", which,", "who"], "qfa": "تابعی که تلاشِ مجدد را مدیریت می‌کند از دیگری جداست.", "a": "that", "afa": "تعریفی، بدونِ ویرگول"},
+    {"k": "G", "q": "Azure Functions, ______ scale automatically, run the retry logic.", "op": ["which", "that", "who"], "qfa": "Azure Functions، که خودکار مقیاس می‌گیرند، منطق را اجرا می‌کنند.", "a": "which", "afa": "توضیحی، با ویرگول ← which نه that"},
+    {"k": "G", "q": "The API ______ rate limit we hit last quarter needs replacing.", "op": ["whose", "who's", "that's"], "qfa": "همان API که محدودیتِ نرخش را رد کردیم باید جایگزین شود.", "a": "whose", "afa": "مالکیت ← whose"},
+    {"k": "G", "q": "Correct it: <i>The API, which we call it for validation, is old.</i>", "lines": true, "qfa": "یک کلمه‌ی اضافه دارد.", "a": "The API which we call for validation is old. (or: The API we call for validation is old.)", "afa": "مفعول تکراری (it) حذف می‌شود؛ اینجا تعریفی است پس ویرگول هم لازم نیست"},
+    {"k": "C", "q": "I ______ a proposal and ______ it for comments before the final sign-off.", "op": ["drafted / circulated", "wrote / signed", "drafted / signed"], "qfa": "پیش‌نویس نوشتم و برای نظرخواهی پخشش کردم.", "a": "drafted / circulated", "afa": "draft a proposal · circulate for comments"},
+    {"k": "C", "q": "This ADR ______ the old one — use the wiki page instead.", "qfa": "این ADR تصمیمِ قبلی را جایگزین می‌کند.", "a": "supersedes", "afa": "supersede a decision"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["sign off on sth", "sign off sth", "flesh out a section", "circulate for comments"], "a": "sign off sth", "afa": "درست: sign off on sth"},
+    {"k": "W", "q": "Keep it ______: a long, vague sentence costs more time than a short, explicit one.", "op": ["concise", "redundant", "implicit"], "qfa": "کوتاه و رسا بنویس.", "a": "concise", "afa": "concise"},
+    {"k": "W", "q": "Match: (a) a caveat  (b) boilerplate  (c) self-contained", "qfa": "۱) خودبسنده  ۲) متنِ آماده و تکراری  ۳) نکته‌ی احتیاطی", "a": "a-3 · b-2 · c-1", "afa": "a caveat نکته‌ی احتیاطی · boilerplate متنِ تکراری · self-contained خودبسنده"},
+    {"k": "X", "q": "In trunk-based development, why do short-lived branches keep conflicts small?", "op": ["they never get deleted", "they merge back within a day or two", "they skip code review"], "qfa": "چرا شاخه‌های کوتاه‌عمر تعارض را کم می‌کنند؟", "a": "they merge back within a day or two", "afa": "AZ-400 — trunk-based development"},
+    {"k": "L", "q": "How can you tell a defining clause from a non-defining one just by listening?", "qfa": "چطور فقط با گوش‌دادن جمله‌واره‌ی تعریفی را از توضیحی تشخیص می‌دهی؟", "a": "a non-defining clause has a short pause before and after it; a defining one doesn't", "afa": "ترک ۳-۶"},
+    {"k": "G", "old": true, "q": "I'm not ______ that part of the system — the platform team owns it.", "qfa": "از درس ۷.", "a": "responsible for", "afa": "از درس ۷ — responsible for"},
+    {"k": "P", "q": "One sentence: <i>The API has a rate limit. We hit it last quarter. I want to replace it. The new function scales automatically.</i>", "lines": true, "qfa": "با whose / which یک جمله بساز.", "a": "Model: The API whose rate limit we hit last quarter is the one I want to replace with a new function, which scales automatically.", "afa": "نمونه: همان API که محدودیتِ نرخش را فصلِ پیش رد کردیم، همانی است که می‌خواهم با یک تابعِ تازه جایگزینش کنم، که خودکار مقیاس می‌گیرد."}
+  ],
+  "_id": "u412"
+}

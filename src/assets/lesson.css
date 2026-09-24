@@ -83,6 +83,8 @@ td.r { font-weight: 700; width: 28%; }
 .chip.cert s { color: #2c726d; }
 .chip em { font: 700 .72em Calibri, Carlito, Arial, sans-serif; font-style: normal; background: #6a4c04; color: #fbefc4; border-radius: 3px; padding: 0 .3em; margin-left: .35em; }
 .chip.cert em { background: #14544f; color: #e2f0ef; }
+.chip i { font: 700 .68em Calibri, Carlito, Arial, sans-serif; font-style: normal; background: transparent; color: #8a6d20; border: 1px solid #dfc15c; border-radius: 3px; padding: 0 .3em; margin-left: .35em; }
+.chip.cert i { color: #2c726d; border-color: #8fbfbc; }
 .wset { margin-top: .6em; }
 .wset:first-child { margin-top: 0; }
 .wu { font: 600 .78em Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; color: #8a94a0; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .25em; }
@@ -138,6 +140,14 @@ ol.steps li { margin: .25em 0; }
 .kr div { border-left: 3px solid var(--k); padding: .15em .7em; background: #fff; }
 .kr .en { font-size: .98em; }
 .afa { direction: rtl; text-align: right; color: #6b7580; font-size: .88em; }
+
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  body { background: #fff; }
+  .lesson-nav { display: none !important; }
+  .lesson-page { max-width: 100%; padding: 0; }
+  .sec { break-inside: avoid-page; }
+}
 
 .lesson-nav { display: flex; gap: .6em; align-items: center; margin-bottom: 1em; flex-wrap: wrap; }
 .lesson-nav a, .lesson-nav .btn-link { color: #2d5f86; text-decoration: none; font-size: .92em; background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }

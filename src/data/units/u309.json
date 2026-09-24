@@ -1,0 +1,215 @@
+{
+  "n": 9,
+  "hue": [340, 0.45, 0.26],
+  "tag": "Module 3 · Unit 9",
+  "en": "Your first performance review",
+  "fa": "اولین ارزیابی عملکرد — نشان‌دادنِ کارت بدون پُز و بدون کوچک‌بینی",
+  "src": [
+    ["Grammar", "GIU 19–21 · will/going to/present continuous · as well as / in addition to"],
+    ["Colloc.", "Units 97–99 · achievement and improvement"],
+    ["Words", "WS 79 + 80 · personality, praise & criticism"],
+    ["Listen", "TfL Developing U15 · talking about achievements"]
+  ],
+  "books": {
+    "col": [97, 98, 99],
+    "giu": [7, 13, 19, 20, 21],
+    "ws": [79, 80],
+    "dev": [15]
+  },
+  "chain": {
+    "prev": "Unit 8 · Giving and taking code review feedback",
+    "next": "Unit 10 · On call: a production incident"
+  },
+  "story": "سه ماه گذشته و اولین ارزیابیِ عملکردت است. مدیرت می‌پرسد چه کاری کرده‌ای و بعد چه می‌خواهی بکنی. اینجا دو زمان با هم رقابت می‌کنند: <b>حال کامل</b> برای چیزی که تا الان انجام داده‌ای، و <b>will / going to / حال استمراری</b> برای برنامه‌ی بعدی. و یک کلمه‌ی ربطِ کوچک — <b>as well as</b> — همان چیزی است که فهرستِ کارهایت را از یک لیستِ خشک به یک روایتِ قانع‌کننده تبدیل می‌کند.",
+  "dialog": {
+    "h": "دیالوگ — جلسه‌ی ارزیابیِ سه‌ماهه",
+    "lab": "Dialogue · GIU 7, 13, 19–21",
+    "lines": [
+      ["Manager", "Let's start simple: what [[g:have you accomplished]] this quarter?", "بیایید ساده شروع کنیم: این فصل چه کاری [[g:انجام داده‌ای]]؟"],
+      ["Arash", "I[[g:'ve shipped]] the sync fix, [[c:as well as]] two smaller features. I[[g:'ve also]] cut the anomaly query's runtime by 40 percent.", "رفعِ باگِ sync را [[g:عرضه کرده‌ام]]، [[c:به‌علاوه‌ی]] دو فیچرِ کوچک‌تر. زمانِ اجرای کوئریِ ناهنجاری را هم ۴۰ درصد [[g:کم کرده‌ام]]."],
+      ["Manager", "Impressive. [[c:In addition to]] the technical work, how [[g:have you found]] working with the platform team?", "چشمگیر است. [[c:علاوه بر]] کارِ فنی، همکاری با تیمِ پلتفرم را چطور [[g:دیده‌ای]]؟"],
+      ["Arash", "Good. I[[g:'ve learned]] to raise blockers earlier [[c:rather than]] guessing alone — that alone saved a week on the sync bug.", "خوب. یاد گرفته‌ام گیرها را زودتر مطرح کنم [[c:به‌جای]] این‌که تنها حدس بزنم — همین به‌تنهایی یک هفته روی باگِ sync صرفه‌جویی کرد."],
+      ["Manager", "What [[g:are you planning]] for next quarter?", "برای فصلِ بعد چه [[g:برنامه‌ای داری]]؟"],
+      ["Arash", "I[[g:'m going to]] take the AZ-204 exam in October, and I[[g:'m]] already [[g:preparing]] for it evenings. I[[g:'ll]] also mentor the new hire on the ledger module.", "قصد دارم آزمونِ AZ-204 را در اکتبر بدهم، و همین الان دارم شب‌ها [[g:آماده می‌شوم]]. مربیِ نیرویِ جدید روی ماژولِ دفترکل هم [[g:خواهم بود]]."],
+      ["Manager", "Any area you're [[c:not fully satisfied with]]?", "جایی هست که از خودت [[c:کاملاً راضی نباشی]]؟"],
+      ["Arash", "Yes — my test coverage on the sync module. I [[c:take that on board]] and [[g:'m adding]] tests next sprint, [[c:not just]] fixing bugs [[c:but also]] preventing them.", "بله — پوششِ تستِ ماژولِ sync. [[c:این را می‌پذیرم]] و اسپرینتِ بعد دارم تست اضافه می‌کنم، [[c:نه‌فقط]] رفعِ باگ [[c:بلکه]] جلوگیری از آن."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — چه کرده‌ای در برابر چه می‌کنی + as well as",
+    "lab": "Grammar in Use · 7, 13, 19–21",
+    "rows": [
+      ["افزودنِ یک اسم به چیزِ دیگر — حرف‌اضافه", "I shipped the fix, [[g:as well as]] two features.", "I shipped the fix, as well two features"],
+      ["افزودنِ یک جمله‌ی کامل", "[[g:In addition to]] the fix, I improved the tests.", "In addition to I improved the tests"],
+      ["دستاوردِ تا الان، بدونِ زمانِ دقیق", "I[[g:'ve shipped]] the sync fix this quarter.", "I shipped the sync fix since three months"],
+      ["برنامه‌ریزی‌شده و قطعی — با تصمیمِ قبلی", "I[[g:'m going to]] take the exam in October.", "I will take the exam in October (تصمیمِ لحظه‌ای نیست)"],
+      ["قرارِ از پیش‌تعیین‌شده، مثلِ برنامه", "I[[g:'m]] already [[g:preparing]] for it evenings.", "I already prepare for it evenings"],
+      ["تصمیمِ آنیِ همین الان — will", "Okay, I[[g:'ll]] send you the plan today.", "Okay, I'm going to send you the plan today (تصمیمِ از پیش نبود)"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + review prep",
+    "errors": [
+      ["as well two features", "as well as two features"],
+      ["in addition to I improved", "in addition to improving / and I also improved"],
+      ["I shipped it since three months", "I've shipped it this quarter / over the last three months"],
+      ["I will take the exam (planned weeks ago)", "I'm going to take the exam"],
+      ["not just fixing but preventing too", "not just fixing but also preventing"],
+      ["it depend on the module", "it depends on the module"]
+    ],
+    "trigger": "<b class='en'>What have you accomplished?</b> ← حال کامل (نتیجه تا الان، بدونِ زمانِ دقیق). <b class='en'>What are you planning?</b> ← going to برای تصمیمِ از پیش، حالِ استمراری برای قرارِ برنامه‌ریزی‌شده، will فقط برای تصمیمِ همین‌جا. <span class='en'>as well as</span> بعدش اسم/gerund می‌گیرد، نه جمله‌ی کامل."
+  },
+  "colls": {
+    "h": "کالوکیشن — دستاورد و پیشرفت",
+    "lab": "Collocations in Use · Units 97–99",
+    "groups": [
+      {"h": "meet / exceed", "n": "رسیدن یا فراتررفتن از هدف", "ok": ["meet a target", "exceed expectations"], "no": "exceed a target over"},
+      {"h": "build on", "n": "روی چیزی که هست ادامه دادن", "ok": ["build on your strengths", "capitalise on sth"], "no": "build over your strengths"},
+      {"h": "fall short", "n": "کم‌آوردن نسبت به هدف", "ok": ["fall short of a target", "room for improvement"], "no": "fall short from a target"},
+      {"h": "take on board", "n": "پذیرفتنِ یک بازخورد", "ok": ["take feedback on board", "act on feedback"], "no": "take on the board"}
+    ],
+    "rows": [
+      ["meet a target", "به هدف رسیدن", "meet with a target"],
+      ["exceed expectations", "فراتر از انتظار عمل کردن", "exceed from expectations"],
+      ["fall short of a target", "از هدف کم‌آوردن", "fall short from a target"],
+      ["room for improvement", "جایی برای پیشرفت", "room to improvement"],
+      ["build on your strengths", "روی نقاطِ قوت ادامه دادن", "build over your strengths"],
+      ["capitalise on sth", "از فرصتی نهایت استفاده را بردن", "capitalise of sth"],
+      ["take feedback on board", "بازخورد را پذیرفتن و به‌کاربستن", "take a feedback on board"],
+      ["act on feedback", "طبقِ بازخورد عمل کردن", "act to feedback"],
+      ["a steep improvement", "پیشرفتِ چشمگیر", "a steep improve"],
+      ["set a stretch goal", "هدفی بلندپروازانه تعیین کردن", "set a stretching goal"],
+      ["punch above your weight", "بالاتر از حدِ انتظار ظاهر شدن", "punch over your weight"],
+      ["a track record", "سابقه‌ی عملکرد", "a track recording"]
+    ],
+    "ex": [
+      ["I [[c:exceeded]] the target on query speed, but [[c:fell short of]] it on test coverage — [[c:room for improvement]], and I own that.", "روی سرعتِ کوئری [[c:فراتر از انتظار]] عمل کردم، ولی روی پوششِ تست [[c:کم آوردم]] — [[c:جایی برای پیشرفت]] هست، و آن را می‌پذیرم."],
+      ["I [[c:took the feedback on board]] and [[c:acted on it]] within the same sprint.", "بازخورد را [[c:پذیرفتم]] و همان اسپرینت طبقِ آن [[c:عمل کردم]]."],
+      ["This quarter is a [[c:steep improvement]] on the last one — I want to [[c:build on]] that in Q4.", "این فصل نسبت به فصلِ قبل [[c:پیشرفتِ چشمگینی]] است — می‌خواهم در فصلِ چهارم [[c:رویش ادامه بدهم]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — شخصیت، تعریف و انتقاد",
+    "lab": "Word Skills · 79 + 80",
+    "sets": [
+      {"u": "79 · Personality and character", "chips": [
+        ["conscientious", "وظیفه‌شناس", "C1", "adj"],
+        ["proactive", "پیشدستانه", "B2", "adj"],
+        ["meticulous", "موشکاف، دقیق", "C1", "adj"],
+        ["dependable", "قابل‌اتکا", "B2", "adj"],
+        ["self-critical", "خودانتقادگر", "C1", "adj"],
+        ["humble", "فروتن", "B2", "adj"],
+        ["assertive", "قاطع (بدون پرخاش)", "C1", "adj"],
+        ["complacent", "خودراضی، بی‌تحرک", "C1", "adj"],
+        ["resilient", "تاب‌آور", "C1", "adj"],
+        ["candid", "رک و صادق", "C1", "adj"]
+      ]},
+      {"u": "80 · Praise, criticism and achievement", "chips": [
+        ["commend sb for sth", "کسی را برای چیزی تحسین کردن", "C1", "v"],
+        ["a strong suit", "نقطه‌ی قوت", "B2", "n"],
+        ["constructive criticism", "انتقادِ سازنده", "B2", "n"],
+        ["nitpicky", "ایرادگیرِ جزئی", "C1", "adj"],
+        ["fall behind", "عقب افتادن", "B1", "phr"],
+        ["surpass", "پیشی گرفتن از", "C1", "v"],
+        ["credit sb with sth", "چیزی را به حسابِ کسی گذاشتن", "C1", "v"],
+        ["underrate", "دستِ‌کم گرفتن", "C1", "v"],
+        ["a growth area", "زمینه‌ی رشد", "B2", "n"],
+        ["milestone", "نقطه‌ی عطف، سنگِ‌راه", "B2", "n"]
+      ]}
+    ],
+    "ex": [
+      ["I'd call myself [[w:conscientious]] and [[w:proactive]] — I raise a blocker before it becomes a [[w:growth area]] nobody flagged.", "خودم را [[w:وظیفه‌شناس]] و [[w:پیشدستانه]] می‌دانم — یک گیر را قبل از این‌که به [[w:زمینه‌ی رشدی]] تبدیل شود که کسی مطرحش نکرده، مطرح می‌کنم."],
+      ["My manager [[w:commended me for]] the query fix and [[w:credited me with]] saving the team a week.", "مدیرم [[w:برای]] رفعِ کوئری [[w:تحسینم کرد]] و صرفه‌جوییِ یک هفته را [[w:به حسابم گذاشت]]."],
+      ["I'm [[w:self-critical]] enough to say test coverage is my [[w:growth area]] this quarter, not my [[w:strong suit]].", "به‌اندازه‌ی کافی [[w:خودانتقادگر]] هستم که بگویم پوششِ تست [[w:زمینه‌ی رشدِ]] من در این فصل است، نه [[w:نقطه‌ی قوتم]]."],
+      ["Shipping the sync fix was a real [[w:milestone]] — I don't want to be [[w:complacent]] about it, though.", "عرضه‌ی رفعِ sync یک [[w:نقطه‌ی عطفِ]] واقعی بود — با این حال نمی‌خواهم دربارهاش [[w:خودراضی]] باشم."],
+      ["[[w:Constructive criticism]] isn't the same as being [[w:nitpicky]] — one has a point, the other doesn't.", "[[w:انتقادِ سازنده]] با [[w:ایرادگیریِ جزئی]] فرق دارد — یکی نکته دارد، دیگری ندارد."],
+      ["I'd rather be [[w:candid]] about falling behind than let a manager [[w:underrate]] the real reason.", "ترجیح می‌دهم درباره‌ی [[w:عقب‌افتادن]] [[w:رک]] باشم تا این‌که بگذارم مدیر دلیلِ واقعی را [[w:دست‌کم بگیرد]]."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: از PL-400 به AZ-204",
+    "lab": "Microsoft AZ-204 · reading",
+    "exam": "AZ-204",
+    "areas": ["Develop Azure compute solutions", "Connect to and consume Azure services"],
+    "terms": [
+      ["Azure Function", "تابعِ Azure", "AZ-204"],
+      ["managed identity", "هویتِ مدیریت‌شده", "AZ-204"],
+      ["App Configuration", "پیکربندیِ اپ", "AZ-204"],
+      ["Key Vault", "خزانه‌ی کلید", "AZ-204"],
+      ["scaling", "مقیاس‌گذاری", "AZ-204"],
+      ["cold start", "شروعِ سرد", "AZ-204"],
+      ["throughput", "توانِ گذردهی", "AZ-204"],
+      ["milestone", "نقطه‌ی عطف", "PL-400"]
+    ],
+    "read": {
+      "t": "Why the next certificate is Azure, not just Power Platform",
+      "body": [
+        ["[[g:As well as]] Power Platform, most real integrations eventually touch [[x:Azure Function]]s — small pieces of code that run [[g:in addition to]] the low-code layer when logic gets too heavy for a flow. Learning them is the natural [[c:next milestone]] [[g:after]] PL-400.", "[[g:علاوه بر]] Power Platform، بیشترِ یکپارچه‌سازی‌های واقعی در نهایت به [[x:توابعِ Azure]] می‌رسند — قطعه‌کدهای کوچکی که [[g:علاوه بر]] لایه‌ی کم‌کد اجرا می‌شوند وقتی منطق برای یک فلو خیلی سنگین شود. یادگیریِ آن‌ها [[c:نقطه‌ی عطفِ]] طبیعیِ [[g:بعد از]] PL-400 است."],
+        ["A secret should never sit in code or a connection string. Instead, an [[x:Azure Function]] reads it from [[x:Key Vault]] or [[x:App Configuration]] using a [[x:managed identity]] — an identity Azure manages for you, [[g:so that]] no password is ever stored anywhere.", "یک رمزِ محرمانه نباید هرگز در کد یا رشته‌ی اتصال بنشیند. در عوض، یک [[x:تابعِ Azure]] آن را از [[x:خزانه‌ی کلید]] یا [[x:پیکربندیِ اپ]] با یک [[x:هویتِ مدیریت‌شده]] می‌خواند — هویتی که Azure برایت مدیریت می‌کند، [[g:تا]] هیچ رمزی هیچ‌جا ذخیره نشود."],
+        ["[[x:Scaling]] is the other reason this matters at your job now, not later: a function that handled ten calls a day [[g:might]] suddenly need ten a second [[g:if]] SmartLedgerAI [[g:onboards]] a bigger client. A [[x:cold start]] — the delay before an idle function wakes up — can hurt [[x:throughput]] exactly when it matters most.", "[[x:مقیاس‌گذاری]] دلیلِ دیگری است که این همین حالا در کارت اهمیت دارد، نه بعداً: تابعی که روزی ده فراخوان داشت [[g:ممکن است]] ناگهان به ده فراخوان در ثانیه نیاز پیدا کند [[g:اگر]] SmartLedgerAI مشتریِ بزرگ‌تری [[g:بگیرد]]. یک [[x:شروعِ سرد]] — تأخیرِ پیش از بیدارشدنِ تابعِ بی‌کار — دقیقاً همان لحظه‌ای که مهم‌ترین است می‌تواند به [[x:توانِ گذردهی]] ضربه بزند."],
+        ["So a good performance-review answer for “what's next” isn't just a certificate name; it's the [[c:reason]] behind it: <i>I'm going to study AZ-204 [[g:so that]] I can move logic to Azure Functions [[c:as well as]] Power Automate — and I've already read the pricing model for cold starts.</i>", "پس یک جوابِ خوب برای «بعدی چیست؟» در ارزیابیِ عملکرد فقط اسمِ یک مدرک نیست؛ [[c:دلیلِ]] پشتش است: <i>می‌خواهم AZ-204 بخوانم [[g:تا]] بتوانم منطق را [[c:علاوه بر]] Power Automate به Azure Functions هم منتقل کنم — و مدلِ قیمت‌گذاریِ شروعِ سرد را هم از قبل خوانده‌ام.</i>"]
+      ],
+      "qs": ["Why should a secret never sit in code or a connection string?", "What could suddenly change the scaling needs of a function?", "In two sentences: explain your certification plan the way you would in a performance review."]
+    },
+    "why": "این متن دقیقاً جوابِ سؤالِ «برای فصلِ بعد چه برنامه‌ای داری؟» را با اصطلاحِ آزمون می‌دهد. سؤالِ آخر را همان‌طور بلند بگو که در جلسه‌ی ارزیابی می‌گویی."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: زمانِ فعل، نه فقط کلمه",
+    "lab": "Tactics for Listening · Developing · Unit 15 · Achievements",
+    "tactic": "وقتی کسی از دستاوردهایش می‌گوید، زمانِ فعل مشخص می‌کند چه چیزی تمام شده و چه چیزی هنوز ادامه دارد. دنبالِ خودِ فعل کمکی بگرد — <span class='en'>have/has</span> برای تا-الان، <span class='en'>am/is/are + -ing</span> یا <span class='en'>going to</span> برای بعدی — نه فقط کلمه‌ی اصلی.",
+    "where": "<div class='en'>Book: Unit 15 “Achievements” · pages 58–61</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 32–36</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-32</span> — فقط همین یک ترک:</b> برای هر گوینده دو ستون بنویس: «تا الان چه کرده» (have/has) و «بعدی چیست» (going to / -ing). فقط فعلِ کمکی را علامت بزن."
+    ],
+    "rec": {
+      "h": "ضبط خودت — خلاصه‌ی سه‌ماهه در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“What have you accomplished this quarter, and what's next?”</span> جواب بده. ۹۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار حال کامل و چند بار going to/حالِ استمراری گفتی؛ آیا جابه‌جا نشدند.",
+        "<b>۳ · دوباره، با این قالب:</b> دو جمله‌ی حال کامل (دستاورد) · یک جمله‌ی as well as · یک جمله‌ی going to (برنامه) · یک جمله‌ی self-critical (زمینه‌ی رشد).",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["I shipped it since three months", "I've shipped it over the last three months", "since با حال کامل، نه گذشته‌ی ساده"],
+        ["as well two features", "as well as two features", "as بعدِ well لازم است"],
+        ["A-Z two-o-four", "AZ-204", "اِی-زد دویست‌وچهار"],
+        ["manage identity", "managed identity", "d پایانی"],
+        ["key vote", "Key Vault", "وُلت، نه ووت"],
+        ["cold star", "cold start", "d پایانی"],
+        ["through-put", "throughput", "یک کلمه، تراف‌پوت"]
+      ],
+      "compare": [
+        ["I've shipped the sync fix, as well as two smaller features, this quarter.", "رفعِ sync را به‌علاوه‌ی دو فیچرِ کوچک‌تر، این فصل عرضه کرده‌ام."],
+        ["I'm going to take the AZ-204 exam in October.", "قصد دارم آزمونِ AZ-204 را در اکتبر بدهم."],
+        ["I'm already preparing for it in the evenings.", "همین الان دارم شب‌ها برایش آماده می‌شوم."],
+        ["My test coverage is a growth area, and I'm adding tests next sprint.", "پوششِ تستم زمینه‌ی رشد است، و اسپرینتِ بعد تست اضافه می‌کنم."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Review · Email · Hard question",
+    "tasks": [
+      {"k": "Review · 90 sec", "t": "اولین ارزیابیِ عملکردت را بازی کن: دو جمله‌ی حال کامل برای دستاورد، یک جمله‌ی as well as، یک جمله‌ی going to برای برنامه، و یک زمینه‌ی رشد که خودت با صداقت مطرح می‌کنی. ضبط کن."},
+      {"k": "Email · 5 lines", "t": "خلاصه‌ی ارزیابیِ سه‌ماهه برای مدیرت: خط اول دستاوردِ اصلی، خط دوم as well as یک دستاوردِ دوم، خط سوم زمینه‌ی رشد، خط چهارم برنامه‌ی فصلِ بعد با going to، خط پنجم تشکر.", "lines": 5},
+      {"k": "Hard question", "t": "مدیرت می‌پرسد <span class='en'>“Why should I trust the estimate for AZ-204 prep?”</span> — جوابی بنویس که یک دستاوردِ گذشته را مدرک بیاورد و با going to/because تمام شود.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "I've shipped the sync fix as well as two smaller features this quarter, and I'm going to take the AZ-204 exam in October — test coverage is my growth area, and I'm already adding tests next sprint.",
+  "quiz": [
+    {"k": "G", "q": "I've shipped the fix, ______ two smaller features.", "op": ["as well as", "as well", "in addition"], "qfa": "رفعِ باگ را به‌علاوه‌ی دو فیچرِ کوچک عرضه کرده‌ام.", "a": "as well as", "afa": "as well as + اسم"},
+    {"k": "G", "q": "What ______ you ______ (accomplish) this quarter?", "qfa": "این فصل چه کاری انجام داده‌ای؟", "a": "have … accomplished", "afa": "حال کامل — نتیجه تا الان"},
+    {"k": "G", "q": "I ______ take the AZ-204 exam in October — I decided last month.", "op": ["'m going to", "will", "am"], "qfa": "قصد دارم آزمونِ AZ-204 را اکتبر بدهم — ماهِ پیش تصمیمش را گرفتم.", "a": "'m going to", "afa": "going to ← تصمیمِ از پیش"},
+    {"k": "G", "q": "Correct it: <i>I shipped it since three months, and I will take the exam since I decided it weeks ago.</i>", "lines": true, "qfa": "زمانِ درست را انتخاب کن.", "a": "I've shipped it over the last three months, and I'm going to take the exam since I decided it weeks ago.", "afa": "since با حال کامل · تصمیمِ قبلی با going to"},
+    {"k": "C", "q": "I ______ expectations on query speed but fell short on test coverage.", "op": ["exceeded", "met with", "capitalised"], "qfa": "روی سرعتِ کوئری فراتر از انتظار عمل کردم.", "a": "exceeded", "afa": "exceed expectations"},
+    {"k": "C", "q": "I ______ the feedback on board and acted on it the same sprint.", "qfa": "بازخورد را پذیرفتم و همان اسپرینت طبقِ آن عمل کردم.", "a": "took", "afa": "take feedback on board"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["meet a target", "fall short from a target", "room for improvement", "build on your strengths"], "a": "fall short from a target", "afa": "درست: fall short of a target"},
+    {"k": "W", "q": "I'd call myself ______ — I raise a blocker before anyone else notices it.", "op": ["proactive", "complacent", "nitpicky"], "qfa": "خودم را پیشدستانه می‌دانم.", "a": "proactive", "afa": "proactive — پیشدستانه"},
+    {"k": "W", "q": "Match: (a) a strong suit  (b) a growth area  (c) constructive criticism", "qfa": "۱) انتقادِ سازنده  ۲) نقطه‌ی قوت  ۳) زمینه‌ی رشد", "a": "a-2 · b-3 · c-1", "afa": "a strong suit نقطه‌ی قوت · a growth area زمینه‌ی رشد · constructive criticism انتقادِ سازنده"},
+    {"k": "X", "q": "Where should a secret like an API key be stored, according to Azure best practice?", "op": ["directly in the code", "in Key Vault, read via a managed identity", "in a connection string"], "qfa": "یک رمزِ محرمانه کجا باید ذخیره شود؟", "a": "in Key Vault, read via a managed identity", "afa": "AZ-204 — Key Vault + managed identity"},
+    {"k": "L", "q": "Which two auxiliary-verb patterns mark 'done so far' vs 'planned next'?", "qfa": "دو الگوی فعلِ کمکی برای «تا الان» و «برنامه‌ی بعدی» را بنویس.", "a": "have/has + past participle · going to / am-is-are + -ing", "afa": "ترک ۲-۳۲"},
+    {"k": "G", "old": true, "q": "This week I ______ (finish) the documentation.", "qfa": "از درس ۱.", "a": "'m finishing", "afa": "از درس ۱ — کارِ در جریان"},
+    {"k": "P", "q": "One sentence: <i>I fixed the sync bug. I improved query speed. Test coverage is still weak. I'm adding tests next sprint.</i>", "lines": true, "qfa": "با as well as / though یک جمله بساز.", "a": "Model: I've fixed the sync bug and improved query speed as well, though test coverage is still weak — I'm adding tests next sprint.", "afa": "نمونه: باگِ sync را رفع کردم و سرعتِ کوئری را هم بهتر کردم، هرچند پوششِ تست هنوز ضعیف است — اسپرینتِ بعد تست اضافه می‌کنم."}
+  ],
+  "_id": "u309"
+}

@@ -1,0 +1,216 @@
+{
+  "n": 15,
+  "hue": [200, 0.5, 0.22],
+  "tag": "Module 4 · Unit 15",
+  "en": "Presenting quarterly results to leadership",
+  "fa": "ارائه‌ی نتایجِ فصلی به مدیریتِ ارشد — از اولین ارائه تا این‌جا",
+  "src": [
+    ["Grammar", "GIU 42–43, 44 · get-passive & causative have/get sth done · mixed review"],
+    ["Colloc.", "Units 116–118 · presenting, impact and results"],
+    ["Words", "WS 91 + 92 · presenting & summarising, impact & results"],
+    ["Listen", "TfL Developing U21 · the headline number first"]
+  ],
+  "books": {
+    "col": [116, 117, 118],
+    "giu": [42, 43, 44],
+    "ws": [91, 92],
+    "dev": [21]
+  },
+  "chain": {
+    "prev": "Unit 14 · Negotiating scope with a stakeholder",
+    "next": "Unit 16 · Interviewing candidates you might soon manage"
+  },
+  "story": "شش ماه از آن اولین ارائه‌ی لرزان گذشته (یونیت ۵). امروز باید نتایجِ فصل را به مدیریتِ ارشد ارائه دهی — نه به یک تیمِ کوچک. اینجا همه‌چیزی که تا حالا یاد گرفتی به‌هم می‌رسد: <b>عددِ اصلی اول</b>، بعد چرا (because/since)، بعد چه چیزی عوض شد (مجهول)، بعد چه کاری خودت انجام ندادی بلکه <b>کارِ کسی دیگر را ترتیب دادی</b> — همان <b>causative</b> که مدیرانِ ارشد به آن گوش می‌دهند.",
+  "dialog": {
+    "h": "دیالوگ — ارائه به مدیریت، ده دقیقه",
+    "lab": "Dialogue · GIU 42–44",
+    "lines": [
+      ["Director", "Give me the headline number first — how did the quarter go?", "اول عددِ اصلی را بده — فصل چطور گذشت؟"],
+      ["Arash", "Sync incidents [[g:were reduced]] by eighty percent, and the export feature [[g:was shipped]] two weeks early.", "حوادثِ sync ۸۰ درصد [[g:کاهش یافت]]، و فیچرِ خروجی دو هفته زودتر [[g:عرضه شد]]."],
+      ["Director", "Good. What [[g:got you]] there — was it mostly the retry fix?", "خوب. چه چیزی [[g:باعث شد]] به این‌جا برسید — بیشتر رفعِ retry بود؟"],
+      ["Director", "And the dashboard — I heard it [[g:got delayed]].", "و داشبورد — شنیدم [[g:عقب افتاد]]."],
+      ["Arash", "It did, on purpose. We [[c:traded scope for time]] — export first, since clients [[g:needed]] it more urgently.", "بله، عمدی. [[c:محدوده را با زمان معامله کردیم]] — اول خروجی، چون مشتری‌ها فوری‌تر [[g:به آن نیاز داشتند]]."],
+      ["Director", "Makes sense. What [[g:have]] you [[g:had]] the platform team [[g:do]] to support this?", "منطقی است. چه کاری [[g:ترتیب دادی]] تیمِ پلتفرم [[g:انجام بدهد]] تا از این پشتیبانی کند؟"],
+      ["Arash", "I [[g:had]] them [[g:review]] the retry logic before ship, and I [[g:got]] the monitoring dashboard [[g:set up]] by the SRE team.", "کاری کردم تیمِ پلتفرم منطقِ retry را قبل از عرضه بازبینی کند، و [[g:ترتیب دادم]] داشبوردِ مانیتورینگ توسط تیمِ SRE [[g:راه‌اندازی شود]]."],
+      ["Director", "Solid quarter. What's the one thing you'd change?", "فصلِ محکمی بود. اگر یک چیز را می‌توانستی عوض کنی، چه بود؟"],
+      ["Arash", "I'd have the estimate reviewed earlier — the export estimate [[g:was revised]] twice, and that cost us a week we didn't need to lose.", "کاری می‌کردم تخمین زودتر بازبینی شود — تخمینِ خروجی دوبار [[g:بازبینی شد]]، و همین یک هفته‌ای را از دست دادیم که لازم نبود."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — مجهولِ get و causative: کاری را ترتیب دادن",
+    "lab": "Grammar in Use · 42–44",
+    "rows": [
+      ["مجهولِ رسمی با be — نتیجه، بدونِ فاعل", "Incidents [[g:were reduced]] by eighty percent.", "Incidents were reducing by eighty percent"],
+      ["مجهولِ غیررسمی با get — اتفاقی که افتاد", "The dashboard [[g:got delayed]].", "The dashboard got delay"],
+      ["Causative — کاری را ترتیب دادی تا کسی دیگر انجام دهد", "I [[g:had]] them [[g:review]] the logic.", "I had them to review the logic"],
+      ["Causative با get — نتیجه مهم است، نه فاعل", "I [[g:got]] the dashboard [[g:set up]] by the SRE team.", "I got the dashboard setting up"],
+      ["فرقِ have sth done و do sth خودت", "I [[g:had]] the estimate [[g:reviewed]]. (کسی دیگر بازبینی کرد)", "I reviewed the estimate (خودت انجام دادی — معنایِ متفاوت)"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:reduces]] · that [[g:gets]] flagged · risk [[g:is]] lower", "it reduce · that get flagged · risk are lower"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + leadership review",
+    "errors": [
+      ["Incidents were reducing (بدونِ by، معنای نادرست)", "Incidents were reduced by eighty percent"],
+      ["The dashboard got delay", "The dashboard got delayed"],
+      ["I had them to review the logic", "I had them review the logic (بدونِ to)"],
+      ["I got the dashboard setting up", "I got the dashboard set up"],
+      ["I had review the estimate", "I had the estimate reviewed"],
+      ["it reduce", "it reduces"]
+    ],
+    "trigger": "برای گزارشِ رسمی: <span class='en'>be + past participle</span>. برای لحنِ محاوره‌ای‌تر، اتفاقی که افتاد: <span class='en'>get + past participle</span>. وقتی <b>خودت</b> کاری را ترتیب دادی تا دیگری انجام دهد: <span class='en'>have/get sb + verb (base/-ed)</span> — این جمله‌ای است که یک مدیرِ ارشد می‌خواهد بشنود: نه این‌که خودت همه‌کار کردی، بلکه این‌که چطور تیم را هماهنگ کردی."
+  },
+  "colls": {
+    "h": "کالوکیشن — ارائه، اثر و نتیجه",
+    "lab": "Collocations in Use · Units 116–118",
+    "groups": [
+      {"h": "the headline number", "n": "عددِ اصلی، اول از همه", "ok": ["lead with the headline number", "bottom line up front"], "no": "lead with a headline number of"},
+      {"h": "get buy-in / read the room", "n": "جلبِ حمایت، تشخیصِ فضا", "ok": ["get buy-in from sb", "read the room"], "no": "get a buy-in of sb"},
+      {"h": "land the message", "n": "پیام را رساندن، جا انداختن", "ok": ["land the message", "drive the point home"], "no": "land a message to"},
+      {"h": "bury the lede", "n": "نکته‌ی اصلی را زیرِ جزئیات گم کردن", "ok": ["bury the lede", "cut to the chase"], "no": "bury a lede in"}
+    ],
+    "rows": [
+      ["lead with the headline number", "با عددِ اصلی شروع کردن", "lead with a headline number of"],
+      ["bottom line up front (BLUF)", "نتیجه اول، جزئیات بعد", "bottom line at front"],
+      ["get buy-in from sb", "جلبِ حمایتِ کسی", "get a buy-in of sb"],
+      ["read the room", "فضایِ جلسه را تشخیص دادن", "read a room"],
+      ["land the message", "پیام را رساندن", "land a message to"],
+      ["drive the point home", "نکته را کاملاً جا انداختن", "drive home the point to"],
+      ["bury the lede", "نکته‌ی اصلی را گم کردن", "bury a lede in"],
+      ["cut to the chase", "رفتن سرِ اصلِ مطلب", "cut to a chase"],
+      ["a solid quarter", "فصلِ محکم و خوب", "a solid quarterly"],
+      ["move the needle", "تأثیرِ محسوس گذاشتن", "move a needle on"],
+      ["a quick win", "پیروزیِ سریع و کوچک", "a quick winning"],
+      ["punch above your weight", "بالاتر از حدِ انتظار ظاهر شدن", "punch over your weight"]
+    ],
+    "ex": [
+      ["I [[c:led with the headline number]] — eighty percent fewer incidents — instead of [[c:burying the lede]] under six slides of detail.", "با [[c:عددِ اصلی]] شروع کردم — هشتاد درصد حادثه‌ی کمتر — به‌جایِ این‌که [[c:نکته‌ی اصلی]] را زیرِ شش اسلایدِ جزئیات [[c:گم کنم]]."],
+      ["A good [[c:BLUF]] [[c:reads the room]]: leadership wants the result first, the method second.", "یک [[c:BLUF]] خوب [[c:فضا را می‌خواند]]: مدیریت اول نتیجه را می‌خواهد، روش دوم است."],
+      ["This quarter really [[c:moved the needle]], and I got [[c:buy-in]] for next quarter's plan before I even finished the slide.", "این فصل واقعاً [[c:تأثیرِ محسوسی]] گذاشت، و قبل از این‌که حتی اسلاید تمام شود [[c:حمایت]] برایِ برنامه‌ی فصلِ بعد گرفتم."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — ارائه‌دادن و تأثیرِ کار",
+    "lab": "Word Skills · 91 + 92",
+    "sets": [
+      {"u": "91 · Presenting and summarising", "chips": [
+        ["a takeaway", "نکته‌ی برداشتنی از ارائه", "B2", "n"],
+        ["in a nutshell", "به‌طورِ خلاصه", "B2", "phr"],
+        ["to recap", "برایِ مرور", "B1", "phr"],
+        ["a deep dive", "بررسیِ عمیق", "C1", "n"],
+        ["at a high level", "در سطحِ کلی", "B2", "phr"],
+        ["candour", "صراحت، رک‌گویی", "C1", "n"],
+        ["a rhetorical question", "سؤالِ بلاغی", "C1", "n"],
+        ["succinct", "موجز، کوتاه و دقیق", "C1", "adj"],
+        ["a Q&A", "پرسش‌وپاسخ", "B1", "n"],
+        ["field a question", "به سؤالی (بداهه) جواب دادن", "C1", "phr"]
+      ]},
+      {"u": "92 · Impact and results", "chips": [
+        ["a measurable impact", "تأثیرِ قابلِ‌اندازه‌گیری", "C1", "n"],
+        ["a KPI", "شاخصِ کلیدیِ عملکرد", "B2", "n"],
+        ["attribute sth to sth", "چیزی را به چیزی نسبت دادن", "C1", "v"],
+        ["a baseline", "خطِ پایه", "B2", "n"],
+        ["year-over-year", "سال‌به‌سال", "C1", "phr"],
+        ["diminishing returns", "بازدهِ کاهنده", "C1", "n"],
+        ["a stretch target", "هدفِ بلندپروازانه", "C1", "n"],
+        ["ROI (return on investment)", "بازگشتِ سرمایه", "B2", "n"],
+        ["tangible", "ملموس، محسوس", "C1", "adj"],
+        ["a lagging indicator", "شاخصِ تأخیری", "C1", "n"]
+      ]}
+    ],
+    "ex": [
+      ["[[w:In a nutshell]]: fewer incidents, faster exports. For the [[w:deep dive]], I've put the numbers in the appendix.", "[[w:به‌طورِ خلاصه]]: حادثه‌ی کمتر، خروجیِ سریع‌تر. برایِ [[w:بررسیِ عمیق]]، عددها را در پیوست گذاشته‌ام."],
+      ["The eighty percent drop is a [[w:measurable impact]], and I can [[w:attribute]] most of it to the retry fix.", "افتِ هشتاد درصدی یک [[w:تأثیرِ قابلِ‌اندازه‌گیری]] است، و بیشترش را می‌توانم [[w:به]] رفعِ retry [[w:نسبت بدهم]]."],
+      ["Compared to the [[w:baseline]] from last quarter, this is a real, [[w:tangible]] improvement — not just a good story.", "در مقایسه با [[w:خطِ پایه‌ی]] فصلِ پیش، این یک بهبودِ واقعی و [[w:ملموس]] است — نه فقط یک داستانِ خوب."],
+      ["I kept my slides [[w:succinct]] and left room for [[w:the Q&A]] instead of over-explaining every KPI.", "اسلایدهایم را [[w:موجز]] نگه داشتم و به‌جایِ توضیحِ بیش‌ازحدِ هر شاخص، جا برایِ [[w:پرسش‌وپاسخ]] گذاشتم."],
+      ["Incident count is [[w:a lagging indicator]] — it tells us what already happened, not what's coming next quarter.", "تعدادِ حادثه یک [[w:شاخصِ تأخیری]] است — می‌گوید چه اتفاقی قبلاً افتاده، نه فصلِ بعد چه می‌آید."],
+      ["I [[w:fielded]] a hard question about ROI with [[w:candour]] — I said the dashboard delay was the right trade-off, not a failure.", "با [[w:صراحت]] به یک سؤالِ سخت درباره‌ی بازگشتِ سرمایه [[w:جواب دادم]] — گفتم تأخیرِ داشبورد معامله‌ی درستی بود، نه شکست."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: چهار عددی که یک تیمِ DevOps واقعاً اندازه می‌گیرد",
+    "lab": "Microsoft AZ-400 · reading",
+    "exam": "AZ-400",
+    "areas": ["Develop a DevOps culture", "Define metrics that matter"],
+    "terms": [
+      ["deployment frequency", "فراوانیِ استقرار", "AZ-400"],
+      ["lead time for changes", "زمانِ آماده‌سازیِ تغییر", "AZ-400"],
+      ["change failure rate", "نرخِ شکستِ تغییر", "AZ-400"],
+      ["mean time to recovery (MTTR)", "میانگینِ زمانِ بازیابی", "AZ-400"],
+      ["DORA metrics", "شاخص‌هایِ DORA", "AZ-400"],
+      ["a feedback loop", "حلقه‌ی بازخورد", "AZ-400"],
+      ["psychological safety", "امنیتِ روانی (تیم)", "AZ-400"],
+      ["a north star metric", "شاخصِ راهنما، هدفِ اصلی", "AZ-400"]
+    ],
+    "read": {
+      "t": "Numbers a director actually trusts",
+      "body": [
+        ["When a director asks “how did the quarter go,” the four [[x:DORA metrics]] [[g:were designed]] to answer exactly that, without a single vanity number: [[x:deployment frequency]], [[x:lead time for changes]], [[x:change failure rate]], and [[x:mean time to recovery]].", "وقتی یک مدیرِ ارشد می‌پرسد «فصل چطور گذشت»، چهار شاخصِ DORA دقیقاً برایِ جواب‌دادن به همین طراحی شده‌اند، بدونِ حتی یک عددِ نمایشی: فراوانیِ استقرار، زمانِ آماده‌سازیِ تغییر، نرخِ شکستِ تغییر، و میانگینِ زمانِ بازیابی."],
+        ["A high [[x:deployment frequency]] with a low [[x:change failure rate]] is [[g:the]] story every team wants to tell — it means the team ships often [[g:and]] safely, not one [[g:or]] the other. [[x:MTTR]] — the same metric you [[g:reported]] after the incident in Unit 10 — closes the loop.", "فراوانیِ استقرارِ بالا با نرخِ شکستِ تغییرِ پایین همان داستانی است که هر تیمی می‌خواهد تعریف کند — یعنی تیم زیاد عرضه می‌کند و امن هم عرضه می‌کند، نه فقط یکی. میانگینِ زمانِ بازیابی — همان شاخصی که بعدِ حادثه‌ی یونیت ۱۰ گزارش دادی — حلقه را می‌بندد."],
+        ["None of these numbers matter without [[x:psychological safety]]: a team [[g:that]] hides failures to protect its metrics produces worse metrics, not better ones. A [[x:feedback loop]] only works if incidents [[g:get reported]] honestly, the way Unit 10's blameless postmortem taught.", "هیچ‌کدام از این عددها بدونِ امنیتِ روانی معنا ندارند: تیمی که شکست‌ها را برایِ محافظت از شاخص‌هایش پنهان می‌کند، شاخص‌هایِ بدتری تولید می‌کند، نه بهتر. یک حلقه‌ی بازخورد فقط وقتی کار می‌کند که حوادث صادقانه گزارش شوند، همان‌طور که گزارشِ بدونِ سرزنشِ یونیت ۱۰ یادت داد."],
+        ["So the most senior-friendly version of a quarterly update names one [[x:north star metric]], shows it moved, and — like this unit's dialogue — names exactly what was arranged (had the team review, got the dashboard set up) to move it.", "پس حرفه‌ای‌ترین نسخه‌ی یک گزارشِ فصلی برایِ مدیریتِ ارشد، یک شاخصِ راهنما را نام می‌برد، نشان می‌دهد حرکت کرده، و — درست مثلِ دیالوگِ این یونیت — دقیقاً می‌گوید چه چیزی ترتیب داده شد (کاری کرد تیم بازبینی کند، ترتیب داد داشبورد راه‌اندازی شود) تا آن را حرکت بدهد."]
+      ],
+      "qs": ["Why do the four DORA metrics need to be read together, not one at a time?", "What happens to metrics when a team lacks psychological safety?", "In two sentences, using causative have/get, describe one thing you arranged this quarter."]
+    },
+    "why": "این چهار شاخص دقیقاً همان چیزی است که در ارائه‌ی امروز گزارش دادی. سؤالِ سوم را با have/get sb do sth جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: عددِ اصلی همیشه اول می‌آید",
+    "lab": "Tactics for Listening · Developing · Unit 21 · Executive summaries",
+    "tactic": "در ارائه‌های مدیریتی، گوینده‌های خوب همیشه با <b>نتیجه</b> شروع می‌کنند، نه با روش. اولین جمله را با دقت بگیر — همان‌جا عددِ اصلی و نتیجه‌ی کل ارائه است. بقیه‌ی ارائه فقط توضیحِ همان یک جمله است.",
+    "where": "<div class='en'>Book: Unit 21 “Executive Summaries” · pages 82–85</div><div class='en'>Audio: folder 03 (Unit 17-24) · files 21–25</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>3-21</span> — فقط همین یک ترک:</b> فقط جمله‌ی اولِ هر ارائه را بنویس. بعد چک کن آیا همان جمله خلاصه‌ی کل ارائه بود یا نه."
+    ],
+    "rec": {
+      "h": "ضبط خودت — ارائه‌ی فصلی در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“How did the quarter go?”</span> جواب بده — انگار داری به یک مدیرِ ارشد ارائه می‌دهی. ۹۰ ثانیه.",
+        "<b>۲ · گوش بده و بشمار:</b> آیا جمله‌ی اولت عددِ اصلی بود؛ چند بار مجهول و چند بار causative (had/got sb do sth) گفتی.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی عددِ اصلی (مجهول) · یک جمله‌ی because/since برایِ دلیل · یک جمله‌ی causative برایِ کاری که ترتیب دادی · یک جمله‌ی چیزی که عوض می‌کنی.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["incidents were reducing", "incidents were reduced", "مجهولِ نتیجه، نه در-جریان"],
+        ["the dashboard got delay", "the dashboard got delayed", "get-passive، با -ed"],
+        ["I had them to review", "I had them review", "بدونِ to بعدِ have sb"],
+        ["I got the dashboard setting up", "I got the dashboard set up", "past participle، نه -ing"],
+        ["D-O-R-A metrics", "DORA metrics", "دورا، یک کلمه خوانده می‌شود"],
+        ["M-T-T-R", "MTTR", "ام-تی-تی-آر"],
+        ["a north star of metric", "a north star metric", "بدونِ of"]
+      ],
+      "compare": [
+        ["Sync incidents were reduced by eighty percent, and the export feature was shipped two weeks early.", "حوادثِ sync هشتاد درصد کاهش یافت، و فیچرِ خروجی دو هفته زودتر عرضه شد."],
+        ["The dashboard got delayed on purpose — we traded scope for time.", "داشبورد عمداً عقب افتاد — محدوده را با زمان معامله کردیم."],
+        ["I had the platform team review the retry logic before ship.", "کاری کردم تیمِ پلتفرم منطقِ retry را قبل از عرضه بازبینی کند."],
+        ["I'd have the estimate reviewed earlier next time — that cost us a week we didn't need to lose.", "دفعه‌ی بعد کاری می‌کنم تخمین زودتر بازبینی شود — همین یک هفته‌ای را از دست دادیم که لازم نبود."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Exec update · Email · Hard question",
+    "tasks": [
+      {"k": "Exec update · 90 sec", "t": "ارائه‌ی فصلی را بازی کن: یک جمله‌ی عددِ اصلی (مجهول)، یک جمله‌ی دلیل، یک جمله‌ی causative (had/got sb do sth)، و یک جمله‌ی چیزی که دفعه‌ی بعد عوض می‌کنی. ضبط کن."},
+      {"k": "Email · 5 lines", "t": "خلاصه‌ی فصل برایِ مدیریتِ ارشد: خط اول عددِ اصلی، خط دوم دلیلِ اصلی، خط سوم چه چیزی به تعویق افتاد و چرا، خط چهارم چه کاری ترتیب دادی (causative)، خط پنجم برنامه‌ی فصلِ بعد.", "lines": 5},
+      {"k": "Hard question", "t": "یک مدیرِ ارشد می‌پرسد <span class='en'>“Why should we trust this number wasn't just luck?”</span> — جوابی بنویس که یک baseline یا معیارِ روشن بیاورد، نه فقط ادعا.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "Sync incidents were reduced by eighty percent and the export feature was shipped two weeks early — I had the platform team review the retry logic and got the monitoring dashboard set up by SRE.",
+  "quiz": [
+    {"k": "G", "q": "Sync incidents ______ by eighty percent this quarter.", "op": ["were reduced", "reduced", "were reducing"], "qfa": "حوادثِ sync این فصل هشتاد درصد کاهش یافت.", "a": "were reduced", "afa": "مجهولِ رسمی — نتیجه"},
+    {"k": "G", "q": "The dashboard ______ delayed, but on purpose.", "op": ["got", "was getting", "get"], "qfa": "داشبورد عقب افتاد، ولی عمداً.", "a": "got", "afa": "get-passive — لحنِ محاوره‌ای‌تر"},
+    {"k": "G", "q": "I ______ the platform team ______ the retry logic before ship.", "op": ["had / review", "had / to review", "made / reviewing"], "qfa": "کاری کردم تیمِ پلتفرم قبل از عرضه منطقِ retry را بازبینی کند.", "a": "had / review", "afa": "have sb + فعلِ ساده، بدونِ to"},
+    {"k": "G", "q": "Correct it: <i>I got the dashboard setting up by the SRE team.</i>", "lines": true, "qfa": "شکلِ فعل را درست کن.", "a": "I got the dashboard set up by the SRE team.", "afa": "get sth + past participle"},
+    {"k": "C", "q": "I ______ with the headline number instead of burying it under six slides.", "op": ["led", "buried", "read"], "qfa": "با عددِ اصلی شروع کردم.", "a": "led", "afa": "lead with the headline number"},
+    {"k": "C", "q": "This quarter really ______ — a measurable, tangible result.", "qfa": "این فصل واقعاً تأثیرِ محسوسی گذاشت.", "a": "moved the needle", "afa": "move the needle"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["lead with the headline number", "bury the lede", "get a buy-in of sb", "read the room"], "a": "get a buy-in of sb", "afa": "درست: get buy-in from sb"},
+    {"k": "W", "q": "In a ______: fewer incidents, faster exports.", "op": ["nutshell", "deep dive", "baseline"], "qfa": "به‌طورِ خلاصه: حادثه‌ی کمتر، خروجیِ سریع‌تر.", "a": "nutshell", "afa": "in a nutshell"},
+    {"k": "W", "q": "Match: (a) a lagging indicator  (b) a baseline  (c) diminishing returns", "qfa": "۱) خطِ پایه  ۲) بازدهِ کاهنده  ۳) شاخصِ تأخیری", "a": "a-3 · b-1 · c-2", "afa": "lagging indicator شاخصِ تأخیری · baseline خطِ پایه · diminishing returns بازدهِ کاهنده"},
+    {"k": "X", "q": "Why should deployment frequency and change failure rate always be read together?", "op": ["they measure the same thing twice", "high frequency alone could just mean shipping often but breaking things", "the exam requires both numbers"], "qfa": "چرا این دو شاخص باید با هم خوانده شوند؟", "a": "high frequency alone could just mean shipping often but breaking things", "afa": "AZ-400 — DORA metrics"},
+    {"k": "L", "q": "In a good executive update, where does the headline number usually go?", "qfa": "عددِ اصلی معمولاً کجای ارائه می‌آید؟", "a": "in the very first sentence", "afa": "ترک ۳-۲۱ — BLUF"},
+    {"k": "G", "old": true, "q": "The more features we add now, the ______ the risk of breaking the sync fix.", "qfa": "از درس ۱۴.", "a": "higher", "afa": "از درس ۱۴ — the more X, the more Y"},
+    {"k": "P", "q": "One sentence: <i>Incidents dropped 80%. I asked the platform team to review the logic. I asked SRE to set up monitoring.</i>", "lines": true, "qfa": "با مجهول + causative یک جمله بساز.", "a": "Model: Incidents were reduced by 80% after I had the platform team review the logic and got SRE to set up monitoring.", "afa": "نمونه: حوادث هشتاد درصد کاهش یافت بعد از این‌که ترتیب دادم تیمِ پلتفرم منطق را بازبینی کند و SRE مانیتورینگ را راه‌اندازی کند."}
+  ],
+  "_id": "u415"
+}

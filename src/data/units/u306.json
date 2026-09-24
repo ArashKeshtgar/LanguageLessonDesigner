@@ -1,0 +1,216 @@
+{
+  "n": 6,
+  "hue": [265, 0.42, 0.26],
+  "tag": "Module 3 · Unit 6",
+  "en": "Explaining a trade-off to your team",
+  "fa": "توضیح یک تصمیمِ دوپهلو — چرا این راه را انتخاب کردی، نه آن یکی را",
+  "src": [
+    ["Grammar", "GIU 112–114 · although/though/despite · because/because of · so that"],
+    ["Colloc.", "Units 61–63 · decisions and reasoning"],
+    ["Words", "WS 73 + 74 · comparing & contrasting, reason & purpose"],
+    ["Listen", "TfL Developing U12 · giving reasons in a meeting"]
+  ],
+  "books": {
+    "col": [61, 62, 63],
+    "giu": [112, 113, 114],
+    "ws": [73, 74],
+    "dev": [12]
+  },
+  "chain": {
+    "prev": "Unit 5 · Your first team presentation",
+    "next": "Unit 7 · Raising a blocker without sounding lost"
+  },
+  "story": "دو هفته از استخدام گذشته و اولین جلسه‌ی طراحی واقعی‌ات است. یک همکار پیشنهاد می‌دهد همه‌چیز را با Power Automate بسازید؛ تو معتقدی بخش هسته باید کد باشد. اینجا دیگر کافی نیست بگویی «این بهتر است» — باید بگویی <b>because</b> کدام، <b>because of</b> کدام، و چرا <b>although</b> راه‌حل کم‌کد سریع‌تر است، باز هم راه‌حل کدنویسی را انتخاب کردی. جمله‌بندیِ ربط‌دهنده همان چیزی است که یک تصمیم را قانع‌کننده یا مبهم می‌کند.",
+  "dialog": {
+    "h": "دیالوگ — جلسه‌ی طراحی، تخته‌ی سفید",
+    "lab": "Dialogue · GIU 112–114",
+    "lines": [
+      ["Colleague", "[[g:Because]] the deadline is close, why don't we just build the whole thing in Power Automate?", "[[g:چون]] ددلاین نزدیک است، چرا کل کار را در Power Automate نسازیم؟"],
+      ["Arash", "[[g:Although]] that would be faster this week, [[g:it would]] break the moment the volume doubles. I'd rather keep the core logic in code.", "[[g:با اینکه]] این هفته سریع‌تر می‌شد، همان لحظه که حجم دو برابر شود [[g:خراب می‌شود]]. ترجیح می‌دهم منطق هسته را در کد نگه دارم."],
+      ["Colleague", "[[c:Fair point]]. But what's the actual reason — [[g:because of]] performance, or something else?", "[[c:نکته‌ی درستی است]]. ولی دلیل واقعی چیست — [[g:به‌خاطر]] کارایی، یا چیز دیگری؟"],
+      ["Arash", "Mainly [[g:because of]] testability. I can unit-test a stored procedure; I can't easily unit-test a flow with twelve branches.", "بیشتر [[g:به‌خاطر]] قابلیت تست است. می‌توانم یک stored procedure را یونیت‌تست کنم؛ یک فلوی با دوازده شاخه را به‌راحتی نمی‌توانم."],
+      ["Colleague", "[[g:Despite]] the extra setup time, you still think code wins?", "[[g:با وجود]] زمان تنظیمِ اضافه، هنوز فکر می‌کنی کد برنده است؟"],
+      ["Arash", "Yes — [[g:despite]] the setup, [[c:it pays off]] within a month. I wrote the validation [[g:so that]] a bad record can never reach the ledger, no matter which app calls it.", "بله — [[g:با وجود]] آن تنظیم، ظرف یک ماه [[c:جبران می‌شود]]. اعتبارسنجی را [[g:طوری]] نوشتم که هیچ رکورد خرابی، از هر اپی که بیاید، هرگز به دفتر کل نرسد."],
+      ["Colleague", "Okay. [[g:Even though]] I still like low-code for the approval screens, I [[c:take your point]] on the core.", "باشه. [[g:با اینکه]] هنوز کم‌کد را برای صفحه‌های تأیید دوست دارم، حرفت را درباره‌ی هسته [[c:می‌پذیرم]]."],
+      ["Arash", "Exactly — that split is the plan: low-code [[g:for]] the screens, code [[g:so that]] the rules can't be bypassed.", "دقیقاً — همین تقسیم برنامه است: کم‌کد [[g:برای]] صفحه‌ها، کد [[g:تا]] قاعده‌ها قابل دورزدن نباشند."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — ربط‌دهنده یا حرف‌اضافه؟ although یا because of؟",
+    "lab": "Grammar in Use · 112–114",
+    "rows": [
+      ["تضاد + جمله‌ی کامل (فعل و فاعل)", "[[g:Although]] it's faster, it breaks under load.", "Although of it's faster, it breaks under load"],
+      ["تضاد + اسم یا gerund (بدون فعل)", "[[g:Despite]] the extra setup time, code wins.", "Despite it's faster this week"],
+      ["دلیل + جمله‌ی کامل", "I chose code [[g:because]] it's testable.", "I chose code because of it's testable"],
+      ["دلیل + اسم (حرف‌اضافه)", "I chose code [[g:because of]] testability.", "I chose code because testability"],
+      ["هدف — چرا این کار را می‌کنی", "I wrote it [[g:so that]] a bad record can't reach the ledger.", "I wrote it so a bad record can't to reach the ledger"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:validates]] · that [[g:depends]] · risk [[g:is]] flagged", "it validate · that depend · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + design meeting",
+    "errors": [
+      ["Although of the deadline", "Although the deadline is close"],
+      ["Despite it's faster", "Despite being faster / Despite the fact that it's faster"],
+      ["because of it's testable", "because it's testable"],
+      ["so a bad record can't to reach", "so that a bad record can't reach"],
+      ["it validate", "it validates"],
+      ["that depend on", "that depends on"]
+    ],
+    "trigger": "قاعده‌ی یک‌خطی: بعد از <b class='en'>although / even though / because</b> یک جمله‌ی کامل می‌آید (فاعل + فعل). بعد از <b class='en'>despite / in spite of / because of</b> فقط اسم یا gerund می‌آید — هرگز جمله‌ی کامل. <b class='en'>Why did you choose X?</b> جواب خوب هر دو نوع را با هم دارد: یکی با because، یکی با so that برای هدف."
+  },
+  "colls": {
+    "h": "کالوکیشن — تصمیم‌گیری و استدلال",
+    "lab": "Collocations in Use · Units 61–63",
+    "groups": [
+      {"h": "reach / come to", "n": "رسیدن به یک تصمیم یا نتیجه", "ok": ["reach a decision", "come to a conclusion"], "no": "reach a conclusion decision"},
+      {"h": "weigh up", "n": "سبک‌سنگین کردن گزینه‌ها", "ok": ["weigh up the options", "weigh the pros and cons"], "no": "weigh up between"},
+      {"h": "trade-off", "n": "معامله‌ی دو ارزش در برابر هم", "ok": ["a trade-off between speed and safety", "strike a balance"], "no": "make a trade-off with"},
+      {"h": "pay off / hold up", "n": "نتیجه دادن، دوام آوردن", "ok": ["pay off in the long run", "hold up under load"], "no": "pay off from"}
+    ],
+    "rows": [
+      ["reach a decision", "به تصمیم رسیدن", "take a decision*"],
+      ["come to a conclusion", "به نتیجه رسیدن", "come to a decision*"],
+      ["weigh up the options", "گزینه‌ها را سبک‌سنگین کردن", "weigh up between options"],
+      ["weigh the pros and cons", "خوب و بد را سنجیدن", "weigh pros against cons"],
+      ["a trade-off between X and Y", "معامله‌ی X در برابر Y", "a trade between X and Y"],
+      ["strike a balance", "تعادل برقرار کردن", "strike a balance with"],
+      ["pay off in the long run", "در بلندمدت جبران شدن", "pay off on the long run"],
+      ["hold up under load", "زیر فشار دوام آوردن", "hold on under load"],
+      ["make a case for sth", "برای چیزی استدلال آوردن", "make a case of sth"],
+      ["take sth into account", "چیزی را در نظر گرفتن", "take sth in account"],
+      ["a sound argument", "استدلال محکم", "a strong sound argument*"],
+      ["on balance", "با در نظر گرفتن همه‌چیز", "in balance"]
+    ],
+    "ex": [
+      ["I [[c:weighed up the options]] and [[c:reached a decision]]: code for the core, low-code for the screens.", "[[c:گزینه‌ها را سبک‌سنگین کردم]] و [[c:به تصمیم رسیدم]]: کد برای هسته، کم‌کد برای صفحه‌ها."],
+      ["The extra setup [[c:pays off in the long run]], because the logic [[c:holds up under load]] the flow never would.", "تنظیمِ اضافه [[c:در بلندمدت جبران می‌شود]]، چون منطق زیر فشاری [[c:دوام می‌آورد]] که فلو هرگز نمی‌آورد."],
+      ["[[c:On balance]], I [[c:made a case for]] keeping validation in the database, not the app.", "[[c:با در نظر گرفتن همه‌چیز]]، [[c:استدلال آوردم]] که اعتبارسنجی در دیتابیس بماند، نه در اپ."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — مقایسه، تضاد، دلیل و هدف",
+    "lab": "Word Skills · 73 + 74",
+    "sets": [
+      {"u": "73 · Comparing and contrasting", "chips": [
+        ["whereas", "درحالی‌که (تضاد)", "B2", "conj"],
+        ["on the other hand", "از طرف دیگر", "B2", "phr"],
+        ["unlike", "برخلاف", "B1", "prep"],
+        ["in contrast to", "در تضاد با", "C1", "prep"],
+        ["a drawback", "نکته‌ی منفی", "B2", "n"],
+        ["an advantage", "مزیت", "B1", "n"],
+        ["equivalent", "معادل", "B2", "adj"],
+        ["comparable", "قابل‌مقایسه", "C1", "adj"],
+        ["outweigh", "برتری‌داشتن بر (در سنجش)", "C1", "v"],
+        ["marginal", "جزئی، ناچیز", "C1", "adj"]
+      ]},
+      {"u": "74 · Reason and purpose", "chips": [
+        ["justify", "توجیه کردن", "B2", "v"],
+        ["rationale", "منطقِ پشتِ تصمیم", "C1", "n"],
+        ["with a view to", "به قصد، با هدف", "C1", "prep"],
+        ["for the sake of", "به‌خاطر (منفعتِ)", "B2", "prep"],
+        ["accordingly", "بر همین اساس", "C1", "adv"],
+        ["as a consequence", "در نتیجه", "B2", "phr"],
+        ["deliberate", "عمدی", "B2", "adj"],
+        ["arbitrary", "دلبخواهی، بی‌دلیل", "C1", "adj"],
+        ["sound (adj.)", "محکم، منطقی", "C1", "adj"],
+        ["flawed", "دارای ایراد", "C1", "adj"]
+      ]}
+    ],
+    "ex": [
+      ["My [[w:rationale]] was simple: [[w:unlike]] the flow, a stored procedure is [[w:comparable]] in every environment.", "[[w:منطقِ]] من ساده بود: [[w:برخلاف]] فلو، یک stored procedure در هر محیطی [[w:قابل‌مقایسه]] است."],
+      ["The setup time is a real [[w:drawback]], but the safety [[w:outweighs]] it.", "زمان تنظیم یک [[w:نکته‌ی منفی]] واقعی است، ولی امنیتش [[w:برتری دارد]]."],
+      ["I chose code [[w:with a view to]] scaling later, not [[w:for the sake of]] looking clever.", "کد را [[w:با هدف]] مقیاس‌پذیری بعدی انتخاب کردم، نه [[w:به‌خاطر]] باهوش به‌نظر رسیدن."],
+      ["This wasn't an [[w:arbitrary]] choice — the [[w:rationale]] is written in the design doc.", "این یک انتخاب [[w:دلبخواهی]] نبود — [[w:منطقش]] در سند طراحی نوشته شده."],
+      ["[[w:As a consequence]], every write now goes through the same validated path.", "[[w:در نتیجه]]، حالا هر نوشتنی از همان مسیر اعتبارسنجی‌شده می‌گذرد."],
+      ["A [[w:flawed]] argument still needs a fair hearing; I asked my colleague to [[w:justify]] the flow-only approach too.", "یک استدلالِ [[w:معیوب]] هم به شنیده‌شدنِ منصفانه نیاز دارد؛ از همکارم خواستم رویکرد فقط-فلو را هم [[w:توجیه کند]]."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: کِی کم‌کد، کِی کد",
+    "lab": "Microsoft PL-400 · reading",
+    "exam": "PL-400",
+    "areas": ["Create a technical design", "Evaluate design options"],
+    "terms": [
+      ["extensibility", "قابلیت‌گسترش", "PL-400"],
+      ["custom connector", "کانکتور سفارشی", "PL-400"],
+      ["ALM", "چرخه‌ی مدیریت اپلیکیشن", "PL-400"],
+      ["governance", "حاکمیت (قوانین سازمانی)", "PL-400"],
+      ["low-code", "کم‌کد", "PL-900"],
+      ["pro-code", "کدنویسیِ حرفه‌ای", "PL-400"],
+      ["maintainability", "قابلیت‌نگهداری", "PL-400"],
+      ["scalability", "مقیاس‌پذیری", "PL-400"]
+    ],
+    "read": {
+      "t": "The real trade-off behind low-code vs. pro-code",
+      "body": [
+        ["Every PL-400 design question hides the same trade-off: [[x:low-code]] is faster to ship but harder to test at scale; [[x:pro-code]] takes longer up front but gives full control over [[x:maintainability]] and [[x:scalability]]. Neither one wins on its own — the exam wants you to say <i>[[c:it depends on]]</i> the number of branches, not on personal taste.", "هر سؤال طراحی PL-400 همان معامله را پشت خودش پنهان می‌کند: [[x:کم‌کد]] عرضه‌اش سریع‌تر است ولی تستِ آن در مقیاس سخت‌تر است؛ [[x:کدنویسیِ حرفه‌ای]] اولش وقت بیشتری می‌برد ولی کنترل کامل روی [[x:قابلیت‌نگهداری]] و [[x:مقیاس‌پذیری]] می‌دهد. هیچ‌کدام به‌تنهایی برنده نیست — آزمون می‌خواهد بگویی <i>[[c:بستگی دارد]]</i> به تعداد شاخه‌ها، نه سلیقه‌ی شخصی."],
+        ["A flow with many branches becomes hard to reason about — that's [[c:a drawback]] that grows with every new condition. A [[x:custom connector]] can bridge a flow to real code, [[g:so that]] the complex part stays testable while the simple part stays low-code.", "فلویی با شاخه‌های زیاد فهمیدنش سخت می‌شود — این [[c:نکته‌ی منفی‌ای]] است که با هر شرط تازه بزرگ‌تر می‌شود. یک [[x:کانکتور سفارشی]] می‌تواند فلو را به کد واقعی وصل کند، [[g:طوری‌که]] بخش پیچیده تست‌پذیر بماند و بخش ساده کم‌کد باقی بماند."],
+        ["[[x:Governance]] is the other half of the answer. [[g:Although]] a citizen developer can build fast, an organisation still needs [[x:ALM]] — source control, environments, and a review step — [[g:because]] a flow in production is production code, whether anyone calls it that or not.", "[[x:حاکمیت]] نیمه‌ی دیگر جواب است. [[g:با اینکه]] یک توسعه‌دهنده‌ی غیرحرفه‌ای می‌تواند سریع بسازد، سازمان همچنان به [[x:ALM]] نیاز دارد — کنترل نسخه، محیط‌ها، و یک مرحله‌ی بازبینی — [[g:چون]] یک فلو در تولید، کدِ تولید است، چه کسی آن را این‌طور بنامد چه نه."],
+        ["So the exam's favourite answer is a hybrid: build the screen in Power Apps, put the rule [[g:because of]] its testability in a stored procedure or plug-in, and connect the two. That split, not a single tool, is the [[x:extensibility]] story Microsoft actually sells.", "پس جوابِ محبوبِ آزمون یک ترکیب است: صفحه را در Power Apps بساز، قاعده را [[g:به‌خاطر]] قابلیت‌تستش در یک stored procedure یا پلاگین بگذار، و آن دو را وصل کن. همین تقسیم، نه یک ابزار تنها، همان داستانِ [[x:قابلیت‌گسترشی]] است که مایکروسافت واقعاً می‌فروشد."]
+      ],
+      "qs": ["Why does a flow with many branches become a maintenance risk?", "What does a custom connector let you combine?", "In two sentences: justify a hybrid design to a manager who only trusts low-code."]
+    },
+    "why": "این چهار پاراگراف دقیقاً همان جوابی است که در جلسه‌ی طراحی دادی — فقط با اصطلاح‌های آزمون. سؤال سوم را بلند جواب بده؛ همان جمله را فردا در جلسه هم می‌توانی بگویی."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: کلمه‌ی ربط‌دهنده، نشانه‌ی دلیل بعدی",
+    "lab": "Tactics for Listening · Developing · Unit 12 · Meetings",
+    "tactic": "در جلسه‌ها، آدم‌ها دلیلشان را با یک کلمه‌ی ربط علامت می‌زنند: <span class='en'>because · since · so that · although</span>. اگر همین کلمه‌ها را بگیری، بدون فهمیدنِ کل جمله هم می‌فهمی <b>کدام حرف دلیل است و کدام تضاد</b>.",
+    "where": "<div class='en'>Book: Unit 12 “Discussion” · pages 46–49</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 17–21</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-17</span> — فقط همین یک ترک:</b> هر بار که یکی از این کلمه‌ها را شنیدی، دستت را بالا ببر (یا کاغذ را علامت بزن): <span class='en'>because / since / so that / although</span>. بعد از هر علامت، سه کلمه‌ی بعدش را بنویس."
+    ],
+    "rec": {
+      "h": "ضبط خودت — دفاع از یک تصمیم در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به این سؤال جواب بده: <span class='en'>“Why did you choose code over Power Automate here?”</span> ۹۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار because به‌جای because of (یا برعکس) گفتی؛ آیا بعد از although یک جمله‌ی کامل آمد یا فقط یک اسم.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی although + جمله‌ی کامل · یک جمله‌ی because of + اسم · یک جمله‌ی so that + هدف.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["although of", "although", "although جمله می‌گیرد، نه اسم با of"],
+        ["despite that it's faster", "despite the fact that it's faster / despite being faster", "despite اسم یا gerund می‌گیرد"],
+        ["because it's testable of", "because it's testable / because of testability", "یا فعل‌دار با because، یا اسم با because of"],
+        ["so a record can't to reach", "so that a record can't reach", "بعد از can't هرگز to نمی‌آید"],
+        ["it validate", "it validates", "سوم‌شخص مفرد"],
+        ["Power Automated", "Power Automate", "بدون d پایانی"],
+        ["a stored procedured", "a stored procedure", "procedure اسم است، d نمی‌گیرد"]
+      ],
+      "compare": [
+        ["Although it would be faster this week, it would break under load.", "با اینکه این هفته سریع‌تر می‌شد، زیر فشار خراب می‌شد."],
+        ["I chose code mainly because of testability, not because it's trendy.", "کد را بیشتر به‌خاطر قابلیت‌تست انتخاب کردم، نه چون مد روز است."],
+        ["Despite the extra setup time, the logic holds up under load.", "با وجود زمان تنظیمِ اضافه، منطق زیر فشار دوام می‌آورد."],
+        ["I wrote the rule in the database so that no app could bypass it.", "قاعده را در دیتابیس نوشتم تا هیچ اپی نتواند دورش بزند."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Meeting · Email · Hard question",
+    "tasks": [
+      {"k": "Meeting · 90 sec", "t": "دفاع از تصمیم کد-به‌جای-فلو را بازی کن: یک جمله‌ی <span class='en'>although</span> + جمله‌ی کامل، یک جمله‌ی <span class='en'>because of</span> + اسم، و یک جمله‌ی <span class='en'>so that</span> برای هدف. ضبط کن."},
+      {"k": "Email · 5 lines", "t": "ایمیل خلاصه‌ی تصمیمِ طراحی به تیم: خط اول تصمیم، خط دوم دلیل با because، خط سوم مصالحه با despite/although، خط چهارم هدف با so that، خط پنجم گام بعدی.", "lines": 5},
+      {"k": "Hard question", "t": "مدیرت می‌پرسد <span class='en'>“Couldn't we have just used Power Automate for everything and saved a week?”</span> — جوابی بنویس که با although شروع شود و با so that تمام شود.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "Although Power Automate would have shipped faster, I chose code because of testability — and I wrote the validation so that no app could ever bypass it.",
+  "quiz": [
+    {"k": "G", "q": "______ the deadline is close, we should still test this properly.", "op": ["Although", "Despite", "Because of"], "qfa": "با اینکه ددلاین نزدیک است، باید این را درست تست کنیم.", "a": "Although", "afa": "بعد از although جمله‌ی کامل می‌آید"},
+    {"k": "G", "q": "I chose this design ______ its testability, not because it's fashionable.", "op": ["because", "because of", "so that"], "qfa": "این طراحی را به‌خاطر قابلیت‌تستش انتخاب کردم.", "a": "because of", "afa": "because of + اسم"},
+    {"k": "G", "q": "Correct it: <i>Despite it's slower, the team preferred it.</i>", "lines": true, "qfa": "despite بعدش اسم/gerund می‌خواهد.", "a": "Despite being slower, the team preferred it. / Despite the fact that it's slower, …", "afa": "despite + اسم یا gerund، نه جمله‌ی کامل"},
+    {"k": "G", "q": "I wrote the check in the database ______ no app could bypass it.", "qfa": "چک را در دیتابیس نوشتم تا هیچ اپی نتواند دورش بزند.", "a": "so that", "afa": "so that ← هدف"},
+    {"k": "C", "q": "After a long meeting, we finally ______ a decision.", "op": ["reached", "took", "made"], "qfa": "بعد از جلسه‌ی طولانی بالاخره به تصمیم رسیدیم.", "a": "reached", "afa": "reach a decision"},
+    {"k": "C", "q": "The extra setup time will ______ in the long run.", "qfa": "زمان تنظیم اضافه در بلندمدت جبران می‌شود.", "a": "pay off", "afa": "pay off in the long run"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["weigh up the options", "reach a conclusion decision", "a trade-off between speed and safety", "hold up under load"], "a": "reach a conclusion decision", "afa": "یا reach a decision یا come to a conclusion — نه ترکیبِ هردو"},
+    {"k": "W", "q": "______ the flow, a stored procedure works the same in every environment.", "op": ["Unlike", "Whereas", "Despite"], "qfa": "برخلاف فلو، stored procedure در هر محیطی یکسان کار می‌کند.", "a": "Unlike", "afa": "unlike + اسم"},
+    {"k": "W", "q": "Match: (a) rationale  (b) drawback  (c) arbitrary", "qfa": "۱) نکته‌ی منفی  ۲) دلبخواهی  ۳) منطقِ پشتِ تصمیم", "a": "a-3 · b-1 · c-2", "afa": "rationale منطق · drawback نکته‌ی منفی · arbitrary دلبخواهی"},
+    {"k": "X", "q": "In the PL-400 design story, what makes a flow with many branches risky?", "op": ["it costs more licences", "it becomes hard to test and maintain", "it can't call a connector"], "qfa": "چرا فلوی پرشاخه ریسک دارد؟", "a": "it becomes hard to test and maintain", "afa": "PL-400 — maintainability و scalability"},
+    {"k": "L", "q": "Which four words in the meeting audio usually introduce a reason or contrast?", "qfa": "چهار کلمه‌ی نشانه‌ی دلیل یا تضاد در جلسه کدام‌اند؟", "a": "because · since · so that · although", "afa": "ترک ۲-۱۷"},
+    {"k": "C", "old": true, "q": "The rewrite ______ a real impact on the query time.", "op": ["made", "had", "did"], "qfa": "از درس ۲.", "a": "had", "afa": "از درس ۲ — have an impact on"},
+    {"k": "W", "old": true, "q": "It was a ______, not an insoluble problem.", "op": ["setback", "breakthrough", "struggle"], "qfa": "از درس ۳.", "a": "setback", "afa": "از درس ۳ — setback"},
+    {"k": "P", "q": "One sentence: <i>Power Automate is faster to build. Code is easier to test. I chose code.</i>", "lines": true, "qfa": "با although / because of یک جمله بساز.", "a": "Model: Although Power Automate would be faster to build, I chose code because of how much easier it is to test.", "afa": "نمونه: با اینکه Power Automate ساختش سریع‌تر است، کد را به‌خاطر تست‌پذیریِ بیشترش انتخاب کردم."}
+  ],
+  "_id": "u306"
+}

@@ -1,0 +1,215 @@
+{
+  "n": 13,
+  "hue": [265, 0.35, 0.3],
+  "tag": "Module 4 · Unit 13",
+  "en": "Mentoring the new hire",
+  "fa": "مربی‌گریِ نیرویِ تازه — نقل‌قولِ سؤال و درخواست",
+  "src": [
+    ["Grammar", "GIU 48–49 · reported questions · reported requests/commands"],
+    ["Colloc.", "Units 110–112 · teaching, guiding and delegating"],
+    ["Words", "WS 87 + 88 · teaching & learning, instructions & requests"],
+    ["Listen", "TfL Developing U19 · relaying a conversation"]
+  ],
+  "books": {
+    "col": [110, 111, 112],
+    "giu": [47, 48, 49],
+    "ws": [87, 88],
+    "dev": [19]
+  },
+  "chain": {
+    "prev": "Unit 12 · Writing a technical design doc",
+    "next": "Unit 14 · Negotiating scope with a stakeholder"
+  },
+  "story": "نیرویِ تازه، سارا، روزِ سوم کاری‌اش است و گیج شده. تیم‌لید از تو خواسته کمکش کنی جا بیفتد. امروز باید هم چیزی که لید از تو خواسته را به سارا منتقل کنی، هم سؤالی که سارا از تو پرسیده را برای لید تعریف کنی. اینجا فرقِ نقل‌قولِ یک <b>جمله</b>، یک <b>سؤال</b> و یک <b>درخواست/دستور</b> — هرکدام شکلِ گرامریِ خودش را دارد.",
+  "dialog": {
+    "h": "دیالوگ — بینِ مربی و نیرویِ تازه",
+    "lab": "Dialogue · GIU 47–49",
+    "lines": [
+      ["Sara", "The lead told me [[g:to]] shadow you this week. She also asked [[g:whether]] I should touch the ledger code yet.", "لید [[g:به من گفت]] این هفته پیشِ تو باشم. همچنین [[g:پرسید آیا]] هنوز باید به کدِ دفترکل دست بزنم یا نه."],
+      ["Arash", "Good question — I asked her the same thing. She said [[g:not to]] touch it directly [[g:—]] yet. She told me [[g:to]] walk you through the read-only parts first.", "سؤالِ خوبی است — من هم همین را از او پرسیدم. گفت هنوز مستقیم [[g:بهش دست نزن]]. [[g:به من گفت]] اول قسمت‌هایِ فقط-خواندنی را برایت توضیح بدهم."],
+      ["Sara", "Okay. Can I ask you something? What [[g:did]] she [[g:mean]] by 'shadow'?", "باشه. می‌شود یک چیزی بپرسم؟ منظورش از «shadow» [[g:چه بود]]؟"],
+      ["Arash", "She meant [[c:sit in on]] my meetings and [[c:watch]] how I debug, without [[c:owning]] a ticket yet. I asked [[g:if]] that included standup, and she said yes.", "منظورش این بود [[c:بنشینی و ببینی]] جلسه‌هایم را و [[c:نگاه کنی]] چطور دیباگ می‌کنم، بدون این‌که هنوز [[c:مالکِ]] یک تیکت باشی. پرسیدم [[g:آیا]] این شاملِ استندآپ هم می‌شود، و گفت بله."],
+      ["Sara", "Got it. One more thing — the lead asked me [[g:not to]] push directly to main. Is that normal here?", "فهمیدم. یک چیزِ دیگر — لید [[g:از من خواست]] مستقیم به main پوش نکنم. اینجا این عادی است؟"],
+      ["Arash", "Yes, always. I'll [[c:walk you through]] the branch workflow. She's right to [[c:flag]] that early — it's [[c:not obvious]] on day three.", "بله، همیشه. مسیرِ کارِ شاخه‌ها را برایت [[c:توضیح می‌دهم]]. حق دارد این را زود [[c:مطرح کند]] — روزِ سوم چیزِ واضحی نیست."],
+      ["Sara", "Thanks. Should I tell her I asked you all this, or is that [[c:too much noise]]?", "ممنون. باید بهش بگویم همه‌ی این‌ها را از تو پرسیدم، یا [[c:سروصدایِ زیادی]] است؟"],
+      ["Arash", "Tell her — she asked me [[g:to]] [[c:give her a heads-up]] on what you're learning. It shows you're [[c:proactive]], not lost.", "بهش بگو — او از من [[g:خواست]] درباره‌ی چیزی که داری یاد می‌گیری بهش [[c:خبر بدهم]]. نشان می‌دهد پیشدستانه‌ای، نه گم‌شده."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — نقل‌قولِ سؤال، درخواست و دستور",
+    "lab": "Grammar in Use · 47–49",
+    "rows": [
+      ["نقل‌قولِ سؤالِ بله/خیر — با if/whether", "She asked [[g:whether]] I should touch the code yet.", "She asked did I should touch the code"],
+      ["نقل‌قولِ سؤالِ wh — بدونِ وارونگی", "I asked [[g:what]] she meant by 'shadow'.", "I asked what did she mean"],
+      ["نقل‌قولِ درخواست/دستورِ مثبت — to", "The lead told me [[g:to]] shadow you this week.", "The lead told me that I shadow you"],
+      ["نقل‌قولِ درخواست/دستورِ منفی — not to", "She said [[g:not to]] touch it directly yet.", "She said to not touch it directly"],
+      ["ask sb to در برابر tell sb to — لحن", "She asked me [[g:to]] give her a heads-up. (مؤدبانه)", "She told me to give her a heads-up (دستوری‌تر است)"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "she [[g:asks]] · he [[g:tells]] · risk [[g:is]] flagged", "she ask · he tell · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + mentoring session",
+    "errors": [
+      ["She asked did I should touch it", "She asked whether I should touch it"],
+      ["I asked what did she mean", "I asked what she meant"],
+      ["The lead told me that I shadow you", "The lead told me to shadow you"],
+      ["She said to not touch it", "She said not to touch it"],
+      ["she ask", "she asks"],
+      ["he tell", "he tells"]
+    ],
+    "trigger": "سه شکلِ نقل‌قول را قاطی نکن: <b class='en'>said/told sb (that) + جمله</b> برای گفته‌ها، <b class='en'>asked (sb) + if/whether/wh-word + جمله (بدونِ وارونگی)</b> برای سؤال‌ها، و <b class='en'>told/asked sb + to</b> برای درخواست و دستور. علامتِ سؤال و کمکی‌فعلِ اولِ سؤال در نقل‌قول ناپدید می‌شوند."
+  },
+  "colls": {
+    "h": "کالوکیشن — راهنمایی، مربی‌گری و واگذاریِ کار",
+    "lab": "Collocations in Use · Units 110–112",
+    "groups": [
+      {"h": "shadow / walk through", "n": "همراهیِ نزدیک برای یادگیری", "ok": ["shadow sb", "walk sb through sth"], "no": "shadow with sb"},
+      {"h": "throw in / hold back", "n": "میزانِ استقلالِ نیرویِ تازه", "ok": ["throw sb in at the deep end", "hold sb back"], "no": "throw sb into deep end"},
+      {"h": "own / delegate", "n": "مالکیتِ یک کار", "ok": ["own a ticket", "delegate sth to sb"], "no": "own of a ticket"},
+      {"h": "lead by example", "n": "با رفتار، نه فقط حرف، آموزش دادن", "ok": ["lead by example", "set the tone"], "no": "lead with example"}
+    ],
+    "rows": [
+      ["shadow sb", "همراهیِ نزدیکِ کسی برای یادگیری", "shadow with sb"],
+      ["walk sb through sth", "چیزی را قدم‌به‌قدم برای کسی توضیح دادن", "walk through sb sth"],
+      ["throw sb in at the deep end", "کسی را بدونِ آماده‌سازی وارد کارِ سخت کردن", "throw sb into deep end"],
+      ["hold sb back", "جلویِ رشدِ کسی را گرفتن", "hold back sb"],
+      ["own a ticket", "مالکِ یک تیکت بودن", "own of a ticket"],
+      ["delegate sth to sb", "کاری را به کسی واگذار کردن", "delegate sb sth"],
+      ["lead by example", "با رفتار الگو بودن", "lead with example"],
+      ["set the tone", "فضا/لحنِ کار را تعیین کردن", "set a tone of"],
+      ["give sb a heads-up", "از قبل به کسی خبر دادن", "give sb a head up"],
+      ["sit in on a meeting", "بدونِ مشارکتِ فعال در جلسه حاضر بودن", "sit on a meeting"],
+      ["get up to speed", "به روز و آماده شدن", "get up on speed"],
+      ["a steep onboarding curve", "شروعِ کاریِ سخت و شیب‌دار", "a steep onboard curve"]
+    ],
+    "ex": [
+      ["I [[c:walked her through]] the read-only parts before letting her [[c:own]] her first ticket — no [[c:throwing sb in at the deep end]] here.", "قسمت‌های فقط-خواندنی را برایش [[c:قدم‌به‌قدم توضیح دادم]] قبل از این‌که بگذارم اولین تیکتش را [[c:مالک شود]] — اینجا کسی را [[c:بدونِ آمادگی وارد کارِ سخت نمی‌کند]]."],
+      ["I [[c:gave the lead a heads-up]] on what Sara's learning, so nobody [[c:holds her back]] by accident.", "به لید [[c:از قبل خبر دادم]] سارا دارد چه چیزی یاد می‌گیرد، تا کسی اتفاقی [[c:جلویِ رشدش را نگیرد]]."],
+      ["Good mentors [[c:lead by example]] and let the new hire [[c:sit in on]] real meetings — that's how you [[c:get up to speed]] fast.", "مربی‌های خوب [[c:با رفتار الگو می‌شوند]] و می‌گذارند نیرویِ تازه در جلسه‌های واقعی [[c:حاضر باشد]] — همین‌طوری سریع [[c:به‌روز می‌شوی]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — آموزش و دستور دادن",
+    "lab": "Word Skills · 87 + 88",
+    "sets": [
+      {"u": "87 · Teaching and learning", "chips": [
+        ["hands-on", "عملی، با تجربه‌ی مستقیم", "B2", "adj"],
+        ["a knowledge gap", "شکافِ دانشی", "C1", "n"],
+        ["reinforce", "تقویت کردن (یادگیری)", "C1", "v"],
+        ["absorb (information)", "جذب کردن (اطلاعات)", "B2", "v"],
+        ["a rule of thumb", "قاعده‌ی سرانگشتی", "C1", "n"],
+        ["intuitive", "شهودی، بی‌نیاز از توضیح", "C1", "adj"],
+        ["counterintuitive", "خلافِ شهود", "C1", "adj"],
+        ["trial and error", "آزمون‌وخطا", "B2", "n"],
+        ["a sandbox environment", "محیطِ آزمایشی", "B2", "n"],
+        ["ramp up", "به‌تدریج سرعت‌گرفتن", "B2", "phr"]
+      ]},
+      {"u": "88 · Instructions and requests", "chips": [
+        ["explicit instructions", "دستورهایِ صریح", "C1", "n"],
+        ["at your own pace", "با سرعتِ خودت", "B2", "phr"],
+        ["a heads-up", "خبرِ ازپیش", "B2", "n"],
+        ["a gentle reminder", "یادآوریِ ملایم", "B2", "n"],
+        ["flag sth for later", "چیزی را برای بعد علامت زدن", "B2", "phr"],
+        ["a courtesy (to do sth)", "ادب، احترام (در انجامِ کاری)", "C1", "n"],
+        ["a standing instruction", "دستورِ همیشگی و ثابت", "C1", "n"],
+        ["defer to sb", "به تشخیصِ کسی احترام گذاشتن", "C1", "v"],
+        ["push back (on a request)", "در برابرِ درخواستی مقاومت کردن", "B2", "phr"],
+        ["a soft no", "ردِ نرم و غیرمستقیم", "C1", "n"]
+      ]}
+    ],
+    "ex": [
+      ["Sara learns best [[w:hands-on]] — I gave her a [[w:sandbox environment]] instead of just reading docs.", "سارا بهترین یادگیری‌اش [[w:عملی]] است — به‌جای فقط خواندنِ مستندات یک [[w:محیطِ آزمایشی]] بهش دادم."],
+      ["I noticed a [[w:knowledge gap]] around branching, so I gave her some [[w:explicit instructions]] instead of a vague hint.", "یک [[w:شکافِ دانشی]] درباره‌ی شاخه‌بندی دیدم، پس به‌جایِ یک اشاره‌ی مبهم، [[w:دستورهایِ صریح]] دادم."],
+      ["It felt [[w:counterintuitive]] at first, but it's a good [[w:rule of thumb]]: never push to main directly.", "اول [[w:خلافِ شهود]] به‌نظر می‌رسید، ولی [[w:قاعده‌ی سرانگشتیِ]] خوبی است: هرگز مستقیم به main پوش نکن."],
+      ["I told her to work [[w:at her own pace]] and gave her a [[w:gentle reminder]] about the standup time.", "بهش گفتم [[w:با سرعتِ خودش]] کار کند و یک [[w:یادآوریِ ملایم]] درباره‌ی ساعتِ استندآپ دادم."],
+      ["She's starting to [[w:ramp up]] — fewer questions each day, more [[w:trial and error]] on her own.", "دارد [[w:به‌تدریج سرعت می‌گیرد]] — هر روز سؤالِ کمتر، [[w:آزمون‌وخطایِ]] بیشتر به‌تنهایی."],
+      ["As [[w:a courtesy]], I always [[w:give a heads-up]] before assigning a new ticket, instead of just dropping it on someone.", "به‌عنوانِ [[w:احترام]]، همیشه قبل از واگذاریِ تیکتِ تازه [[w:از قبل خبر می‌دهم]]، به‌جایِ این‌که فقط آن را روی کسی بیندازم."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: خودکارسازیِ آنبوردینگ با IaC",
+    "lab": "Microsoft AZ-400 · reading",
+    "exam": "AZ-400",
+    "areas": ["Implement infrastructure as code (IaC)", "Design a governance strategy"],
+    "terms": [
+      ["infrastructure as code (IaC)", "زیرساخت به‌شکلِ کد", "AZ-400"],
+      ["a template (ARM/Bicep)", "قالب", "AZ-400"],
+      ["idempotent deployment", "استقرارِ خودتکرارپذیرِ بی‌اثر", "AZ-400"],
+      ["least privilege", "کمترین دسترسیِ لازم", "AZ-400"],
+      ["a service principal", "اصلِ سرویس", "AZ-400"],
+      ["drift (configuration)", "انحرافِ پیکربندی", "AZ-400"],
+      ["a runbook", "دفترچه‌ی راهنمای اجرا", "AZ-400"],
+      ["self-service", "خوداتکا، بدونِ نیاز به درخواست", "AZ-400"]
+    ],
+    "read": {
+      "t": "What a new hire should never have to ask twice",
+      "body": [
+        ["A new engineer [[g:who]] asks [[g:—]] how to get a dev environment shouldn't need a person to answer; that's exactly what [[x:infrastructure as code]] fixes. A [[x:template]], [[g:which]] anyone can read like a doc, spins up the same environment every time.", "یک مهندسِ تازه که می‌پرسد چطور یک محیطِ توسعه بگیرد نباید به یک آدم برای جواب نیاز داشته باشد؛ دقیقاً همین چیزی است که زیرساخت به‌شکلِ کد حل می‌کند. یک قالب، که هرکسی می‌تواند مثلِ یک سند بخواندش، هر بار همان محیط را بالا می‌آورد."],
+        ["That template must be an [[x:idempotent deployment]]: running it twice gives the same result, [[g:which]] means a mentor never has to say 'don't run that script again, it'll break something' — a sentence [[g:that]] every new hire hears at least once without IaC.", "آن قالب باید یک استقرارِ خودتکرارپذیرِ بی‌اثر باشد: دوبار اجراکردنش همان نتیجه را می‌دهد، که یعنی یک مربی هرگز مجبور نیست بگوید «دیگر آن اسکریپت را اجرا نکن، چیزی را خراب می‌کند» — جمله‌ای که هر نیرویِ تازه‌ای بدونِ IaC دست‌کم یک‌بار می‌شنود."],
+        ["Access follows the same logic: a new hire's [[x:service principal]] should have [[x:least privilege]] — read access to the sandbox, nothing in production — so a mentor never has to say 'please don't touch that' out loud; the permission [[c:says it for them]].", "دسترسی هم همین منطق را دنبال می‌کند: اصلِ سرویسِ یک نیرویِ تازه باید کمترین دسترسیِ لازم را داشته باشد — دسترسیِ خواندن به محیطِ آزمایشی، هیچ‌چیز در تولید — تا یک مربی هرگز مجبور نباشد با صدای بلند بگوید «لطفاً به آن دست نزن»؛ خودِ مجوز این را [[c:به‌جای او می‌گوید]]."],
+        ["Finally, [[x:drift]] — when the real environment quietly stops matching the template — is what makes onboarding docs go stale. A [[x:runbook]] that's actually [[x:self-service]], backed by IaC that's re-applied regularly, is the only way a design doc stays true six months later.", "در نهایت، انحرافِ پیکربندی — وقتی محیطِ واقعی بی‌سروصدا دیگر با قالب جور درنمی‌آید — همان چیزی است که مستنداتِ آنبوردینگ را کهنه می‌کند. یک دفترچه‌ی راهنمایِ واقعاً خوداتکا، که با IaCِ به‌طورِ منظم بازاجراشده پشتیبانی می‌شود، تنها راهی است که یک سندِ طراحی شش ماه بعد هم هنوز درست بماند."]
+      ],
+      "qs": ["Why does IaC reduce the number of questions a mentor has to answer?", "How does least privilege protect a new hire without a mentor saying anything?", "In two sentences: how would you IaC-ify part of Sara's onboarding?"]
+    },
+    "why": "این متن دقیقاً همان مشکلی را حل می‌کند که در دیالوگِ امروز دیدی — سؤال‌های تکراریِ نیرویِ تازه. سؤالِ سوم را با جمله‌واره‌ی موصولی جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: فعلِ گزارش‌دهنده، نه فقط محتوا",
+    "lab": "Tactics for Listening · Developing · Unit 19 · Relaying a conversation",
+    "tactic": "وقتی کسی مکالمه‌ای را نقل می‌کند، فعلِ گزارش‌دهنده (<span class='en'>said · told · asked</span>) نوعِ جمله را لو می‌دهد قبل از این‌که محتوا را بشنوی: <span class='en'>asked</span> ← سؤال یا درخواست می‌آید؛ <span class='en'>told</span> ← دستور یا گفته‌ی مستقیم. همین فعل را بگیر تا بدونِ شنیدنِ بقیه هم بدانی چه نوع جمله‌ای در راه است.",
+    "where": "<div class='en'>Book: Unit 19 “Reporting Back” · pages 74–77</div><div class='en'>Audio: folder 03 (Unit 17-24) · files 11–15</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>3-11</span> — فقط همین یک ترک:</b> هر بار said/told/asked شنیدی، آن را بنویس و بعد فقط بگو محتوا یک گفته بود، یک سؤال بود، یا یک درخواست."
+    ],
+    "rec": {
+      "h": "ضبط خودت — گزارشِ یک مکالمه در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> یک مکالمه‌ی فرضی با یک نیرویِ تازه را برایِ لیدت تعریف کن. ۶۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار said/told/asked درست جفت شد با گفته/دستور/سؤال؛ آیا وارونگیِ سؤال را در نقل‌قول حذف کردی.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی told sb to · یک جمله‌ی asked whether · یک جمله‌ی asked what.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["she asked did I should", "she asked whether I should", "بدونِ وارونگی در نقل‌قول"],
+        ["she told me that I shadow", "she told me to shadow", "told sb to + مصدر"],
+        ["I asked what did she mean", "I asked what she meant", "بدونِ did در نقل‌قول"],
+        ["she said to not touch", "she said not to touch", "not قبل از to"],
+        ["shadow with her", "shadow her", "بدونِ with"],
+        ["a sand-box", "a sandbox", "یک کلمه"],
+        ["ideal potent", "idempotent", "آیدم‌پوتنت"]
+      ],
+      "compare": [
+        ["The lead told me to shadow you this week.", "لید به من گفت این هفته پیشِ تو باشم."],
+        ["She asked whether I should touch the ledger code yet.", "پرسید آیا هنوز باید به کدِ دفترکل دست بزنم یا نه."],
+        ["I asked what she meant by 'shadow'.", "پرسیدم منظورش از «shadow» چیست."],
+        ["She asked me not to push directly to main.", "از من خواست مستقیم به main پوش نکنم."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Mentoring recap · Email · Hard question",
+    "tasks": [
+      {"k": "Recap · 60 sec", "t": "گزارشِ یک مکالمه‌ی مربی‌گری را برایِ لیدت بازی کن: یک جمله‌ی told sb to، یک جمله‌ی asked whether، یک جمله‌ی asked what. ضبط کن."},
+      {"k": "Email · 4 lines", "t": "ایمیل به لید درباره‌ی پیشرفتِ نیرویِ تازه: خط اول چه چیزی یاد گرفته، خط دوم سؤالی که پرسید (نقل‌قول)، خط سوم چه چیزی هنوز نیاز به راهنمایی دارد، خط چهارم گامِ بعدی.", "lines": 4},
+      {"k": "Hard question", "t": "نیرویِ تازه می‌پرسد <span class='en'>“Why can't I just push directly to main like at my last job?”</span> — جوابی بنویس که دستوری نباشد، دلیل بیاورد، و با احترام باشد.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "The lead told me to shadow her this week and asked whether I should touch the ledger code yet — she said not to, not until I've been walked through the read-only parts first.",
+  "quiz": [
+    {"k": "G", "q": "She asked ______ I should touch the code yet.", "op": ["whether", "that", "did"], "qfa": "پرسید آیا هنوز باید به کد دست بزنم یا نه.", "a": "whether", "afa": "نقل‌قولِ سؤالِ بله/خیر ← whether/if"},
+    {"k": "G", "q": "I asked her what ______ by 'shadow'.", "op": ["she meant", "did she mean", "she means"], "qfa": "پرسیدم منظورش از «shadow» چیست.", "a": "she meant", "afa": "نقل‌قولِ سؤالِ wh ← بدونِ وارونگی"},
+    {"k": "G", "q": "The lead told me ______ her this week.", "op": ["to shadow", "that I shadow", "shadowing"], "qfa": "لید به من گفت این هفته پیشش باشم.", "a": "to shadow", "afa": "told sb to + مصدر"},
+    {"k": "G", "q": "Correct it: <i>She said to not touch it, and she asked did I understand.</i>", "lines": true, "qfa": "دو غلط را پیدا کن.", "a": "She said not to touch it, and she asked whether/if I understood.", "afa": "not to (نه to not) · بدونِ وارونگی در نقل‌قول"},
+    {"k": "C", "q": "I ______ her through the read-only parts before she ______ her first ticket.", "op": ["walked / owned", "shadowed / delegated", "walked / delegated"], "qfa": "قبل از اینکه اولین تیکتش را بگیرد، قسمت‌های فقط-خواندنی را برایش توضیح دادم.", "a": "walked / owned", "afa": "walk sb through sth · own a ticket"},
+    {"k": "C", "q": "I always ______ before assigning a new ticket, instead of just dropping it on someone.", "qfa": "همیشه قبل از واگذاریِ تیکتِ تازه از قبل خبر می‌دهم.", "a": "give a heads-up", "afa": "give sb a heads-up"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["walk sb through sth", "shadow with sb", "own a ticket", "lead by example"], "a": "shadow with sb", "afa": "درست: shadow sb (بدونِ with)"},
+    {"k": "W", "q": "She's a ______ learner — sandbox time works better for her than reading docs alone.", "op": ["hands-on", "intuitive", "explicit"], "qfa": "یادگیرنده‌ی عملی است.", "a": "hands-on", "afa": "hands-on"},
+    {"k": "W", "q": "Match: (a) a knowledge gap  (b) a rule of thumb  (c) trial and error", "qfa": "۱) قاعده‌ی سرانگشتی  ۲) آزمون‌وخطا  ۳) شکافِ دانشی", "a": "a-3 · b-1 · c-2", "afa": "knowledge gap شکافِ دانشی · rule of thumb قاعده‌ی سرانگشتی · trial and error آزمون‌وخطا"},
+    {"k": "X", "q": "Why is an idempotent IaC template useful for onboarding, specifically?", "op": ["it's faster to write", "running it twice never breaks anything", "it removes the need for a sandbox"], "qfa": "چرا استقرارِ خودتکرارپذیر برای آنبوردینگ مفید است؟", "a": "running it twice never breaks anything", "afa": "AZ-400 — idempotent deployment"},
+    {"k": "L", "q": "Which reporting verb usually signals a question or request is coming, told or asked?", "qfa": "کدام فعلِ گزارش‌دهنده معمولاً نشانه‌ی سؤال یا درخواست است؟", "a": "asked", "afa": "ترک ۳-۱۱ — asked ← سؤال/درخواست، told ← دستور/گفته"},
+    {"k": "G", "old": true, "q": "If I ______ this variable, it would read a lot clearer.", "qfa": "از درس ۸.", "a": "renamed", "afa": "از درس ۸ — شرطیِ دوم"},
+    {"k": "P", "q": "One sentence: <i>The new hire asked if she could touch the code. I said no, not yet. I told her to shadow me first.</i>", "lines": true, "qfa": "با asked whether / told sb to یک جمله بساز.", "a": "Model: She asked whether she could touch the code, and I told her not to yet, but to shadow me first instead.", "afa": "نمونه: پرسید آیا می‌تواند به کد دست بزند، و گفتم هنوز نه، بلکه اول پیشِ من باشد."}
+  ],
+  "_id": "u413"
+}

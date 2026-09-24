@@ -18,6 +18,7 @@ const ex = computed(() => props.vocab.ex.map(([e, f]) => ({ e: mark(e), f: mark(
       <div class="chips">
         <span class="chip" v-for="(c, j) in s.chips" :key="j">
           <b>{{ c[0] }}</b><s>{{ c[1] }}</s>
+          <i v-if="c[3]">{{ c[3] }}</i>
           <em v-if="c[2] && c[2] !== 'A1'">{{ c[2] }}</em>
         </span>
       </div>

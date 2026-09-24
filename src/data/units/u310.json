@@ -1,0 +1,215 @@
+{
+  "n": 10,
+  "hue": [4, 0.55, 0.3],
+  "tag": "Module 3 · Unit 10",
+  "en": "On call: a production incident",
+  "fa": "شیفت آنکال — وقتی چیزی در تولید خراب می‌شود و باید گزارش بدهی",
+  "src": [
+    ["Grammar", "GIU 42–43 · passive voice · due to/owing to/as a result of vs because/since"],
+    ["Colloc.", "Units 101–103 · incidents and outcomes"],
+    ["Words", "WS 81 + 82 · cause & effect, warnings & suggestions"],
+    ["Listen", "TfL Developing U16 · incident debriefs"]
+  ],
+  "books": {
+    "col": [101, 102, 103],
+    "giu": [42, 43, 112, 113],
+    "ws": [81, 82],
+    "dev": [16]
+  },
+  "chain": {
+    "prev": "Unit 9 · Your first performance review",
+    "next": "Unit 11 · Estimating work you've never done before"
+  },
+  "story": "ساعتِ دو صبح موبایلت زنگ می‌زند: PagerDuty. سرویسِ sync پایین است. در این ساعت، کسی نمی‌خواهد بشنود «فکر می‌کنم شاید یک چیزی...» — می‌خواهد یک گزارشِ روشن: چه چیزی خراب شد، [[c:به‌خاطرِ]] چه، الان چه وضعیتی دارد، و چه کسی چه کاری کرد. اینجا صدای مجهول (passive) دقیقاً همان چیزی است که یک حادثه را حرفه‌ای گزارش می‌دهد — نه «من این کار را کردم»، بلکه «سرویس ری‌استارت شد».",
+  "dialog": {
+    "h": "دیالوگ — کانالِ آنکال، دو بامداد",
+    "lab": "Dialogue · GIU 42–43, 112–113",
+    "lines": [
+      ["Lead", "What's the status? PagerDuty says sync [[g:is down]].", "وضعیت چیست؟ PagerDuty می‌گوید sync [[g:قطع است]]."],
+      ["Arash", "Confirmed. The service [[g:was restarted]] at 2:04, but it [[g:'s still being]] investigated — [[c:root cause]] isn't clear yet.", "تأیید شد. سرویس ساعتِ ۲:۰۴ [[g:ری‌استارت شد]]، ولی هنوز در حالِ [[g:بررسی است]] — [[c:علتِ ریشه‌ای]] هنوز روشن نیست."],
+      ["Lead", "Any theory? [[g:Due to]] the deploy earlier, or something else?", "تئوری‌ای هست؟ [[g:به‌خاطرِ]] دیپلویِ زودتر، یا چیزِ دیگری؟"],
+      ["Arash", "It [[g:was]] most likely [[g:triggered]] by the deploy, [[g:since]] the timestamps line up. Memory usage [[g:had]] already [[g:been climbing]] for an hour before it crashed.", "به‌احتمالِ زیاد [[g:به‌وسیله‌ی]] آن دیپلوی [[g:فعال شد]]، [[g:چون]] زمان‌ها با هم جور در می‌آیند. مصرفِ حافظه یک ساعت قبل از کرش [[g:در حالِ بالارفتن بود]]."],
+      ["Lead", "So it wasn't [[g:caused by]] the timezone bug from last month?", "پس [[g:به‌وسیله‌ی]] باگِ منطقه‌ی زمانیِ ماهِ پیش [[g:ایجاد نشده بود]]؟"],
+      ["Arash", "No — that [[g:was fixed]] weeks ago and hasn't recurred. [[g:As a result of]] tonight's rollback, memory [[g:is]] back to normal now.", "نه — آن هفته‌ها پیش [[g:رفع شده بود]] و دوباره پیش نیامده. [[g:در نتیجه‌ی]] rollbackِ امشب، حافظه الان [[g:برگشته]] به حالتِ عادی."],
+      ["Lead", "Good. What [[g:needs to be]] communicated to the client team in the morning?", "خوب. صبح چه چیزی باید به تیمِ مشتری [[g:اطلاع داده شود]]؟"],
+      ["Arash", "That the incident [[g:was resolved]] within twenty minutes, no data [[g:was lost]], and a permanent fix [[g:will be shipped]] once the root cause [[g:'s confirmed]].", "این‌که حادثه ظرف بیست دقیقه [[g:رفع شد]]، هیچ داده‌ای [[g:از دست نرفت]]، و یک رفعِ دائمی [[g:عرضه خواهد شد]] به‌محضِ این‌که علتِ ریشه‌ای [[g:تأیید شود]]."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — صدای مجهول + because در برابر due to",
+    "lab": "Grammar in Use · 42–43, 112–113",
+    "rows": [
+      ["مجهول، حالِ ساده — وضعیتِ الان", "The service [[g:is being]] investigated.", "The service investigates now"],
+      ["مجهول، گذشته‌ی ساده — رویداد", "It [[g:was restarted]] at 2:04.", "It restarted at 2:04 (فاعل حذف نمی‌شود اگر خودش نکرده)"],
+      ["مجهول، آینده — چه اتفاقی خواهد افتاد", "A fix [[g:will be shipped]] once confirmed.", "A fix will ship once confirmed (فرقش ظریف است؛ مجهول تمرکز را از عاملِ کار برمی‌دارد)"],
+      ["دلیل + جمله‌ی کامل", "It crashed [[g:since]] memory kept climbing.", "It crashed due to memory kept climbing"],
+      ["دلیل + اسم (رسمی، گزارشی)", "[[g:Due to]] the deploy, memory rose sharply.", "Due to the memory rose, it crashed"],
+      ["نتیجه + اسم (رسمی، گزارشی)", "[[g:As a result of]] the rollback, service is normal.", "As a result the rollback, service is normal"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + incident report",
+    "errors": [
+      ["The service investigates now", "The service is being investigated"],
+      ["It restarted at 2:04 (by itself, unclear who)", "It was restarted at 2:04"],
+      ["due to memory kept climbing", "due to the memory climbing / since memory kept climbing"],
+      ["as a result the rollback", "as a result of the rollback"],
+      ["it depend on the deploy", "it depends on the deploy"],
+      ["no data were lost", "no data was lost"]
+    ],
+    "trigger": "در گزارشِ حادثه، مجهول را ترجیح بده وقتی <b>چه اتفاقی افتاد</b> مهم است، نه چه کسی آن را انجام داد: <span class='en'>the service was restarted</span>، نه <span class='en'>I restarted it</span>. برای دلیل: <span class='en'>because/since</span> + جمله، <span class='en'>due to/owing to/as a result of</span> + اسم."
+  },
+  "colls": {
+    "h": "کالوکیشن — حادثه و پیامد",
+    "lab": "Collocations in Use · Units 101–103",
+    "groups": [
+      {"h": "trigger / mitigate", "n": "فعال‌کردن یا کاهش‌دادنِ حادثه", "ok": ["trigger an incident", "mitigate the risk"], "no": "trigger to an incident"},
+      {"h": "root cause / recur", "n": "علتِ ریشه‌ای، تکرارِ دوباره", "ok": ["identify the root cause", "recur again"], "no": "root cause of it self"},
+      {"h": "roll back / restore", "n": "برگرداندن به حالتِ قبل", "ok": ["roll back a deploy", "restore service"], "no": "roll back from a deploy"},
+      {"h": "escalate / de-escalate", "n": "بزرگ‌ترشدن یا کوچک‌ترشدنِ حادثه", "ok": ["escalate to on-call", "bring the incident under control"], "no": "escalate the incident to bigger"}
+    ],
+    "rows": [
+      ["trigger an incident", "حادثه را فعال کردن", "trigger to an incident"],
+      ["mitigate the risk", "ریسک را کاهش دادن", "mitigate from the risk"],
+      ["identify the root cause", "علتِ ریشه‌ای را شناسایی کردن", "identify the root cause of it"],
+      ["recur", "دوباره پیش آمدن", "recur again*"],
+      ["roll back a deploy", "دیپلوی را برگرداندن", "roll back a deploy to"],
+      ["restore service", "سرویس را بازگرداندن", "restore the service back"],
+      ["escalate to on-call", "به آنکال ارجاع دادن", "escalate for on-call"],
+      ["bring sth under control", "چیزی را تحتِ کنترل درآوردن", "bring sth to control"],
+      ["a postmortem / retro", "گزارشِ پس از حادثه", "a post-mortem of"],
+      ["a near miss", "یک تقریباً-حادثه", "a near-missing"],
+      ["at fault", "مقصر", "in fault"],
+      ["blameless (postmortem)", "بدونِ سرزنش", "blame-free"]
+    ],
+    "ex": [
+      ["The deploy [[c:triggered]] the incident; [[c:rolling back]] [[c:restored service]] within twenty minutes.", "دیپلوی حادثه را [[c:فعال کرد]]؛ [[c:برگرداندنش]] ظرفِ بیست دقیقه سرویس را [[c:بازگرداند]]."],
+      ["We [[c:identified the root cause]] and made sure it wouldn't [[c:recur]] — no team was [[c:at fault]], the postmortem stayed [[c:blameless]].", "[[c:علتِ ریشه‌ای را شناسایی کردیم]] و مطمئن شدیم دوباره [[c:پیش نمی‌آید]] — هیچ تیمی [[c:مقصر]] نبود، گزارشِ پس از حادثه [[c:بدونِ سرزنش]] ماند."],
+      ["It was a [[c:near miss]] last month too — that's exactly why we [[c:mitigated the risk]] before it could [[c:escalate]] again.", "ماهِ پیش هم یک [[c:تقریباً-حادثه]] بود — دقیقاً به همین دلیل ریسک را [[c:کاهش دادیم]] قبل از این‌که دوباره [[c:بزرگ‌تر شود]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — علت و اثر، هشدار و پیشنهاد",
+    "lab": "Word Skills · 81 + 82",
+    "sets": [
+      {"u": "81 · Cause and effect", "chips": [
+        ["stem from sth", "ناشی‌شدن از چیزی", "C1", "v"],
+        ["give rise to sth", "باعثِ چیزی شدن", "C1", "phr"],
+        ["a knock-on effect", "اثرِ زنجیره‌ای", "C1", "n"],
+        ["attributable to", "قابل‌انتساب به", "C1", "adj"],
+        ["compound (v.)", "تشدید کردن", "C1", "v"],
+        ["a contributing factor", "عاملِ کمکی (نه تنها دلیل)", "C1", "n"],
+        ["preventable", "قابل‌پیشگیری", "B2", "adj"],
+        ["as a knock-on result", "به‌عنوانِ اثرِ زنجیره‌ای", "C1", "phr"],
+        ["averted", "دفع‌شده (بلایی که رخ نداد)", "C1", "adj"],
+        ["a symptom (of sth)", "نشانه‌ی (چیزی)", "B2", "n"]
+      ]},
+      {"u": "82 · Warnings, advice and suggestions", "chips": [
+        ["a red flag", "نشانه‌ی هشدار", "B2", "n"],
+        ["flag sth up", "چیزی را برجسته کردن (هشدار)", "B2", "phr"],
+        ["it's worth doing sth", "ارزشِ انجامش را دارد", "B2", "phr"],
+        ["I'd strongly advise", "به‌شدت توصیه می‌کنم", "C1", "phr"],
+        ["a precaution", "یک اقدامِ احتیاطی", "B2", "n"],
+        ["err on the side of caution", "جانبِ احتیاط را گرفتن", "C1", "phr"],
+        ["a contingency plan", "برنامه‌ی احتیاطی", "C1", "n"],
+        ["proactively", "پیشدستانه", "B2", "adv"],
+        ["a wake-up call", "زنگِ بیدارباش", "C1", "n"],
+        ["preemptive", "پیشگیرانه", "C1", "adj"]
+      ]}
+    ],
+    "ex": [
+      ["The crash [[w:stemmed from]] a memory leak that had been a [[w:contributing factor]] for weeks, not the sole cause.", "کرش [[w:ناشی شد از]] یک نشتِ حافظه که هفته‌ها [[w:عاملِ کمکی]] بود، نه تنها دلیل."],
+      ["Rising memory usage was a [[w:red flag]] — we should have [[w:flagged it up]] before it became an incident.", "بالارفتنِ مصرفِ حافظه یک [[w:نشانه‌ی هشدار]] بود — باید قبل از این‌که به حادثه تبدیل شود [[w:برجسته‌اش می‌کردیم]]."],
+      ["This was a [[w:preventable]] outage; a memory alert would have been a simple [[w:precaution]].", "این یک قطعیِ [[w:قابل‌پیشگیری]] بود؛ یک هشدارِ حافظه یک [[w:اقدامِ احتیاطیِ]] ساده می‌بود."],
+      ["I'd [[w:strongly advise]] we [[w:err on the side of caution]] and add a memory alert this week.", "[[w:به‌شدت توصیه می‌کنم]] [[w:جانبِ احتیاط را بگیریم]] و همین هفته یک هشدارِ حافظه اضافه کنیم."],
+      ["Treat this as a [[w:wake-up call]]: we're adding a [[w:contingency plan]] so the next deploy is [[w:preemptive]], not reactive.", "این را [[w:زنگِ بیدارباش]] بدان: یک [[w:برنامه‌ی احتیاطی]] اضافه می‌کنیم تا دیپلویِ بعدی [[w:پیشگیرانه]] باشد، نه واکنشی."],
+      ["A bigger outage was [[w:averted]] only because someone acted [[w:proactively]] at 2 a.m.", "یک قطعیِ بزرگ‌تر فقط [[w:دفع شد]] چون کسی ساعت دو بامداد [[w:پیشدستانه]] عمل کرد."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: گزارشِ حادثه به زبانِ AZ-204",
+    "lab": "Microsoft AZ-204 · reading",
+    "exam": "AZ-204",
+    "areas": ["Monitor, troubleshoot, and optimise Azure solutions", "Implement Azure security"],
+    "terms": [
+      ["Application Insights", "بینشِ اپلیکیشن", "AZ-204"],
+      ["alert rule", "قاعده‌ی هشدار", "AZ-204"],
+      ["autoscale", "مقیاسِ‌خودکار", "AZ-204"],
+      ["memory leak", "نشتِ حافظه", "AZ-204"],
+      ["health check", "بررسیِ سلامت", "AZ-204"],
+      ["blameless postmortem", "گزارشِ بدونِ سرزنش", "AZ-204"],
+      ["SLA", "توافقِ سطحِ خدمات", "AZ-204"],
+      ["mean time to recovery", "میانگینِ زمانِ بازیابی", "AZ-204"]
+    ],
+    "read": {
+      "t": "What good telemetry would have told you at 1 a.m.",
+      "body": [
+        ["The honest first line of a postmortem is often: the incident [[g:was]] [[c:preventable]] [[g:if]] the right [[x:alert rule]] had existed. [[x:Application Insights]] can [[g:be configured]] [[g:so that]] a memory chart, not a page at 2 a.m., is the first warning you get.", "خطِ اولِ صادقانه‌ی یک گزارشِ پس‌ازحادثه اغلب این است: حادثه [[c:قابل‌پیشگیری]] [[g:بود]] [[g:اگر]] قاعده‌ی هشدارِ درست وجود می‌داشت. [[x:بینشِ اپلیکیشن]] می‌تواند [[g:طوری تنظیم شود]] که یک نمودارِ حافظه، نه یک پیجِ ساعتِ دو بامداد، اولین هشدارت باشد."],
+        ["A [[x:health check]] endpoint [[g:is pinged]] regularly by the platform; [[g:if]] it fails three times in a row, traffic [[g:is rerouted]] before a human [[g:is]] even paged. [[x:Autoscale]] rules [[g:can]] also add capacity automatically [[g:so that]] rising load, not a single deploy, [[g:isn't]] mistaken for the root cause.", "یک نقطه‌پایانِ [[x:بررسیِ سلامت]] مرتب [[g:توسطِ]] پلتفرم پینگ می‌شود؛ [[g:اگر]] سه‌بارِ پیاپی شکست بخورد، ترافیک [[g:مسیرِ دیگری داده می‌شود]] پیش از این‌که حتی یک انسان [[g:پیج شود]]. قاعده‌های [[x:مقیاسِ‌خودکار]] هم [[g:می‌توانند]] ظرفیت را خودکار اضافه کنند [[g:تا]] بارِ رو-به-افزایش، نه یک دیپلویِ تنها، [[g:اشتباه‌گرفته نشود]] با علتِ ریشه‌ای."],
+        ["When something does go wrong, the report [[g:should]] be written as a [[x:blameless postmortem]]: what happened, [[g:what was affected]], and [[c:what will change]] — never who to blame. This is [[g:not just]] a courtesy; teams that blame people stop reporting near misses, [[c:which]] [[g:makes]] the next incident worse.", "وقتی واقعاً چیزی خراب می‌شود، گزارش [[g:باید]] به‌شکلِ یک [[x:گزارشِ بدونِ سرزنش]] نوشته شود: چه اتفاقی افتاد، [[g:چه چیزی تحتِ‌تأثیر قرار گرفت]]، و [[c:چه چیزی تغییر خواهد کرد]] — هرگز نه این‌که چه کسی مقصر است. این [[g:نه‌فقط]] یک ادب است؛ تیم‌هایی که آدم‌ها را سرزنش می‌کنند دیگر تقریباً-حادثه‌ها را گزارش نمی‌دهند، [[c:که]] حادثه‌ی بعدی را بدتر [[g:می‌کند]]."],
+        ["Finally, every incident [[g:is measured]] against an [[x:SLA]]: how long service [[g:was]] down, and the [[x:mean time to recovery]] for next time. Reporting these numbers honestly — not rounding them down — is what makes a client trust the postmortem [[g:as much as]] the fix itself.", "در نهایت، هر حادثه‌ای در برابرِ یک [[x:SLA]] سنجیده می‌شود: سرویس چه‌مدت قطع [[g:بود]]، و [[x:میانگینِ زمانِ بازیابی]] برای دفعه‌ی بعد. گزارشِ صادقانه‌ی این عددها — نه گردکردنِ رو-به-پایینشان — همان چیزی است که باعث می‌شود مشتری به گزارش [[g:به‌همان‌اندازه‌ی]] خودِ رفعِ باگ اعتماد کند."]
+      ],
+      "qs": ["What would have caught the memory leak before it caused an outage?", "Why does a blameless postmortem produce better long-term data than a blaming one?", "In two sentences: what would you tell a client about tonight's incident, using the passive voice?"]
+    },
+    "why": "این متن دقیقاً گزارشِ همان حادثه‌ای است که در دیالوگ نوشتی — با اصطلاحِ آزمون. سؤالِ سوم را با صدای مجهول جواب بده؛ همان جمله فردا در ایمیلِ واقعی هم به کارت می‌آید."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: فاعلِ حذف‌شده را پیدا کن",
+    "lab": "Tactics for Listening · Developing · Unit 16 · Reporting problems",
+    "tactic": "در گزارشِ حادثه، جمله‌ها اغلب مجهول‌اند و فاعل گفته نمی‌شود: <span class='en'>“It was restarted.” “Service was restored.”</span> کارِ تو این نیست که حدس بزنی چه کسی این کار را کرد — کارِ تو این است که بفهمی <b>چه اتفاقی افتاد</b> و <b>الان</b> وضعیت چیست.",
+    "where": "<div class='en'>Book: Unit 16 “Problems at Work” · pages 62–65</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 37–41</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-37</span> — فقط همین یک ترک:</b> هر جمله‌ی مجهول را بنویس (فقط فعل)، و کنارش یادداشت کن آیا هنوز ادامه دارد یا تمام شده."
+    ],
+    "rec": {
+      "h": "ضبط خودت — گزارشِ حادثه در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“What happened, and what's the status now?”</span> جواب بده. ۹۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند جمله را مجهول گفتی به‌جای من-محور؛ آیا due to را با اسم و because را با جمله درست جفت کردی.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی مجهولِ گذشته (چه اتفاقی افتاد) · یک جمله‌ی due to/because (دلیل) · یک جمله‌ی مجهولِ حال (وضعیتِ الان) · یک جمله‌ی will be (گامِ بعدی).",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["it restart at two", "it was restarted at two", "مجهول، d پایانی"],
+        ["due to memory kept climbing", "since memory kept climbing / due to the climbing memory", "due to + اسم، نه جمله"],
+        ["root cause isn't clear already", "root cause isn't clear yet", "yet نه already، در جمله‌ی منفی"],
+        ["as a result the rollback", "as a result of the rollback", "of لازم است"],
+        ["no data were lost", "no data was lost", "data در این‌جا مفرد رفتار می‌کند"],
+        ["it will fix soon", "it will be fixed soon", "مجهول لازم است"],
+        ["a-zed two-o-four", "AZ-204", "اِی-زد دویست‌وچهار"]
+      ],
+      "compare": [
+        ["The service was restarted at 2:04, but it's still being investigated.", "سرویس ساعتِ ۲:۰۴ ری‌استارت شد، ولی هنوز در حالِ بررسی است."],
+        ["It was most likely triggered by the deploy, since the timestamps line up.", "به‌احتمالِ زیاد به‌وسیله‌ی آن دیپلوی فعال شد، چون زمان‌ها با هم جور در می‌آیند."],
+        ["As a result of the rollback, memory is back to normal now.", "در نتیجه‌ی rollback، حافظه الان به حالتِ عادی برگشته."],
+        ["No data was lost, and a permanent fix will be shipped once the root cause is confirmed.", "هیچ داده‌ای از دست نرفت، و یک رفعِ دائمی عرضه خواهد شد به‌محضِ تأییدِ علتِ ریشه‌ای."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Incident call · Email · Hard question",
+    "tasks": [
+      {"k": "Incident call · 90 sec", "t": "گزارشِ حادثه‌ی ساعتِ دو بامداد را بازی کن: یک جمله‌ی مجهولِ گذشته، یک جمله‌ی due to/because، یک جمله‌ی مجهولِ حال برای وضعیتِ الان، و یک جمله‌ی will be برای گامِ بعدی. ضبط کن."},
+      {"k": "Email · 5 lines", "t": "خلاصه‌ی حادثه برای تیمِ مشتری: خط اول چه اتفاقی افتاد (مجهول)، خط دوم دلیل با due to/since، خط سوم وضعیتِ الان، خط چهارم چه چیزی تحتِ‌تأثیر بود، خط پنجم گامِ بعدی با will be. بدونِ سرزنشِ کسی.", "lines": 5},
+      {"k": "Hard question", "t": "مشتری می‌پرسد <span class='en'>“How do we know this won't happen again?”</span> — جوابی بنویس که یک اقدامِ پیشگیرانه‌ی مشخص بیاورد، نه فقط وعده‌ی کلی.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "The service was restarted at 2:04 and was most likely triggered by the deploy, since the timestamps line up; as a result of the rollback, memory is back to normal, and a permanent fix will be shipped once the root cause is confirmed.",
+  "quiz": [
+    {"k": "G", "q": "The service ______ at 2:04 this morning.", "op": ["was restarted", "restarted itself", "restart"], "qfa": "سرویس ساعتِ ۲:۰۴ صبح ری‌استارت شد.", "a": "was restarted", "afa": "مجهول — فعل توسطِ کسی/چیزی انجام شد"},
+    {"k": "G", "q": "It crashed ______ memory kept climbing for an hour.", "op": ["since", "due to", "as a result of"], "qfa": "چون مصرفِ حافظه یک ساعت داشت بالا می‌رفت کرش کرد.", "a": "since", "afa": "since + جمله‌ی کامل"},
+    {"k": "G", "q": "______ the deploy, memory usage rose sharply.", "op": ["Due to", "Because", "Since"], "qfa": "به‌خاطرِ آن دیپلوی، مصرفِ حافظه به‌شدت بالا رفت.", "a": "Due to", "afa": "due to + اسم"},
+    {"k": "G", "q": "Correct it: <i>No data were lost, and it will fix by tomorrow.</i>", "lines": true, "qfa": "دو غلط را پیدا کن.", "a": "No data was lost, and it will be fixed by tomorrow.", "afa": "data مفرد رفتار می‌کند اینجا · مجهول لازم است"},
+    {"k": "C", "q": "The deploy ______ the incident; rolling back restored service.", "op": ["triggered", "mitigated", "recurred"], "qfa": "دیپلوی حادثه را فعال کرد.", "a": "triggered", "afa": "trigger an incident"},
+    {"k": "C", "q": "We wrote a ______ postmortem — no team was blamed.", "qfa": "یک گزارشِ بدونِ سرزنش نوشتیم.", "a": "blameless", "afa": "blameless postmortem"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["identify the root cause", "root cause of it self", "restore service", "roll back a deploy"], "a": "root cause of it self", "afa": "درست: identify the root cause (بدونِ of it self)"},
+    {"k": "W", "q": "Rising memory usage was a ______ we should have flagged earlier.", "op": ["red flag", "wake-up call", "contingency plan"], "qfa": "بالارفتنِ حافظه یک نشانه‌ی هشدار بود.", "a": "red flag", "afa": "a red flag"},
+    {"k": "W", "q": "Match: (a) stem from  (b) a contributing factor  (c) preventable", "qfa": "۱) قابل‌پیشگیری  ۲) ناشی‌شدن از  ۳) عاملِ کمکی", "a": "a-2 · b-3 · c-1", "afa": "stem from ناشی‌شدن از · contributing factor عاملِ کمکی · preventable قابل‌پیشگیری"},
+    {"k": "X", "q": "What can automatically reroute traffic before a human is even paged?", "op": ["a health check with automatic failover", "a longer SLA", "a bigger Key Vault"], "qfa": "چه چیزی می‌تواند قبل از پیج‌شدنِ انسان ترافیک را مسیردهی کند؟", "a": "a health check with automatic failover", "afa": "AZ-204 — health check + autoscale"},
+    {"k": "L", "q": "In incident reports, whose action is usually left unnamed by the passive voice?", "qfa": "در گزارشِ حادثه، فاعلِ کدام اقدام معمولاً نام‌برده نمی‌شود؟", "a": "the person who performed the fix — the focus is the event, not the actor", "afa": "ترک ۲-۳۷ — تمرکز روی اتفاق، نه فاعل"},
+    {"k": "G", "old": true, "q": "If I ______ this variable, it would read a lot clearer.", "qfa": "از درس ۸.", "a": "renamed", "afa": "از درس ۸ — شرطیِ دوم"},
+    {"k": "P", "q": "One sentence: <i>The deploy triggered a memory leak. The service crashed. We rolled back. Service is normal now.</i>", "lines": true, "qfa": "با passive + as a result of یک جمله بساز.", "a": "Model: The service crashed because a memory leak was triggered by the deploy, and as a result of the rollback, it's back to normal now.", "afa": "نمونه: سرویس کرش کرد چون یک نشتِ حافظه به‌وسیله‌ی دیپلوی فعال شد، و در نتیجه‌ی rollback الان به حالتِ عادی برگشته."}
+  ],
+  "_id": "u310"
+}

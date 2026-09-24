@@ -14,7 +14,7 @@ const units = listUnits().map((u) => {
     <div class="hero" style="--hero:#22303d">
       <div class="tag">Language Lesson Designer</div>
       <h1>English lessons</h1>
-      <div class="hfa">۵ درسی که قبلاً طراحی شده — گرامر، کالوکیشن، واژه، شنیدن و تولید</div>
+      <div class="hfa">{{ units.length }} درسی که تا الان طراحی شده — گرامر، کالوکیشن، واژه، شنیدن و تولید</div>
     </div>
 
     <div class="lesson-list">

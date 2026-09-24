@@ -1,0 +1,215 @@
+{
+  "n": 8,
+  "hue": [190, 0.45, 0.24],
+  "tag": "Module 3 · Unit 8",
+  "en": "Giving and taking code review feedback",
+  "fa": "بازخورد کد — دادن و گرفتنش بدون شکستن رابطه‌ی تیمی",
+  "src": [
+    ["Grammar", "GIU 38–40 · zero/first/second conditional"],
+    ["Colloc.", "Units 91–93 · agreement, disagreement and opinion"],
+    ["Words", "WS 77 + 78 · agreeing & disagreeing, describing change"],
+    ["Listen", "TfL Developing U14 · giving opinions"]
+  ],
+  "books": {
+    "col": [91, 92, 93],
+    "giu": [38, 39, 40],
+    "ws": [77, 78],
+    "dev": [14]
+  },
+  "chain": {
+    "prev": "Unit 7 · Raising a blocker without sounding lost",
+    "next": "Unit 9 · Your first performance review"
+  },
+  "story": "اولین pull requestِ واقعی‌ات باز است و کامنت‌ها دارند می‌آیند. یکی می‌نویسد <b>“What if this failed halfway through?”</b> — سؤالی که با یک شرطی درست جواب داده می‌شود، نه با دفاع. همین‌جا باید یاد بگیری چطور با یک پیشنهاد <b>مخالفت کنی</b> بدون این‌که رابطه را خراب کنی، و چطور یک بازخوردِ سخت را بدهی که به جای حمله، یک راه‌حل باشد.",
+  "dialog": {
+    "h": "دیالوگ — کامنت‌های Pull Request",
+    "lab": "Dialogue · GIU 38–40",
+    "lines": [
+      ["Reviewer", "Nice PR overall. What [[g:happens if]] the API call fails halfway through the batch?", "کلاً PR خوبی است. [[g:اگر]] فراخوانِ API وسط دسته [[g:شکست بخورد]] چه می‌شود؟"],
+      ["Arash", "Good catch. Right now, if it [[g:fails]], the whole batch [[g:rolls back]] — nothing partial gets written.", "نکته‌ی خوبی است. الان، اگر [[g:شکست بخورد]]، کل دسته [[g:برمی‌گردد]] — چیزِ نیمه‌کاره‌ای نوشته نمی‌شود."],
+      ["Reviewer", "[[g:If]] the batch [[g:gets bigger]] later, that rollback [[g:could get]] expensive. [[c:What do you think about]] chunking it?", "[[g:اگر]] دسته بعداً [[g:بزرگ‌تر شود]]، آن rollback [[g:می‌تواند]] گران [[g:شود]]. [[c:درباره‌ی]] تکه‌تکه‌کردنش [[c:چه فکری می‌کنی]]؟"],
+      ["Arash", "[[c:I see your point]], but I'd rather keep it atomic for now. [[c:I'm not convinced]] chunking is worth the complexity at this size — though I [[g:'d reconsider]] if volume tripled.", "[[c:حرفت را می‌فهمم]]، ولی فعلاً ترجیح می‌دهم اتمیک بماند. [[c:مطمئن نیستم]] تکه‌تکه‌کردن به‌اندازه‌ی پیچیدگی‌اش در این حجم بیارزد — هرچند اگر حجم سه‌برابر شود [[g:دوباره فکر می‌کنم]]."],
+      ["Reviewer", "[[c:Fair enough]]. One more thing: [[g:if]] I [[g:renamed]] this variable to `pendingBatch`, [[g:it would]] read a lot clearer.", "[[c:منصفانه است]]. یک چیزِ دیگر: [[g:اگر]] این متغیر را به `pendingBatch` [[g:تغییر نام می‌دادم]]، [[g:خیلی واضح‌تر خوانده می‌شد]]."],
+      ["Arash", "[[c:Agreed]] — that [[c:makes sense]], I'll rename it. [[g:If]] you [[g:hadn't]] flagged it, I honestly wouldn't have noticed.", "[[c:موافقم]] — [[c:منطقی است]]، تغییرش می‌دهم. [[g:اگر]] مطرحش [[g:نکرده بودی]]، صادقانه متوجه نمی‌شدم."],
+      ["Reviewer", "One last question, [[c:not a blocker]]: why a stored procedure here [[g:instead of]] a plug-in?", "یک سؤال آخر، [[c:مانع نیست]]: چرا اینجا stored procedure [[g:به‌جای]] پلاگین؟"],
+      ["Arash", "Testability, mainly. [[c:I take your point]] on the plug-in, but for now this [[c:strikes the right balance]]. Thanks for the thorough review.", "بیشتر به‌خاطر قابلیت‌تست. [[c:حرفت را درباره‌ی]] پلاگین [[c:می‌پذیرم]]، ولی فعلاً این [[c:تعادلِ درستی برقرار می‌کند]]. ممنون بابت بازبینیِ دقیق."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — اگر (شرطیِ صفر، اول، دوم)",
+    "lab": "Grammar in Use · 38–40",
+    "rows": [
+      ["حقیقتِ همیشگی، قانونِ کد", "[[g:If]] the call [[g:fails]], the batch [[g:rolls]] back.", "If the call will fail, the batch rolls back"],
+      ["احتمالِ واقعیِ آینده", "[[g:If]] volume [[g:triples]], I[[g:'ll]] reconsider chunking.", "If volume will triple, I'll reconsider"],
+      ["فرضِ خلافِ واقع، الان یا آینده", "[[g:If]] I [[g:renamed]] it, [[g:it would]] read clearer.", "If I would rename it, it would read clearer"],
+      ["پیشنهادِ مؤدبانه با شرطیِ دوم", "[[g:If]] you [[g:asked]] me, I[[g:'d]] chunk it at 10k rows.", "If you would ask me, I would chunk it"],
+      ["پشیمانیِ گذشته — شرطیِ سوم، کوتاه", "[[g:If]] you [[g:hadn't]] flagged it, I wouldn't have noticed.", "If you didn't flag it, I wouldn't have noticed"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:rolls]] back · that [[g:reads]] clearer · risk [[g:is]] flagged", "it roll back · that read clearer · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + PR comments",
+    "errors": [
+      ["If it will fail", "If it fails"],
+      ["If I would rename it", "If I renamed it"],
+      ["it would would read clearer", "it would read clearer"],
+      ["If you didn't flag it, I wouldn't notice", "If you hadn't flagged it, I wouldn't have noticed"],
+      ["it roll back", "it rolls back"],
+      ["that read clearer", "that reads clearer"]
+    ],
+    "trigger": "<b class='en'>What happens if X fails?</b> ← شرطیِ صفر (قانونِ همیشگی). <b class='en'>What would you change?</b> ← شرطیِ دوم، برای پیشنهادِ مؤدبانه. جمله‌ی شرط هرگز <span class='en'>will/would</span> نمی‌گیرد — فقط جمله‌ی نتیجه می‌گیرد."
+  },
+  "colls": {
+    "h": "کالوکیشن — موافقت، مخالفت و نظر دادن",
+    "lab": "Collocations in Use · Units 91–93",
+    "groups": [
+      {"h": "soften disagreement", "n": "مخالفتِ نرم", "ok": ["I see your point, but…", "I'm not (entirely) convinced"], "no": "I disagree completely with you"},
+      {"h": "agree fully", "n": "موافقتِ کامل", "ok": ["that makes sense", "fair enough"], "no": "that makes a sense"},
+      {"h": "take a point", "n": "پذیرفتنِ نکته‌ی طرفِ مقابل", "ok": ["take your point on sth", "concede a point"], "no": "take a point of"},
+      {"h": "give feedback kindly", "n": "بازخوردِ سخت، بدون حمله", "ok": ["a nitpick, not a blocker", "strike the right balance"], "no": "a not blocker"}
+    ],
+    "rows": [
+      ["I see your point, but…", "حرفت را می‌فهمم، ولی…", "I see the point of you"],
+      ["I'm not (entirely) convinced", "مطمئن نیستم (کاملاً)", "I'm not convinced of that fully"],
+      ["that makes sense", "منطقی است", "that makes a sense"],
+      ["fair enough", "منصفانه است، قبول", "fair enough of"],
+      ["take your point on sth", "نکته‌ات را درباره‌ی چیزی پذیرفتن", "take a point of sth"],
+      ["concede a point", "یک نکته را (با اکراه) پذیرفتن", "concede on a point*"],
+      ["a nitpick, not a blocker", "یک ایرادِ جزئی، نه مانع", "a nitpicking, not a block"],
+      ["strike the right balance", "تعادلِ درست را برقرار کردن", "strike a right balance with"],
+      ["push back on sth", "در برابر چیزی مقاومت کردن", "push back to sth"],
+      ["reach a compromise", "به توافق رسیدن", "reach to a compromise"],
+      ["with respect,…", "با احترام، …", "with respect of,"],
+      ["play devil's advocate", "نقشِ مخالف را بازی کردن (برای سنجش)", "play the devil advocate"]
+    ],
+    "ex": [
+      ["[[c:I see your point]], but [[c:I'm not entirely convinced]] chunking is worth it at this size.", "[[c:حرفت را می‌فهمم]]، ولی [[c:کاملاً مطمئن نیستم]] تکه‌تکه‌کردن در این اندازه بیارزد."],
+      ["That's [[c:a nitpick, not a blocker]] — I'll [[c:take your point]] and rename the variable anyway.", "این [[c:یک ایرادِ جزئی است، نه مانع]] — [[c:نکته‌ات را می‌پذیرم]] و به هر حال متغیر را تغییر نام می‌دهم."],
+      ["We [[c:pushed back]] on the estimate, [[c:reached a compromise]], and both sides felt the review [[c:struck the right balance]].", "روی تخمین [[c:مقاومت کردیم]]، [[c:به توافق رسیدیم]]، و هر دو طرف حس کردند بازبینی [[c:تعادلِ درستی برقرار کرد]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — موافقت/مخالفت و توصیفِ تغییر",
+    "lab": "Word Skills · 77 + 78",
+    "sets": [
+      {"u": "77 · Agreeing, disagreeing and opinion", "chips": [
+        ["I couldn't agree more", "کاملاً موافقم", "B2", "phr"],
+        ["with all due respect", "با کمال احترام (قبل از مخالفت)", "C1", "phr"],
+        ["to be fair", "منصفانه بگویم", "B2", "phr"],
+        ["objection", "اعتراض", "B2", "n"],
+        ["reservation (about sth)", "تردید (درباره‌ی چیزی)", "C1", "n"],
+        ["overrule", "رد کردن (نظرِ کسی)", "C1", "v"],
+        ["subjective", "سلیقه‌ای، ذهنی", "B2", "adj"],
+        ["objective (adj.)", "عینی، بی‌طرفانه", "B2", "adj"],
+        ["contentious", "بحث‌برانگیز", "C1", "adj"],
+        ["a valid point", "نکته‌ی معتبر", "B2", "n"]
+      ]},
+      {"u": "78 · Describing change", "chips": [
+        ["refine", "پرداخت کردن، بهتر کردن", "B2", "v"],
+        ["simplify", "ساده کردن", "B1", "v"],
+        ["streamline", "روان و کارآمد کردن", "C1", "v"],
+        ["a minor tweak", "یک تغییرِ کوچک", "B2", "n"],
+        ["overhaul", "بازسازیِ کامل", "C1", "n"],
+        ["revert", "به حالتِ قبل برگرداندن", "C1", "v"],
+        ["incremental", "تدریجی", "C1", "adj"],
+        ["backward-compatible", "سازگار با نسخه‌ی قبل", "C1", "adj"],
+        ["clean up sth", "تمیزکاری کردنِ چیزی", "B1", "phr"],
+        ["consolidate", "یکپارچه کردن", "C1", "v"]
+      ]}
+    ],
+    "ex": [
+      ["[[w:To be fair]], the naming was [[w:subjective]] — a [[w:minor tweak]], not a [[w:contentious]] change.", "[[w:منصفانه بگویم]]، نام‌گذاری [[w:سلیقه‌ای]] بود — یک [[w:تغییرِ کوچک]]، نه یک تغییرِ [[w:بحث‌برانگیز]]."],
+      ["I have one [[w:reservation]] about the design, but it's a [[w:valid point]] worth discussing, not an [[w:objection]].", "یک [[w:تردید]] درباره‌ی طراحی دارم، ولی [[w:نکته‌ای معتبر]] است که ارزشِ بحث دارد، نه یک [[w:اعتراض]]."],
+      ["I [[w:refined]] the query instead of an [[w:overhaul]] — small, [[w:incremental]] changes are easier to review.", "به‌جای یک [[w:بازسازیِ کامل]]، کوئری را [[w:پرداخت کردم]] — تغییراتِ کوچک و [[w:تدریجی]] بازبینی‌شان راحت‌تر است."],
+      ["The rename is [[w:backward-compatible]], so we don't need to [[w:revert]] anything downstream.", "این تغییرِ نام [[w:سازگار با نسخه‌ی قبل]] است، پس لازم نیست چیزی را در پایین‌دست [[w:برگردانیم]]."],
+      ["Let's [[w:streamline]] this function and [[w:consolidate]] the three helpers into one.", "بیایید این تابع را [[w:روان‌تر کنیم]] و سه تابعِ کمکی را در یکی [[w:یکپارچه کنیم]]."],
+      ["[[w:With all due respect]], I [[w:overrule]] this one — the test coverage isn't there yet.", "[[w:با کمال احترام]]، این یکی را [[w:رد می‌کنم]] — پوششِ تست هنوز کافی نیست."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: چرا بازبینیِ کد بخشی از طراحی است",
+    "lab": "Microsoft PL-400 · reading",
+    "exam": "PL-400",
+    "areas": ["Configure Dataverse", "Implement Power Apps improvements"],
+    "terms": [
+      ["idempotency", "خودتکرارپذیریِ بی‌اثر", "PL-400"],
+      ["atomic operation", "عملیاتِ اتمیک", "PL-400"],
+      ["batch size", "اندازه‌ی دسته", "PL-400"],
+      ["code review", "بازبینیِ کد", "PL-400"],
+      ["technical debt", "بدهیِ فنی", "PL-400"],
+      ["rollback", "بازگشت به حالتِ قبل", "PL-400"],
+      ["chunking", "تکه‌تکه‌کردنِ داده", "PL-400"],
+      ["readability", "خوانایی", "PL-400"]
+    ],
+    "read": {
+      "t": "The trade-off a reviewer is actually checking",
+      "body": [
+        ["A good [[x:code review]] question is rarely about style; it's a [[x:conditional]] disguised as a comment — <i>“What happens if…?”</i>. [[g:If]] a batch write [[g:fails]] halfway, the reviewer wants to know whether the operation is [[x:atomic]]: everything commits, or nothing does.", "یک سؤالِ خوب در [[x:بازبینیِ کد]] به‌ندرت درباره‌ی سبک است؛ یک [[g:جمله‌ی شرطی]] است که پشتِ یک کامنت پنهان شده — <i>«اگر… چه می‌شود؟»</i>. [[g:اگر]] یک نوشتنِ دسته‌ای وسط‌راه [[g:شکست بخورد]]، بازبین می‌خواهد بداند آیا عملیات [[x:اتمیک]] است: یا همه‌چیز commit می‌شود، یا هیچ‌چیز."],
+        ["The follow-up is almost always about scale: [[g:if]] the [[x:batch size]] [[g:grows]], [[g:would]] the current [[x:rollback]] still be cheap? [[x:Chunking]] trades a bit of complexity now for safety later — which is exactly the kind of trade-off Unit 6 already taught you to defend with <i>although / because of</i>.", "پیگیریِ آن تقریباً همیشه درباره‌ی مقیاس است: [[g:اگر]] [[x:اندازه‌ی دسته]] [[g:رشد کند]]، آیا [[x:بازگشتِ]] فعلی هنوز ارزان [[g:می‌ماند]]؟ [[x:تکه‌تکه‌کردن]] کمی پیچیدگیِ الان را با امنیتِ بعداً معامله می‌کند — دقیقاً همان معامله‌ای که یونیت ۶ یادت داد با although/because of از آن دفاع کنی."],
+        ["Every write should also be [[x:idempotent]]: running it twice must give the same result as running it once. Without this, a retry after a network blip [[g:could]] double-write data — the exact bug behind many production incidents.", "هر نوشتن باید [[x:خودتکرارپذیرِ بی‌اثر]] هم باشد: دوبار اجرا شدنش باید همان نتیجه‌ی یک‌بار اجرا شدن را بدهد. بدونِ این، یک تلاشِ مجدد بعد از یک قطعیِ کوچکِ شبکه [[g:می‌تواند]] داده را دوبار بنویسد — دقیقاً همان باگی که پشتِ خیلی از حوادثِ تولید است."],
+        ["This is why reviewers separate a [[x:readability]] nitpick from a real risk. Renaming a variable is a comment; an unhandled failure path is [[x:technical debt]] with a due date. Knowing which is which — and saying so clearly — is what makes a review fast instead of a fight.", "به همین دلیل بازبین‌ها یک ایرادِ [[x:خوانایی]] را از یک ریسکِ واقعی جدا می‌کنند. تغییرِ نامِ یک متغیر یک کامنت است؛ یک مسیرِ شکستِ مدیریت‌نشده [[x:بدهیِ فنی]] با تاریخِ سررسید است. دانستنِ این‌که کدام‌یک است — و روشن گفتنش — همان چیزی است که یک بازبینی را سریع می‌کند، نه دعوا."]
+      ],
+      "qs": ["Why is chunking a trade-off rather than a free improvement?", "What does idempotency protect against on retry?", "In two sentences: how do you decide if a review comment is a blocker or a nitpick?"]
+    },
+    "why": "همان زبانِ شرطی که در بازبینیِ PR شنیدی، اینجا هم آزمون می‌شود. سؤالِ آخر را با <span class='en'>if / would</span> جواب بده — درست همان‌طور که در کامنتِ PR جواب دادی."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: نرم‌کننده‌ی مخالفت را بگیر",
+    "lab": "Tactics for Listening · Developing · Unit 14 · Opinions",
+    "tactic": "قبل از یک مخالفتِ واقعی، انگلیسی‌زبان‌ها تقریباً همیشه یک نرم‌کننده می‌گویند: <span class='en'>I see your point, but… / With respect, … / To be fair, …</span>. اگر این نرم‌کننده را بشنوی، بدان مخالفتِ واقعی همین الان می‌آید — آماده باش بقیه‌اش را بگیری.",
+    "where": "<div class='en'>Book: Unit 14 “Opinions” · pages 54–57</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 27–31</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-27</span> — فقط همین یک ترک:</b> هر بار یک نرم‌کننده شنیدی، آن را بنویس، بعد فقط جمله‌ی بعدش (خودِ مخالفت) را در سه کلمه خلاصه کن."
+    ],
+    "rec": {
+      "h": "ضبط خودت — یک بازخوردِ سخت در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> یک همکارِ فرضی پیشنهادی می‌دهد که با آن موافق نیستی. جوابت را ضبط کن — بدون آماده‌سازی، یک‌بار.",
+        "<b>۲ · گوش بده و بشمار:</b> آیا یک نرم‌کننده گفتی قبل از مخالفت؛ آیا حداقل یک شرطیِ if/would داشتی.",
+        "<b>۳ · دوباره، با این قالب:</b> نرم‌کننده + مخالفت · یک جمله‌ی if برای نشان‌دادنِ ریسک · یک پیشنهادِ جایگزین.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["I disagree you completely", "I completely disagree with you", "ترتیبِ کلمات"],
+        ["it would would read", "it would read", "would تکراری نمی‌آید"],
+        ["a night pick", "a nitpick", "یک کلمه"],
+        ["strike a right balance", "strike the right balance", "the نه a"],
+        ["conditionable", "conditional", "کاندیشنال"],
+        ["a tomic operation", "an atomic operation", "an قبل از مصوت"],
+        ["idem-potent", "idempotent", "آیدم‌پوتنت"]
+      ],
+      "compare": [
+        ["I see your point, but I'm not entirely convinced chunking is worth it yet.", "حرفت را می‌فهمم، ولی کاملاً مطمئن نیستم تکه‌تکه‌کردن هنوز بیارزد."],
+        ["If the batch size grows, that rollback could get expensive.", "اگر اندازه‌ی دسته رشد کند، آن بازگشت می‌تواند گران شود."],
+        ["That's a nitpick, not a blocker — I'll take your point and fix it.", "این یک ایرادِ جزئی است، نه مانع — نکته‌ات را می‌پذیرم و درستش می‌کنم."],
+        ["With all due respect, I'd rather keep this atomic for now.", "با کمال احترام، فعلاً ترجیح می‌دهم این اتمیک بماند."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "PR comment · Email · Hard question",
+    "tasks": [
+      {"k": "PR reply · 60 sec", "t": "به یک کامنتِ فرضیِ بازبینی جواب بده: یک نرم‌کننده، یک جمله‌ی if/would، و یک تصمیمِ روشن (می‌پذیرم یا فعلاً نه). ضبط کن."},
+      {"k": "Email · 5 lines", "t": "خلاصه‌ی بازخوردِ یک PR برای تیم: خط اول چه چیزی خوب بود، خط دوم یک ریسکِ واقعی با if، خط سوم یک نیت‌پیکِ کوچک، خط چهارم تصمیمِ نهایی، خط پنجم تشکر.", "lines": 5},
+      {"k": "Hard question", "t": "یک همکار می‌گوید <span class='en'>“I still think you're wrong about the stored procedure.”</span> — جوابی بنویس که با یک نرم‌کننده شروع شود، یک شرطی داشته باشد، و در نهایت یک تصمیم بدهد.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "I see your point, but if the batch size stays this small, I'd rather keep the write atomic — I'll reconsider chunking if volume triples.",
+  "quiz": [
+    {"k": "G", "q": "If the API call ______, the whole batch rolls back.", "op": ["fails", "will fail", "would fail"], "qfa": "اگر فراخوانِ API شکست بخورد، کل دسته برمی‌گردد.", "a": "fails", "afa": "شرطیِ صفر — قانونِ همیشگی"},
+    {"k": "G", "q": "If I ______ this variable, it would read a lot clearer.", "op": ["renamed", "rename", "will rename"], "qfa": "اگر این متغیر را تغییرِ نام می‌دادم، خیلی واضح‌تر خوانده می‌شد.", "a": "renamed", "afa": "شرطیِ دوم — پیشنهادِ مؤدبانه"},
+    {"k": "G", "q": "Correct it: <i>If you didn't flag it, I wouldn't notice.</i> (talking about yesterday's review)", "lines": true, "qfa": "درباره‌ی بازبینیِ دیروز صحبت می‌کند.", "a": "If you hadn't flagged it, I wouldn't have noticed.", "afa": "پشیمانیِ گذشته ← شرطیِ سوم"},
+    {"k": "G", "q": "If volume ______ next quarter, I'll reconsider chunking.", "qfa": "اگر حجم فصلِ بعد سه‌برابر شود، دوباره فکر می‌کنم.", "a": "triples", "afa": "شرطیِ اول — احتمالِ واقعیِ آینده"},
+    {"k": "C", "q": "______, but I'm not entirely convinced this is worth the complexity.", "op": ["I see your point", "I disagree you", "I take a point of"], "qfa": "حرفت را می‌فهمم، ولی کاملاً مطمئن نیستم.", "a": "I see your point", "afa": "نرم‌کننده‌ی مخالفت"},
+    {"k": "C", "q": "That's a ______, not a blocker.", "qfa": "این یک ایرادِ جزئی است، نه مانع.", "a": "nitpick", "afa": "a nitpick, not a blocker"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["fair enough", "that makes a sense", "I see your point", "take your point on sth"], "a": "that makes a sense", "afa": "درست: that makes sense (بدونِ a)"},
+    {"k": "W", "q": "It's a ______, not an overhaul — just a small rename.", "op": ["minor tweak", "contentious change", "consolidation"], "qfa": "یک تغییرِ کوچک است، نه بازسازیِ کامل.", "a": "minor tweak", "afa": "a minor tweak"},
+    {"k": "W", "q": "Match: (a) subjective  (b) a valid point  (c) reservation", "qfa": "۱) تردید  ۲) سلیقه‌ای  ۳) نکته‌ی معتبر", "a": "a-2 · b-3 · c-1", "afa": "subjective سلیقه‌ای · a valid point نکته‌ی معتبر · reservation تردید"},
+    {"k": "X", "q": "What must be true of a write operation so a retry after a network blip is safe?", "op": ["it must be fast", "it must be idempotent", "it must use a plug-in"], "qfa": "چه چیزی باید درست باشد تا یک تلاشِ مجدد امن باشد؟", "a": "it must be idempotent", "afa": "PL-400 — idempotency"},
+    {"k": "L", "q": "Name two softeners English speakers use right before disagreeing.", "qfa": "دو نرم‌کننده‌ی قبل از مخالفت را بنویس.", "a": "I see your point, but… · With all due respect, …", "afa": "ترک ۲-۲۷"},
+    {"k": "G", "old": true, "q": "I ______ the numbers from the view since then.", "qfa": "از درس ۲.", "a": "'ve taken", "afa": "از درس ۲ — since ← حال کامل"},
+    {"k": "P", "q": "One sentence: <i>A reviewer suggested chunking. I disagreed for now. I said I'd reconsider if volume grows.</i>", "lines": true, "qfa": "با although / if یک جمله بساز.", "a": "Model: Although a reviewer suggested chunking, I pushed back for now and said I'd reconsider if the volume grew.", "afa": "نمونه: با اینکه بازبین تکه‌تکه‌کردن را پیشنهاد داد، فعلاً مقاومت کردم و گفتم اگر حجم رشد کند دوباره فکر می‌کنم."}
+  ],
+  "_id": "u308"
+}

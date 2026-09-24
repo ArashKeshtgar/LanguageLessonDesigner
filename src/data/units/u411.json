@@ -1,0 +1,215 @@
+{
+  "n": 11,
+  "hue": [155, 0.4, 0.24],
+  "tag": "Module 4 · Unit 11",
+  "en": "Estimating work you've never done before",
+  "fa": "تخمین‌زدنِ کاری که قبلاً انجامش نداده‌ای",
+  "src": [
+    ["Grammar", "GIU 69–73 · a/an, the, zero article · gerund vs infinitive"],
+    ["Colloc.", "Units 104–106 · estimating and planning"],
+    ["Words", "WS 83 + 84 · estimating & probability, planning & scheduling"],
+    ["Listen", "TfL Developing U17 · giving a rough figure"]
+  ],
+  "books": {
+    "col": [104, 105, 106],
+    "giu": [69, 70, 71, 72, 73],
+    "ws": [83, 84],
+    "dev": [17]
+  },
+  "chain": {
+    "prev": "Unit 10 · On call: a production incident",
+    "next": "Unit 12 · Writing a technical design doc"
+  },
+  "story": "مدیرِ محصول می‌پرسد: «چقدر طول می‌کشد تا Azure AI Document Intelligence را به سیستم وصل کنیم؟» تا حالا با آن کار نکرده‌ای. اینجا دو چیز به‌هم گره می‌خورند: حرفِ تعریف — چون در فارسی معادلِ دقیقِ <b>a/an/the</b> نداریم و همین کوچک‌ترین کلمه‌ها بیشترین غلط را در مصاحبه و ایمیل ایجاد می‌کنند — و فعلِ بعد از افعالِ تخمین (avoid, risk, plan, expect). یک تخمینِ خوب، جمله‌بندیِ درستی هم دارد.",
+  "dialog": {
+    "h": "دیالوگ — درخواستِ تخمین، جلسه‌ی برنامه‌ریزی",
+    "lab": "Dialogue · GIU 69–73",
+    "lines": [
+      ["PM", "How long do you think [[g:the]] Document Intelligence integration will take?", "به‌نظرت وصل‌کردنِ Document Intelligence چقدر طول می‌کشد؟"],
+      ["Arash", "I need [[g:a]] rough estimate first — I haven't used [[g:the]] API before. Give me [[g:—]] a day to prototype [[g:—]] before I commit to [[g:a]] number.", "اول به [[g:یک]] تخمینِ تقریبی نیاز دارم — قبلاً از [[g:آن]] API استفاده نکرده‌ام. یک روز بده تا [[g:یک]] پروتوتایپ بسازم قبل از این‌که به [[g:یک]] عدد متعهد شوم."],
+      ["PM", "Fair. What's [[g:the]] biggest unknown right now?", "منصفانه است. الان [[g:بزرگ‌ترین]] ناشناخته چیست؟"],
+      ["Arash", "[[g:The]] confidence scores it returns — I don't know yet whether [[g:—]] low-confidence results need [[g:—]] manual review or not. That's [[g:the]] part I'd avoid [[g:promising]] a date on.", "امتیازهای اطمینانی که برمی‌گرداند — هنوز نمی‌دانم آیا نتایجِ کم‌اطمینان به بازبینیِ دستی نیاز دارند یا نه. آن بخشی است که [[g:وعده‌دادنِ]] تاریخ برایش را دوست ندارم."],
+      ["PM", "So what's [[c:a ballpark figure]] — [[g:a]] week, [[g:a]] month?", "پس [[c:یک عددِ تقریبی]] چیست — [[g:یک]] هفته، [[g:یک]] ماه؟"],
+      ["Arash", "[[c:Somewhere between]] one and three weeks. I plan [[g:to prototype]] it in two days and I expect [[g:to have]] a real number by Friday.", "[[c:بینِ]] یک تا سه هفته. قصد دارم ظرفِ دو روز پروتوتایپش کنم و انتظار دارم تا جمعه یک عددِ واقعی داشته باشم."],
+      ["PM", "Can you [[c:pad]] that a little, just in case?", "می‌شود کمی [[c:به آن حاشیه اضافه کنی]]، برای احتیاط؟"],
+      ["Arash", "I already [[c:built in a buffer]] — that range already assumes [[g:—]] surprises happen. I'd rather risk [[g:overestimating]] than [[g:underpromising]] and missing it.", "همین الان [[c:یک حاشیه‌ی احتیاطی]] در نظر گرفته‌ام — همان بازه فرض می‌کند غافلگیری پیش می‌آید. ترجیح می‌دهم ریسکِ بیش‌تخمین‌زدن را بپذیرم تا کم‌وعده‌دادن و نرسیدن به آن."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — a/an یا the یا هیچ‌کدام؟",
+    "lab": "Grammar in Use · 69–73",
+    "rows": [
+      ["اولین‌بار که اسمِ شمردنی می‌آید ← a/an؛ بارِ بعد که همان چیز است ← the", "I need [[g:a]] rough estimate. [[g:The]] estimate will change.", "I need the rough estimate. A estimate will change"],
+      ["اسمِ عام یا جمعِ کلی ← بدونِ حرفِ تعریف", "[[g:—]] Estimates are hard when [[g:—]] requirements change.", "The estimates are hard when the requirements change"],
+      ["چیزِ یکتا یا برترین ← the", "This is [[g:the]] biggest unknown right now.", "This is a biggest unknown right now"],
+      ["فعل + gerund", "I'd avoid [[g:promising]] a fixed date.", "I'd avoid to promise a fixed date"],
+      ["فعل + مصدر با to", "I plan [[g:to prototype]] it first; I expect [[g:to have]] a number by Friday.", "I plan prototyping it first"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:takes]] · that [[g:depends]] · risk [[g:is]] estimated", "it take · that depend · risk are estimated"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + estimation meeting",
+    "errors": [
+      ["I need the rough estimate (اولین بار)", "I need a rough estimate"],
+      ["The estimates are hard when the requirements change (کلی)", "Estimates are hard when requirements change"],
+      ["a biggest unknown", "the biggest unknown"],
+      ["avoid to promise", "avoid promising"],
+      ["plan prototyping it", "plan to prototype it"],
+      ["it take", "it takes"]
+    ],
+    "trigger": "قاعده‌ی سریع: بارِ اول با <span class='en'>a/an</span>، بارِ بعد با <span class='en'>the</span>. برترین/یکتا همیشه <span class='en'>the</span>. جمعِ کلی یا غیرِقابل‌شمارشِ عام هیچ حرفِ تعریفی نمی‌خواهد. <b class='en'>avoid / risk / consider / suggest</b> فقط gerund می‌گیرند؛ <b class='en'>plan / expect / decide / manage</b> فقط مصدرِ to."
+  },
+  "colls": {
+    "h": "کالوکیشن — تخمین‌زدن و برنامه‌ریزی",
+    "lab": "Collocations in Use · Units 104–106",
+    "groups": [
+      {"h": "give an estimate", "n": "دادنِ یک تخمین", "ok": ["give a rough estimate", "a ballpark figure"], "no": "give an estimation number"},
+      {"h": "buffer / pad", "n": "حاشیه‌ی احتیاطی برای غیرمنتظره", "ok": ["build in a buffer", "pad an estimate"], "no": "build a buffer in of"},
+      {"h": "over/under", "n": "بیش یا کم تخمین‌زدن", "ok": ["overestimate", "underestimate", "lowball a figure"], "no": "over estimate (دو کلمه)"},
+      {"h": "moving target", "n": "چیزی که مدام تغییر می‌کند", "ok": ["a moving target", "scope creep"], "no": "a target that moves alone"}
+    ],
+    "rows": [
+      ["give a rough estimate", "یک تخمینِ تقریبی دادن", "give an estimation"],
+      ["a ballpark figure", "یک عددِ تقریبی", "a ball park number"],
+      ["somewhere between X and Y", "بینِ X و Y", "somewhere among X and Y"],
+      ["build in a buffer", "یک حاشیه‌ی احتیاطی در نظر گرفتن", "build a buffer in of"],
+      ["pad an estimate", "به تخمین حاشیه اضافه کردن", "pad up an estimate"],
+      ["overestimate / underestimate", "بیش/کم‌تخمین‌زدن", "over estimate / under estimate"],
+      ["lowball a figure", "عددِ کمتر از واقع دادن", "lowball on a figure"],
+      ["a moving target", "هدفی که مدام تغییر می‌کند", "a target moving"],
+      ["scope creep", "بزرگ‌ترشدنِ تدریجیِ کار", "scope creeping"],
+      ["a back-of-the-envelope calculation", "محاسبه‌ی سرانگشتی", "a back of envelope calculating"],
+      ["commit to a number", "به یک عدد متعهد شدن", "commit on a number"],
+      ["a best-case / worst-case scenario", "بهترین/بدترین حالتِ ممکن", "a best case scene"]
+    ],
+    "ex": [
+      ["I [[c:gave a rough estimate]] and [[c:built in a buffer]], because requirements here are usually [[c:a moving target]].", "[[c:یک تخمینِ تقریبی دادم]] و [[c:یک حاشیه‌ی احتیاطی]] در نظر گرفتم، چون اینجا نیازمندی‌ها معمولاً [[c:هدفی متحرک]] هستند."],
+      ["I'd rather [[c:overestimate]] slightly than [[c:lowball]] the figure and hit [[c:scope creep]] later.", "ترجیح می‌دهم کمی [[c:بیش‌تخمین بزنم]] تا این‌که [[c:عددِ کمتر از واقع]] بدهم و بعداً به [[c:بزرگ‌شدنِ تدریجیِ کار]] بخورم."],
+      ["A quick [[c:back-of-the-envelope calculation]] gave me [[c:a ballpark figure]] before I [[c:committed to a number]] in the meeting.", "یک [[c:محاسبه‌ی سرانگشتیِ]] سریع [[c:یک عددِ تقریبی]] به من داد قبل از این‌که در جلسه [[c:به یک عدد متعهد شوم]]."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — تخمین و احتمال، برنامه‌ریزی و زمان‌بندی",
+    "lab": "Word Skills · 83 + 84",
+    "sets": [
+      {"u": "83 · Estimating and probability", "chips": [
+        ["roughly", "تقریباً", "B1", "adv"],
+        ["give or take", "به‌علاوه یا منهایِ کمی", "C1", "phr"],
+        ["highly unlikely", "به‌شدت بعید", "B2", "phr"],
+        ["a fair chance", "احتمالِ نسبتاً خوب", "B2", "n"],
+        ["a long shot", "احتمالِ کم، شانسِ ضعیف", "C1", "n"],
+        ["conservative (estimate)", "محافظه‌کارانه", "C1", "adj"],
+        ["optimistic", "خوش‌بینانه", "B2", "adj"],
+        ["in the region of", "در حدودِ", "C1", "prep"],
+        ["contingency", "پیش‌بینیِ احتیاطی", "C1", "n"],
+        ["a margin of error", "حاشیه‌ی خطا", "C1", "n"]
+      ]},
+      {"u": "84 · Planning and scheduling", "chips": [
+        ["a milestone", "نقطه‌ی عطف", "B2", "n"],
+        ["a dependency", "وابستگی (بینِ کارها)", "B2", "n"],
+        ["front-load sth", "کاری را از اول سنگین کردن", "C1", "v"],
+        ["a critical path", "مسیرِ بحرانی", "C1", "n"],
+        ["slack (in a schedule)", "فضای آزاد در برنامه", "C1", "n"],
+        ["reprioritise", "اولویت را دوباره تعیین کردن", "C1", "v"],
+        ["a hard deadline", "ضرب‌الاجلِ قطعی", "B2", "n"],
+        ["a soft deadline", "ضرب‌الاجلِ انعطاف‌پذیر", "B2", "n"],
+        ["running behind schedule", "عقب از برنامه", "B2", "phr"],
+        ["ahead of schedule", "جلوتر از برنامه", "B2", "phr"]
+      ]}
+    ],
+    "ex": [
+      ["It'll take [[w:roughly]] two weeks, [[w:give or take]] — I'd call it a [[w:conservative]] estimate, not an [[w:optimistic]] one.", "[[w:تقریباً]] دو هفته طول می‌کشد، [[w:به‌علاوه یا منهایِ کمی]] — من آن را یک تخمینِ [[w:محافظه‌کارانه]] می‌نامم، نه [[w:خوش‌بینانه]]."],
+      ["There's a [[w:fair chance]] I'll finish early, but hitting Friday is [[w:a long shot]] if the API changes again.", "[[w:احتمالِ نسبتاً خوبی]] هست که زود تمام کنم، ولی رسیدن به جمعه [[w:شانسِ ضعیفی]] است اگر API دوباره تغییر کند."],
+      ["The scores are [[w:in the region of]] ninety percent accurate, with a small [[w:margin of error]].", "امتیازها [[w:در حدودِ]] نود درصد دقیق‌اند، با یک [[w:حاشیه‌ی خطای]] کوچک."],
+      ["I built in a [[w:contingency]] because this task is a [[w:dependency]] for two other teams.", "یک [[w:پیش‌بینیِ احتیاطی]] در نظر گرفتم چون این کار یک [[w:وابستگیِ]] برای دو تیمِ دیگر است."],
+      ["This is on the [[w:critical path]], so I [[w:front-loaded]] the riskiest part instead of leaving it for last.", "این روی [[w:مسیرِ بحرانی]] است، پس ریسکی‌ترین بخش را [[w:از اول سنگین کردم]] به‌جای این‌که برای آخر بگذارم."],
+      ["We're [[w:running behind schedule]] on testing but [[w:ahead of schedule]] on the integration itself.", "روی تست [[w:عقب از برنامه]] هستیم ولی روی خودِ یکپارچه‌سازی [[w:جلوتر از برنامه]]."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: تخمینِ هزینه و عملکرد در Azure",
+    "lab": "Microsoft AZ-204 · reading",
+    "exam": "AZ-204",
+    "areas": ["Develop Azure compute solutions", "Estimate cost and performance"],
+    "terms": [
+      ["consumption plan", "طرحِ مصرفی", "AZ-204"],
+      ["provisioned capacity", "ظرفیتِ ازپیش‌تخصیص‌یافته", "AZ-204"],
+      ["throughput unit", "واحدِ گذردهی", "AZ-204"],
+      ["SKU", "رده‌ی محصول", "AZ-204"],
+      ["pricing tier", "سطحِ قیمت‌گذاری", "AZ-204"],
+      ["benchmark", "محکِ آزمایشی", "AZ-204"],
+      ["cost estimator", "ابزارِ تخمینِ هزینه", "AZ-204"],
+      ["confidence score", "امتیازِ اطمینان", "AZ-204"]
+    ],
+    "read": {
+      "t": "Why a good estimate needs a prototype, not a guess",
+      "body": [
+        ["Before quoting [[g:a]] number for [[x:Document Intelligence]], [[c:the]] right first step is [[g:—]] a small prototype against [[g:the]] real data, not [[g:—]] guessing from documentation alone. [[x:Confidence score]]s vary by document type, and that variance is exactly [[g:the]] biggest unknown in [[g:a]] fresh integration.", "قبل از دادنِ یک عدد برایِ Document Intelligence، گامِ اولِ درست یک پروتوتایپِ کوچک روی داده‌ی واقعی است، نه حدس‌زدن فقط از روی مستندات. امتیازهای اطمینان بسته به نوعِ سند فرق می‌کنند، و همان تفاوت دقیقاً بزرگ‌ترین ناشناخته در یک یکپارچه‌سازیِ تازه است."],
+        ["Cost estimates depend on [[g:—]] two separate things: [[x:pricing tier]] and [[x:throughput unit]]s. A [[x:consumption plan]] scales to zero and costs nothing when idle, but [[x:provisioned capacity]] costs [[g:a]] fixed amount whether it's used or not — [[g:the]] trade-off is predictability against savings.", "تخمینِ هزینه به دو چیزِ جدا بستگی دارد: سطحِ قیمت‌گذاری و واحدهای گذردهی. یک طرحِ مصرفی تا صفر مقیاس می‌گیرد و وقتِ بی‌کاری هزینه‌ای ندارد، ولی ظرفیتِ ازپیش‌تخصیص‌یافته هزینه‌ای ثابت دارد چه استفاده شود چه نه — معامله بینِ قابلِ‌پیش‌بینی‌بودن و صرفه‌جویی است."],
+        ["Microsoft's own [[x:cost estimator]] gives [[g:a]] ballpark figure, but it can't know your document mix, so it's still [[g:a]] starting point, not [[g:the]] final answer. Running a [[x:benchmark]] on a representative sample closes that gap.", "ابزارِ تخمینِ هزینه‌ی خودِ مایکروسافت یک عددِ تقریبی می‌دهد، ولی نمی‌تواند ترکیبِ اسناد شما را بداند، پس همچنان یک نقطه‌ی شروع است، نه جوابِ نهایی. اجرایِ یک محکِ آزمایشی روی یک نمونه‌ی معرف همان فاصله را پر می‌کند."],
+        ["So a defensible estimate in [[x:AZ-204]] terms — and in a planning meeting — always names its unknown: <i>“[[g:the]] estimate assumes [[x:SKU]] X; it could change if [[g:the]] document mix is different.”</i> Naming [[g:the]] assumption is what turns a guess into [[c:a professional estimate]].", "پس یک تخمینِ قابلِ‌دفاع، هم به زبانِ AZ-204 و هم در جلسه‌ی برنامه‌ریزی، همیشه ناشناخته‌اش را نام می‌برد: <i>«این تخمین فرض می‌کند رده‌ی محصول X است؛ اگر ترکیبِ اسناد فرق کند ممکن است تغییر کند.»</i> نام‌بردنِ این فرض همان چیزی است که یک حدس را به یک تخمینِ حرفه‌ای تبدیل می‌کند."]
+      ],
+      "qs": ["Why is a small prototype better than estimating from documentation alone?", "What trade-off exists between a consumption plan and provisioned capacity?", "In two sentences: name the assumption behind your own estimate for this task."]
+    },
+    "why": "همین ساختار — تخمین + نام‌بردنِ فرض — دقیقاً همان چیزی است که در جلسه‌ی برنامه‌ریزی گفتی. سؤالِ سوم را با a/the درست جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: بازه را بگیر، نه یک عددِ تنها",
+    "lab": "Tactics for Listening · Developing · Unit 17 · Giving a rough figure",
+    "tactic": "وقتی کسی تخمین می‌زند، به‌ندرت یک عددِ قطعی می‌گوید. دنبالِ نشانه‌های بازه بگرد: <span class='en'>somewhere between · roughly · give or take · in the region of</span>. عددِ اول و آخرِ بازه را بنویس، نه فقط یکی.",
+    "where": "<div class='en'>Book: Unit 17 “Facts and Figures” · pages 66–69</div><div class='en'>Audio: folder 03 (Unit 17-24) · files 01–05</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>3-1</span> — فقط همین یک ترک:</b> برای هر گوینده، بازه‌ی عدد (کمترین و بیشترین) را بنویس، نه یک عددِ میانی که خودت حدس زدی."
+    ],
+    "rec": {
+      "h": "ضبط خودت — تخمینِ یک کارِ ناآشنا در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> به سؤال <span class='en'>“How long would this take you?”</span> برای یک کارِ کاملاً تازه جواب بده. ۶۰ ثانیه.",
+        "<b>۲ · گوش بده و بشمار:</b> آیا حرفِ تعریف (a/an/the) را درست گفتی؛ آیا یک بازه دادی یا فقط یک عددِ تنها.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی a/an برای بارِ اول · یک جمله‌ی the برای همان چیز · یک جمله‌ی بازه با somewhere between.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["give the estimation", "give an estimate", "estimate اسم است، نه estimation در این اصطلاح"],
+        ["between one to three weeks", "between one and three weeks", "and نه to"],
+        ["I avoid to promise", "I avoid promising", "avoid + gerund"],
+        ["a A-Z two-o-four", "AZ-204", "بدونِ a قبلش"],
+        ["confidents score", "confidence score", "کان‌فیدنس"],
+        ["through-put unit", "throughput unit", "یک کلمه"],
+        ["a S-K-U", "a SKU", "اِس-کی-یو یا اسکیو"]
+      ],
+      "compare": [
+        ["I need a rough estimate first — I haven't used the API before.", "اول به یک تخمینِ تقریبی نیاز دارم — قبلاً از آن API استفاده نکرده‌ام."],
+        ["Somewhere between one and three weeks, depending on the confidence scores.", "بینِ یک تا سه هفته، بسته به امتیازهای اطمینان."],
+        ["I plan to prototype it in two days and expect to have a real number by Friday.", "قصد دارم ظرفِ دو روز پروتوتایپش کنم و انتظار دارم تا جمعه یک عددِ واقعی داشته باشم."],
+        ["I'd rather risk overestimating than underpromising and missing it.", "ترجیح می‌دهم ریسکِ بیش‌تخمین‌زدن را بپذیرم تا کم‌وعده‌دادن و نرسیدن به آن."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Planning meeting · Email · Hard question",
+    "tasks": [
+      {"k": "Meeting · 60 sec", "t": "به سؤالِ تخمینِ یک کارِ ناآشنا جواب بده: یک جمله با a/an برای بارِ اول، همان چیز دوباره با the، و یک بازه‌ی روشن با somewhere between. ضبط کن."},
+      {"k": "Email · 4 lines", "t": "ایمیلِ تخمین برای مدیرِ محصول: خط اول بازه‌ی زمانی، خط دوم بزرگ‌ترین ناشناخته، خط سوم فرضی که تخمین رویش سوار است، خط چهارم کِی عددِ دقیق‌تر می‌آید.", "lines": 4},
+      {"k": "Hard question", "t": "مدیرت می‌پرسد <span class='en'>“Can you just commit to two weeks?”</span> — جوابی بنویس که نه مطلقاً نه بگوید و نه بی‌فکر قبول کند؛ یک شرط یا یک فرض در آن باشد.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "I need a rough estimate first, since I haven't used the API before — somewhere between one and three weeks, assuming the confidence scores behave the way the documentation says.",
+  "quiz": [
+    {"k": "G", "q": "I need ______ rough estimate before I commit to ______ number.", "op": ["a … a", "the … the", "a … the"], "qfa": "قبل از تعهد به یک عدد، به یک تخمینِ تقریبی نیاز دارم.", "a": "a … a", "afa": "بارِ اولِ هر دو اسم ← a"},
+    {"k": "G", "q": "______ estimates are hard when ______ requirements change.", "op": ["—/—", "The/The", "A/The"], "qfa": "تخمین‌ها وقتی نیازمندی‌ها تغییر می‌کنند سخت‌اند.", "a": "—/—", "afa": "جمعِ کلی ← بدونِ حرفِ تعریف"},
+    {"k": "G", "q": "I'd avoid ______ a fixed date before testing the API.", "op": ["promising", "to promise", "promise"], "qfa": "قبل از تست کردنِ API، از وعده‌دادنِ تاریخِ ثابت پرهیز می‌کنم.", "a": "promising", "afa": "avoid + gerund"},
+    {"k": "G", "q": "Correct it: <i>I plan finishing it Friday and I expect having a number by then.</i>", "lines": true, "qfa": "دو فعل را درست کن.", "a": "I plan to finish it Friday and I expect to have a number by then.", "afa": "plan/expect + مصدرِ to"},
+    {"k": "C", "q": "Give me ______ before I commit to an exact number.", "op": ["a ballpark figure", "an estimation number", "a target moving"], "qfa": "قبل از تعهد به یک عددِ دقیق، یک عددِ تقریبی بده.", "a": "a ballpark figure", "afa": "a ballpark figure"},
+    {"k": "C", "q": "I always ______ my estimates, in case something goes wrong.", "qfa": "همیشه به تخمین‌هایم حاشیه اضافه می‌کنم.", "a": "pad", "afa": "pad an estimate"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["a moving target", "over estimate", "scope creep", "a ballpark figure"], "a": "over estimate", "afa": "درست: overestimate (یک کلمه)"},
+    {"k": "W", "q": "It'll take two weeks, ______ — call it a conservative number.", "op": ["give or take", "a long shot", "front-loaded"], "qfa": "دو هفته طول می‌کشد، به‌علاوه یا منهایِ کمی.", "a": "give or take", "afa": "give or take"},
+    {"k": "W", "q": "Match: (a) a critical path  (b) a hard deadline  (c) slack", "qfa": "۱) ضرب‌الاجلِ قطعی  ۲) فضای آزاد  ۳) مسیرِ بحرانی", "a": "a-3 · b-1 · c-2", "afa": "critical path مسیرِ بحرانی · hard deadline ضرب‌الاجلِ قطعی · slack فضای آزاد"},
+    {"k": "X", "q": "Which Azure pricing option costs nothing when idle but has less predictable cost under heavy load?", "op": ["provisioned capacity", "consumption plan", "a fixed SKU"], "qfa": "کدام گزینه‌ی قیمت‌گذاری وقتِ بی‌کاری هزینه ندارد؟", "a": "consumption plan", "afa": "AZ-204 — consumption plan scales to zero"},
+    {"k": "L", "q": "Name three phrases that signal a range is coming, not a single number.", "qfa": "سه عبارتِ نشانه‌ی بازه را بنویس.", "a": "somewhere between · roughly · give or take", "afa": "ترک ۳-۱"},
+    {"k": "G", "old": true, "q": "It ______ be the UTC conversion, but I'm not certain yet.", "qfa": "از درس ۷.", "a": "might", "afa": "از درس ۷ — احتمالِ نامطمئن"},
+    {"k": "P", "q": "One sentence: <i>I've never used this API. I need to prototype first. I can give a range, not a fixed date.</i>", "lines": true, "qfa": "با since / a-the یک جمله بساز.", "a": "Model: Since I've never used the API before, I need to prototype it first, so I can give a range rather than a fixed date.", "afa": "نمونه: چون قبلاً از این API استفاده نکرده‌ام، اول باید پروتوتایپش کنم، پس می‌توانم یک بازه بدهم، نه یک تاریخِ ثابت."}
+  ],
+  "_id": "u411"
+}

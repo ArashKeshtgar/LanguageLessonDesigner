@@ -33,5 +33,75 @@
     "tag": "Module 2 · Unit 4",
     "en": "Your first week on the job",
     "fa": "هفته‌ی اول کاری — قانون‌ها، عادت‌های تازه، اولین دعوت به ناهار"
+  },
+  {
+    "id": "u306",
+    "n": 6,
+    "tag": "Module 3 · Unit 6",
+    "en": "Explaining a trade-off to your team",
+    "fa": "توضیح یک تصمیمِ دوپهلو — چرا این راه را انتخاب کردی، نه آن یکی را"
+  },
+  {
+    "id": "u307",
+    "n": 7,
+    "tag": "Module 3 · Unit 7",
+    "en": "Raising a blocker without sounding lost",
+    "fa": "گفتنِ گیر کار — کمک خواستن بدون این‌که بی‌کفایت به‌نظر برسی"
+  },
+  {
+    "id": "u308",
+    "n": 8,
+    "tag": "Module 3 · Unit 8",
+    "en": "Giving and taking code review feedback",
+    "fa": "بازخورد کد — دادن و گرفتنش بدون شکستن رابطه‌ی تیمی"
+  },
+  {
+    "id": "u309",
+    "n": 9,
+    "tag": "Module 3 · Unit 9",
+    "en": "Your first performance review",
+    "fa": "اولین ارزیابی عملکرد — نشان‌دادنِ کارت بدون پُز و بدون کوچک‌بینی"
+  },
+  {
+    "id": "u310",
+    "n": 10,
+    "tag": "Module 3 · Unit 10",
+    "en": "On call: a production incident",
+    "fa": "شیفت آنکال — وقتی چیزی در تولید خراب می‌شود و باید گزارش بدهی"
+  },
+  {
+    "id": "u411",
+    "n": 11,
+    "tag": "Module 4 · Unit 11",
+    "en": "Estimating work you've never done before",
+    "fa": "تخمین‌زدنِ کاری که قبلاً انجامش نداده‌ای"
+  },
+  {
+    "id": "u412",
+    "n": 12,
+    "tag": "Module 4 · Unit 12",
+    "en": "Writing a technical design doc",
+    "fa": "نوشتنِ سندِ طراحیِ فنی — با جمله‌واره‌های موصولیِ درست"
+  },
+  {
+    "id": "u413",
+    "n": 13,
+    "tag": "Module 4 · Unit 13",
+    "en": "Mentoring the new hire",
+    "fa": "مربی‌گریِ نیرویِ تازه — نقل‌قولِ سؤال و درخواست"
+  },
+  {
+    "id": "u414",
+    "n": 14,
+    "tag": "Module 4 · Unit 14",
+    "en": "Negotiating scope with a stakeholder",
+    "fa": "چانه‌زدن روی محدوده‌ی کار — مقایسه و عادتِ گذشته در برابرِ حالا"
+  },
+  {
+    "id": "u415",
+    "n": 15,
+    "tag": "Module 4 · Unit 15",
+    "en": "Presenting quarterly results to leadership",
+    "fa": "ارائه‌ی نتایجِ فصلی به مدیریتِ ارشد — از اولین ارائه تا این‌جا"
   }
 ]

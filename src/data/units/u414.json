@@ -1,0 +1,215 @@
+{
+  "n": 14,
+  "hue": [25, 0.5, 0.28],
+  "tag": "Module 4 · Unit 14",
+  "en": "Negotiating scope with a stakeholder",
+  "fa": "چانه‌زدن روی محدوده‌ی کار — مقایسه و عادتِ گذشته در برابرِ حالا",
+  "src": [
+    ["Grammar", "GIU 108–110 · comparatives/superlatives, the...the... · used to / would"],
+    ["Colloc.", "Units 113–115 · negotiating and compromising"],
+    ["Words", "WS 89 + 90 · negotiating, priorities"],
+    ["Listen", "TfL Developing U20 · negotiating a deadline"]
+  ],
+  "books": {
+    "col": [113, 114, 115],
+    "giu": [108, 109, 110],
+    "ws": [89, 90],
+    "dev": [20]
+  },
+  "chain": {
+    "prev": "Unit 13 · Mentoring the new hire",
+    "next": "Unit 15 · Presenting quarterly results to leadership"
+  },
+  "story": "مدیرِ محصول می‌خواهد سه فیچرِ تازه به همان ددلاین اضافه کند. راهِ حرفه‌ای نه گفتنِ سریع «نه» است، نه قبول‌کردنِ بی‌فکر — چانه‌زدن است. اینجا مقایسه (چه‌چیزی از چه‌چیزی مهم‌تر است) و <b>used to / would</b> برای مقایسه‌ی روشِ قدیم با روشِ حالا، ابزارهایی‌اند که به تو کمک می‌کنند بگویی «این ممکن است، ولی نه همه‌اش، نه با این ددلاین».",
+  "dialog": {
+    "h": "دیالوگ — جلسه‌ی برنامه‌ریزیِ فصلِ بعد",
+    "lab": "Dialogue · GIU 108–110",
+    "lines": [
+      ["PM", "Can we fit all three features into this sprint? It's [[g:more important than]] ever this quarter.", "می‌شود هر سه فیچر را در این اسپرینت جا داد؟ این فصل [[g:مهم‌تر از]] همیشه است."],
+      ["Arash", "[[g:The more]] features we add now, [[g:the higher]] the risk of breaking the sync fix. Let's be honest about priorities.", "[[g:هرچه]] فیچرِ بیشتری الان اضافه کنیم، [[g:هرچه]] ریسکِ خراب‌کردنِ رفعِ sync بالاتر می‌رود. بیایید درباره‌ی اولویت‌ها صادق باشیم."],
+      ["PM", "Fair. Which one is [[g:the most critical]] to ship first?", "منصفانه است. کدام‌یک [[g:مهم‌ترین]] است که اول عرضه شود؟"],
+      ["Arash", "The export feature — it's [[g:far more]] urgent than the dashboard redesign. We [[g:used to]] ship exports manually; now clients expect it automatic.", "فیچرِ خروجی — [[g:خیلی مهم‌تر]] از بازطراحیِ داشبورد است. [[g:قبلاً]] خروجی‌ها را دستی می‌فرستادیم؛ الان مشتری‌ها انتظار دارند خودکار باشد."],
+      ["PM", "Okay, export first. What about the dashboard — can it wait?", "باشه، اول خروجی. داشبورد چطور — می‌تواند صبر کند؟"],
+      ["Arash", "It can. It's [[g:less urgent]] than the export, and honestly [[g:the simpler]] the first version, [[g:the faster]] we can iterate on it later.", "می‌تواند. [[g:کم‌ضرورت‌تر]] از خروجی است، و صادقانه، [[g:هرچه]] نسخه‌ی اول ساده‌تر باشد، [[g:هرچه]] سریع‌تر بعداً می‌توانیم رویش تکرار کنیم."],
+      ["PM", "We [[g:used to]] plan everything at once. Maybe splitting it is smarter.", "[[g:قبلاً]] عادت داشتیم همه‌چیز را یک‌جا برنامه‌ریزی کنیم. شاید تقسیم‌کردنش باهوشانه‌تر باشد."],
+      ["Arash", "It is. I'd rather ship [[g:the]] one thing well than [[g:the]] three things badly. That's [[c:non-negotiable]] for me on the sync piece.", "همین‌طور است. ترجیح می‌دهم یک چیز را خوب عرضه کنم تا سه چیز را بد. این روی بخشِ sync [[c:غیرقابل‌مذاکره]] است."]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — مقایسه، برترین، و عادتِ گذشته",
+    "lab": "Grammar in Use · 108–110",
+    "rows": [
+      ["مقایسه‌ی دو چیز — صفتِ کوتاه/بلند", "This is [[g:more important]] than ever; export is [[g:far more]] urgent.", "This is more important that ever"],
+      ["برترین در بینِ چند چیز", "Which one is [[g:the most critical]] to ship first?", "Which one is more critical to ship first"],
+      ["الگویِ هرچه...هرچه... — دو مقایسه‌ی به‌هم‌وابسته", "[[g:The more]] features we add, [[g:the higher]] the risk.", "More features we add, the risk is higher"],
+      ["عادتِ تکرارشونده در گذشته، الان فرق دارد", "We [[g:used to]] ship exports manually.", "We use to ship exports manually"],
+      ["عادتِ گذشته با فعل — نه برای حالت‌ها", "We [[g:used to]] plan everything at once. (نه: We would be busy — حالت است، would نمی‌گیرد)", "We would plan everything at once* (هر دو درستند برای فعل، ولی would برای حالت غلط است)"],
+      ["سوم‌شخص و شکل گذشته — غلط‌های خودت", "it [[g:breaks]] · that [[g:matters]] · risk [[g:is]] flagged", "it break · that matter · risk are flagged"]
+    ],
+    "elab": "Your own errors · RTF 3–4 + scope negotiation",
+    "errors": [
+      ["more important that ever", "more important than ever"],
+      ["Which one is more critical (بینِ سه‌تا یا بیشتر)", "Which one is the most critical"],
+      ["More features we add, the risk is higher", "The more features we add, the higher the risk"],
+      ["We use to ship exports manually", "We used to ship exports manually"],
+      ["We used to being busy every quarter (حالت، نه عادت)", "We used to be busy every quarter"],
+      ["it break", "it breaks"]
+    ],
+    "trigger": "برای دو چیز: <span class='en'>-er/more … than</span>. برای سه چیز یا بیشتر: <span class='en'>the -est / the most</span>. <span class='en'>the more X, the more Y</span> دو مقایسه را به‌هم وصل می‌کند. <span class='en'>used to</span> برای عادت یا حالتِ گذشته که دیگر نیست؛ <span class='en'>would</span> فقط برای عادتِ تکرارشونده‌ی گذشته کار می‌کند، نه برای حالت‌ها (be, have, know)."
+  },
+  "colls": {
+    "h": "کالوکیشن — مذاکره و مصالحه",
+    "lab": "Collocations in Use · Units 113–115",
+    "groups": [
+      {"h": "meet halfway / give a little", "n": "کوتاه‌آمدنِ دوطرفه", "ok": ["meet sb halfway", "give a little on sth"], "no": "meet halfway with sb"},
+      {"h": "a deal-breaker", "n": "شرطی که بدونش توافق نمی‌شود", "ok": ["a deal-breaker", "non-negotiable"], "no": "a deal breaking point*"},
+      {"h": "trade sth for sth", "n": "یک چیز را با چیزِ دیگر معامله کردن", "ok": ["trade scope for time", "a fair trade"], "no": "trade sth with sth"},
+      {"h": "push back / stand firm", "n": "مقاومت‌کردن در برابرِ یک درخواست", "ok": ["push back on a request", "stand firm on sth"], "no": "push back a request"}
+    ],
+    "rows": [
+      ["meet sb halfway", "با کسی نیمه‌راه توافق کردن", "meet halfway with sb"],
+      ["give a little on sth", "روی چیزی کمی کوتاه آمدن", "give little on sth"],
+      ["a deal-breaker", "شرطِ اصلیِ توافق", "a deal breaking point"],
+      ["non-negotiable", "غیرقابلِ‌مذاکره", "non negotiable of"],
+      ["trade scope for time", "محدوده را با زمان معامله کردن", "trade scope with time"],
+      ["a fair trade", "معامله‌ی منصفانه", "a fair trading"],
+      ["push back on a request", "در برابرِ درخواستی مقاومت کردن", "push back a request"],
+      ["stand firm on sth", "روی چیزی محکم ایستادن", "stand firm with sth"],
+      ["a win-win", "توافقی که هر دو طرف برنده‌اند", "a win-win of"],
+      ["prioritise ruthlessly", "بی‌رحمانه اولویت‌بندی کردن", "prioritise ruthless"],
+      ["a non-starter", "پیشنهادی که از اول قابل‌قبول نیست", "a non-start"],
+      ["park a discussion", "بحثی را موقتاً کنار گذاشتن", "park up a discussion"]
+    ],
+    "ex": [
+      ["I [[c:pushed back on]] the original request, and we [[c:met halfway]]: export now, dashboard next sprint.", "روی درخواستِ اصلی [[c:مقاومت کردم]]، و [[c:نیمه‌راه توافق کردیم]]: خروجی الان، داشبورد اسپرینتِ بعد."],
+      ["Breaking the sync fix is [[c:a deal-breaker]] for me — everything else, I'm happy to [[c:give a little on]].", "خراب‌کردنِ رفعِ sync برای من [[c:غیرقابلِ‌مذاکره]] است — روی بقیه‌ی چیزها با کمالِ میل [[c:کوتاه می‌آیم]]."],
+      ["We [[c:traded scope for time]]: fewer features now, but each one done well — [[c:a fair trade]] for both sides.", "[[c:محدوده را با زمان معامله کردیم]]: فیچرِ کمتر الان، ولی هرکدام خوب انجام‌شده — [[c:معامله‌ای منصفانه]] برای هر دو طرف."]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — مذاکره و اولویت‌بندی",
+    "lab": "Word Skills · 89 + 90",
+    "sets": [
+      {"u": "89 · Negotiating and compromising", "chips": [
+        ["leverage (n.)", "اهرمِ قدرت در مذاکره", "C1", "n"],
+        ["concede", "کوتاه آمدن، پذیرفتن", "C1", "v"],
+        ["a counteroffer", "پیشنهادِ متقابل", "C1", "n"],
+        ["a sticking point", "نقطه‌ی گیر در مذاکره", "C1", "n"],
+        ["a fallback position", "موضعِ احتیاطی", "C1", "n"],
+        ["haggle", "چانه زدن (غیررسمی)", "B2", "v"],
+        ["hold your ground", "روی موضعت ایستادن", "C1", "phr"],
+        ["a common ground", "زمینه‌ی مشترک", "B2", "n"],
+        ["an ultimatum", "اتمامِ‌حجت", "C1", "n"],
+        ["reasonable (adj.)", "منطقی، معقول", "B1", "adj"]
+      ]},
+      {"u": "90 · Priorities", "chips": [
+        ["a top priority", "اولویتِ اول", "B1", "n"],
+        ["rank sth", "چیزی را رتبه‌بندی کردن", "B2", "v"],
+        ["a nice-to-have", "خوب است باشد، ولی ضروری نیست", "B2", "n"],
+        ["a must-have", "ضروری", "B2", "n"],
+        ["trade off against sth", "در برابرِ چیزی سبک‌سنگین کردن", "C1", "v"],
+        ["low-hanging fruit", "کارِ کم‌زحمت و پراثر", "C1", "n"],
+        ["on the back burner", "به‌طورِ موقت کنار گذاشته‌شده", "C1", "phr"],
+        ["a bottleneck", "گلوگاه", "B2", "n"],
+        ["urgency", "فوریت", "B2", "n"],
+        ["defer sth", "چیزی را به تعویق انداختن", "C1", "v"]
+      ]}
+    ],
+    "ex": [
+      ["I had one [[w:sticking point]]: the sync piece. Everything else, I could [[w:concede]] on.", "یک [[w:نقطه‌ی گیرِ]] من بود: بخشِ sync. روی بقیه‌ی چیزها می‌توانستم [[w:کوتاه بیایم]]."],
+      ["We treated the dashboard as [[w:a nice-to-have]], not [[w:a must-have]], this quarter.", "این فصل داشبورد را [[w:خوب‌است‌باشد]] دانستیم، نه [[w:ضروری]]."],
+      ["I found some [[w:low-hanging fruit]] — a quick win — and put the riskier redesign [[w:on the back burner]].", "یک [[w:کارِ کم‌زحمت و پراثر]] پیدا کردم و بازطراحیِ پرریسک‌تر را [[w:موقتاً کنار گذاشتم]]."],
+      ["I offered [[w:a counteroffer]]: export now, dashboard as a [[w:fallback position]] if we have time left.", "یک [[w:پیشنهادِ متقابل]] دادم: خروجی الان، داشبورد به‌عنوانِ [[w:موضعِ احتیاطی]] اگر وقت ماند."],
+      ["The PM's [[w:urgency]] made sense, but I [[w:held my ground]] on not risking the sync fix.", "[[w:فوریتِ]] مدیرِ محصول منطقی بود، ولی روی نریسک‌کردنِ رفعِ sync [[w:روی موضعم ایستادم]]."],
+      ["We found [[w:common ground]] quickly once we [[w:ranked]] the three features honestly.", "وقتی سه فیچر را صادقانه [[w:رتبه‌بندی کردیم]]، سریع [[w:زمینه‌ی مشترک]] پیدا کردیم."]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: عرضه‌ی تدریجی به‌جای همه‌چیز یک‌جا",
+    "lab": "Microsoft AZ-400 · reading",
+    "exam": "AZ-400",
+    "areas": ["Design a release strategy", "Implement a feature flag strategy"],
+    "terms": [
+      ["a release strategy", "استراتژیِ عرضه", "AZ-400"],
+      ["a feature flag", "پرچمِ ویژگی", "AZ-400"],
+      ["a phased rollout", "عرضه‌ی مرحله‌ای", "AZ-400"],
+      ["canary release", "عرضه‌ی قناری", "AZ-400"],
+      ["a ring deployment", "استقرارِ حلقه‌ای", "AZ-400"],
+      ["blast radius", "شعاعِ انفجار (دامنه‌ی آسیب)", "AZ-400"],
+      ["rollback plan", "برنامه‌ی بازگشت", "AZ-400"],
+      ["MVP", "کمینه‌ی محصولِ قابلِ‌عرضه", "AZ-400"]
+    ],
+    "read": {
+      "t": "Why splitting scope is a technical decision, not just a political one",
+      "body": [
+        ["A [[c:negotiation]] about scope and a [[x:release strategy]] are [[g:the same]] conversation wearing different clothes. Shipping [[g:the]] export feature alone behind [[x:a feature flag]] is [[g:far safer]] than shipping three features at once — [[g:the more]] changes bundled together, [[g:the harder]] it is to know which one broke something.", "یک مذاکره درباره‌ی محدوده و یک استراتژیِ عرضه همان مکالمه با لباسِ متفاوت‌اند. عرضه‌ی فقط فیچرِ خروجی پشتِ یک پرچمِ ویژگی خیلی امن‌تر است از عرضه‌ی هر سه فیچر با هم — هرچه تغییراتِ بیشتری با هم بسته‌بندی شوند، فهمیدنِ این‌که کدام‌یک چیزی را خراب کرده سخت‌تر می‌شود."],
+        ["A [[x:phased rollout]] — sometimes called a [[x:canary release]] or [[x:ring deployment]] — ships to five percent of users first, [[g:the]] smallest group that still gives a real signal. If something breaks, [[g:the]] [[x:blast radius]] is tiny, not company-wide.", "یک عرضه‌ی مرحله‌ای — که گاهی عرضه‌ی قناری یا استقرارِ حلقه‌ای نامیده می‌شود — اول به پنج درصدِ کاربران عرضه می‌شود، کوچک‌ترینِ گروهی که هنوز سیگنالِ واقعی می‌دهد. اگر چیزی خراب شود، شعاعِ انفجار کوچک است، نه در سراسرِ شرکت."],
+        ["Every rollout needs a [[x:rollback plan]] written down [[g:before]] the release, not invented during an incident — a habit you already practised in Unit 10. This is [[g:the]] same discipline: name the risk, name the exit, before you commit.", "هر عرضه‌ای به یک برنامه‌ی بازگشتِ از پیش‌نوشته نیاز دارد، نه ابداع‌شده در حینِ حادثه — عادتی که در یونیت ۱۰ تمرینش کردی. همین انضباط است: ریسک را نام ببر، راهِ خروج را نام ببر، قبل از تعهد."],
+        ["So the honest answer to “can we ship all three?” is: define [[g:the]] [[x:MVP]] — [[g:the]] smallest version that's actually useful — ship that behind a flag, and treat the rest as [[c:a fallback position]], not a promise.", "پس جوابِ صادقانه به «می‌شود هر سه را عرضه کرد؟» این است: کمینه‌ی محصولِ قابلِ‌عرضه را تعریف کن — کوچک‌ترین نسخه‌ای که واقعاً مفید است — همان را پشتِ یک پرچم عرضه کن، و بقیه را موضعِ احتیاطی بدان، نه یک وعده."]
+      ],
+      "qs": ["Why is bundling three features together riskier than shipping one at a time?", "What does a ring deployment limit if something goes wrong?", "In two sentences: propose a phased rollout for this quarter's three features."]
+    },
+    "why": "همان چیزی که در جلسه‌ی چانه‌زنی گفتی، اینجا با زبانِ آزمون توضیح داده شده. سؤالِ سوم را با the more…the more… جواب بده."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: کلمه‌ی کوتاه‌آمدن را بگیر",
+    "lab": "Tactics for Listening · Developing · Unit 20 · Negotiating a deadline",
+    "tactic": "در مذاکره، طرفِ مقابل معمولاً یک کلمه می‌گوید که نشان می‌دهد دارد کوتاه می‌آید یا نه: <span class='en'>could · maybe · I'd need · non-negotiable</span>. اگر <span class='en'>could/maybe</span> بشنوی، جا برایِ چانه‌زدن هست؛ اگر <span class='en'>non-negotiable/has to</span> بشنوی، آن یکی دیگر بسته است.",
+    "where": "<div class='en'>Book: Unit 20 “Deadlines” · pages 78–81</div><div class='en'>Audio: folder 03 (Unit 17-24) · files 16–20</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>3-16</span> — فقط همین یک ترک:</b> برایِ هر گوینده بنویس کدام بخشِ درخواست باز است (could/maybe) و کدام بسته است (non-negotiable/has to)."
+    ],
+    "rec": {
+      "h": "ضبط خودت — چانه‌زدنِ محدودهِ کار در ۶۰ ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> به درخواستِ فرضیِ «هر سه فیچر را به همان ددلاین اضافه کن» جواب بده. ۶۰ ثانیه.",
+        "<b>۲ · گوش بده و بشمار:</b> آیا از the...the... استفاده کردی؛ آیا used to را درست برایِ مقایسه‌ی قدیم/حالا به‌کار بردی.",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله‌ی مقایسه (X مهم‌تر از Y) · یک جمله‌ی the more...the more... · یک جمله‌ی used to برایِ روشِ قدیم.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        ["more important that ever", "more important than ever", "than نه that"],
+        ["more features we add, risk is higher", "the more features we add, the higher the risk", "the در هر دو نیمه لازم است"],
+        ["we use to ship manually", "we used to ship manually", "used، با d"],
+        ["a canary release of", "a canary release", "بدونِ of اضافه"],
+        ["blast radios", "blast radius", "رِیدیِس"],
+        ["ring deploy-ment", "ring deployment", "دیپلویمنت، یک کلمه"],
+        ["M-V-P of the product", "the MVP", "ام-وی-پی"]
+      ],
+      "compare": [
+        ["The more features we add now, the higher the risk of breaking the sync fix.", "هرچه فیچرِ بیشتری الان اضافه کنیم، ریسکِ خراب‌کردنِ رفعِ sync بالاتر می‌رود."],
+        ["The export feature is far more urgent than the dashboard redesign.", "فیچرِ خروجی خیلی مهم‌تر از بازطراحیِ داشبورد است."],
+        ["We used to ship exports manually; now clients expect it automatic.", "قبلاً خروجی‌ها را دستی می‌فرستادیم؛ الان مشتری‌ها انتظار دارند خودکار باشد."],
+        ["I'd rather ship one thing well than three things badly — that's non-negotiable on the sync piece.", "ترجیح می‌دهم یک چیز را خوب عرضه کنم تا سه چیز را بد — این روی بخشِ sync غیرقابلِ‌مذاکره است."]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Negotiation · Email · Hard question",
+    "tasks": [
+      {"k": "Negotiation · 60 sec", "t": "چانه‌زدنِ محدوده‌ی کار را بازی کن: یک جمله‌ی مقایسه، یک جمله‌ی the more...the more...، و یک خطِ قرمزِ غیرقابلِ‌مذاکره. ضبط کن."},
+      {"k": "Email · 5 lines", "t": "ایمیلِ توافقِ محدوده برای مدیرِ محصول: خط اول چه چیزی این اسپرینت می‌آید، خط دوم چرا (مقایسه)، خط سوم چه چیزی به تعویق افتاد، خط چهارم چرا این معامله منصفانه است، خط پنجم تأیید.", "lines": 5},
+      {"k": "Hard question", "t": "مدیرِ محصول می‌گوید <span class='en'>“Other teams manage to ship more than this every sprint.”</span> — جوابی بنویس که دفاعی نباشد، با یک مقایسه‌ی واقعی جواب بدهد.", "lines": 3}
+    ]
+  },
+  "plan": {"dialog": 1, "grammar": 1, "colls": 2, "vocab": 2, "cert": 3, "listen": 3, "prod": 3},
+  "take": "The more features we bundle into one sprint, the higher the risk of breaking the sync fix — we used to plan everything at once, but shipping one thing well beats three things badly.",
+  "quiz": [
+    {"k": "G", "q": "This feature is ______ urgent than the dashboard redesign.", "op": ["far more", "the most", "as more"], "qfa": "این فیچر خیلی مهم‌تر از بازطراحیِ داشبورد است.", "a": "far more", "afa": "far more + صفت، برایِ مقایسه‌ی دو چیز"},
+    {"k": "G", "q": "Which feature is ______ critical to ship first — out of the three?", "op": ["the most", "more", "most"], "qfa": "کدام فیچر بینِ سه‌تا مهم‌ترین است؟", "a": "the most", "afa": "سه‌تا یا بیشتر ← the most"},
+    {"k": "G", "q": "______ features we add now, ______ the risk of breaking something.", "qfa": "هرچه فیچرِ بیشتری الان اضافه کنیم، ریسکِ خراب‌کردنِ چیزی بالاتر می‌رود.", "a": "The more … the higher", "afa": "the more X, the more Y"},
+    {"k": "G", "q": "Correct it: <i>We use to ship exports manually, and we would be busy every quarter back then.</i>", "lines": true, "qfa": "دو غلط دارد.", "a": "We used to ship exports manually, and we used to be busy every quarter back then.", "afa": "used to با d · would برایِ حالت‌ها (be) غلط است"},
+    {"k": "C", "q": "We ______ on the deadline: export this sprint, dashboard next.", "op": ["met halfway", "gave a full", "held firm"], "qfa": "روی ددلاین نیمه‌راه توافق کردیم.", "a": "met halfway", "afa": "meet sb halfway"},
+    {"k": "C", "q": "Breaking the sync fix is ______ for me — everything else is open to discussion.", "qfa": "خراب‌کردنِ رفعِ sync برای من غیرقابلِ‌مذاکره است.", "a": "non-negotiable", "afa": "non-negotiable"},
+    {"k": "C", "q": "Cross out the wrong one:", "op": ["meet sb halfway", "meet halfway with sb", "push back on a request", "a deal-breaker"], "a": "meet halfway with sb", "afa": "درست: meet sb halfway (بدونِ with)"},
+    {"k": "W", "q": "We treated the dashboard as a ______, not a must-have, this quarter.", "op": ["nice-to-have", "sticking point", "bottleneck"], "qfa": "این فصل داشبورد را خوب‌است‌باشد دانستیم، نه ضروری.", "a": "nice-to-have", "afa": "a nice-to-have"},
+    {"k": "W", "q": "Match: (a) low-hanging fruit  (b) on the back burner  (c) a bottleneck", "qfa": "۱) گلوگاه  ۲) کارِ کم‌زحمت و پراثر  ۳) موقتاً کنار گذاشته‌شده", "a": "a-2 · b-3 · c-1", "afa": "low-hanging fruit کارِ کم‌زحمت · on the back burner موقتاً کنار گذاشته · a bottleneck گلوگاه"},
+    {"k": "X", "q": "Why does a phased rollout ship to a small percentage of users first?", "op": ["to save money on servers", "to limit the blast radius if something breaks", "because it's required by law"], "qfa": "چرا عرضه‌ی مرحله‌ای اول به درصدِ کمی از کاربران می‌رسد؟", "a": "to limit the blast radius if something breaks", "afa": "AZ-400 — canary/ring deployment"},
+    {"k": "L", "q": "Which two kinds of words tell you a request is still negotiable — or already closed?", "qfa": "کدام دو نوع کلمه نشان می‌دهند درخواست هنوز باز است یا بسته؟", "a": "could/maybe (open) vs. non-negotiable/has to (closed)", "afa": "ترک ۳-۱۶"},
+    {"k": "G", "old": true, "q": "If the API call ______, the whole batch rolls back.", "qfa": "از درس ۸.", "a": "fails", "afa": "از درس ۸ — شرطیِ صفر"},
+    {"k": "P", "q": "One sentence: <i>The PM wanted three features. I explained the risk. We agreed on one feature now, two later.</i>", "lines": true, "qfa": "با the more...the more... / used to یک جمله بساز.", "a": "Model: The PM wanted all three features at once, but the more we bundled together, the higher the risk, so we agreed on shipping one now and the rest later.", "afa": "نمونه: مدیرِ محصول هر سه فیچر را یک‌جا می‌خواست، ولی هرچه بیشتر باهم بسته‌بندی می‌کردیم ریسک بالاتر می‌رفت، پس توافق کردیم یکی الان و بقیه بعداً."}
+  ],
+  "_id": "u414"
+}
