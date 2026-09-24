@@ -42,13 +42,6 @@ export interface Colls {
   ex: [string, string][]
 }
 
-export interface VocabChip extends Array<string> {
-  0: string
-  1: string
-  2?: string
-  3?: string
-}
-
 export interface VocabSet {
   u: string
   chips: [string, string, string?, string?][]

@@ -34,3 +34,16 @@ export function hasDraft(id: string): boolean {
     return false
   }
 }
+
+export function listDraftIds(): string[] {
+  const ids: string[] = []
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i)
+      if (k && k.startsWith(KEY_PREFIX)) ids.push(k.slice(KEY_PREFIX.length))
+    }
+  } catch {
+    // ignore
+  }
+  return ids
+}

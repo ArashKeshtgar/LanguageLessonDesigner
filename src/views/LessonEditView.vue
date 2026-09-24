@@ -1,22 +1,39 @@
 <script setup lang="ts">
 import { reactive, ref, watch } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
-import { getUnit, getOriginalUnit } from '../lib/units'
-import { saveDraft, clearDraft, hasDraft } from '../lib/drafts'
+import { getUnit, getOriginalUnit, blankUnit } from '../lib/units'
+import { saveDraft, clearDraft, hasDraft, loadDraft } from '../lib/drafts'
 import type { Unit } from '../types/unit'
 
 const route = useRoute()
 const router = useRouter()
 const id = route.params.id as string
 
-const original = getUnit(id)
-if (!original) {
+// router.replace() is async and doesn't stop the rest of this setup from
+// running, so fall back to a throwaway blank unit rather than crashing on
+// the split-second before navigation actually completes.
+const original = getUnit(id) ?? blankUnit(id, 0)
+if (!getUnit(id)) {
   router.replace('/')
+}
+
+// If a "publish" (writes the file, then regenerates its PDF) got interrupted
+// client-side by the dev server's own reload of the freshly-written file —
+// the file watch and this page's fetch() response race each other — the
+// draft is now just a stale duplicate of what's already on disk. Clear it
+// here so a reload can't leave a dangling "unsaved changes" flag behind.
+const fileVersion = getOriginalUnit(id)
+if (fileVersion && hasDraft(id) && JSON.stringify(loadDraft(id)) === JSON.stringify(fileVersion)) {
+  clearDraft(id)
 }
 
 const unit = reactive<Unit>(JSON.parse(JSON.stringify(original)))
 const savedMsg = ref('')
 const draftActive = ref(hasDraft(id))
+const hasOriginal = ref(!!getOriginalUnit(id))
+const publishing = ref(false)
+const publishMsg = ref('')
+const publishError = ref('')
 
 function linesToArr(text: string): string[] {
   return text.split('\n').map((s) => s.trim()).filter(Boolean)
@@ -115,6 +132,36 @@ function downloadJson() {
   a.download = `${id}.json`
   a.click()
   URL.revokeObjectURL(url)
+}
+
+async function publish() {
+  publishing.value = true
+  publishError.value = ''
+  publishMsg.value = ''
+  try {
+    const res = await fetch(`/api/save-lesson/${id}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(unit),
+    })
+    const data = await res.json()
+    if (res.ok && data.ok) {
+      clearDraft(id)
+      draftActive.value = false
+      hasOriginal.value = true
+      publishMsg.value = 'در فایل ذخیره شد و PDF ساخته شد ✓'
+    } else {
+      publishError.value = data.error || 'خطای ناشناخته'
+    }
+  } catch (e) {
+    publishError.value = 'سرور dev در دسترس نیست (فقط با npm run dev کار می‌کنه)'
+  } finally {
+    publishing.value = false
+    setTimeout(() => {
+      publishMsg.value = ''
+      publishError.value = ''
+    }, 5000)
+  }
 }
 
 watch(
@@ -336,7 +383,7 @@ watch(
       <div class="field"><label>تاکتیک</label><textarea v-model="unit.listen.tactic" rows="2"></textarea></div>
       <div class="field"><label>کجا (Where)</label><textarea v-model="unit.listen.where" rows="2"></textarea></div>
       <div class="field"><label>مراحل</label>
-        <div class="row2" v-for="(s, i) in unit.listen.steps" :key="i" style="margin-bottom:.4em">
+        <div class="row2" v-for="(_s, i) in unit.listen.steps" :key="i" style="margin-bottom:.4em">
           <input type="text" v-model="unit.listen.steps[i]" />
           <button class="btn btn-danger" style="justify-self:start" @click="removeListenStep(i)">حذف</button>
         </div>
@@ -349,7 +396,7 @@ watch(
           <div class="field"><label>زمان</label><input type="text" v-model="unit.listen.rec.min" /></div>
         </div>
         <div class="field"><label>مراحل ضبط</label>
-          <div class="row2" v-for="(s, i) in unit.listen.rec.steps || []" :key="i" style="margin-bottom:.4em">
+          <div class="row2" v-for="(_s, i) in unit.listen.rec.steps || []" :key="i" style="margin-bottom:.4em">
             <input type="text" v-model="unit.listen.rec.steps![i]" />
             <button class="btn btn-danger" style="justify-self:start" @click="removeRecStep(i)">حذف</button>
           </div>
@@ -437,13 +484,19 @@ watch(
 
     <div class="actions">
       <button class="btn btn-primary" @click="save">ذخیره (محلی)</button>
+      <button class="btn" :disabled="publishing" @click="publish">
+        {{ publishing ? 'در حال ساخت PDF…' : '⭳ ذخیره در فایل + ساخت PDF' }}
+      </button>
       <button class="btn" @click="downloadJson">دانلود JSON</button>
-      <button class="btn btn-danger" @click="resetToFile">بازگشت به نسخه‌ی فایل</button>
-      <span class="saved-msg">{{ savedMsg }}</span>
+      <button v-if="hasOriginal" class="btn btn-danger" @click="resetToFile">بازگشت به نسخه‌ی فایل</button>
+      <span v-if="savedMsg" class="saved-msg">{{ savedMsg }}</span>
+      <span v-if="publishMsg" class="saved-msg">{{ publishMsg }}</span>
+      <span v-if="publishError" class="saved-msg" style="color:#b4534e">{{ publishError }}</span>
     </div>
     <p class="hint">
-      ذخیره‌ی «محلی» فقط توی همین مرورگر می‌مونه (localStorage). برای این‌که تغییرات واقعاً در پروژه و گیت ذخیره بشه،
-      روی «دانلود JSON» بزن و فایل دانلودشده رو جای‌گزین <code>src/data/units/{{ id }}.json</code> کن.
+      «ذخیره (محلی)» فقط توی همین مرورگر می‌مونه. «⭳ ذخیره در فایل + ساخت PDF» فقط وقتی با
+      <code>npm run dev</code> لوکال اجرا شده کار می‌کنه: مستقیم فایل <code>src/data/units/{{ id }}.json</code> رو
+      می‌نویسه و PDF رسمی‌اش رو دوباره می‌سازه. اگه لوکال نیستی، از «دانلود JSON» استفاده کن و فایل رو دستی جای‌گزین کن.
     </p>
   </div>
 </template>

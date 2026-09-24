@@ -1,12 +1,31 @@
 <script setup lang="ts">
-import { listUnits, getUnit } from '../lib/units'
+import { listUnits, getUnit, allUnits, blankUnit } from '../lib/units'
+import { saveDraft } from '../lib/drafts'
 import { shades } from '../lib/shades'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const units = listUnits().map((u) => {
   const full = getUnit(u.id)!
   return { ...u, hero: shades(full.hue).hero }
 })
+
+function createLesson() {
+  const id = window.prompt('شناسه‌ی درس جدید (مثلاً u416):')?.trim()
+  if (!id) return
+  if (!/^u[a-z0-9]+$/i.test(id)) {
+    window.alert('شناسه باید با u شروع بشه و فقط حرف/عدد باشه، مثل u416.')
+    return
+  }
+  if (getUnit(id)) {
+    window.alert('این شناسه از قبل استفاده شده.')
+    return
+  }
+  const maxN = Math.max(0, ...allUnits().map((u) => u.n))
+  saveDraft(id, blankUnit(id, maxN + 1))
+  router.push(`/lesson/${id}/edit`)
+}
 </script>
 
 <template>
@@ -29,6 +48,9 @@ const units = listUnits().map((u) => {
         <div class="en">{{ u.en }}</div>
         <div class="fa">{{ u.fa }}</div>
       </RouterLink>
+      <button class="lesson-card lesson-card-add" @click="createLesson">
+        <div class="en">+ درس جدید</div>
+      </button>
     </div>
   </div>
 </template>
@@ -76,5 +98,20 @@ const units = listUnits().map((u) => {
   font-family: 'B Nazanin', 'B Yekan', serif;
   color: #6b7580;
   margin-top: 0.3em;
+}
+.lesson-card-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  border-top-width: 1px;
+  cursor: pointer;
+  font: inherit;
+  color: #8a94a0;
+  min-height: 4.5em;
+}
+.lesson-card-add:hover {
+  color: #2d5f86;
+  border-color: #2d5f86;
 }
 </style>

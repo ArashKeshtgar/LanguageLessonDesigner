@@ -2,10 +2,14 @@
 import { computed } from 'vue'
 import type { Listen } from '../types/unit'
 import { mark } from '../lib/mark'
+import { stripForSpeech } from '../lib/speak'
 import SectionHeader from './SectionHeader.vue'
+import SpeakButton from './SpeakButton.vue'
 
 const props = defineProps<{ listen: Listen }>()
-const compare = computed(() => (props.listen.rec?.compare || []).map(([e, f]) => ({ e: mark(e), f: mark(f) })))
+const compare = computed(() =>
+  (props.listen.rec?.compare || []).map(([e, f]) => ({ e: mark(e), f: mark(f), raw: stripForSpeech(e) })),
+)
 </script>
 
 <template>
@@ -46,7 +50,7 @@ const compare = computed(() => (props.listen.rec?.compare || []).map(([e, f]) =>
         <div class="k">Compare with these lines</div>
         <table>
           <tr v-for="(c, i) in compare" :key="i">
-            <td class="e" v-html="c.e"></td>
+            <td class="e"><span v-html="c.e"></span> <SpeakButton :text="c.raw" style="vertical-align:-.3em" /></td>
             <td v-html="c.f"></td>
           </tr>
         </table>

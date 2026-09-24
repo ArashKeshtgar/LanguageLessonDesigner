@@ -69,8 +69,8 @@ td.r { font-weight: 700; width: 28%; }
 .box { background: #f6f7f8; border-radius: 8px; padding: .6em .85em; }
 .box .k { font: 700 .72em Calibri, Carlito, Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #8a94a0; direction: ltr; text-align: left; margin-bottom: .3em; }
 
-.grp { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6em; }
-.gc { border: 1px solid var(--line); border-top: 3px solid #2e6b4a; border-radius: 8px; padding: .5em .7em; }
+.grp { display: flex; flex-wrap: wrap; gap: .6em; }
+.gc { flex: 1 1 180px; border: 1px solid var(--line); border-top: 3px solid #2e6b4a; border-radius: 8px; padding: .5em .7em; }
 .gc .h { font: 700 1.05em Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; color: #2e6b4a; }
 .gc .n { font-size: .84em; color: #6b7580; line-height: 1.6; }
 .gc .ok { font: 1em/1.5 Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; }
@@ -146,7 +146,16 @@ ol.steps li { margin: .25em 0; }
   body { background: #fff; }
   .lesson-nav { display: none !important; }
   .lesson-page { max-width: 100%; padding: 0; }
-  .sec { break-inside: avoid-page; }
+  /* Avoid splitting small pieces across a page break, but let a long .sec
+     flow across pages — forcing whole sections onto one page left large
+     blank gaps at the bottom of the previous page. */
+  .sh, .rh, .rt { break-after: avoid; }
+  tr, .q, .gc, .pt, .ses, .chip, .kr > div { break-inside: avoid; }
+  .ex > div { break-inside: avoid; }
+  /* A 2-column CSS grid doesn't fragment cleanly across a print page break —
+     Chrome moves the whole grid to the next page instead of splitting it,
+     which left large gaps. Stack these single-column for print only. */
+  .ex.two { grid-template-columns: 1fr; }
 }
 
 .lesson-nav { display: flex; gap: .6em; align-items: center; margin-bottom: 1em; flex-wrap: wrap; }

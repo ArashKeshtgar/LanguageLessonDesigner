@@ -17,6 +17,7 @@ import QuizSection from '../components/QuizSection.vue'
 const route = useRoute()
 const unit = computed(() => getUnit(route.params.id as string))
 const index = listUnits()
+const pdfBase = import.meta.env.BASE_URL
 
 const rootStyle = computed(() => {
   if (!unit.value) return {}
@@ -35,6 +36,10 @@ function neighborId(offset: number): string | null {
   const n = index[i + offset]
   return n ? n.id : null
 }
+
+function printPage() {
+  window.print()
+}
 </script>
 
 <template>
@@ -44,8 +49,8 @@ function neighborId(offset: number): string | null {
       <RouterLink v-if="neighborId(-1)" :to="`/lesson/${neighborId(-1)}`">‹ درس قبل</RouterLink>
       <RouterLink v-if="neighborId(1)" :to="`/lesson/${neighborId(1)}`">درس بعد ›</RouterLink>
       <span class="spacer"></span>
-      <a :href="`/pdf/${unit._id}.pdf`" target="_blank" rel="noopener">⭳ دانلود PDF</a>
-      <button class="btn-link" @click="window.print()">🖶 چاپ</button>
+      <a :href="`${pdfBase}pdf/${unit._id}.pdf`" target="_blank" rel="noopener">⭳ دانلود PDF</a>
+      <button class="btn-link" @click="printPage">🖶 چاپ</button>
       <RouterLink :to="`/lesson/${unit._id}/edit`">✎ ویرایش این درس</RouterLink>
     </div>
 
