@@ -43,6 +43,8 @@ function neighborId(offset: number): string | null {
       <RouterLink to="/">← همه‌ی درس‌ها</RouterLink>
       <RouterLink v-if="neighborId(-1)" :to="`/lesson/${neighborId(-1)}`">‹ درس قبل</RouterLink>
       <RouterLink v-if="neighborId(1)" :to="`/lesson/${neighborId(1)}`">درس بعد ›</RouterLink>
+      <span class="spacer"></span>
+      <RouterLink :to="`/lesson/${unit._id}/edit`">✎ ویرایش این درس</RouterLink>
     </div>
 
     <HeroBlock :unit="unit" />

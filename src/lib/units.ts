@@ -1,19 +1,27 @@
 import type { Unit, UnitIndexEntry } from '../types/unit'
+import { loadDraft } from './drafts'
 
 const modules = import.meta.glob<{ default: Unit }>('../data/units/u*.json', { eager: true })
 
 const units: Unit[] = Object.values(modules)
   .map((m) => m.default)
-  .sort((a, b) => {
-    // module-2 units (u201..u204) first by n, then standalone units (u06) after — keep insertion order stable by _id
-    return a._id.localeCompare(b._id)
-  })
+  .sort((a, b) => a.n - b.n)
 
 export function listUnits(): UnitIndexEntry[] {
-  return units.map((u) => ({ id: u._id, n: u.n, tag: u.tag, en: u.en, fa: u.fa }))
+  return units.map((u) => {
+    const draft = loadDraft(u._id)
+    const active = draft || u
+    return { id: u._id, n: active.n, tag: active.tag, en: active.en, fa: active.fa }
+  })
 }
 
 export function getUnit(id: string): Unit | undefined {
+  const base = units.find((u) => u._id === id)
+  if (!base) return undefined
+  return loadDraft(id) || base
+}
+
+export function getOriginalUnit(id: string): Unit | undefined {
   return units.find((u) => u._id === id)
 }
 
