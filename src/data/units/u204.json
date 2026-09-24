@@ -1,0 +1,758 @@
+{
+  "n": 4,
+  "tag": "Module 2 · Unit 4",
+  "en": "Your first week on the job",
+  "fa": "هفته‌ی اول کاری — قانون‌ها، عادت‌های تازه، اولین دعوت به ناهار",
+  "src": [
+    [
+      "Grammar",
+      "GIU 32 · 47 · must/mustn't/needn't & reported speech"
+    ],
+    [
+      "Colloc.",
+      "Units 27, 28, 48 · internet, study & learning, change"
+    ],
+    [
+      "Words",
+      "WS 67 + 68 · working conditions, time management"
+    ],
+    [
+      "Listen",
+      "TfL Developing U11 · accepting or refusing an invitation"
+    ]
+  ],
+  "books": {
+    "col": [
+      27,
+      28,
+      48
+    ],
+    "giu": [
+      32,
+      47
+    ],
+    "ws": [
+      67,
+      68
+    ],
+    "dev": [
+      11
+    ]
+  },
+  "chain": {
+    "next": "Unit 5 · Your first team presentation"
+  },
+  "story": "روز اول. لپ‌تاپ تازه، بج تازه، و یک لیست از چیزهایی که باید یاد بگیری. صبح با IT شروع می‌شود — رمز عبور، وی‌پی‌ان، آنتی‌ویروس. ظهر با منابع انسانی — مزایا، بیمه، مرخصی. و بین این دو، یک همکار سرش را می‌آورد تو: <b>“Want to grab lunch with the team?”</b> جوابِ درست به این سؤال، به‌اندازه‌ی رمز عبورِ درست مهم است.",
+  "dialog": {
+    "h": "دیالوگ — بین IT و منابع انسانی",
+    "lab": "Dialogue · GIU 32, 47",
+    "lines": [
+      [
+        "IT",
+        "You [[g:must]] change your password today, and you [[g:mustn't]] write it down anywhere.",
+        "امروز [[g:باید]] رمز عبورت را عوض کنی، و هیچ‌جا [[g:نباید]] یادداشتش کنی."
+      ],
+      [
+        "Arash",
+        "Got it. Do I need a VPN to [[c:back up]] my files, or does the cloud do that automatically?",
+        "گرفتم. برای [[c:بک‌آپ گرفتن]] از فایل‌هام وی‌پی‌ان لازم دارم، یا کلاود خودش این کار را می‌کند؟"
+      ],
+      [
+        "IT",
+        "It's automatic. Just [[w:never]] [[c:open an attachment]] you didn't expect — that's how most accounts get [[c:hacked into]].",
+        "خودکار است. فقط هرگز [[c:فایل ضمیمه‌ای]] که منتظرش نبودی باز نکن — بیشتر حساب‌ها همین‌جوری [[c:هک می‌شوند]]."
+      ],
+      [
+        "HR",
+        "Welcome! [[g:You needn't]] fill in the pension form today — you have thirty days. But you [[g:must]] pick a health plan by Friday.",
+        "خوش آمدی! [[g:لازم نیست]] امروز فرم مستمری را پر کنی — سی روز وقت داری. ولی تا جمعه [[g:باید]] یک طرح بیمه انتخاب کنی."
+      ],
+      [
+        "Arash",
+        "Understood. My manager already [[g:told me]] that the first month is mostly [[c:continuous assessment]] — no big exam, just feedback.",
+        "متوجه‌ام. مدیرم قبلاً [[g:به من گفته بود]] که ماه اول بیشتر [[c:ارزیابی پیوسته]] است — امتحان بزرگی نیست، فقط بازخورد."
+      ],
+      [
+        "HR",
+        "That's right. She [[g:said]] you'd be [[c:attending]] two onboarding sessions this week — [[w:note]] the room numbers down.",
+        "درست است. او [[g:گفت]] این هفته در دو جلسه‌ی آموزشی [[c:شرکت خواهی کرد]] — شماره‌ی اتاق‌ها را [[w:یادداشت کن]]."
+      ],
+      [
+        "Colleague",
+        "Hey — want to [[c:grab lunch]] with the team? [[w:No pressure]] if you'd rather settle in first.",
+        "هی — می‌خوای با تیم [[c:بریم ناهار]]؟ [[w:فشاری نیست]] اگر ترجیح می‌دی اول جا بیفتی."
+      ],
+      [
+        "Arash",
+        "I'd love to, thanks. [[c:One thing at a time]] this morning, but lunch sounds great.",
+        "دوست دارم، ممنون. صبح [[c:یکی‌یکی]] پیش می‌رم، ولی ناهار عالیه."
+      ]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — قانون، اجازه، و نقلِ حرفِ دیگران",
+    "lab": "Grammar in Use · 32, 47",
+    "rows": [
+      [
+        "قانونِ اجباری",
+        "You [[g:must]] change your password today.",
+        "You should change your password"
+      ],
+      [
+        "قانونِ ممنوع",
+        "You [[g:mustn't]] write it down anywhere.",
+        "You don't must write it down"
+      ],
+      [
+        "لازم نیست — اختیاری",
+        "You [[g:needn't]] fill in the form today.",
+        "You mustn't fill in the form today"
+      ],
+      [
+        "نقل‌قولِ ساده",
+        "She [[g:said]] (that) the first month was continuous assessment.",
+        "She said that the first month is continuous assessment"
+      ],
+      [
+        "نقل‌قولِ فعلِ آینده",
+        "My manager [[g:told me]] I[[g:'d]] be attending two sessions.",
+        "My manager told me I will be attending two sessions"
+      ],
+      [
+        "سوم‌شخص و شکل گذشته — غلط‌های خودت",
+        "it [[g:answers]] · that [[g:validates]] · all [[g:triggered]]",
+        "it answer · that validate · all trigger"
+      ]
+    ],
+    "elab": "Your own errors · RTF 3, 4 + speaking session",
+    "errors": [
+      [
+        "Are you recognise",
+        "Do you recognise"
+      ],
+      [
+        "is lives",
+        "lives"
+      ],
+      [
+        "it answer",
+        "it answers"
+      ],
+      [
+        "that validate",
+        "that validates"
+      ],
+      [
+        "all trigger",
+        "all triggered"
+      ],
+      [
+        "with the single click",
+        "with a single click"
+      ]
+    ],
+    "trigger": "<b class='en'>What do I have to do?</b> ← must/needn't جواب می‌دهند. <b class='en'>What did they tell you?</b> ← نقل‌قول. وقتی نقل می‌کنی، فعل یک پله به عقب می‌رود: <span class='en'>is → was</span>، <span class='en'>will → would</span>."
+  },
+  "colls": {
+    "h": "کالوکیشن — اینترنت و امنیت · یادگیری · عادتِ تازه",
+    "lab": "Collocations in Use · Units 27, 28, 48",
+    "groups": [
+      {
+        "h": "online safety",
+        "n": "امنیت روز اول",
+        "ok": [
+          "back up your files",
+          "hack into",
+          "open an attachment"
+        ],
+        "no": "back up on your files"
+      },
+      {
+        "h": "study & learning",
+        "n": "یادگیری رسمی در محل کار",
+        "ok": [
+          "attend a lecture",
+          "hand in",
+          "get feedback"
+        ],
+        "no": "do feedback"
+      },
+      {
+        "h": "change",
+        "n": "عادتِ تازه، کوچک یا بزرگ",
+        "ok": [
+          "make an adjustment",
+          "break a habit",
+          "adopt a new approach"
+        ],
+        "no": "break an adjustment"
+      }
+    ],
+    "rows": [
+      [
+        "back up your files",
+        "از فایل‌ها بک‌آپ گرفتن",
+        "back up on your files"
+      ],
+      [
+        "hack into",
+        "هک کردن، نفوذ کردن",
+        "hack in"
+      ],
+      [
+        "open an attachment",
+        "فایل ضمیمه را باز کردن",
+        "open an attach"
+      ],
+      [
+        "refine your search",
+        "جست‌وجو را دقیق‌تر کردن",
+        "refine your searching"
+      ],
+      [
+        "subscribe to",
+        "مشترک شدن",
+        "subscribe for"
+      ],
+      [
+        "attend a lecture / session",
+        "در جلسه شرکت کردن",
+        "attend to a lecture"
+      ],
+      [
+        "hand in",
+        "تحویل دادن",
+        "hand up"
+      ],
+      [
+        "get feedback",
+        "بازخورد گرفتن",
+        "get a feedback"
+      ],
+      [
+        "continuous assessment",
+        "ارزیابی پیوسته",
+        "continuously assessment"
+      ],
+      [
+        "make an adjustment",
+        "تنظیم کوچک انجام دادن",
+        "make an adjust"
+      ],
+      [
+        "make a slight alteration",
+        "تغییر جزئی دادن",
+        "make a slight alter"
+      ],
+      [
+        "adopt a new approach",
+        "رویکرد تازه را در پیش گرفتن",
+        "adopt a new approaching"
+      ],
+      [
+        "break a habit / kick the habit",
+        "عادت را ترک کردن",
+        "break a habitude"
+      ],
+      [
+        "revolutionise the way",
+        "شیوه‌ی انجام کاری را متحول کردن",
+        "revolution the way"
+      ],
+      [
+        "a problem arises",
+        "مشکلی پیش می‌آید",
+        "a problem appears"
+      ]
+    ],
+    "ex": [
+      [
+        "On day one, [[c:back up your files]] before you [[c:open an attachment]] from anyone you don't know.",
+        "روز اول، قبل از این‌که [[c:فایل ضمیمه‌ای]] از کسی که نمی‌شناسی باز کنی، [[c:از فایل‌هات بک‌آپ بگیر]]."
+      ],
+      [
+        "I [[c:attended]] two sessions and [[c:got feedback]] the same day — this team runs on [[c:continuous assessment]], not big exams.",
+        "دو جلسه [[c:شرکت کردم]] و همان روز [[c:بازخورد گرفتم]] — این تیم با [[c:ارزیابی پیوسته]] کار می‌کند، نه امتحان‌های بزرگ."
+      ],
+      [
+        "Don't try to [[c:revolutionise the way]] the team works in week one. [[c:Make an adjustment]], not a revolution.",
+        "هفته‌ی اول سعی نکن شیوه‌ی کار تیم را [[c:متحول کنی]]. [[c:یک تنظیم کوچک]] بکن، نه یک انقلاب."
+      ]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — شرایط کاری و مدیریت زمان",
+    "lab": "Word Skills · 67 + 68",
+    "sets": [
+      {
+        "u": "67 · Working conditions",
+        "chips": [
+          [
+            "fringe benefit / perk",
+            "مزیت جانبی",
+            "B2"
+          ],
+          [
+            "pension",
+            "مستمری بازنشستگی",
+            "B1"
+          ],
+          [
+            "bonus",
+            "پاداش",
+            "B1"
+          ],
+          [
+            "sick leave",
+            "مرخصی استعلاجی",
+            "B1"
+          ],
+          [
+            "maternity / paternity leave",
+            "مرخصی زایمان/پدری",
+            "B2"
+          ],
+          [
+            "commission",
+            "کمیسیون فروش",
+            "B2"
+          ],
+          [
+            "right",
+            "حق",
+            "B1"
+          ],
+          [
+            "trade union",
+            "اتحادیه‌ی کارگری",
+            "B2"
+          ],
+          [
+            "entitle sb to sth",
+            "به کسی حق چیزی را دادن",
+            "C1"
+          ],
+          [
+            "minimum wage",
+            "حداقل دستمزد",
+            "B1"
+          ]
+        ]
+      },
+      {
+        "u": "68 · Time management",
+        "chips": [
+          [
+            "note sth down",
+            "یادداشت کردن",
+            "B1"
+          ],
+          [
+            "on a daily basis",
+            "به‌صورت روزانه",
+            "B2"
+          ],
+          [
+            "reminder",
+            "یادآور",
+            "B1"
+          ],
+          [
+            "prioritize",
+            "اولویت‌بندی کردن",
+            "B2"
+          ],
+          [
+            "accomplish",
+            "به سرانجام رساندن",
+            "B2"
+          ],
+          [
+            "stick to sth",
+            "به چیزی پایبند ماندن",
+            "B2"
+          ],
+          [
+            "one thing at a time",
+            "یکی‌یکی، بدون چندکاره‌گی",
+            "B1"
+          ],
+          [
+            "anticipate",
+            "پیش‌بینی کردن",
+            "C1"
+          ],
+          [
+            "delegate sth to sb",
+            "واگذار کردن کاری به کسی",
+            "C1"
+          ],
+          [
+            "deadline",
+            "ضرب‌الاجل",
+            "B1"
+          ]
+        ]
+      }
+    ],
+    "ex": [
+      [
+        "On my [[w:first day]] I got a [[w:reminder]] about the [[w:deadline]] for choosing a health plan.",
+        "روز اولم یک [[w:یادآور]] درباره‌ی [[w:ضرب‌الاجل]] انتخاب طرح بیمه گرفتم."
+      ],
+      [
+        "I try to [[w:prioritize]] and do [[w:one thing at a time]] — no point [[w:anticipating]] week three on day one.",
+        "سعی می‌کنم [[w:اولویت‌بندی کنم]] و [[w:یکی‌یکی]] پیش بروم — فایده‌ای ندارد روز اول [[w:هفته‌ی سوم]] را پیش‌بینی کنی."
+      ],
+      [
+        "Ask early what [[w:fringe benefits]] and [[w:rights]] you're [[w:entitled to]] — nobody explains them twice.",
+        "زود بپرس چه [[w:مزایا]] و [[w:حق‌هایی]] [[w:به تو تعلق می‌گیرد]] — کسی دوبار توضیح نمی‌دهد."
+      ]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: چیزهایی که هفته‌ی اول می‌بینی",
+    "lab": "Microsoft PL-900 · reading",
+    "exam": "PL-900",
+    "areas": [
+      "Power Apps",
+      "Dataverse basics"
+    ],
+    "terms": [
+      [
+        "environment",
+        "محیط",
+        "PL-900"
+      ],
+      [
+        "solution",
+        "سولوشن",
+        "PL-900"
+      ],
+      [
+        "canvas app",
+        "اپ بوم‌محور",
+        "PL-900"
+      ],
+      [
+        "model-driven app",
+        "اپ مدل‌محور",
+        "PL-900"
+      ],
+      [
+        "Dataverse table",
+        "جدول Dataverse",
+        "PL-900"
+      ],
+      [
+        "column",
+        "ستون",
+        "PL-900"
+      ],
+      [
+        "relationship",
+        "رابطه‌ی بین جدول‌ها",
+        "PL-900"
+      ],
+      [
+        "security role",
+        "نقش امنیتی",
+        "PL-900"
+      ]
+    ],
+    "read": {
+      "t": "What you'll meet in week one",
+      "body": [
+        [
+          "Your first login lands you in an [[x:environment]] — a space that holds one team's apps, data, and settings, separate from everyone else's. Everything you build this month ships inside a [[x:solution]], a package the team can move from testing to production together.",
+          "اولین ورودت به یک [[x:محیط]] می‌رسد — فضایی که اپ‌ها، داده و تنظیمات یک تیم را نگه می‌دارد، جدا از بقیه. هر چیزی که این ماه می‌سازی داخل یک [[x:سولوشن]] بیرون می‌رود، بسته‌ای که تیم می‌تواند از تست به تولید با هم جابه‌جایش کند."
+        ],
+        [
+          "You'll hear two names for apps: a [[x:canvas app]] is drag-and-drop, screen by screen, when the design has to be exact. A [[x:model-driven app]] builds its screens automatically from the data — faster, but less control over the layout.",
+          "دو اسم برای اپ می‌شنوی: [[x:اپ بوم‌محور]] کشیدن‌وانداختن است، صفحه‌به‌صفحه، وقتی طراحی باید دقیق باشد. [[x:اپ مدل‌محور]] صفحه‌هایش را خودکار از روی داده می‌سازد — سریع‌تر، ولی کنترل کمتری روی چیدمان."
+        ],
+        [
+          "Under both sits [[x:Dataverse]]. A [[x:Dataverse table]] is a category of thing you track — like Expense or Employee — and each [[x:column]] is one fact about it. A [[x:relationship]] connects two tables, so one Employee [[c:relates to]] many Expenses.",
+          "زیر هر دو، Dataverse نشسته. یک [[x:جدول Dataverse]] یک دسته‌ی چیزی است که ردیابی می‌کنی — مثل Expense یا Employee — و هر [[x:ستون]] یک واقعیت درباره‌ی آن است. یک [[x:رابطه]] دو جدول را وصل می‌کند، پس یک Employee به چند Expense [[c:مرتبط]] است."
+        ],
+        [
+          "And on day one, someone [[g:will have already]] assigned you a [[x:security role]]: it decides which tables you can read, and which you can only [[c:attend]] — not touch — until you've [[c:got feedback]] on your first change.",
+          "و روز اول، کسی از قبل یک [[x:نقش امنیتی]] به تو داده: همین تصمیم می‌گیرد کدام جدول‌ها را می‌توانی بخوانی، و کدام‌ها را فقط [[c:نگاه کنی]] — نه دست بزنی — تا وقتی روی اولین تغییرت [[c:بازخورد بگیری]]."
+        ]
+      ],
+      "qs": [
+        "What is the difference between a canvas app and a model-driven app?",
+        "Why does a solution matter more than a single app?",
+        "In two sentences: what would you ask your manager about your security role in week one?"
+      ]
+    },
+    "why": "این چهار اصطلاح — environment، solution، canvas در برابر model-driven، و security role — هم سؤال آزمون‌اند هم اولین چیزی که در یک تیم واقعی از تو می‌پرسند."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: قبول یا رد، از لحنِ اول جمله",
+    "lab": "Tactics for Listening · Developing · Unit 11 · Invitations",
+    "tactic": "جواب دعوت معمولاً همان کلمه‌ی اول لو می‌دهد. <span class='en'>“I'd love to…”</span> و <span class='en'>“Sure, that sounds great”</span> قبول است. <span class='en'>“Sorry, I…”</span> و <span class='en'>“Maybe some other time”</span> رد است — حتی اگر جمله با یک دلیلِ مؤدبانه ادامه پیدا کند.",
+    "where": "<div class='en'>Book: Unit 11 “Invitations” · pages 42–43</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 12–16</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-12</span> — فقط همین یک ترک:</b> شش دعوت را گوش کن. فقط بنویس قبول یا رد — به بقیه‌ی جمله کار نداشته باش. کلمه‌ی اول کافی است.",
+      "<b>نکته‌ی تلفظی همان بخش:</b> <span class='en'>“Do you want to…”</span> و <span class='en'>“Are you free…”</span> در گفتار فشرده می‌شوند: <span class='en'>/dʒə wɑnə/</span> و <span class='en'>/ɜr yə/</span>."
+    ],
+    "rec": {
+      "h": "ضبط خودت — قبول یا رد در ده ثانیه",
+      "min": "12 min",
+      "steps": [
+        "<b>۱ · خام:</b> یک همکار می‌گوید <span class='en'>“Want to grab lunch with the team?”</span> ضبط کن: یک جمله‌ی قبول، بعد یک جمله‌ی رد — هرکدام زیر ده ثانیه.",
+        "<b>۲ · گوش بده:</b> آیا کلمه‌ی اولت همان لحن را داشت؟ آیا مکث قبل از جواب بیشتر از یک ثانیه بود؟",
+        "<b>۳ · دوباره:</b> این بار با یک دلیلِ واقعی بعدش — کاری که واقعاً آن روز داری.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج."
+      ],
+      "watch": [
+        [
+          "use a city",
+          "used a CTE",
+          "سی-تی-ای"
+        ],
+        [
+          "power ups",
+          "Power Apps",
+          "جمع است — پاوِر اَپس"
+        ],
+        [
+          "power automated flow",
+          "Power Automate flow",
+          "بدون D"
+        ],
+        [
+          "Asia",
+          "Azure",
+          "اَ-ژِر"
+        ],
+        [
+          "CUAL",
+          "SQL",
+          "اس-کیو-اِل، سه حرف جدا"
+        ],
+        [
+          "this is green marks",
+          "this screen marks",
+          "is اضافه شد و screen شکست"
+        ],
+        [
+          "a mouse and a ear",
+          "a month and a year",
+          "حرف پایانی حذف شد"
+        ]
+      ],
+      "compare": [
+        [
+          "I'd love to, thanks — one thing at a time this morning, but lunch sounds great.",
+          "دوست دارم، ممنون — صبح یکی‌یکی پیش می‌رم، ولی ناهار عالیه."
+        ],
+        [
+          "Sorry, I don't think I can today — I still have to get through the onboarding forms.",
+          "ببخشید، امروز فکر نکنم بتونم — هنوز باید فرم‌های آشناسازی را رد کنم."
+        ],
+        [
+          "Sure, that sounds great. What time does the team usually go?",
+          "حتماً، عالیه. تیم معمولاً چه ساعتی می‌رود؟"
+        ],
+        [
+          "Maybe some other time — I want to get my password and VPN sorted first.",
+          "شاید یک وقت دیگه — می‌خوام اول رمز عبور و وی‌پی‌انم را درست کنم."
+        ]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Phone · Email · Hard question",
+    "tasks": [
+      {
+        "k": "Intro · 60 sec",
+        "t": "خودت را به تیم تازه معرفی کن: یک جمله چه کاره‌ای، یک جمله چه چیزی این هفته یاد می‌گیری، و یک جمله چیزی که به آن افتخار می‌کنی. دست‌کم دو ترکیب از <span class='en'>attend · get feedback · one thing at a time</span> بیاور. ضبط کن."
+      },
+      {
+        "k": "Email · 4 lines",
+        "t": "ایمیل به مدیرت بعد از روز اول: خط اول تشکر، خط دوم چیزی که <span class='en'>you were told</span> (نقل‌قول)، خط سوم یک سؤال درباره‌ی <span class='en'>security role</span> یا دسترسی‌ها، خط چهارم بسته.",
+        "lines": 4
+      },
+      {
+        "k": "Hard question",
+        "t": "همکارت می‌پرسد <span class='en'>“So, are you settling in okay?”</span> — جوابی بنویس که یک چیز واقعاً گیج‌کننده را بپذیرد و بگوید برای حلش چه کار می‌کنی.",
+        "lines": 3
+      }
+    ]
+  },
+  "plan": {
+    "dialog": 1,
+    "grammar": 1,
+    "colls": 2,
+    "vocab": 2,
+    "cert": 3,
+    "listen": 3,
+    "prod": 3
+  },
+  "take": "I'd love to, thanks — just one thing at a time this morning, but lunch sounds great.",
+  "quiz": [
+    {
+      "k": "G",
+      "q": "You ______ change your password today, but you ______ fill in the pension form yet.",
+      "op": [
+        "must / needn't",
+        "needn't / must",
+        "mustn't / needn't"
+      ],
+      "qfa": "امروز باید رمز عبور را عوض کنی، ولی هنوز لازم نیست فرم مستمری را پر کنی.",
+      "a": "must / needn't",
+      "afa": "اجباری ← must · اختیاری ← needn't"
+    },
+    {
+      "k": "G",
+      "q": "She said (that) the first month ______ continuous assessment.",
+      "qfa": "گفت ماه اول ارزیابی پیوسته است.",
+      "a": "was",
+      "afa": "نقل‌قول ← فعل یک پله عقب می‌رود: is → was"
+    },
+    {
+      "k": "G",
+      "q": "My manager told me I ______ be attending two sessions this week.",
+      "op": [
+        "will",
+        "would",
+        "was"
+      ],
+      "qfa": "مدیرم گفت این هفته دو جلسه شرکت خواهم کرد.",
+      "a": "would",
+      "afa": "نقل‌قول ← will می‌شود would"
+    },
+    {
+      "k": "G",
+      "q": "Correct it: <i>He told me that I must to sign the form and I needn't to ask twice.</i>",
+      "lines": true,
+      "qfa": "to اضافه را حذف کن.",
+      "a": "He told me that I must sign the form and I needn't ask twice.",
+      "afa": "بعد از must/needn't هرگز to نمی‌آید"
+    },
+    {
+      "k": "C",
+      "q": "Always ______ your files before you ______ an attachment you didn't expect.",
+      "op": [
+        "back up / open",
+        "back up on / open",
+        "open / back up"
+      ],
+      "qfa": "همیشه قبل از باز کردن فایل ضمیمه‌ی غیرمنتظره، از فایل‌ها بک‌آپ بگیر.",
+      "a": "back up / open",
+      "afa": "back up your files · open an attachment"
+    },
+    {
+      "k": "C",
+      "q": "This team runs on ______, not big exams.",
+      "op": [
+        "continuous assessment",
+        "continuously assessment",
+        "continuous assess"
+      ],
+      "qfa": "این تیم با ارزیابی پیوسته کار می‌کند، نه امتحان بزرگ.",
+      "a": "continuous assessment",
+      "afa": "continuous assessment"
+    },
+    {
+      "k": "C",
+      "q": "Don't try to ______ the way the team works in week one — ______ a small adjustment instead.",
+      "qfa": "هفته‌ی اول شیوه‌ی کار تیم را متحول نکن — به‌جایش یک تنظیم کوچک بکن.",
+      "a": "revolutionise … make",
+      "afa": "revolutionise the way · make an adjustment"
+    },
+    {
+      "k": "W",
+      "q": "I got a ______ about the ______ for choosing a health plan.",
+      "op": [
+        "reminder / deadline",
+        "reminder / prioritize",
+        "delegate / deadline"
+      ],
+      "qfa": "یک یادآور درباره‌ی ضرب‌الاجل انتخاب طرح بیمه گرفتم.",
+      "a": "reminder / deadline",
+      "afa": "reminder · deadline"
+    },
+    {
+      "k": "W",
+      "q": "No point anticipating week three — just ______ and do ______.",
+      "qfa": "فایده‌ای ندارد هفته‌ی سوم را پیش‌بینی کنی — فقط اولویت‌بندی کن و یکی‌یکی پیش برو.",
+      "a": "prioritize … one thing at a time",
+      "afa": "prioritize · one thing at a time"
+    },
+    {
+      "k": "X",
+      "q": "What's the main difference between a canvas app and a model-driven app?",
+      "op": [
+        "canvas is faster to build automatically",
+        "canvas gives exact control over layout; model-driven builds screens from data",
+        "they are the same thing"
+      ],
+      "qfa": "فرق اصلی اپ بوم‌محور و مدل‌محور چیست؟",
+      "a": "canvas gives exact control over layout; model-driven builds screens from data",
+      "afa": "PL-900 — canvas = دقیق و دستی · model-driven = خودکار از روی داده"
+    },
+    {
+      "k": "X",
+      "q": "What decides which Dataverse tables you can read on day one?",
+      "op": [
+        "your security role",
+        "your job title",
+        "the solution name"
+      ],
+      "qfa": "روز اول چه چیزی تعیین می‌کند کدام جدول‌ها را می‌توانی بخوانی؟",
+      "a": "your security role",
+      "afa": "PL-900 — security role دسترسی را کنترل می‌کند"
+    },
+    {
+      "k": "L",
+      "q": "Which word usually decides accept or refuse — the first word, or the reason at the end?",
+      "qfa": "کدام معمولاً قبول یا رد را نشان می‌دهد — کلمه‌ی اول، یا دلیل آخر جمله؟",
+      "a": "the first word",
+      "afa": "در ترک ۲-۱۲ — “I'd love to” / “Sorry, I…” از همان اول لحن را می‌دهند"
+    },
+    {
+      "k": "C",
+      "old": true,
+      "q": "The immediate cause was the filter; the ______ cause was that I had no test.",
+      "op": [
+        "underlying",
+        "under",
+        "direct"
+      ],
+      "qfa": "علت بلافاصله فیلتر بود؛ علت ریشه‌ای این بود که تستی نداشتم.",
+      "a": "underlying",
+      "afa": "از درس ۳ — the underlying cause"
+    },
+    {
+      "k": "W",
+      "old": true,
+      "q": "It was a ______, not an insoluble problem.",
+      "op": [
+        "setback",
+        "breakthrough",
+        "struggle"
+      ],
+      "qfa": "یک عقب‌گرد بود، نه مشکلی حل‌نشدنی.",
+      "a": "setback",
+      "afa": "از درس ۳ — setback"
+    },
+    {
+      "k": "P",
+      "q": "One sentence: <i>A colleague invited me to lunch. I had onboarding forms to finish. I said maybe next time.</i>",
+      "lines": true,
+      "qfa": "با یک نقل‌قول (told me / said) این را دوباره بگو.",
+      "a": "Model: A colleague told me the team was going to lunch, but I said I'd rather finish the onboarding forms first.",
+      "afa": "نمونه: همکارم گفت تیم می‌رود ناهار، ولی گفتم ترجیح می‌دم اول فرم‌های آشناسازی را تمام کنم."
+    }
+  ],
+  "_id": "u204",
+  "hue": [
+    280,
+    0.34,
+    0.25
+  ]
+}

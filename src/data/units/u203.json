@@ -1,0 +1,758 @@
+{
+  "n": 3,
+  "tag": "Module 2 · Unit 3",
+  "en": "Tell me about a time something went wrong",
+  "fa": "وقتی چیزی خراب شد — روایتِ یک خرابی، با زمان درست",
+  "src": [
+    [
+      "Grammar",
+      "GIU 6 · 15 · 16 · past continuous & past perfect"
+    ],
+    [
+      "Colloc.",
+      "Units 51–53 · start/finish, success/failure, cause/effect"
+    ],
+    [
+      "Words",
+      "WS 71 + 72 · success and failure, problems and solutions"
+    ],
+    [
+      "Listen",
+      "TfL Developing U10 · listening for reasons"
+    ]
+  ],
+  "books": {
+    "col": [
+      51,
+      52,
+      53
+    ],
+    "giu": [
+      6,
+      15,
+      16
+    ],
+    "ws": [
+      71,
+      72
+    ],
+    "dev": [
+      10
+    ]
+  },
+  "chain": {
+    "next": "Unit 4 · Your first week on the job"
+  },
+  "story": "مصاحبه‌ی رفتاری، سؤالی که همه از آن می‌ترسند: <b>“Tell me about a time something went wrong.”</b> مصاحبه‌گر دنبال یک فاجعه نیست؛ دنبال این است که ببیند آیا می‌توانی یک خرابی را <b>مرتب تعریف کنی</b>: چه در جریان بود، قبلش چه عوض شده بود، علت بلافاصله چه بود و علت ریشه‌ای چه. اینجا سه زمان گذشته کل روایت را نگه می‌دارند — و اگر قاطی شوند، شنونده نمی‌فهمد چه چیزی قبل از چه چیزی بود.",
+  "dialog": {
+    "h": "دیالوگ — سؤال سختِ مصاحبه‌ی رفتاری",
+    "lab": "Dialogue · GIU 6, 15, 16",
+    "lines": [
+      [
+        "Interviewer",
+        "Tell me about a time something [[c:went badly wrong]].",
+        "از وقتی بگو که چیزی [[c:بدجور خراب شد]]."
+      ],
+      [
+        "Arash",
+        "The anomaly screen. I [[g:was showing]] the app to a friend and [[g:was loading]] a month of expenses when it marked almost every row as risky.",
+        "صفحه‌ی ناهنجاری. اپ را به یک دوست [[g:نشان می‌دادم]] و یک ماه هزینه [[g:بار می‌زدم]] که تقریباً همه‌ی ردیف‌ها را پرخطر علامت زد."
+      ],
+      [
+        "Interviewer",
+        "What was the [[c:immediate cause]]?",
+        "[[c:علت بلافاصله]] چه بود؟"
+      ],
+      [
+        "Arash",
+        "The view [[g:had started]] reading pending records, so the baseline moved. The [[c:underlying cause]] was mine: I [[g:had changed]] the filter a week earlier and [[g:hadn't re-run]] the numbers.",
+        "ویو شروع [[g:کرده بود]] رکوردهای در انتظار را بخواند، پس خط پایه جابه‌جا شد. [[c:علت ریشه‌ای]] خودم بودم: یک هفته قبلش فیلتر را [[g:عوض کرده بودم]] و عددها را دوباره [[g:حساب نکرده بودم]]."
+      ],
+      [
+        "Interviewer",
+        "How long [[g:had it been]] wrong?",
+        "چه مدت غلط [[g:بوده بود]]؟"
+      ],
+      [
+        "Arash",
+        "It [[g:had been failing]] quietly for three days. Nothing crashed, and that's why nobody [[w:raised]] it. A silent wrong number [[c:does]] more [[c:damage]] than an error.",
+        "سه روز بی‌سروصدا [[g:خراب کار می‌کرد]]. هیچ چیز کرش نکرد، و به همین دلیل کسی آن را [[w:مطرح نکرد]]. یک عددِ غلطِ ساکت بیشتر از یک خطا [[c:خسارت می‌زند]]."
+      ],
+      [
+        "Interviewer",
+        "So what did you do first?",
+        "خب اول چه کردی؟"
+      ],
+      [
+        "Arash",
+        "I stopped the demo — an [[c:abrupt end]] is better than a wrong answer. Then I [[w:addressed]] it in order: reproduce it, fix the view, add a test that fails if the filter changes again.",
+        "دمو را قطع کردم — [[c:پایان ناگهانی]] از جواب غلط بهتر است. بعد به ترتیب [[w:سراغش رفتم]]: بازتولیدش کن، ویو را درست کن، و تستی اضافه کن که اگر فیلتر دوباره عوض شد رد شود."
+      ],
+      [
+        "Interviewer",
+        "Did it [[c:have]] any lasting [[c:impact]]?",
+        "[[c:اثر]] ماندگاری [[c:داشت]]؟"
+      ],
+      [
+        "Arash",
+        "An [[c:unforeseen outcome]], yes. The rewrite [[c:got off to a good start]] because I already knew where it hurt. I also [[w:overcame]] the habit of trusting one screen.",
+        "بله، یک [[c:نتیجه‌ی پیش‌بینی‌نشده]]. بازنویسی [[c:خوب شروع شد]] چون از قبل می‌دانستم کجا درد دارد. عادتِ اعتماد به یک صفحه را هم [[w:کنار گذاشتم]]."
+      ],
+      [
+        "Interviewer",
+        "Most candidates [[w:play]] this kind of thing [[w:down]].",
+        "بیشتر داوطلب‌ها چنین چیزی را [[w:کوچک جلوه می‌دهند]]."
+      ],
+      [
+        "Arash",
+        "That would [[c:miss the point]]. The [[w:setback]] showed me exactly where my testing was [[w:hopeless]] — and that's the part worth telling.",
+        "همان‌جا [[c:اصل موضوع گم می‌شود]]. آن [[w:عقب‌گرد]] دقیقاً نشانم داد تستِ من کجا [[w:به‌دردنخور]] بود — و همین تکه ارزش تعریف کردن دارد."
+      ]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — کدام قبل از کدام بود؟",
+    "lab": "Grammar in Use · 6, 15, 16",
+    "rows": [
+      [
+        "کاری در جریان بود، کاری ناگهان شد",
+        "I [[g:was loading]] the data <b>when</b> it [[g:broke]].",
+        "I loaded the data when it was breaking"
+      ],
+      [
+        "دو کار همزمان و کشدار",
+        "<b>While</b> I [[g:was testing]], the API [[g:was retrying]] in the background.",
+        "While I tested, the API retried"
+      ],
+      [
+        "قبل‌تر از آن نقطه‌ی گذشته",
+        "By the time I opened the log, the flow [[g:had already retried]] twice.",
+        "the flow already retried twice"
+      ],
+      [
+        "منفیِ همان — کاری که نکرده بودی",
+        "I [[g:hadn't re-run]] the numbers after the change.",
+        "I didn't re-run the numbers after the change*"
+      ],
+      [
+        "مدتِ کشدار، قبل از گذشته",
+        "It [[g:had been failing]] <b>for</b> three days <b>before</b> anyone noticed.",
+        "It was failing for three days before anyone noticed"
+      ],
+      [
+        "سوم‌شخص و شکل گذشته — غلط‌های خودت",
+        "all [[g:triggered]] · it [[g:answers]] · that [[g:validates]]",
+        "all trigger · it answer · that validate"
+      ]
+    ],
+    "elab": "Your own errors · RTF 3, 4 + speaking session",
+    "errors": [
+      [
+        "Everybody are waiting",
+        "is waiting"
+      ],
+      [
+        "I am need it",
+        "I need it"
+      ],
+      [
+        "he is seems",
+        "he seems"
+      ],
+      [
+        "Are you recognise",
+        "Do you recognise"
+      ],
+      [
+        "is lives",
+        "lives"
+      ],
+      [
+        "it answer",
+        "it answers"
+      ]
+    ],
+    "trigger": "<b class='en'>What were you doing when…?</b> ← گذشته‌ی استمراری. <b class='en'>What had changed before it broke?</b> ← گذشته‌ی کامل. قاعده‌ی ساده‌ی روایت: صحنه را با <span class='en'>was/were doing</span> بچین، علت را با <span class='en'>had done</span> عقب‌تر ببر، و خودِ خرابی را با گذشته‌ی ساده بگو."
+  },
+  "colls": {
+    "h": "کالوکیشن — شروع و پایان · موفقیت و شکست · علت و اثر",
+    "lab": "Collocations in Use · Units 51, 52, 53",
+    "groups": [
+      {
+        "h": "cause",
+        "n": "رویداد و حس منفی",
+        "ok": [
+          "cause damage",
+          "cause chaos"
+        ],
+        "no": "cause a progress"
+      },
+      {
+        "h": "bring about / spark off",
+        "n": "تغییر، یا جرقه‌ی ناگهانی",
+        "ok": [
+          "bring about a change",
+          "spark off a discussion"
+        ],
+        "no": "bring about a damage"
+      },
+      {
+        "h": "cause ↔ effect",
+        "n": "ریشه، اثر، نتیجه",
+        "ok": [
+          "the underlying cause",
+          "adverse effects",
+          "an unforeseen outcome"
+        ],
+        "no": "the under cause"
+      },
+      {
+        "h": "failure",
+        "n": "خرابی و شکست",
+        "ok": [
+          "go badly wrong",
+          "fail miserably",
+          "a recipe for disaster"
+        ],
+        "no": "go badly false"
+      }
+    ],
+    "rows": [
+      [
+        "the immediate cause",
+        "علت بلافاصله",
+        "the immediately cause"
+      ],
+      [
+        "the underlying cause",
+        "علت ریشه‌ای",
+        "the under cause"
+      ],
+      [
+        "cause damage",
+        "خسارت زدن",
+        null
+      ],
+      [
+        "cause chaos",
+        "همه‌چیز را به‌هم ریختن",
+        "make chaos"
+      ],
+      [
+        "spark off",
+        "جرقه زدن، راه انداختن",
+        "spark up"
+      ],
+      [
+        "produce the opposite effect",
+        "نتیجه‌ی معکوس دادن",
+        "produce the reverse affect"
+      ],
+      [
+        "adverse effects",
+        "اثرهای منفی",
+        "adverse affects"
+      ],
+      [
+        "an unforeseen outcome",
+        "نتیجه‌ی پیش‌بینی‌نشده",
+        "an unforeseen output"
+      ],
+      [
+        "minimise the impact",
+        "اثر را به کمترین رساندن",
+        "minimise the affect"
+      ],
+      [
+        "go badly wrong",
+        "بدجور خراب شدن",
+        "go bad wrong"
+      ],
+      [
+        "a recipe for disaster",
+        "دستورِ پختِ فاجعه",
+        "a receipt for disaster"
+      ],
+      [
+        "miss the point",
+        "اصل موضوع را نگرفتن",
+        "lose the point"
+      ],
+      [
+        "get off to a good start",
+        "خوب شروع شدن",
+        "get off a good start"
+      ],
+      [
+        "an abrupt end",
+        "پایان ناگهانی",
+        "an abrupt finish"
+      ]
+    ],
+    "ex": [
+      [
+        "The [[c:immediate cause]] was the filter, but the [[c:underlying cause]] was that I [[g:hadn't re-run]] the numbers.",
+        "[[c:علت بلافاصله]] فیلتر بود، ولی [[c:علت ریشه‌ای]] این بود که عددها را دوباره [[g:حساب نکرده بودم]]."
+      ],
+      [
+        "Shipping a silent wrong number is [[c:a recipe for disaster]]: it [[c:causes damage]] long before it [[c:causes chaos]].",
+        "بیرون دادن یک عددِ غلطِ ساکت [[c:دستور پخت فاجعه]] است: خیلی قبل از آن‌که [[c:همه‌چیز را به‌هم بریزد]]، [[c:خسارت می‌زند]]."
+      ],
+      [
+        "One test [[c:brought about a change]] in how I work, and the rewrite [[c:got off to a good start]].",
+        "یک تست [[c:تغییری ایجاد کرد]] در شکل کار کردنم، و بازنویسی [[c:خوب شروع شد]]."
+      ]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — موفقیت و شکست · مشکل و راه‌حل",
+    "lab": "Word Skills · 71 + 72",
+    "sets": [
+      {
+        "u": "71 · Success and failure",
+        "chips": [
+          [
+            "obstacle",
+            "مانع",
+            "B2"
+          ],
+          [
+            "overcome",
+            "از پس چیزی برآمدن",
+            "B2"
+          ],
+          [
+            "breakthrough",
+            "گشایش، پیشرفت کلیدی",
+            "C1"
+          ],
+          [
+            "boast",
+            "پُز دادن",
+            "B2"
+          ],
+          [
+            "go downhill",
+            "سرازیری رفتن، بدتر شدن",
+            "B2"
+          ],
+          [
+            "let sb down",
+            "کسی را نا‌امید کردن",
+            "B1"
+          ],
+          [
+            "get nowhere",
+            "به‌جایی نرسیدن",
+            "B2"
+          ],
+          [
+            "hopeless",
+            "به‌دردنخور، ناامیدکننده",
+            "B1"
+          ]
+        ]
+      },
+      {
+        "u": "72 · Problems and solutions",
+        "chips": [
+          [
+            "a minor problem",
+            "مشکل کوچک",
+            "B1"
+          ],
+          [
+            "a major problem",
+            "مشکل بزرگ",
+            "B1"
+          ],
+          [
+            "an insoluble problem",
+            "مشکل حل‌نشدنی",
+            "C1"
+          ],
+          [
+            "arise",
+            "پیش آمدن (مشکل)",
+            "B2"
+          ],
+          [
+            "raise a problem",
+            "مشکلی را مطرح کردن",
+            "B2"
+          ],
+          [
+            "address a problem",
+            "به مشکلی پرداختن",
+            "B2"
+          ],
+          [
+            "tackle a problem",
+            "دست به کار شدن روی مشکل",
+            "B2"
+          ],
+          [
+            "resolve",
+            "حل کردن",
+            "B2"
+          ],
+          [
+            "escalate",
+            "بزرگ‌تر و بدتر شدن",
+            "C1"
+          ],
+          [
+            "setback",
+            "عقب‌گرد، ضربه به پیشرفت",
+            "C1"
+          ],
+          [
+            "play sth down",
+            "کوچک جلوه دادن",
+            "C1"
+          ],
+          [
+            "keep things in perspective",
+            "اندازه‌ی واقعی چیزها را نگه داشتن",
+            "C1"
+          ]
+        ]
+      }
+    ],
+    "ex": [
+      [
+        "The bug [[w:arose]] on a Friday, [[w:escalated]] over the weekend, and I [[w:addressed]] it on Monday.",
+        "باگ جمعه [[w:پیش آمد]]، آخر هفته [[w:بزرگ‌تر شد]]، و دوشنبه [[w:سراغش رفتم]]."
+      ],
+      [
+        "It was a [[w:setback]], not an [[w:insoluble problem]] — the trick is to [[w:keep things in perspective]].",
+        "یک [[w:عقب‌گرد]] بود، نه [[w:مشکلی حل‌نشدنی]] — هنر این است که [[w:اندازه‌ی واقعی‌اش را نگه داری]]."
+      ],
+      [
+        "Don't [[w:boast]] and don't [[w:play]] it [[w:down]]: say which [[w:obstacle]] you [[w:overcame]].",
+        "نه [[w:پُز بده]] نه [[w:کوچکش کن]]: بگو از پس کدام [[w:مانع]] [[w:برآمدی]]."
+      ]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: خرابی را بخوان، حدس نزن",
+    "lab": "Microsoft PL-400 · reading",
+    "exam": "PL-400",
+    "areas": [
+      "Implement Power Apps improvements (debug, optimise, Monitor)",
+      "Develop integrations (Dataverse API, Power Automate, events)"
+    ],
+    "terms": [
+      [
+        "Monitor",
+        "ابزار Monitor",
+        "PL-400"
+      ],
+      [
+        "trace log",
+        "لاگ ردیابی",
+        "PL-400"
+      ],
+      [
+        "exception handling",
+        "مدیریت استثنا",
+        "PL-400"
+      ],
+      [
+        "retry policy",
+        "سیاست تلاش مجدد",
+        "PL-400"
+      ],
+      [
+        "throttling limit",
+        "سقف محدودسازی درخواست",
+        "PL-400"
+      ],
+      [
+        "correlation ID",
+        "شناسه‌ی همبستگی",
+        "PL-400"
+      ],
+      [
+        "telemetry",
+        "داده‌های تله‌متری",
+        "PL-400"
+      ],
+      [
+        "idempotent",
+        "خودتکرارپذیرِ بی‌اثر",
+        "PL-400"
+      ]
+    ],
+    "read": {
+      "t": "Read the failure, don't guess it",
+      "body": [
+        [
+          "Every PL-400 debugging question starts from the same place: what does the platform already record? [[x:Monitor]] replays a canvas or model-driven session event by event, so you see the call that [[c:went badly wrong]] instead of guessing which screen [[w:let]] you [[w:down]].",
+          "هر سؤال دیباگ در PL-400 از یک جا شروع می‌شود: پلتفرم خودش چه چیزی را ثبت کرده؟ [[x:Monitor]] یک نشست کنوس یا مدل‌محور را رویداد به رویداد بازپخش می‌کند، پس همان فراخوانی را می‌بینی که [[c:بدجور خراب شد]]، نه این‌که حدس بزنی کدام صفحه [[w:ناامیدت کرد]]."
+        ],
+        [
+          "A plug-in writes to the [[x:trace log]], and a cloud flow keeps every run. If a run failed at three in the morning, the [[x:telemetry]] is the only witness. Put a [[x:correlation ID]] on the request and the same failure can be followed from app to flow to Azure Function.",
+          "پلاگین در [[x:لاگ ردیابی]] می‌نویسد و فلوی ابری همه‌ی اجراها را نگه می‌دارد. اگر اجرایی ساعت سه صبح شکست خورده باشد، [[x:تله‌متری]] تنها شاهد ماجراست. یک [[x:شناسه‌ی همبستگی]] روی درخواست بگذار تا همان خرابی را از اپ به فلو و از آن‌جا به Azure Function دنبال کنی."
+        ],
+        [
+          "Then there is the failure the exam loves: the [[x:throttling limit]]. Too many calls in a short window and Dataverse answers 429. Without a [[x:retry policy]] the flow [[c:fails miserably]]; with one, the [[x:adverse effects]] are [[c:minimised]] — as long as the operation is [[x:idempotent]], so a second attempt [[c:causes]] no [[c:damage]].",
+          "بعد خرابی‌ای که آزمون عاشقش است: [[x:سقف محدودسازی درخواست]]. تعداد زیادی فراخوان در بازه‌ی کوتاه و Dataverse جواب 429 می‌دهد. بدون [[x:سیاست تلاش مجدد]]، فلو [[c:کاملاً شکست می‌خورد]]؛ با آن، [[x:اثرهای منفی]] [[c:به کمترین می‌رسد]] — به شرطی که عملیات [[x:خودتکرارپذیرِ بی‌اثر]] باشد تا تلاش دوم [[c:خسارتی نزند]]."
+        ],
+        [
+          "So [[x:exception handling]] is not politeness. Catch the error, write what you know into the [[x:trace log]], and let the caller see a real message. That is the difference between an [[w:insoluble problem]] and a [[w:minor problem]] you can [[w:address]] on Monday morning.",
+          "پس [[x:مدیریت استثنا]] ادب نیست. خطا را بگیر، آنچه می‌دانی را در [[x:لاگ ردیابی]] بنویس، و بگذار فراخوان یک پیام واقعی ببیند. همین فرق است بین یک [[w:مشکل حل‌نشدنی]] و یک [[w:مشکل کوچک]] که دوشنبه صبح می‌توانی [[w:سراغش بروی]]."
+        ]
+      ],
+      "qs": [
+        "Which tool would you open first, and why: Monitor, the trace log, or the flow run history?",
+        "What does a retry policy assume about the operation it retries?",
+        "In two sentences: how would you find out today whether your app is failing silently?"
+      ]
+    },
+    "why": "سؤال «چطور دیباگ می‌کنی؟» هم در آزمون می‌آید هم در مصاحبه‌ی فنی. جواب خوب اسم ابزار می‌آورد، نه احساس: <span class='en'>Monitor · trace log · run history · correlation ID</span>."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: دلیل، بعدِ خودِ خبر",
+    "lab": "Tactics for Listening · Developing · Unit 10 · Keeping Fit",
+    "tactic": "گوینده اول می‌گوید <b>چه کار می‌کند</b>، بعد <b>چرا</b>. دلیل تقریباً همیشه با <span class='en'>because · that's why · the main thing is · it's just that</span> می‌آید. اول کار را بگیر، بعد فقط دنبال همین نشانه‌ها بگرد — نه همه‌ی جمله.",
+    "where": "<div class='en'>Book: Unit 10 “Keeping Fit” · pages 38–41</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 07–11</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-8</span> — فقط همین یک ترک:</b> Listening 2 دو بار پخش می‌شود. بار اول Task 1: هر نفر چه ورزشی را <span class='en'>now</span> ترجیح می‌دهد. بار دوم Task 2: <b>دلیلش</b>. برای هر نفر دلیل را در سه کلمه بنویس.",
+      "<b>یک نکته‌ی تلفظی همان ترک:</b> <span class='en'>used to</span> را <span class='en'>/juːstə/</span> می‌گویند — یک کلمه، نه دو تا. همین را در جمله‌ی خودت تمرین کن: <span class='en'>I used to run the stats in the app.</span>"
+    ],
+    "rec": {
+      "h": "ضبط خودت — روایت یک خرابی در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“Tell me about a time something went wrong.”</span> جواب بده. ۹۰ ثانیه، بدون نوشتن، یک‌بار.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار <span class='en'>was/were doing</span> لازم بود و نگفتی؛ چند جمله‌ی <span class='en'>had done</span> داشتی؛ چند بار d پایانی را خوردی (<span class='en'>changed · triggered · stored</span>).",
+        "<b>۳ · دوباره، با این قالب:</b> یک جمله صحنه (<span class='en'>I was …ing when …</span>) · یک جمله علتِ عقب‌تر (<span class='en'>I had changed …</span>) · یک جمله مدت (<span class='en'>it had been failing for …</span>) · یک جمله کاری که کردی · یک جمله نتیجه.",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج. اگر ترتیب زمانی‌ات با آن‌ها یکی بود، جواب آماده است."
+      ],
+      "watch": [
+        [
+          "anonymity detection",
+          "anomaly detection",
+          "اَنامِلی"
+        ],
+        [
+          "recancelled",
+          "reconciled",
+          "رِ-کان-سایلد"
+        ],
+        [
+          "small ledger",
+          "Smart Ledger",
+          "اسمارت لِ-جِر"
+        ],
+        [
+          "use a city",
+          "used a CTE",
+          "سی-تی-ای"
+        ],
+        [
+          "power ups",
+          "Power Apps",
+          "جمع است — پاوِر اَپس"
+        ],
+        [
+          "tax semi risk",
+          "tax summary",
+          "—"
+        ],
+        [
+          "unemployed submits",
+          "an employee submits",
+          "دو کلمه به هم چسبید"
+        ]
+      ],
+      "compare": [
+        [
+          "I was loading a month of expenses when the screen marked almost every row as risky.",
+          "یک ماه هزینه بار می‌زدم که صفحه تقریباً همه‌ی ردیف‌ها را پرخطر علامت زد."
+        ],
+        [
+          "I had changed the filter a week earlier and hadn't re-run the numbers.",
+          "یک هفته قبلش فیلتر را عوض کرده بودم و عددها را دوباره حساب نکرده بودم."
+        ],
+        [
+          "It had been failing quietly for three days, so nothing crashed and nobody raised it.",
+          "سه روز بی‌سروصدا خراب کار می‌کرد، پس هیچ چیز کرش نکرد و کسی مطرحش نکرد."
+        ],
+        [
+          "The immediate cause was the filter; the underlying cause was that I had no test on the view.",
+          "علت بلافاصله فیلتر بود؛ علت ریشه‌ای این بود که هیچ تستی روی ویو نداشتم."
+        ]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Phone · Email · Hard question",
+    "tasks": [
+      {
+        "k": "Phone · 90 sec",
+        "t": "ریکروتر تلفنی می‌پرسد <span class='en'>“Tell me about a time something went wrong.”</span> با قالب پنج‌جمله‌ای بخش شنیدن جواب بده: صحنه، علتِ عقب‌تر، مدت، کاری که کردی، نتیجه. دست‌کم سه ترکیب از <span class='en'>cause · effect · outcome</span> بیاور. ضبط کن."
+      },
+      {
+        "k": "Email · 5 lines",
+        "t": "ایمیل گزارش خرابی به مدیر: خط اول چه چیزی خراب بود و از کِی، خط دوم <span class='en'>the immediate cause</span>، خط سوم <span class='en'>the underlying cause</span>، خط چهارم کاری که کردی، خط پنجم چه چیزی جلوی تکرارش را می‌گیرد. بدون معذرت‌خواهی طولانی.",
+        "lines": 5
+      },
+      {
+        "k": "Hard question",
+        "t": "مصاحبه‌گر می‌گوید <span class='en'>“Why didn't your tests catch it?”</span> — جوابی بنویس که یک ضعف واقعی را بپذیرد، آن را <span class='en'>play down</span> نکند، و بگوید حالا چه چیزی عوض شده است.",
+        "lines": 3
+      }
+    ]
+  },
+  "plan": {
+    "dialog": 1,
+    "grammar": 1,
+    "colls": 2,
+    "vocab": 2,
+    "cert": 3,
+    "listen": 3,
+    "prod": 3
+  },
+  "take": "The immediate cause was a filter I had changed; the underlying cause was that the view had no test — so the first thing I added was the test, not the fix.",
+  "quiz": [
+    {
+      "k": "G",
+      "q": "I ______ the data when the screen ______ every row as risky.",
+      "op": [
+        "loaded / was marking",
+        "was loading / marked",
+        "had loaded / marked"
+      ],
+      "qfa": "داده را بار می‌زدم که صفحه هر ردیف را پرخطر علامت زد.",
+      "a": "was loading / marked",
+      "afa": "کارِ در جریان ← استمراری · رویدادِ ناگهانی ← گذشته‌ی ساده"
+    },
+    {
+      "k": "G",
+      "q": "By the time I opened the log, the flow ______ twice.",
+      "op": [
+        "retried",
+        "had already retried",
+        "was retrying"
+      ],
+      "qfa": "تا وقتی لاگ را باز کردم، فلو دو بار تلاش کرده بود.",
+      "a": "had already retried",
+      "afa": "قبل‌تر از آن نقطه‌ی گذشته ← گذشته‌ی کامل"
+    },
+    {
+      "k": "G",
+      "q": "It ______ quietly for three days before anyone noticed.",
+      "qfa": "سه روز بی‌سروصدا خراب کار می‌کرد تا کسی متوجه شد.",
+      "a": "had been failing",
+      "afa": "مدتِ کشدار قبل از گذشته ← had been + ing"
+    },
+    {
+      "k": "G",
+      "q": "Correct it: <i>I didn't re-run the numbers after I changed the filter, so the baseline was already wrong when I load the data.</i>",
+      "lines": true,
+      "qfa": "زمان‌ها را مرتب کن.",
+      "a": "I hadn't re-run the numbers after I had changed the filter, so the baseline was already wrong when I was loading the data.",
+      "afa": "اول عوض کردن، بعد حساب‌نکردن، بعد صحنه‌ی بارگذاری"
+    },
+    {
+      "k": "C",
+      "q": "The filter was the ______ cause; no test on the view was the ______ cause.",
+      "op": [
+        "immediate / underlying",
+        "underlying / immediate",
+        "direct / immediately"
+      ],
+      "qfa": "فیلتر علت بلافاصله بود؛ نبودِ تست روی ویو علت ریشه‌ای.",
+      "a": "immediate / underlying",
+      "afa": "immediate cause ↔ underlying cause"
+    },
+    {
+      "k": "C",
+      "q": "A retry policy ______ the ______ effects of throttling.",
+      "qfa": "سیاست تلاش مجدد اثرهای منفی محدودسازی را کم می‌کند.",
+      "a": "minimises … adverse",
+      "afa": "minimise the impact · adverse effects"
+    },
+    {
+      "k": "W",
+      "q": "The bug ______ on Friday and ______ over the weekend.",
+      "op": [
+        "arose / escalated",
+        "raised / escalated",
+        "arose / exaggerated"
+      ],
+      "qfa": "باگ جمعه پیش آمد و آخر هفته بزرگ‌تر شد.",
+      "a": "arose / escalated",
+      "afa": "arise = پیش آمدن · raise = مطرح کردن · escalate = بدتر شدن"
+    },
+    {
+      "k": "W",
+      "q": "It was a ______, not an insoluble problem.",
+      "op": [
+        "setback",
+        "breakthrough",
+        "struggle"
+      ],
+      "qfa": "یک عقب‌گرد بود، نه مشکلی حل‌نشدنی.",
+      "a": "setback",
+      "afa": "setback — چیزی که پیشرفت را عقب می‌اندازد"
+    },
+    {
+      "k": "X",
+      "q": "A cloud flow gets 429 from Dataverse. What is the design answer?",
+      "op": [
+        "call it more often",
+        "add a retry policy and keep the operation idempotent",
+        "remove the connector"
+      ],
+      "qfa": "فلو از Dataverse جواب 429 می‌گیرد. جواب طراحی چیست؟",
+      "a": "add a retry policy and keep the operation idempotent",
+      "afa": "PL-400 — throttling ← retry policy + عملیات خودتکرارپذیر"
+    },
+    {
+      "k": "L",
+      "q": "Write the three phrases that signal a reason is coming.",
+      "qfa": "سه نشانه‌ی «دلیل دارد می‌آید» را بنویس.",
+      "a": "because · that's why · the main thing is",
+      "afa": "در ترک ۲-۸ همین‌ها دلیل هر نفر را علامت می‌دهند"
+    },
+    {
+      "k": "C",
+      "old": true,
+      "q": "I ______ some tests before I ______ a decision.",
+      "op": [
+        "did / made",
+        "made / did",
+        "took / made"
+      ],
+      "qfa": "قبل از تصمیم‌گیری چند تست انجام دادم.",
+      "a": "did / made",
+      "afa": "از درس ۲ — do tests · make a decision"
+    },
+    {
+      "k": "W",
+      "old": true,
+      "q": "I ______ the first version, then ______ it after feedback.",
+      "qfa": "نسخه‌ی اول را عرضه کردم، بعد از بازخورد وفقش دادم.",
+      "a": "launched … adapted",
+      "afa": "از درس ۲ — launch · adapt"
+    },
+    {
+      "k": "P",
+      "q": "One sentence: <i>The filter changed. The baseline moved. Nobody noticed for three days. I added a test.</i>",
+      "lines": true,
+      "qfa": "با had + so یک جمله بساز.",
+      "a": "Model: Because I had changed the filter, the baseline had moved for three days before anyone noticed — so the first thing I added was a test.",
+      "afa": "نمونه: چون فیلتر را عوض کرده بودم، خط پایه سه روز جابه‌جا مانده بود تا کسی متوجه شد — پس اولین چیزی که اضافه کردم یک تست بود."
+    }
+  ],
+  "_id": "u203",
+  "hue": [
+    18,
+    0.52,
+    0.24
+  ]
+}

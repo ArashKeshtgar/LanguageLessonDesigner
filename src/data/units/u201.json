@@ -1,0 +1,748 @@
+{
+  "n": 1,
+  "hue": [
+    205,
+    0.45,
+    0.23
+  ],
+  "tag": "Module 2 · Unit 1",
+  "en": "So, what do you do?",
+  "fa": "خب، کارت چیه؟ — معرفی خودت بدون «very»",
+  "src": [
+    [
+      "Grammar",
+      "GIU 1–4 · present simple / continuous"
+    ],
+    [
+      "Colloc.",
+      "Units 6 + 30 · adverbs & work"
+    ],
+    [
+      "Words",
+      "WS 65 + 66 · careers, ways of working"
+    ],
+    [
+      "Listen",
+      "TfL Developing U9 · jobs"
+    ]
+  ],
+  "books": {
+    "col": [
+      6,
+      30
+    ],
+    "giu": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ws": [
+      65,
+      66
+    ],
+    "dev": [
+      9
+    ]
+  },
+  "chain": {
+    "next": "Unit 2 · Telling your project story"
+  },
+  "story": "ساعت ۳:۲۰ بعدازظهر است و شیفت انبار تازه تمام شده. یک آژانس کاریابی فناوری زنگ می‌زند و اولین سؤالش همان جمله‌ای است که همه می‌پرسند: <b>So, what do you do?</b> سی ثانیه داری بگویی الان کجایی، این روزها روی چه کار می‌کنی، و چه می‌خواهی — بی آن‌که ده بار «very» بگویی.",
+  "dialog": {
+    "h": "دیالوگ — تلفن آژانس کاریابی",
+    "lab": "Dialogue · GIU 1–4",
+    "lines": [
+      [
+        "Recruiter",
+        "Thanks for calling back. So, what [[g:do you do]]?",
+        "ممنون که تماس گرفتی. خب، [[g:کارت چیه]]؟"
+      ],
+      [
+        "Arash",
+        "I [[g:work]] as a material handler — a [[c:steady job]], but not the one I want. These days I[[g:'m building]] business apps on Power Platform and Azure.",
+        "به‌عنوان متریال‌هندلر [[g:کار می‌کنم]] — یک [[c:کار باثبات]]، ولی نه آن‌که می‌خواهم. این روزها [[g:دارم]] اپ‌های تجاری روی Power Platform و Azure [[g:می‌سازم]]."
+      ],
+      [
+        "Recruiter",
+        "And what [[g:are you working on]] right now?",
+        "و همین حالا [[g:روی چی کار می‌کنی]]؟"
+      ],
+      [
+        "Arash",
+        "SmartLedgerAI. It [[g:checks]] every expense against its own category and flags anything [[c:highly unusual]].",
+        "SmartLedgerAI. هر هزینه را با دسته‌ی خودش [[g:مقایسه می‌کند]] و هر چیزِ [[c:خیلی غیرعادی]] را علامت می‌زند."
+      ],
+      [
+        "Recruiter",
+        "Does it call the AI for every record?",
+        "برای هر رکورد هوش مصنوعی را صدا می‌زند؟"
+      ],
+      [
+        "Arash",
+        "No — that would be [[c:ridiculously expensive]]. It only [[g:calls]] the model when the risk isn't low.",
+        "نه — [[c:به‌طرز عجیبی گران]] می‌شد. فقط وقتی ریسک پایین نیست مدل را [[g:صدا می‌زند]]."
+      ],
+      [
+        "Recruiter",
+        "Good instinct. The role is in the private [[w:sector]], mostly [[w:finance]]. It's a [[c:demanding job]], but the [[w:prospects]] are good.",
+        "غریزه‌ی خوبی داری. نقش در [[w:بخش]] خصوصی است، بیشتر [[w:مالی]]. [[c:کار سنگینی]] است، ولی [[w:چشم‌انداز]] خوبی دارد."
+      ],
+      [
+        "Arash",
+        "That's what I[[g:'m looking for]]. I [[g:have]] a finance background, and I[[g:'m]] [[c:deeply committed]] to that side of the work.",
+        "همین را [[g:می‌خواهم]]. سابقه‌ی مالی [[g:دارم]] و به این سمتِ کار [[c:عمیقاً متعهدم]]."
+      ],
+      [
+        "Recruiter",
+        "Would you be [[c:available to start work]] in two weeks? And can you [[c:work closely with]] a finance team?",
+        "[[c:برای شروع کار]] دو هفته دیگر [[c:آماده‌ای]]؟ و می‌توانی [[c:نزدیک]] با یک تیم مالی [[c:کار کنی]]؟"
+      ],
+      [
+        "Arash",
+        "Yes. I [[c:apply for]] roles like this every week, and I [[c:work well in a team]] — but I also [[w:use my initiative]] when nobody's around.",
+        "بله. هر هفته برای چنین نقش‌هایی [[c:درخواست می‌دهم]] و [[c:در تیم خوب کار می‌کنم]] — ولی وقتی کسی نیست هم [[w:از ابتکار خودم استفاده می‌کنم]]."
+      ],
+      [
+        "Recruiter",
+        "The market [[g:is]] [[c:highly competitive]], so I[[g:'ll]] be honest with you.",
+        "بازار [[c:بسیار رقابتی]] است، پس رو راست [[g:می‌گویم]]."
+      ],
+      [
+        "Arash",
+        "I [[g:know]]. But I [[c:strongly believe]] my projects [[g:show]] what I can do.",
+        "[[g:می‌دانم]]. ولی [[c:قویاً باور دارم]] پروژه‌هایم [[g:نشان می‌دهند]] چه کاری از من برمی‌آید."
+      ]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — «do you do» یا «are you doing»؟",
+    "lab": "Grammar in Use · 1–4",
+    "rows": [
+      [
+        "شغل، عادت، برنامه‌ی ثابت",
+        "I [[g:start]] at six every morning.",
+        "I am starting at six every morning"
+      ],
+      [
+        "کارِ این روزها، موقت، در جریان",
+        "These days I[[g:'m building]] a portfolio.",
+        "These days I build a portfolio"
+      ],
+      [
+        "فعل‌های حالت: know · need · have · seem · believe",
+        "I [[g:need]] Canadian experience.",
+        "I am needing Canadian experience"
+      ],
+      [
+        "think = نظر  /  در جریانِ فکر کردن",
+        "I [[g:think]] it's a good fit. · I[[g:'m thinking]] about PL-400.",
+        "I am thinking it's a good fit"
+      ],
+      [
+        "سؤال از شغل ← do  /  از کارِ الان ← are",
+        "What [[g:do you do]]? · What [[g:are you doing]]?",
+        "What are you do?"
+      ]
+    ],
+    "elab": "Your own errors · RTF 3–4",
+    "errors": [
+      [
+        "Everybody are waiting",
+        "is waiting"
+      ],
+      [
+        "I am need it",
+        "I need it"
+      ],
+      [
+        "he is seems",
+        "he seems"
+      ],
+      [
+        "Are you recognise",
+        "Do you recognise"
+      ],
+      [
+        "is lives",
+        "lives"
+      ],
+      [
+        "it answer",
+        "it answers"
+      ]
+    ],
+    "trigger": "<b class='en'>What do you do?</b> = شغلت چیست. <b class='en'>What are you working on?</b> = پروژه‌ی جاری ← با ing جواب بده. جواب خوب هر دو را دارد: یکی ساده، یکی ing."
+  },
+  "colls": {
+    "h": "کالوکیشن — محور درس: کار، شغل، مسیر شغلی و قیدهای تشدید",
+    "lab": "Collocations in Use · Units 6 + 30",
+    "groups": [
+      {
+        "h": "highly",
+        "n": "احتمال یا صفت مثبت",
+        "ok": [
+          "highly competitive",
+          "highly effective"
+        ],
+        "no": "highly exhausted"
+      },
+      {
+        "h": "utterly · absolutely",
+        "n": "صفت‌های «ته خط»",
+        "ok": [
+          "utterly exhausted",
+          "absolutely convinced"
+        ],
+        "no": "absolutely tired"
+      },
+      {
+        "h": "deeply · bitterly",
+        "n": "احساس و ناامیدی",
+        "ok": [
+          "deeply committed",
+          "bitterly disappointed"
+        ],
+        "no": "deeply successful"
+      },
+      {
+        "h": "strongly",
+        "n": "فعل‌های نظر",
+        "ok": [
+          "strongly believe",
+          "strongly recommend"
+        ],
+        "no": "strongly love"
+      },
+      {
+        "h": "ridiculously",
+        "n": "عجیب و غیرمنطقی",
+        "ok": [
+          "ridiculously expensive"
+        ]
+      },
+      {
+        "h": "have a job",
+        "n": "کار = job؛ work شمردنی نیست",
+        "ok": [
+          "have a job"
+        ],
+        "no": "have a work"
+      }
+    ],
+    "rows": [
+      [
+        "apply for a job",
+        "برای کاری درخواست دادن",
+        "apply to a job"
+      ],
+      [
+        "a steady job",
+        "کار باثبات",
+        null
+      ],
+      [
+        "a demanding job",
+        "کار سنگین و پرفشار",
+        null
+      ],
+      [
+        "a fulfilling job",
+        "کار رضایت‌بخش",
+        null
+      ],
+      [
+        "a permanent job",
+        "کار دائم",
+        null
+      ],
+      [
+        "carry out work",
+        "کار را انجام دادن",
+        "make work"
+      ],
+      [
+        "take on work",
+        "کار قبول کردن",
+        "take work on you"
+      ],
+      [
+        "be available to start work",
+        "آماده‌ی شروع کار بودن",
+        null
+      ],
+      [
+        "work closely with",
+        "نزدیک با کسی کار کردن",
+        "work close with"
+      ],
+      [
+        "a good team player",
+        "کسی که در تیم خوب کار می‌کند",
+        null
+      ],
+      [
+        "a promising career",
+        "مسیر شغلی امیدبخش",
+        null
+      ],
+      [
+        "climb the career ladder",
+        "پله‌های شغلی را بالا رفتن",
+        null
+      ],
+      [
+        "hand in your notice",
+        "استعفا دادن",
+        "give your notice in advance"
+      ]
+    ],
+    "ex": [
+      [
+        "After a nine-hour shift I'm [[c:utterly exhausted]] — but I still [[c:carry out]] two hours of project work.",
+        "بعد از شیفت نُه‌ساعته [[c:کاملاً خسته‌ام]] — ولی باز دو ساعت کار پروژه [[c:انجام می‌دهم]]."
+      ],
+      [
+        "I was [[c:bitterly disappointed]] when the interview got cancelled, but I [[c:applied for]] three more roles that week.",
+        "وقتی مصاحبه لغو شد [[c:سخت ناامید]] شدم، ولی همان هفته برای سه نقش دیگر [[c:درخواست دادم]]."
+      ]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — مسیر شغلی و شکل‌های کار",
+    "lab": "Word Skills · 65 + 66",
+    "sets": [
+      {
+        "u": "65 · Careers",
+        "chips": [
+          [
+            "sector",
+            "بخش (خصوصی/دولتی)",
+            "B2"
+          ],
+          [
+            "finance",
+            "مالی",
+            "B1"
+          ],
+          [
+            "recruitment",
+            "کاریابی",
+            "B2"
+          ],
+          [
+            "qualifications",
+            "مدارک",
+            "B1"
+          ],
+          [
+            "register with",
+            "ثبت‌نام کردن در",
+            "B2"
+          ],
+          [
+            "prospects",
+            "چشم‌انداز شغلی",
+            "B2"
+          ],
+          [
+            "be appointed",
+            "منصوب شدن",
+            "B2"
+          ],
+          [
+            "be promoted",
+            "ترفیع گرفتن",
+            "B2"
+          ],
+          [
+            "be transferred",
+            "منتقل شدن",
+            "B2"
+          ],
+          [
+            "be made redundant",
+            "تعدیل شدن",
+            "C1"
+          ],
+          [
+            "out of work",
+            "بیکار",
+            "B2"
+          ]
+        ]
+      },
+      {
+        "u": "66 · Ways of working",
+        "chips": [
+          [
+            "freelance",
+            "آزادکار",
+            "B2"
+          ],
+          [
+            "accountable to",
+            "پاسخگو به",
+            "C1"
+          ],
+          [
+            "insight into",
+            "درک درونی از",
+            "C1"
+          ],
+          [
+            "guaranteed",
+            "تضمین‌شده",
+            "B2"
+          ],
+          [
+            "additional",
+            "اضافه",
+            "B1"
+          ],
+          [
+            "encounter",
+            "برخوردن به",
+            "C1"
+          ],
+          [
+            "get in the way of",
+            "مزاحم چیزی شدن",
+            "B2"
+          ],
+          [
+            "fit in",
+            "جا افتادن در جمع",
+            "B2"
+          ],
+          [
+            "collaboration",
+            "همکاری",
+            "B2"
+          ],
+          [
+            "initiative",
+            "ابتکار",
+            "B2"
+          ],
+          [
+            "diverse",
+            "متنوع",
+            "B2"
+          ],
+          [
+            "feel valued",
+            "حس ارزشمندی",
+            "B2"
+          ]
+        ]
+      }
+    ],
+    "ex": [
+      [
+        "I'm [[w:registered with]] two [[w:recruitment]] agencies and I [[w:apply for]] roles in the private [[w:sector]].",
+        "در دو آژانس [[w:کاریابی]] [[w:ثبت‌نام کرده‌ام]] و برای نقش‌های [[w:بخش]] خصوصی درخواست می‌دهم."
+      ],
+      [
+        "Shift work [[w:gets in the way of]] my project hours, so I [[w:use my initiative]] and code after the gym.",
+        "کار شیفتی [[w:مزاحم]] ساعت‌های پروژه‌ام [[w:می‌شود]]، پس [[w:ابتکار]] می‌زنم و بعد از باشگاه کد می‌نویسم."
+      ]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: Power Platform به زبان آزمون",
+    "lab": "Microsoft PL-900 · reading",
+    "exam": "PL-900",
+    "areas": [
+      "Business value of Power Platform",
+      "Core components"
+    ],
+    "terms": [
+      [
+        "low-code platform",
+        "پلتفرم کم‌کد",
+        "PL-900"
+      ],
+      [
+        "canvas app",
+        "اپ کانواس",
+        "PL-900"
+      ],
+      [
+        "model-driven app",
+        "اپ مدل‌محور",
+        "PL-900"
+      ],
+      [
+        "connector",
+        "کانکتور",
+        "PL-900"
+      ],
+      [
+        "cloud flow",
+        "فلوی ابری",
+        "PL-900"
+      ],
+      [
+        "Dataverse table",
+        "جدول Dataverse",
+        "PL-900"
+      ],
+      [
+        "environment",
+        "محیط",
+        "PL-900"
+      ],
+      [
+        "solution",
+        "بسته‌ی راه‌حل",
+        "PL-900"
+      ]
+    ],
+    "read": {
+      "t": "What the platform is for — and who builds on it",
+      "body": [
+        [
+          "Microsoft calls Power Platform a [[x:low-code platform]]. The idea is simple: people who understand the business, not only developers, can [[c:carry out work]] that used to sit in a long IT queue. A finance officer who [[w:uses her initiative]] can build a [[x:canvas app]] for expenses in a week.",
+          "مایکروسافت به Power Platform می‌گوید [[x:پلتفرم کم‌کد]]. ایده ساده است: کسانی که کسب‌وکار را می‌فهمند، نه فقط برنامه‌نویس‌ها، می‌توانند کاری را [[c:انجام دهند]] که قبلاً در صف بلند IT می‌ماند. یک کارشناس مالی که [[w:ابتکار می‌زند]] می‌تواند در یک هفته یک [[x:اپ کانواس]] برای هزینه‌ها بسازد."
+        ],
+        [
+          "There are two kinds of app. A [[x:canvas app]] gives you a blank screen and full control of the layout. A [[x:model-driven app]] starts from the data instead: you design [[x:Dataverse table]]s and relationships, and the screens follow. Both read and write through the same [[x:connector]]s, so a [[x:cloud flow]] can send an approval email the moment a record is created.",
+          "دو نوع اپ داریم. [[x:اپ کانواس]] یک صفحه‌ی خالی می‌دهد و کنترل کامل چیدمان. [[x:اپ مدل‌محور]] از داده شروع می‌کند: [[x:جدول‌های Dataverse]] و رابطه‌هایشان را طراحی می‌کنی و صفحه‌ها خودشان می‌آیند. هر دو از همان [[x:کانکتور]]ها می‌خوانند و می‌نویسند، پس یک [[x:فلوی ابری]] می‌تواند همان لحظه‌ی ساخته‌شدن رکورد ایمیل تأیید بفرستد."
+        ],
+        [
+          "Work is grouped in an [[x:environment]] — a separate space for data and apps — and shipped as a [[x:solution]], so the same build can move from development to production. This matters in the [[w:finance]] [[w:sector]], where nobody is [[w:accountable to]] a screenshot. Teams there need [[w:collaboration]] and an audit trail, not a clever demo.",
+          "کار در یک [[x:محیط]] جمع می‌شود — فضایی جدا برای داده و اپ‌ها — و به شکل یک [[x:بسته‌ی راه‌حل]] منتقل می‌شود، پس همان ساخته از توسعه به تولید می‌رود. این در [[w:بخش]] [[w:مالی]] مهم است، جایی که هیچ‌کس [[w:پاسخگوی]] یک اسکرین‌شات نیست. آن تیم‌ها [[w:همکاری]] و رد حسابرسی می‌خواهند، نه یک دموی بامزه."
+        ],
+        [
+          "So when a recruiter asks what you do, the honest answer is not “I make apps”. It is that you [[c:work closely with]] the people who own the process, and that low-code is [[c:highly effective]] until the requirement gets hard — and then you write code. That line is where PL-900 ends and PL-400 begins.",
+          "پس وقتی رکروتر می‌پرسد چه کار می‌کنی، جواب صادقانه «اپ می‌سازم» نیست. این است که با کسانی که صاحب فرایندند [[c:نزدیک کار می‌کنی]]، و کم‌کد [[c:بسیار مؤثر]] است تا وقتی نیاز سخت شود — آنجا کد می‌نویسی. همان خط، مرز PL-900 و PL-400 است."
+        ]
+      ],
+      "qs": [
+        "Why can a finance officer build an app without the IT queue?",
+        "What is the difference between a canvas app and a model-driven app?",
+        "When does low-code stop being enough — and what do you do then?"
+      ]
+    },
+    "why": "این متن دو کار می‌کند: اصطلاح‌های PL-900 را در جمله‌ی واقعی می‌بینی، و همان ترکیب‌ها و واژه‌های این درس در متن فنی تکرار می‌شوند. سه سؤال آخر را <b>انگلیسی و بلند</b> جواب بده — همین جواب‌ها در مصاحبه هم به کار می‌آیند."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: کلمه‌ی کلیدی، نه همه‌ی جمله",
+    "lab": "Tactics for Listening · Developing · Unit 9 · Jobs",
+    "tactic": "کسی نمی‌گوید «I'm a baker». می‌گوید <span class='en'>oven, bread, early start</span>. دنبال دو سه کلمه‌ای بگرد که شغل را لو می‌دهند و بقیه را رد کن.",
+    "where": "<div class='en'>Book: Unit 9 “Jobs” · pages 34–37</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 02–06</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>2-3</span> — فقط همین یک ترک:</b> برای هر گوینده دو کلمه‌ی کلیدی بنویس که شغلش را لو می‌دهد. بیشتر وقت نگذار؛ تاکتیک را گرفتی."
+    ],
+    "rec": {
+      "h": "ضبط خودت — تمرین اصلی شنیدن",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“So, what do you do?”</span> جواب بده و ضبط کن. بدون آماده‌سازی، یک‌بار.",
+        "<b>۲ · گوش بده و بشمار:</b> چند بار «very» گفتی، چند مکث بلندتر از دو ثانیه داشتی، کدام کلمه را غلط گفتی. بنویس: <span class='en'>very __ · pauses __ · words __</span>",
+        "<b>۳ · دوباره:</b> همان جواب با ترکیب‌های زیر. هدف: صفر «very» و کمتر از دو مکث.",
+        "<b>۴ · مقایسه:</b> فایل اول و دوم را پشت‌سرهم گوش بده و تفاوت را در یک جمله بنویس."
+      ],
+      "watch": [
+        [
+          "power ups",
+          "Power Apps",
+          "جمع است — پاوِر اَپس"
+        ],
+        [
+          "power automated flow",
+          "Power Automate flow",
+          "بدون D"
+        ],
+        [
+          "Asia",
+          "Azure",
+          "اَ-ژِر"
+        ],
+        [
+          "CUAL",
+          "SQL",
+          "اس-کیو-اِل، سه حرف جدا"
+        ],
+        [
+          "unemployed submits",
+          "an employee submits",
+          "دو کلمه به هم چسبید"
+        ],
+        [
+          "this is green marks",
+          "this screen marks",
+          "is اضافه شد و screen شکست"
+        ]
+      ],
+      "compare": [
+        [
+          "I [[c:work closely with]] the people who own the process.",
+          "با کسانی که صاحب فرایندند نزدیک کار می‌کنم."
+        ],
+        [
+          "It's a [[c:demanding job]], but the [[w:prospects]] are good.",
+          "کار سنگینی است، ولی چشم‌انداز خوبی دارد."
+        ],
+        [
+          "Low-code is [[c:highly effective]] until the requirement gets hard.",
+          "کم‌کد بسیار مؤثر است تا وقتی نیاز سخت شود."
+        ],
+        [
+          "I [[c:strongly believe]] my projects show what I can do.",
+          "قویاً باور دارم پروژه‌هایم نشان می‌دهند چه کاری از من برمی‌آید."
+        ]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Phone · Email · Hard question",
+    "tasks": [
+      {
+        "k": "Phone · 60 sec",
+        "t": "تماس رکروتر را بازی کن: جوابت باید یک جمله‌ی ساده (شغل الان)، یک جمله‌ی ing (پروژه‌ی جاری) و دو ترکیب این درس داشته باشد. ضبط کن."
+      },
+      {
+        "k": "Email · 4 lines",
+        "t": "ایمیل کوتاه بعد از تماس: تشکر، یک خط درباره‌ی پروژه، و اینکه کی <span class='en'>available to start work</span> هستی.",
+        "lines": 4
+      },
+      {
+        "k": "Hard question",
+        "t": "رکروتر می‌گوید <span class='en'>“You have no Canadian experience.”</span> — جوابی بنویس که نه دفاعی باشد نه ادعای بی‌پشتوانه: یک واقعیت، یک شاهد، یک پیشنهاد.",
+        "lines": 3
+      }
+    ]
+  },
+  "plan": {
+    "dialog": 1,
+    "grammar": 1,
+    "colls": 2,
+    "vocab": 2,
+    "cert": 3,
+    "listen": 3,
+    "prod": 3
+  },
+  "take": "I work as a material handler, but these days I'm building finance apps on Power Platform and Azure — a demanding job, and I strongly believe it's where my career takes off.",
+  "quiz": [
+    {
+      "k": "G",
+      "q": "I ______ at six every morning.",
+      "op": [
+        "am starting",
+        "start",
+        "starting"
+      ],
+      "qfa": "هر روز صبح ساعت شش شروع می‌کنم.",
+      "a": "start",
+      "afa": "عادت ثابت ← حال ساده"
+    },
+    {
+      "k": "G",
+      "q": "Correct it: <i>I am need more Canadian experience.</i>",
+      "lines": true,
+      "qfa": "به تجربه‌ی کانادایی بیشتری نیاز دارم.",
+      "a": "I need more Canadian experience.",
+      "afa": "need فعل حالت است و ing نمی‌گیرد"
+    },
+    {
+      "k": "G",
+      "q": "These days I ______ (finish) the documentation.",
+      "qfa": "این روزها دارم مستندات را تمام می‌کنم.",
+      "a": "'m finishing",
+      "afa": "کارِ در جریان ← حال استمراری"
+    },
+    {
+      "k": "C",
+      "q": "The market is ______ competitive right now.",
+      "op": [
+        "absolutely",
+        "highly",
+        "deeply"
+      ],
+      "qfa": "بازار الان بسیار رقابتی است.",
+      "a": "highly",
+      "afa": "highly با صفت‌های احتمال و مثبت می‌آید"
+    },
+    {
+      "k": "C",
+      "q": "Cross out the wrong one:",
+      "op": [
+        "utterly exhausted",
+        "absolutely tired",
+        "deeply committed",
+        "strongly believe"
+      ],
+      "qfa": "کدام ترکیب غلط است؟",
+      "a": "absolutely tired",
+      "afa": "با tired می‌گوییم very tired؛ absolutely برای exhausted است"
+    },
+    {
+      "k": "C",
+      "q": "I ______ for three developer roles last week.",
+      "op": [
+        "applied",
+        "applied to",
+        "did apply on"
+      ],
+      "qfa": "هفته‌ی پیش برای سه نقش دولوپر درخواست دادم.",
+      "a": "applied (for)",
+      "afa": "apply for a job — نه apply to"
+    },
+    {
+      "k": "C",
+      "q": "It's a ______ job: long hours, high pressure — but I learn fast.",
+      "qfa": "کار سنگینی است: ساعت‌های طولانی و فشار بالا.",
+      "a": "demanding",
+      "afa": "a demanding job — کار پرفشار"
+    },
+    {
+      "k": "W",
+      "q": "I'd like to work in finance, in the private ______.",
+      "qfa": "می‌خواهم در حوزه‌ی مالی، در بخش خصوصی کار کنم.",
+      "a": "sector",
+      "afa": "the private sector — بخش خصوصی"
+    },
+    {
+      "k": "W",
+      "q": "Match: (a) prospects  (b) redundant  (c) initiative",
+      "qfa": "۱) ابتکار  ۲) تعدیل‌شده  ۳) چشم‌انداز موفقیت",
+      "a": "a-3 · b-2 · c-1",
+      "afa": "prospects چشم‌انداز · made redundant تعدیل · initiative ابتکار"
+    },
+    {
+      "k": "L",
+      "q": "Rising ↗ or falling ↘?  “Is it a permanent job?”",
+      "op": [
+        "↗",
+        "↘"
+      ],
+      "qfa": "سؤال بله/نه با چه لحنی؟",
+      "a": "↗ rising",
+      "afa": "سؤال بله/نه لحن بالارونده دارد"
+    },
+    {
+      "k": "X",
+      "q": "Which component sends an approval email automatically?",
+      "op": [
+        "Power BI",
+        "Power Automate",
+        "Power Pages"
+      ],
+      "qfa": "کدام جزء ایمیل تأیید را خودکار می‌فرستد؟",
+      "a": "Power Automate",
+      "afa": "PL-900 — اتوماسیون با فلوی ابری"
+    },
+    {
+      "k": "P",
+      "q": "One sentence: <i>I work in a warehouse. I'm building apps. I want a developer role.</i>",
+      "lines": true,
+      "qfa": "با but / because / and now یک جمله بساز.",
+      "a": "Model: I work in a warehouse, but these days I'm building apps, because I want a developer role.",
+      "afa": "نمونه: در انبار کار می‌کنم، ولی این روزها دارم اپ می‌سازم، چون نقش دولوپر می‌خواهم."
+    }
+  ],
+  "_id": "u201"
+}

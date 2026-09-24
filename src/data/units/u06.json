@@ -1,0 +1,356 @@
+{
+  "n": 6,
+  "hue": [
+    205,
+    0.45,
+    0.23
+  ],
+  "tag": "Module 2 · Unit 6",
+  "en": "So, what do you do?",
+  "fa": "خب، کارت چیه؟ — معرفی خودت بدون «very»",
+  "src": [
+    [
+      "Grammar",
+      "GIU 1–4 · present simple / continuous"
+    ],
+    [
+      "Colloc.",
+      "Unit 6 · intensifying adverbs"
+    ],
+    [
+      "Words",
+      "WS 65 · careers"
+    ],
+    [
+      "Listen",
+      "TfL Developing U9 · jobs"
+    ]
+  ],
+  "story": "ساعت ۳:۲۰ بعدازظهر است و شیفت انبار تازه تمام شده. رکروتر یک آژانس کاریابی فناوری زنگ می‌زند و اولین سؤالش همان جمله‌ای است که همه می‌پرسند: <b>So, what do you do?</b> باید در سی ثانیه بگویی الان کجایی، این روزها روی چه کار می‌کنی، و چرا — بی آن‌که ده بار «very» بگویی.",
+  "dialog": {
+    "h": "دیالوگ — تلفن رکروتر",
+    "lab": "Dialogue · GIU 1–4",
+    "lines": [
+      [
+        "Recruiter",
+        "Thanks for calling back, Arash. So, what [[g:do you do]]?",
+        "ممنون که تماس گرفتی، آرش. خب، [[g:کارت چیه]]؟"
+      ],
+      [
+        "Arash",
+        "I [[g:work]] as a material handler, but I[[g:'m currently building]] business apps on Power Platform and Azure.",
+        "به‌عنوان متریال‌هندلر [[g:کار می‌کنم]]، ولی [[g:این روزها دارم]] اپ‌های تجاری روی Power Platform و Azure [[g:می‌سازم]]."
+      ],
+      [
+        "Recruiter",
+        "Interesting. What [[g:are you working on]] these days?",
+        "جالبه. این روزها [[g:روی چی کار می‌کنی]]؟"
+      ],
+      [
+        "Arash",
+        "SmartLedgerAI. It [[g:checks]] every expense and flags anything [[c:highly unusual]].",
+        "SmartLedgerAI. هر هزینه را [[g:بررسی می‌کند]] و هر چیزِ [[c:خیلی غیرعادی]] را علامت می‌زند."
+      ],
+      [
+        "Recruiter",
+        "Does it call the AI for every record?",
+        "برای هر رکورد هوش مصنوعی را صدا می‌زند؟"
+      ],
+      [
+        "Arash",
+        "No — that would be [[c:ridiculously expensive]]. It only [[g:calls]] Azure OpenAI when the risk isn't low.",
+        "نه — این [[c:به‌طرز عجیبی گران]] درمی‌آمد. فقط وقتی ریسک پایین نیست Azure OpenAI را [[g:صدا می‌زند]]."
+      ],
+      [
+        "Recruiter",
+        "Nice. The role is in the private [[w:sector]], mostly [[w:finance]]. It's [[w:challenging]].",
+        "خوبه. نقش در [[w:بخش]] خصوصی است، بیشتر [[w:مالی]]. [[w:کار سخت ولی جالبی]] است."
+      ],
+      [
+        "Arash",
+        "That's exactly what I[[g:'m looking for]]. I [[g:have]] a finance background, and I[[g:'m]] [[c:deeply committed]] to that kind of work.",
+        "دقیقاً همان چیزی است که [[g:دنبالش هستم]]. سابقه‌ی مالی [[g:دارم]] و [[c:عمیقاً متعهد]] به این نوع کار هستم."
+      ],
+      [
+        "Recruiter",
+        "The market [[g:is]] [[c:highly competitive]] right now, though.",
+        "البته بازار الان [[c:بسیار رقابتی]] است."
+      ],
+      [
+        "Arash",
+        "I know. But I [[c:strongly believe]] my projects [[g:show]] what I can do — and the [[w:prospects]] [[g:look]] good.",
+        "می‌دانم. ولی [[c:قویاً باور دارم]] پروژه‌هایم نشان [[g:می‌دهند]] چه کاری از من برمی‌آید — و [[w:چشم‌انداز]] خوب [[g:به نظر می‌رسد]]."
+      ]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — «do you do» یا «are you doing»؟",
+    "lab": "Grammar in Use · 1–4",
+    "rows": [
+      [
+        "شغل، عادت، برنامه‌ی ثابت",
+        "I [[g:start]] at six every morning.",
+        "I am starting at six every morning"
+      ],
+      [
+        "کارِ این روزها، موقت، در جریان",
+        "I[[g:'m finishing]] the docs this week.",
+        "I finish the docs this week"
+      ],
+      [
+        "فعل‌های حالت: believe · need · have · seem · know",
+        "I [[g:need]] Canadian experience.",
+        "I am needing Canadian experience"
+      ],
+      [
+        "think = نظر  /  think = فکرکردن در جریان",
+        "I [[g:think]] it's a good fit. · I[[g:'m thinking]] about PL-400.",
+        "I am thinking it's a good fit"
+      ]
+    ],
+    "elab": "Your own errors · RTF 3–4",
+    "errors": [
+      [
+        "Everybody are waiting",
+        "is waiting"
+      ],
+      [
+        "I am need it",
+        "I need it"
+      ],
+      [
+        "he is seems",
+        "he seems"
+      ],
+      [
+        "Are you recognise",
+        "Do you recognise"
+      ]
+    ],
+    "trigger": "<b class='en'>What do you do?</b> = شغلت چیست (نه «الان مشغول چه‌ای»). <b class='en'>What are you working on?</b> = پروژه‌ی جاری ← با ing جواب بده."
+  },
+  "colls": {
+    "h": "کالوکیشن — به‌جای very",
+    "lab": "Collocations in Use · Unit 6",
+    "groups": [
+      {
+        "h": "highly",
+        "n": "احتمال، یا صفت مثبت",
+        "ok": [
+          "highly competitive",
+          "highly effective · unlikely"
+        ],
+        "no": "highly exhausted"
+      },
+      {
+        "h": "absolutely · utterly",
+        "n": "صفت‌های «ته خط» که very نمی‌گیرند",
+        "ok": [
+          "absolutely convinced",
+          "utterly exhausted"
+        ],
+        "no": "absolutely tired"
+      },
+      {
+        "h": "deeply",
+        "n": "احساس و تعهد",
+        "ok": [
+          "deeply committed",
+          "deeply concerned"
+        ],
+        "no": "deeply successful"
+      },
+      {
+        "h": "bitterly",
+        "n": "ناامیدی، پشیمانی",
+        "ok": [
+          "bitterly disappointed",
+          "bitterly regret"
+        ]
+      },
+      {
+        "h": "ridiculously",
+        "n": "عجیب و غیرمنطقی",
+        "ok": [
+          "ridiculously expensive",
+          "ridiculously easy"
+        ]
+      },
+      {
+        "h": "strongly",
+        "n": "فعل‌های نظر",
+        "ok": [
+          "strongly believe",
+          "strongly recommend"
+        ],
+        "no": "strongly love"
+      }
+    ],
+    "ex": [
+      [
+        "After a nine-hour shift, I'm [[c:utterly exhausted]] — but I still code.",
+        "بعد از شیفت نُه‌ساعته [[c:کاملاً خسته‌ام]] — ولی باز کد می‌زنم."
+      ],
+      [
+        "I was [[c:bitterly disappointed]] when the interview got cancelled.",
+        "وقتی مصاحبه لغو شد [[c:سخت ناامید]] شدم."
+      ]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — مسیر شغلی",
+    "lab": "Word Skills · Unit 65",
+    "chips": [
+      [
+        "sector",
+        "بخش (خصوصی/دولتی)"
+      ],
+      [
+        "finance",
+        "مالی"
+      ],
+      [
+        "recruitment",
+        "کاریابی"
+      ],
+      [
+        "qualifications",
+        "مدارک"
+      ],
+      [
+        "challenging",
+        "سخت ولی جالب"
+      ],
+      [
+        "prospects",
+        "چشم‌انداز"
+      ],
+      [
+        "apply for",
+        "درخواست دادن"
+      ],
+      [
+        "be appointed",
+        "منصوب شدن"
+      ],
+      [
+        "be promoted",
+        "ترفیع گرفتن"
+      ],
+      [
+        "hand in your notice",
+        "استعفا دادن"
+      ],
+      [
+        "out of work",
+        "بیکار"
+      ]
+    ],
+    "ex": [
+      [
+        "I'm [[w:applying for]] developer roles in the private [[w:sector]].",
+        "برای نقش‌های دولوپر در [[w:بخش]] خصوصی [[w:درخواست می‌دهم]]."
+      ],
+      [
+        "When I get an offer, I'll [[w:hand in my notice]] at the warehouse.",
+        "وقتی پیشنهاد گرفتم، در انبار [[w:استعفا می‌دهم]]."
+      ]
+    ]
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: کلمه‌ی کلیدی",
+    "lab": "Tactics for Listening · Developing · Unit 9",
+    "tactic": "آدم‌ها کمتر می‌گویند «I'm a baker». می‌گویند <span class='en'>oven, bread, early</span>. دنبال <b>کلمه‌هایی بگرد که شغل را لو می‌دهند</b>، نه همه‌ی جمله.",
+    "where": "<div class='en'>Book: Unit 9 “Jobs” · pages 34–37</div><div class='en'>Audio: folder 02 (Unit 9-16) · files 02–06</div>",
+    "steps": [
+      "<b>قبل:</b> Getting Ready را پر کن؛ بعد با present simple بگو: <span class='en'>“For me, job security matters most.”</span>",
+      "<b>ترک <span class='trk'>2-3</span>:</b> برای هر گوینده فقط <b>دو کلمه‌ی کلیدی</b> بنویس، بعد تمرین کتاب را جواب بده.",
+      "<b>ترک <span class='trk'>2-4</span>:</b> صفتی که هر نفر برای کارش می‌گوید را بگیر؛ برای کار خودت هم یکی با <b>highly / ridiculously</b> بساز.",
+      "<b>ترک <span class='trk'>2-5</span> — لحن بالارونده‌ی سؤال بله/نه:</b> سؤال‌های خودت از رکروتر را همان‌طور بخوان: <span class='en'>Is it a contract role? ↗ · Do you use Dataverse? ↗</span>",
+      "<b>ترک <span class='trk'>2-6</span>:</b> دیکته‌ی کتاب را بنویس؛ بعد جای B خودت جواب بده — دو جمله، یکی ساده، یکی ing."
+    ]
+  },
+  "prod": {
+    "h": "تولید — بگو، بعد بنویس",
+    "speak": "به <span class='en'>“So, what do you do?”</span> جواب بده و ضبط کن. باید داشته باشد: <span class='en'><b>I work as · I'm currently building · strongly believe · challenging</b></span>. بعد بشمار چند بار «very» گفتی.",
+    "write": "سه خط اول بخش About لینکدین: یک جمله present simple، یک جمله ing، و یک کالوکیشن این درس."
+  },
+  "take": "I work as a material handler, but I'm currently building finance apps on Power Platform and Azure — and I strongly believe that's where I'm headed.",
+  "quiz": [
+    {
+      "k": "G",
+      "q": "I ______ at six every morning.",
+      "op": [
+        "am starting",
+        "start",
+        "starting"
+      ],
+      "a": "start"
+    },
+    {
+      "k": "G",
+      "q": "Correct the mistake: <i>I am need more Canadian experience.</i>",
+      "lines": true,
+      "a": "I need more Canadian experience."
+    },
+    {
+      "k": "G",
+      "q": "This week I ______ (finish) the documentation for SmartLedgerAI.",
+      "a": "'m finishing / am finishing"
+    },
+    {
+      "k": "C",
+      "q": "The job market is ______ competitive right now.",
+      "op": [
+        "absolutely",
+        "highly",
+        "deeply"
+      ],
+      "a": "highly"
+    },
+    {
+      "k": "C",
+      "q": "Cross out the wrong one:",
+      "op": [
+        "utterly exhausted",
+        "absolutely tired",
+        "deeply committed",
+        "strongly believe"
+      ],
+      "a": "absolutely tired"
+    },
+    {
+      "k": "C",
+      "q": "I was ______ disappointed when the interview got cancelled.",
+      "a": "bitterly"
+    },
+    {
+      "k": "W",
+      "q": "I'd like to work in finance, in the private ______.",
+      "a": "sector"
+    },
+    {
+      "k": "W",
+      "q": "Match: (a) challenging  (b) prospects  (c) hand in your notice",
+      "fa": "۱) چشم‌انداز موفقیت  ۲) استعفا دادن  ۳) سخت ولی جالب",
+      "a": "a-3 · b-1 · c-2"
+    },
+    {
+      "k": "L",
+      "q": "Rising ↗ or falling ↘?  “Is it a full-time role?”",
+      "op": [
+        "↗",
+        "↘"
+      ],
+      "a": "↗ rising (yes/no question)"
+    },
+    {
+      "k": "P",
+      "q": "Make one sentence: <i>I work in a warehouse. I'm building apps. I want a developer role.</i>",
+      "fa": "با but / because / and now",
+      "lines": true,
+      "a": "Model: I work in a warehouse, but I'm building apps because I want a developer role."
+    }
+  ],
+  "_id": "u06"
+}

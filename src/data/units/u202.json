@@ -1,0 +1,730 @@
+{
+  "n": 2,
+  "tag": "Module 2 · Unit 2",
+  "en": "Walk me through what you built",
+  "fa": "پروژه‌ات را برایم تعریف کن — گذشته یا حال کامل؟",
+  "src": [
+    [
+      "Grammar",
+      "GIU 5 · 7 · 13 · past vs present perfect"
+    ],
+    [
+      "Colloc.",
+      "Units 7–9 · everyday verbs"
+    ],
+    [
+      "Words",
+      "WS 69 + 70 · business world, a successful business"
+    ],
+    [
+      "Listen",
+      "TfL Developing U8 · listening for solutions"
+    ]
+  ],
+  "books": {
+    "col": [
+      7,
+      8,
+      9
+    ],
+    "giu": [
+      5,
+      7,
+      13
+    ],
+    "ws": [
+      69,
+      70
+    ],
+    "dev": [
+      8
+    ]
+  },
+  "chain": {
+    "next": "Unit 3 · When something broke"
+  },
+  "story": "مصاحبه‌ی فنی، دقیقه‌ی پنجم. لپ‌تاپت باز است و مصاحبه‌گر می‌گوید <b>“Walk me through what you built.”</b> پنج دقیقه وقت داری. سؤال واقعی این نیست که چه ساختی — این است که <b>چه تصمیمی گرفتی و چرا</b>. اینجا زمان فعل‌ها همه‌چیز را لو می‌دهد: کاری که تمام شده با گذشته‌ی ساده، و چیزی که هنوز نتیجه‌اش پابرجاست با حال کامل.",
+  "dialog": {
+    "h": "دیالوگ — مصاحبه‌ی فنی، جلوی لپ‌تاپ",
+    "lab": "Dialogue · GIU 5, 7, 13",
+    "lines": [
+      [
+        "Interviewer",
+        "Walk me through what you built.",
+        "بگو چه ساخته‌ای."
+      ],
+      [
+        "Arash",
+        "I [[g:built]] an expense app on Power Apps over an Azure SQL database. It [[g:writes]] through a stored procedure that [[g:validates]] the input inside a transaction.",
+        "یک اپ هزینه روی Power Apps با دیتابیس Azure SQL [[g:ساختم]]. از طریق یک stored procedure [[g:می‌نویسد]] که ورودی را داخل یک تراکنش [[g:اعتبارسنجی می‌کند]]."
+      ],
+      [
+        "Interviewer",
+        "Why put the validation there and not in the app?",
+        "چرا اعتبارسنجی را آن‌جا گذاشتی، نه در اپ؟"
+      ],
+      [
+        "Arash",
+        "Because the app isn't the only way in. If I [[c:take responsibility for]] the data, the rule has to sit where the data sits — otherwise a bad record [[c:does damage]] quietly.",
+        "چون اپ تنها راه ورود نیست. اگر [[c:مسئولیت]] داده را [[c:بپذیرم]]، قاعده باید همان‌جا باشد که داده هست — وگرنه یک رکورد خراب بی‌سروصدا [[c:خسارت می‌زند]]."
+      ],
+      [
+        "Interviewer",
+        "Have you [[g:changed]] anything since the first version?",
+        "از نسخه‌ی اول تا حالا چیزی [[g:عوض کرده‌ای]]؟"
+      ],
+      [
+        "Arash",
+        "Yes. I[[g:'ve rewritten]] the anomaly view with a [[x:window function]], so the self-join is gone. I [[c:did some tests]] on both and the numbers [[g:matched]].",
+        "بله. ویوی ناهنجاری را با [[x:تابع پنجره‌ای]] [[g:بازنویسی کرده‌ام]]، پس self-join حذف شد. روی هر دو [[c:تست انجام دادم]] و عددها [[g:یکی درآمد]]."
+      ],
+      [
+        "Interviewer",
+        "And the AI part — did it [[c:make]] a real difference?",
+        "و بخش هوش مصنوعی — واقعاً [[c:فرقی کرد]]؟"
+      ],
+      [
+        "Arash",
+        "It [[c:had an impact]] on trust, not on detection. The statistics [[g:flag]] the row; the model only [[g:explains]] it in plain language. I [[c:made a decision]] to call it only when the risk isn't low.",
+        "روی اعتماد [[c:اثر گذاشت]]، نه روی تشخیص. آمار ردیف را [[g:علامت می‌زند]]؛ مدل فقط آن را به زبان ساده [[g:توضیح می‌دهد]]. [[c:تصمیم گرفتم]] فقط وقتی ریسک پایین نیست صدایش بزنم."
+      ],
+      [
+        "Interviewer",
+        "What would you do differently?",
+        "چه کاری را جور دیگری می‌کردی؟"
+      ],
+      [
+        "Arash",
+        "The first API [[g:let]] the caller send the stats. That [[c:was a mistake]] — the API believed any number it [[g:was given]]. I[[g:'ve fixed]] it, and I[[g:'ve taken]] the numbers from the view since then.",
+        "API اول اجازه می‌[[g:داد]] فراخوان خودش آمار را بفرستد. [[c:اشتباه بود]] — API هر عددی را که [[g:می‌گرفت]] باور می‌کرد. [[g:درستش کرده‌ام]] و از آن به بعد عددها را از خود ویو [[g:برداشته‌ام]]."
+      ],
+      [
+        "Interviewer",
+        "Good answer. Most people [[c:take]] that question as a trap.",
+        "جواب خوبی بود. بیشتر آدم‌ها این سؤال را تله [[c:حساب می‌کنند]]."
+      ],
+      [
+        "Arash",
+        "It isn't. It's the part where I [[c:make progress]] — I[[g:'ve learned]] more from that bug than from the feature.",
+        "نیست. همان‌جاست که [[c:پیشرفت می‌کنم]] — از آن باگ بیشتر [[g:یاد گرفته‌ام]] تا از خودِ فیچر."
+      ]
+    ]
+  },
+  "grammar": {
+    "h": "گرامر فشرده — گذشته‌ی ساده یا حال کامل؟",
+    "lab": "Grammar in Use · 5, 7, 13",
+    "rows": [
+      [
+        "کارِ تمام‌شده در زمان مشخص",
+        "Last month I [[g:built]] the app.",
+        "Last month I have built the app"
+      ],
+      [
+        "نتیجه‌اش الان پابرجاست",
+        "I[[g:'ve rewritten]] the view. (it's live now)",
+        "I rewrite the view since March"
+      ],
+      [
+        "از فلان زمان تا حالا",
+        "I[[g:'ve taken]] the numbers from the view <b>since then</b>.",
+        "I take the numbers since then"
+      ],
+      [
+        "تجربه، بدون زمان",
+        "Have you [[g:changed]] anything?",
+        "Did you change anything ever?"
+      ],
+      [
+        "سوم‌شخص مفرد — غلطِ خودت",
+        "It [[g:writes]] · that [[g:validates]] · it [[g:answers]]",
+        "it write · that validate · it answer"
+      ]
+    ],
+    "elab": "Your own errors · speaking session",
+    "errors": [
+      [
+        "it answer",
+        "it answers"
+      ],
+      [
+        "that validate",
+        "that validates"
+      ],
+      [
+        "all trigger",
+        "all triggered"
+      ],
+      [
+        "with the single click",
+        "with a single click"
+      ],
+      [
+        "these screen",
+        "this screen"
+      ],
+      [
+        "pending records never moved",
+        "never move"
+      ]
+    ],
+    "trigger": "<b class='en'>Walk me through…</b> ← با گذشته‌ی ساده شروع کن. <b class='en'>What have you changed?</b> ← با حال کامل. جمله‌ی آخرت همیشه حال کامل باشد، چون نتیجه‌ی امروز را می‌گوید."
+  },
+  "colls": {
+    "h": "کالوکیشن — فعل‌های روزمره: make · do · take · have",
+    "lab": "Collocations in Use · Units 7–9",
+    "groups": [
+      {
+        "h": "make",
+        "n": "ساختن، تصمیم، خطا، پیشرفت",
+        "ok": [
+          "make a decision",
+          "make progress",
+          "make a mistake"
+        ],
+        "no": "make a test"
+      },
+      {
+        "h": "do",
+        "n": "انجام دادن کارِ مشخص",
+        "ok": [
+          "do some tests",
+          "do research",
+          "do damage"
+        ],
+        "no": "do a mistake"
+      },
+      {
+        "h": "take",
+        "n": "برداشتن، پذیرفتن، وقت‌گرفتن",
+        "ok": [
+          "take responsibility for",
+          "take action",
+          "take time"
+        ],
+        "no": "take a decision*"
+      },
+      {
+        "h": "have",
+        "n": "داشتن اثر، مشکل، نگاه",
+        "ok": [
+          "have an impact",
+          "have a look"
+        ],
+        "no": "have a work"
+      }
+    ],
+    "rows": [
+      [
+        "make a decision",
+        "تصمیم گرفتن",
+        "take a decision*"
+      ],
+      [
+        "make progress",
+        "پیشرفت کردن",
+        "do progress"
+      ],
+      [
+        "make a mistake",
+        "اشتباه کردن",
+        "do a mistake"
+      ],
+      [
+        "do some tests",
+        "تست انجام دادن",
+        "make tests"
+      ],
+      [
+        "do research",
+        "تحقیق کردن",
+        "make research"
+      ],
+      [
+        "do damage",
+        "خسارت زدن",
+        "make damage"
+      ],
+      [
+        "take responsibility for",
+        "مسئولیت چیزی را پذیرفتن",
+        "take responsibility of"
+      ],
+      [
+        "take action",
+        "دست به کار شدن",
+        "do action"
+      ],
+      [
+        "take time",
+        "وقت بردن",
+        null
+      ],
+      [
+        "have an impact on",
+        "اثر گذاشتن بر",
+        "make an impact to"
+      ],
+      [
+        "go wrong",
+        "خراب شدن، بیراهه رفتن",
+        null
+      ]
+    ],
+    "ex": [
+      [
+        "The first design [[c:went wrong]] quietly, so I [[c:did some tests]] before I [[c:made a decision]].",
+        "طراحی اول بی‌سروصدا [[c:خراب شد]]، پس قبل از [[c:تصمیم‌گیری]] [[c:چند تست انجام دادم]]."
+      ],
+      [
+        "Window functions [[c:had a real impact on]] the query — and they [[c:took]] less time to explain.",
+        "توابع پنجره‌ای [[c:اثر واقعی روی]] کوئری [[c:گذاشتند]] — و توضیحشان وقت کمتری [[c:برد]]."
+      ]
+    ]
+  },
+  "vocab": {
+    "h": "واژه‌های Word Skills — زبان کسب‌وکار و پروژه‌ی موفق",
+    "lab": "Word Skills · 69 + 70",
+    "sets": [
+      {
+        "u": "69 · The business world",
+        "chips": [
+          [
+            "soar",
+            "جهش کردن (قیمت)",
+            "C1"
+          ],
+          [
+            "plunge",
+            "سقوط کردن",
+            "C1"
+          ],
+          [
+            "plummet",
+            "سقوط ناگهانی",
+            "C1"
+          ],
+          [
+            "climb",
+            "بالا رفتن",
+            "B1"
+          ],
+          [
+            "reach a peak",
+            "به اوج رسیدن",
+            "B2"
+          ],
+          [
+            "collapse",
+            "فروریختن",
+            "B2"
+          ],
+          [
+            "in the wake of",
+            "در پی چیزی",
+            "C1"
+          ],
+          [
+            "pursue",
+            "دنبال کردن",
+            "C1"
+          ],
+          [
+            "issue",
+            "رسماً اعلام کردن",
+            "B2"
+          ],
+          [
+            "float an idea",
+            "ایده‌ای را مطرح کردن",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "u": "70 · A successful business",
+        "chips": [
+          [
+            "found",
+            "بنیان گذاشتن",
+            "B2"
+          ],
+          [
+            "launch",
+            "عرضه کردن",
+            "B2"
+          ],
+          [
+            "innovate",
+            "نوآوری کردن",
+            "C1"
+          ],
+          [
+            "invest in",
+            "سرمایه‌گذاری کردن",
+            "B2"
+          ],
+          [
+            "adapt",
+            "وفق دادن",
+            "B2"
+          ],
+          [
+            "exploit",
+            "بهره گرفتن از",
+            "C1"
+          ],
+          [
+            "retain",
+            "حفظ کردن",
+            "C1"
+          ],
+          [
+            "feedback",
+            "بازخورد",
+            "B1"
+          ],
+          [
+            "potential",
+            "توان بالقوه",
+            "B2"
+          ],
+          [
+            "partnership",
+            "مشارکت",
+            "B2"
+          ],
+          [
+            "keep ahead of",
+            "جلوتر ماندن از",
+            "B2"
+          ]
+        ]
+      }
+    ],
+    "ex": [
+      [
+        "I [[w:launched]] the first version, [[w:adapted]] it after [[w:feedback]], and the query time [[w:plummeted]].",
+        "نسخه‌ی اول را [[w:عرضه کردم]]، بعد از [[w:بازخورد]] [[w:وفقش دادم]]، و زمان کوئری [[w:به‌شدت افتاد]]."
+      ],
+      [
+        "A portfolio shows [[w:potential]]; a rewrite shows you can [[w:keep ahead of]] your own first idea.",
+        "پورتفولیو [[w:توان بالقوه]] را نشان می‌دهد؛ بازنویسی نشان می‌دهد می‌توانی از ایده‌ی اول خودت [[w:جلوتر بمانی]]."
+      ]
+    ]
+  },
+  "cert": {
+    "h": "مدرک — ریدینگ: کجا کد بنویسی، کجا ننویسی",
+    "lab": "Microsoft PL-400 · reading",
+    "exam": "PL-400",
+    "areas": [
+      "Create a technical design",
+      "Build Power Platform solutions"
+    ],
+    "terms": [
+      [
+        "stored procedure",
+        "رویه‌ی ذخیره‌شده",
+        "PL-400"
+      ],
+      [
+        "transaction",
+        "تراکنش",
+        "PL-400"
+      ],
+      [
+        "window function",
+        "تابع پنجره‌ای",
+        "PL-400"
+      ],
+      [
+        "parameterized query",
+        "کوئری پارامتری",
+        "PL-400"
+      ],
+      [
+        "business rule",
+        "قاعده‌ی کسب‌وکار",
+        "PL-400"
+      ],
+      [
+        "plug-in",
+        "پلاگین",
+        "PL-400"
+      ],
+      [
+        "synchronous",
+        "همگام",
+        "PL-400"
+      ],
+      [
+        "technical design",
+        "طراحی فنی",
+        "PL-400"
+      ]
+    ],
+    "read": {
+      "t": "Where the rule should live",
+      "body": [
+        [
+          "Every PL-400 question about [[x:technical design]] is really the same question: where should the rule live? You can put it in the app, in a [[x:business rule]], in a [[x:plug-in]], or in the database. The exam wants the cheapest option that still holds when someone [[c:takes a look at]] the data from another door.",
+          "هر سؤال PL-400 درباره‌ی [[x:طراحی فنی]] در واقع یک سؤال است: قاعده کجا باید بنشیند؟ می‌توانی در اپ بگذاری، در یک [[x:قاعده‌ی کسب‌وکار]]، در یک [[x:پلاگین]]، یا در دیتابیس. آزمون ارزان‌ترین گزینه‌ای را می‌خواهد که وقتی کسی از درِ دیگری به داده [[c:نگاه می‌اندازد]] هم پابرجا بماند."
+        ],
+        [
+          "A [[x:plug-in]] runs inside Dataverse, so it holds for every caller. A [[x:synchronous]] one blocks the save and can cancel it — useful, but it [[c:takes time]] on every write. A [[x:stored procedure]] with a [[x:transaction]] does the same job in SQL: validate, commit, or roll back. Nothing partial [[c:does damage]] to the ledger.",
+          "[[x:پلاگین]] داخل Dataverse اجرا می‌شود، پس برای هر فراخوان پابرجاست. نوع [[x:همگام]] ذخیره را متوقف می‌کند و می‌تواند لغوش کند — مفید، ولی روی هر نوشتن [[c:وقت می‌برد]]. [[x:رویه‌ی ذخیره‌شده]] با [[x:تراکنش]] همان کار را در SQL می‌کند: اعتبارسنجی، commit، یا rollback. هیچ چیزِ نیمه‌کاره به دفتر کل [[c:خسارت نمی‌زند]]."
+        ],
+        [
+          "The same logic applies to statistics. A [[x:window function]] computes the average and the deviation on each row, inside the database, so the API has nothing to be told and nothing to believe. Add a [[x:parameterized query]] and the [[w:potential]] for injection is gone too.",
+          "همین منطق برای آمار هم هست. [[x:تابع پنجره‌ای]] میانگین و انحراف را روی هر ردیف، داخل دیتابیس، حساب می‌کند، پس چیزی نیست که به API گفته شود و چیزی نیست که باور کند. [[x:کوئری پارامتری]] را هم اضافه کن، [[w:احتمال]] تزریق هم از بین می‌رود."
+        ],
+        [
+          "So in an interview, “I moved it into the database” is not a detail. It is a [[x:technical design]] answer: the rule sits where the data sits, and it [[c:has an impact on]] every caller, not only the app you demoed.",
+          "پس در مصاحبه، «بردمش داخل دیتابیس» جزئیات نیست. جوابِ [[x:طراحی فنی]] است: قاعده همان‌جا می‌نشیند که داده هست، و روی هر فراخوان [[c:اثر می‌گذارد]]، نه فقط اپی که دمو دادی."
+        ]
+      ],
+      "qs": [
+        "Why is a synchronous plug-in not always the right answer?",
+        "What does a transaction protect you from?",
+        "Explain, in two sentences, why you moved the statistics into the view."
+      ]
+    },
+    "why": "این متن همان تصمیم‌های واقعی پروژه‌ی توست، ولی به زبان آزمون. جواب سؤال سوم را حفظ نکن — بلند بگو، چون دقیقاً همان سؤالی است که مصاحبه‌گر فنی می‌پرسد."
+  },
+  "listen": {
+    "h": "شنیدن — تاکتیک: مشکل، بعد راه‌حل",
+    "lab": "Tactics for Listening · Developing · Unit 8 · Mishaps",
+    "tactic": "در هر روایتِ مشکل، دو چیز پشت‌سرهم می‌آید: <b>چه شد</b> و <b>چه کردی</b>. گوینده‌ها راه‌حل را با <span class='en'>so · in the end · what I did was</span> علامت می‌دهند. دنبال همان کلمه‌ها بگرد، نه همه‌ی جمله.",
+    "where": "<div class='en'>Book: Unit 8 “Mishaps” · pages 30–33</div><div class='en'>Audio: folder 01 (Unit 1-8) · files 38–42</div>",
+    "steps": [
+      "<b>ترک <span class='trk'>1-39</span> — فقط همین یک ترک:</b> برای هر گوینده دو ستون بنویس: مشکل، راه‌حل. سه کلمه برای هرکدام، نه بیشتر."
+    ],
+    "rec": {
+      "h": "ضبط خودت — تعریف پروژه در ۹۰ ثانیه",
+      "min": "15 min",
+      "steps": [
+        "<b>۱ · خام:</b> به <span class='en'>“Walk me through what you built.”</span> جواب بده. ۹۰ ثانیه، بدون نوشتن.",
+        "<b>۲ · گوش بده و بشمار:</b> چند فعل را بی‌<span class='en'>s</span> گفتی (it write)، چند بار d پایانی را خوردی (triggered، stored)، و چند جمله بدون زمانِ مشخص ماند.",
+        "<b>۳ · دوباره:</b> همان جواب با این ساختار: دو جمله‌ی گذشته‌ی ساده (چه ساختی)، یک جمله‌ی حال کامل (چه عوض کرده‌ای).",
+        "<b>۴ · مقایسه:</b> با چهار جمله‌ی پایین بسنج — این‌ها جمله‌های درستِ خودت از جلسه‌ی تمرین‌اند."
+      ],
+      "watch": [
+        [
+          "CUAL",
+          "SQL",
+          "اس-کیو-اِل، سه حرف جدا"
+        ],
+        [
+          "Windows function",
+          "window function",
+          "مفرد"
+        ],
+        [
+          "short procedure",
+          "stored procedure",
+          "stored، با d پایانی"
+        ],
+        [
+          "anonymity detection",
+          "anomaly detection",
+          "اَنامِلی"
+        ],
+        [
+          "recancelled",
+          "reconciled",
+          "رِ-کان-سایلد"
+        ],
+        [
+          "a mouse and a ear",
+          "a month and a year",
+          "حرف پایانی حذف شد"
+        ],
+        [
+          "all three get out",
+          "all triggered",
+          "یک کلمه به دو تکه شکست"
+        ]
+      ],
+      "compare": [
+        [
+          "It writes into SQL through a stored procedure that validates the input inside a transaction.",
+          "از طریق یک رویه‌ی ذخیره‌شده در SQL می‌نویسد که ورودی را داخل تراکنش اعتبارسنجی می‌کند."
+        ],
+        [
+          "I rewrote it using a window function instead of a self-join.",
+          "با تابع پنجره‌ای بازنویسی‌اش کردم، به‌جای self-join."
+        ],
+        [
+          "It only reads approved expenses, so pending records never skew the baseline.",
+          "فقط هزینه‌های تأییدشده را می‌خواند، پس رکوردهای در انتظار خط پایه را کج نمی‌کنند."
+        ],
+        [
+          "An earlier version let the caller send the stats, which meant the API would believe any number it was given.",
+          "نسخه‌ی قبلی اجازه می‌داد فراخوان آمار را بفرستد، یعنی API هر عددی را باور می‌کرد."
+        ]
+      ]
+    }
+  },
+  "prod": {
+    "h": "تولید — سه تمرین",
+    "lab": "Phone · Email · Hard question",
+    "tasks": [
+      {
+        "k": "Demo · 90 sec",
+        "t": "کل پروژه را در ۹۰ ثانیه تعریف کن: دو جمله‌ی گذشته‌ی ساده، یک جمله‌ی حال کامل، و دست‌کم سه ترکیب از <span class='en'>make · do · take · have</span>. ضبط کن."
+      },
+      {
+        "k": "Email · 5 lines",
+        "t": "ایمیل بعد از مصاحبه: یک خط تشکر، دو خط درباره‌ی تصمیم window function، یک خط درباره‌ی چیزی که <span class='en'>you've changed since</span>، و یک خط بسته.",
+        "lines": 5
+      },
+      {
+        "k": "Hard question",
+        "t": "مصاحبه‌گر می‌گوید <span class='en'>“This looks like a tutorial project.”</span> — جوابی بنویس که یک تصمیم، یک اشتباه، و یک نتیجه‌ی اندازه‌گیری‌شده داشته باشد.",
+        "lines": 3
+      }
+    ]
+  },
+  "plan": {
+    "dialog": 1,
+    "grammar": 1,
+    "colls": 2,
+    "vocab": 2,
+    "cert": 3,
+    "listen": 3,
+    "prod": 3
+  },
+  "take": "I built it in two versions: the first one worked, and I've rewritten the heavy part with a window function since then.",
+  "quiz": [
+    {
+      "k": "G",
+      "q": "Last month I ______ the anomaly view.",
+      "op": [
+        "have rewritten",
+        "rewrote",
+        "was rewriting"
+      ],
+      "qfa": "ماه پیش ویوی ناهنجاری را بازنویسی کردم.",
+      "a": "rewrote",
+      "afa": "زمان مشخص گذشته ← گذشته‌ی ساده"
+    },
+    {
+      "k": "G",
+      "q": "I ______ the numbers from the view since then.",
+      "qfa": "از آن موقع عددها را از خود ویو برمی‌دارم.",
+      "a": "'ve taken",
+      "afa": "since ← حال کامل"
+    },
+    {
+      "k": "G",
+      "q": "Correct it: <i>It write into SQL through a procedure that validate the input.</i>",
+      "lines": true,
+      "qfa": "سوم‌شخص مفرد را درست کن.",
+      "a": "It writes … that validates …",
+      "afa": "غلط واقعی خودت در جلسه‌ی تمرین"
+    },
+    {
+      "k": "C",
+      "q": "I ______ some tests before I ______ a decision.",
+      "op": [
+        "did / made",
+        "made / did",
+        "took / did"
+      ],
+      "qfa": "قبل از تصمیم‌گیری چند تست انجام دادم.",
+      "a": "did / made",
+      "afa": "do tests · make a decision"
+    },
+    {
+      "k": "C",
+      "q": "The rewrite ______ a real impact on the query time.",
+      "op": [
+        "made",
+        "had",
+        "did"
+      ],
+      "qfa": "بازنویسی اثر واقعی روی زمان کوئری گذاشت.",
+      "a": "had",
+      "afa": "have an impact on — نه make"
+    },
+    {
+      "k": "C",
+      "q": "I ______ responsibility ______ the whole data layer.",
+      "qfa": "مسئولیت کل لایه‌ی داده را پذیرفتم.",
+      "a": "took … for",
+      "afa": "take responsibility for"
+    },
+    {
+      "k": "W",
+      "q": "After the outage, share prices ______ — they lost a third in a day.",
+      "op": [
+        "soared",
+        "plummeted",
+        "climbed"
+      ],
+      "qfa": "بعد از قطعی، قیمت سهام سقوط کرد.",
+      "a": "plummeted",
+      "afa": "plummet — سقوط ناگهانی"
+    },
+    {
+      "k": "W",
+      "q": "I ______ the first version, then ______ it after feedback.",
+      "qfa": "نسخه‌ی اول را عرضه کردم، بعد از بازخورد وفقش دادم.",
+      "a": "launched … adapted",
+      "afa": "launch · adapt"
+    },
+    {
+      "k": "X",
+      "q": "Where should a rule live if more than one caller writes to the data?",
+      "op": [
+        "in the canvas app",
+        "in the database or a plug-in",
+        "in the export flow"
+      ],
+      "qfa": "اگر چند فراخوان به داده بنویسند، قاعده کجا باید باشد؟",
+      "a": "in the database or a plug-in",
+      "afa": "PL-400 — قاعده همان‌جا که داده هست"
+    },
+    {
+      "k": "L",
+      "q": "Write the three words that signal a solution is coming in a story.",
+      "qfa": "سه نشانه‌ی «راه‌حل دارد می‌آید» را بنویس.",
+      "a": "so · in the end · what I did was",
+      "afa": "در ترک ۱-۳۹ همین‌ها راه‌حل را علامت می‌دهند"
+    },
+    {
+      "k": "C",
+      "old": true,
+      "q": "The market is ______ competitive right now.",
+      "op": [
+        "deeply",
+        "highly",
+        "utterly"
+      ],
+      "qfa": "بازار الان بسیار رقابتی است.",
+      "a": "highly",
+      "afa": "از درس ۱ — highly با صفت مثبت"
+    },
+    {
+      "k": "W",
+      "old": true,
+      "q": "It's a ______ job, but the ______ are good.",
+      "qfa": "کار سنگینی است، ولی چشم‌انداز خوبی دارد.",
+      "a": "demanding … prospects",
+      "afa": "از درس ۱ — a demanding job · prospects"
+    },
+    {
+      "k": "P",
+      "q": "One sentence: <i>I built it. I found a bug. I rewrote the view. It's faster now.</i>",
+      "lines": true,
+      "qfa": "با but / so / since then یک جمله بساز.",
+      "a": "Model: I built it, found a bug in the view, and I've rewritten it since then — it's faster now.",
+      "afa": "نمونه: ساختمش، در ویو یک باگ پیدا کردم، و از آن موقع بازنویسی‌اش کرده‌ام — حالا سریع‌تر است."
+    }
+  ],
+  "_id": "u202",
+  "hue": [
+    150,
+    0.4,
+    0.22
+  ]
+}
