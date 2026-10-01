@@ -28,6 +28,21 @@ if (fileVersion && hasDraft(id) && JSON.stringify(loadDraft(id)) === JSON.string
 }
 
 const unit = reactive<Unit>(JSON.parse(JSON.stringify(original)))
+
+// Older lessons (u06) keep their words in a flat vocab.chips list, which the
+// form below can't show. Move them into a single set labelled like the
+// section — both VocabSection.vue and unit.py render that identically — so
+// they're editable instead of silently hidden once a new set is added.
+// Runs before the draft watcher is registered, so opening a lesson alone
+// never creates a draft.
+function liftLegacyVocab() {
+  if (unit.vocab.chips?.length && !unit.vocab.sets?.length) {
+    unit.vocab.sets = [{ u: unit.vocab.lab || '', chips: unit.vocab.chips }]
+    delete unit.vocab.chips
+  }
+}
+liftLegacyVocab()
+const legacyProd = !unit.prod.tasks?.length && (unit.prod.speak !== undefined || unit.prod.write !== undefined)
 const savedMsg = ref('')
 const draftActive = ref(hasDraft(id))
 const hasOriginal = ref(!!getOriginalUnit(id))
@@ -118,6 +133,7 @@ function resetToFile() {
   const orig = getOriginalUnit(id)
   if (!orig) return
   Object.assign(unit, JSON.parse(JSON.stringify(orig)))
+  liftLegacyVocab()
   clearDraft(id)
   draftActive.value = false
   savedMsg.value = 'به نسخه‌ی فایل برگشت'
@@ -431,6 +447,11 @@ watch(
     <fieldset>
       <legend>تولید (Production)</legend>
       <div class="field"><label>عنوان بخش</label><input type="text" v-model="unit.prod.h" /></div>
+      <template v-if="legacyProd && !unit.prod.tasks?.length">
+        <div class="hint">این درس قالب قدیمی «بگو / بنویس» را دارد. اگر تمرین تازه اضافه کنی، این دو جعبه دیگر نمایش داده نمی‌شوند.</div>
+        <div class="field"><label>Speak · 60 sec</label><textarea v-model="unit.prod.speak" rows="2"></textarea></div>
+        <div class="field"><label>Write · 3 lines</label><textarea v-model="unit.prod.write" rows="2"></textarea></div>
+      </template>
       <div class="field"><label>تمرین‌ها</label>
         <div class="item-card" v-for="(t, i) in unit.prod.tasks || []" :key="i">
           <div class="item-head"><span class="idx">تمرین {{ i + 1 }}</span><button class="btn btn-danger" @click="removeTask(i)">حذف</button></div>

@@ -9,6 +9,15 @@ const PATHS: Record<string, string> = {
   pencil: '<path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z"/><path d="m14 7 3 3"/>',
   shield: '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>',
   clip: '<path d="M14 3v6h6"/><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9l-5-6Z"/>',
+  // used by the context section
+  compare: '<path d="M4 7h6M4 17h6"/><path d="M14 7h6M14 17h6"/><path d="M7 4v6M17 14v6"/>',
+  steps: '<path d="M4 20h4v-4h4v-4h4V8h4"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="m20 20-4.4-4.4"/>',
+  case: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/>',
+  cloud: '<path d="M7 18a4 4 0 0 1 .6-8 5.5 5.5 0 0 1 10.4 1.6A3.6 3.6 0 0 1 17.5 18H7Z"/>',
+  chart: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  screen: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/>',
+  pulse: '<path d="M3 12h4l2-6 4 12 2-6h6"/>',
 }
 
 export function ico(name: string, size = 15): string {

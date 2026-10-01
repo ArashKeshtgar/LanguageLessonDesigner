@@ -1,0 +1,81 @@
+/* Top bar (both sections) + the context section — same visual language as lesson.css
+   and the Python context engine (Context/engine/ctx.py). */
+
+.topbar { position: sticky; top: 0; z-index: 20; background: #16212b; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+.topbar-in { max-width: 880px; margin: 0 auto; padding: 0 18px; display: flex; align-items: stretch; gap: .3em; }
+.brand { font: 700 .78em Calibri, Carlito, Arial, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #8fa3b5; direction: ltr; margin-left: auto; align-self: center; }
+.tab { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: .45em 1.2em .4em; color: #c6d2dd; text-decoration: none; border-bottom: 3px solid transparent; line-height: 1.2; }
+.tab b { font: 700 1.05em 'B Nazanin', 'B Yekan', serif; }
+.tab small { font: 600 .66em Calibri, Carlito, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
+.tab:hover { color: #fff; background: rgba(255,255,255,.05); }
+.tab.on { color: #fff; border-bottom-color: #DFC15C; background: rgba(255,255,255,.07); }
+@media print { .topbar { display: none; } }
+
+/* ---- tags ---- */
+.tg { font: 700 .8em Consolas, 'Cascadia Mono', monospace; color: var(--k); background: var(--t); border: 1px solid var(--k);
+      border-radius: 4px; padding: 0 .4em; direction: ltr; unicode-bidi: isolate; white-space: nowrap; text-decoration: none; }
+a.tg:hover { filter: brightness(.92); text-decoration: none; }
+.me { font: 700 .95em Consolas, monospace; background: rgba(255,255,255,.16); border-radius: 4px; padding: .05em .5em; color: #fff; direction: ltr; display: inline-block; margin-top: .4em; }
+.bal { display: flex; gap: .9em; flex-wrap: wrap; margin-top: .6em; font: 600 .8em Calibri, Carlito, Arial, sans-serif; direction: ltr; color: var(--hero-txt, #dfe6ee); }
+.bal b { color: #fff; }
+
+/* ---- rows ---- */
+.crow { border-top: 1px solid #eef0f2; padding: .55em 0; border-radius: 6px; transition: background .6s; overflow-wrap: anywhere; }
+.kv > div, table.it td { min-width: 0; overflow-wrap: anywhere; }
+.crow:first-of-type, .ih + .crow { border-top: 0; }
+.rh { display: flex; flex-wrap: wrap; align-items: center; gap: .45em; }
+.rt { font-weight: 700; }
+.cl { font: 1.02em/1.6 Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; margin-top: .2em; }
+.cfa { color: #4a5562; font-size: .95em; line-height: 1.85; margin-top: .15em; }
+.ev { color: #8a94a0; font: .84em/1.5 Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; margin-top: .2em; }
+.ev summary { cursor: pointer; }
+.badge { font: 700 .7em Calibri, Carlito, Arial, sans-serif; letter-spacing: .08em; border-radius: 3px; padding: .05em .45em; color: #fff; background: var(--b); }
+.no { font: .82em Calibri, Carlito, Arial, sans-serif; color: #b4534e; text-decoration: line-through; direction: ltr; unicode-bidi: isolate; }
+.kv { display: grid; grid-template-columns: 4.4em 1fr; gap: .15em .6em; margin-top: .3em; font-size: .95em; }
+.kv .k { color: #8a94a0; font-weight: 700; }
+.lesson { background: #f7e9e8; border-right: 3px solid #b4534e; border-radius: 4px; padding: .25em .7em; margin-top: .35em; }
+.date { font: 600 .8em Calibri, Carlito, Arial, sans-serif; color: #8a94a0; direction: ltr; unicode-bidi: isolate; }
+.cm { font: .78em Consolas, monospace; color: #6b7580; direction: ltr; unicode-bidi: isolate; }
+.sub { color: #6b7580; font-size: .9em; }
+.refs { margin-top: .35em; display: flex; flex-wrap: wrap; gap: .3em; }
+.empty { color: #8a94a0; }
+.hint-line { margin-top: .5em; font-size: .88em; }
+.flash { background: #fff6d6; }
+
+/* ---- implementation ---- */
+.ih { margin-bottom: .4em; }
+pre.dg { font: .8em/1.5 Consolas, 'Cascadia Mono', monospace; direction: ltr; text-align: left; background: #0f1b24; color: #d7e3ec;
+         border-radius: 8px; padding: .8em 1em; margin: .2em 0 .6em; overflow-x: auto; }
+table.it td { border-bottom: 1px solid #eef0f2; padding: .35em .5em; }
+table.it td.a { font: 700 .92em Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; white-space: nowrap; color: #14544f; width: 1%; }
+table.it td.b { font: .9em Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; color: #3f4b58; }
+.cmd { font: .84em Consolas, monospace; direction: ltr; text-align: left; background: #f2f4f6; border-radius: 5px; padding: .25em .7em; margin-top: .3em;
+       white-space: pre-wrap; cursor: copy; }
+.cmd:hover { background: #e7ebef; }
+@media (max-width: 640px) { table.it td.a { white-space: normal; } }
+
+/* ---- context home ---- */
+.ctx-search { display: flex; gap: .5em; }
+.ctx-search input { flex: 1; border: 1px solid var(--line); border-radius: 7px; padding: .55em .8em; font: inherit; unicode-bidi: plaintext; }
+.ctx-leg { margin-top: .8em; gap: .9em; }
+.ctx-leg span::before { display: none; }
+.hits { margin-top: .5em; max-height: 22em; overflow-y: auto; }
+.hit { padding: .25em 0; border-top: 1px solid #eef0f2; font-size: .92em; }
+.ctx-quick { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7em; margin-top: 1em; }
+.qk { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--k); border-radius: 10px; padding: .7em 1em; text-decoration: none;
+      color: var(--k); display: flex; flex-direction: column; font: 700 1.1em 'B Nazanin', 'B Yekan', serif; transition: transform .12s, box-shadow .12s; }
+.qk b { font: 700 1.9em/1 Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: right; }
+.qk small { font: 600 .62em Calibri, Carlito, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #8a94a0; }
+.qk:hover, .lesson-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.08); }
+.cbal { font: 600 .74em Calibri, Carlito, Arial, sans-serif; color: #8a94a0; direction: ltr; text-align: left; margin-top: .4em; }
+.ctx-filter { display: flex; flex-wrap: wrap; gap: .4em; }
+.lesson-nav a.on { font-weight: 700; text-decoration: underline; }
+
+/* lesson-card is scoped in LessonListView — repeat what the context grid needs */
+.sec .lesson-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8em; }
+.sec .lesson-card { display: block; border-radius: 10px; padding: .9em 1.1em; text-decoration: none; color: #1a2430; background: #fff;
+                    border: 1px solid #e6e8eb; border-top: 4px solid var(--hero); transition: transform .12s, box-shadow .12s; }
+.sec .lesson-card .tag { font: .72em Consolas, monospace; color: var(--hero); direction: ltr; text-align: left; letter-spacing: 0; text-transform: none; }
+.sec .lesson-card .en { font: 700 1.15em Calibri, Carlito, Arial, sans-serif; direction: ltr; text-align: left; margin-top: .2em; }
+.sec .lesson-card .fa { font-family: 'B Nazanin', 'B Yekan', serif; color: #6b7580; margin-top: .2em; }
+@media (max-width: 640px) { .ctx-quick { grid-template-columns: 1fr; } }
