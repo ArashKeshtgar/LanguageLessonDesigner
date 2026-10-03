@@ -75,6 +75,7 @@ export interface BugItem {
   fix: string
   commit?: string
   lesson: string
+  sum_en?: string
   facts?: string[]
   gaps?: string[]
 }

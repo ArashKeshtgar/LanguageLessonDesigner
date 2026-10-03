@@ -29,6 +29,7 @@ const fields: [string, keyof BugItem][] = [['نشانه', 'sym'], ['علت', 'ca
         </template>
       </div>
       <div class="lesson"><b>درس:</b> {{ bug.lesson }}</div>
+      <div v-if="bug.sum_en" class="en sub did-en" dir="ltr">{{ bug.sum_en }}</div>
     </template>
     <div v-if="item.facts?.length || item.gaps?.length" class="refs">
       <TagChip v-for="f in item.facts || []" :key="f" :tag="`#F:${f}`" />
