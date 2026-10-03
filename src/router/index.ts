@@ -5,8 +5,9 @@ import LessonEditView from '../views/LessonEditView.vue'
 
 // Hash history (e.g. #/lesson/u201) — works unmodified on GitHub Pages and
 // any other static host, with no server rewrite rules needed for deep links.
-// Two sections: lessons (/, /lesson/…) and context (/context/…). The context
-// views are lazy chunks; their data only comes from the dev server.
+// Three sections: lessons (/, /lesson/…), context (/context/…) and proverbs
+// (/proverbs/…). Context and proverbs are lazy chunks; context data only comes
+// from the dev server or the private site.
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -18,6 +19,9 @@ const router = createRouter({
     { path: '/context/gaps', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'gaps' } },
     { path: '/context/bugs', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'bugs' } },
     { path: '/context/work', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'work' } },
+    // Proverbs: public data, bundled as its own lazy chunk (src/data/proverbs.json from the proverb engine).
+    { path: '/proverbs', name: 'proverbs', component: () => import('../views/ProverbsView.vue'), meta: { section: 'proverbs' } },
+    { path: '/proverbs/practice', component: () => import('../views/ProverbsPracticeView.vue'), meta: { section: 'proverbs' } },
   ],
   scrollBehavior(to, from) {
     return to.path === from.path ? false : { top: 0 }

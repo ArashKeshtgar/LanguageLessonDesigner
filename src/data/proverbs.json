@@ -1,0 +1,4334 @@
+{
+ "match": {
+  "exact": {
+   "en": "EXACT",
+   "color": "#2E6B4A",
+   "fa": "معادل دقیق"
+  },
+  "close": {
+   "en": "CLOSE",
+   "color": "#2D5F86",
+   "fa": "نزدیک"
+  },
+  "loose": {
+   "en": "LOOSE",
+   "color": "#9A7414",
+   "fa": "دور — با احتیاط"
+  },
+  "none": {
+   "en": "NO IDIOM",
+   "color": "#B4534E",
+   "fa": "معادل ندارد — بازنویسی"
+  }
+ },
+ "amer": {
+  "daily": {
+   "en": "DAILY US",
+   "color": "#2E6B4A",
+   "fa": "روزمره در آمریکا"
+  },
+  "known": {
+   "en": "KNOWN",
+   "color": "#2D5F86",
+   "fa": "شناخته‌شده، کمتر روزمره"
+  },
+  "dated": {
+   "en": "DATED",
+   "color": "#9A7414",
+   "fa": "قدیمی / کتابی"
+  },
+  "uk": {
+   "en": "MOSTLY UK",
+   "color": "#B4534E",
+   "fa": "بیشتر بریتانیایی — آمریکایی معمولاً نمی‌گوید"
+  }
+ },
+ "where": {
+  "family": {
+   "en": "Family",
+   "fa": "خانواده"
+  },
+  "friends": {
+   "en": "Friends",
+   "fa": "دوستان"
+  },
+  "partner": {
+   "en": "Partner & dating",
+   "fa": "همسر و رابطه"
+  },
+  "kids": {
+   "en": "Kids",
+   "fa": "بچه‌ها"
+  },
+  "neighbors": {
+   "en": "Neighbors & strangers",
+   "fa": "همسایه و غریبه"
+  },
+  "shopping": {
+   "en": "Shopping & services",
+   "fa": "خرید و خدمات"
+  },
+  "online": {
+   "en": "Texting & online",
+   "fa": "پیام و فضای مجازی"
+  },
+  "work": {
+   "en": "Work",
+   "fa": "کار"
+  }
+ },
+ "themes": [
+  {
+   "key": "effort",
+   "tag": "#T:effort",
+   "en": "Work & Effort",
+   "fa": "کار و تلاش",
+   "intro": "زحمت، پشتکار، تمرین — بیشترشان را آمریکایی‌ها در ورزش، باشگاه و محیط کار می‌گویند.",
+   "colors": {
+    "hero": "#5F3D1F",
+    "sub": "#D0BBA8",
+    "txt": "#E5DAD1",
+    "ico": "#F1E4D9",
+    "icoInk": "#764922",
+    "chip": "#F8EFE7",
+    "chipInk": "#824E20",
+    "dIco": "#443121",
+    "dIcoInk": "#D4B090",
+    "dChip": "#392A1D",
+    "dChipInk": "#DBB593",
+    "dHero": "#3D2A18"
+   }
+  },
+  {
+   "key": "patience",
+   "tag": "#T:patience",
+   "en": "Patience & Timing",
+   "fa": "صبر و زمان",
+   "intro": "عجله نکردن، وقت‌شناسی و دیر و زود.",
+   "colors": {
+    "hero": "#1E4851",
+    "sub": "#A8C9D0",
+    "txt": "#D1E1E5",
+    "ico": "#D9EDF1",
+    "icoInk": "#226876",
+    "chip": "#E7F5F8",
+    "chipInk": "#207282",
+    "dIco": "#213E44",
+    "dIcoInk": "#90C9D4",
+    "dChip": "#1D3439",
+    "dChipInk": "#93CFDB",
+    "dHero": "#1A363B"
+   }
+  },
+  {
+   "key": "money",
+   "tag": "#T:money",
+   "en": "Money & Spending",
+   "fa": "پول و خرج",
+   "intro": "خرج، قرض، خساست و بیزنس — از زبان پدر و مادر تا وال‌استریت.",
+   "colors": {
+    "hero": "#21492E",
+    "sub": "#A8D0B6",
+    "txt": "#D1E5D7",
+    "ico": "#D9F1E1",
+    "icoInk": "#22763E",
+    "chip": "#E7F8EC",
+    "chipInk": "#208241",
+    "dIco": "#21442D",
+    "dIcoInk": "#90D4A7",
+    "dChip": "#1D3926",
+    "dChipInk": "#93DBAB",
+    "dHero": "#1D3926"
+   }
+  },
+  {
+   "key": "speech",
+   "tag": "#T:speech",
+   "en": "Words & Silence",
+   "fa": "حرف و سکوت",
+   "intro": "حرف زدن، سکوت، شایعه و راستی.",
+   "colors": {
+    "hero": "#412E5A",
+    "sub": "#B9A8D0",
+    "txt": "#D9D1E5",
+    "ico": "#E3D9F1",
+    "icoInk": "#452276",
+    "chip": "#EEE7F8",
+    "chipInk": "#492082",
+    "dIco": "#302144",
+    "dIcoInk": "#AC90D4",
+    "dChip": "#291D39",
+    "dChipInk": "#B193DB",
+    "dHero": "#291F37"
+   }
+  },
+  {
+   "key": "friends",
+   "tag": "#T:friends",
+   "en": "Friends & Company",
+   "fa": "دوستی و همنشین",
+   "intro": "دوست، همنشین، مهمان و اعتماد.",
+   "colors": {
+    "hero": "#612736",
+    "sub": "#D0A8B2",
+    "txt": "#E5D1D6",
+    "ico": "#F1D9DF",
+    "icoInk": "#762237",
+    "chip": "#F8E7EB",
+    "chipInk": "#822039",
+    "dIco": "#44212A",
+    "dIcoInk": "#D490A1",
+    "dChip": "#391D24",
+    "dChipInk": "#DB93A5",
+    "dHero": "#3A1B23"
+   }
+  },
+  {
+   "key": "family",
+   "tag": "#T:family",
+   "en": "Family & Roots",
+   "fa": "خانواده و اصل و نسب",
+   "intro": "پدر و پسر، شباهت، خانواده.",
+   "colors": {
+    "hero": "#603324",
+    "sub": "#D0B2A8",
+    "txt": "#E5D6D1",
+    "ico": "#F1DFD9",
+    "icoInk": "#763722",
+    "chip": "#F8EBE7",
+    "chipInk": "#823920",
+    "dIco": "#442A21",
+    "dIcoInk": "#D4A190",
+    "dChip": "#39241D",
+    "dChipInk": "#DBA593",
+    "dHero": "#3B231A"
+   }
+  },
+  {
+   "key": "caution",
+   "tag": "#T:caution",
+   "en": "Caution & Foresight",
+   "fa": "احتیاط و دوراندیشی",
+   "intro": "محکم‌کاری، ریسک و پیشگیری.",
+   "colors": {
+    "hero": "#5A4E1A",
+    "sub": "#D0C8A8",
+    "txt": "#E5E1D1",
+    "ico": "#F1ECD9",
+    "icoInk": "#766522",
+    "chip": "#F8F4E7",
+    "chipInk": "#826E20",
+    "dIco": "#443D21",
+    "dIcoInk": "#D4C790",
+    "dChip": "#39331D",
+    "dChipInk": "#DBCD93",
+    "dHero": "#3F3717"
+   }
+  },
+  {
+   "key": "fate",
+   "tag": "#T:fate",
+   "en": "Luck & Fate",
+   "fa": "قسمت و شانس",
+   "intro": "شانس، بدشانسی، فرصت و «قسمت».",
+   "colors": {
+    "hero": "#29395B",
+    "sub": "#A8B6D0",
+    "txt": "#D1D7E5",
+    "ico": "#D9E1F1",
+    "icoInk": "#223E76",
+    "chip": "#E7ECF8",
+    "chipInk": "#204182",
+    "dIco": "#212D44",
+    "dIcoInk": "#90A7D4",
+    "dChip": "#1D2639",
+    "dChipInk": "#93ABDB",
+    "dHero": "#1D2639"
+   }
+  },
+  {
+   "key": "appearance",
+   "tag": "#T:appearance",
+   "en": "Appearances & Hypocrisy",
+   "fa": "ظاهر و ریا",
+   "intro": "ظاهرسازی، دورویی و چیزی که زیر کاسه است.",
+   "colors": {
+    "hero": "#512D51",
+    "sub": "#D0A8D0",
+    "txt": "#E5D1E5",
+    "ico": "#F1D9F1",
+    "icoInk": "#762276",
+    "chip": "#F8E7F8",
+    "chipInk": "#822082",
+    "dIco": "#442144",
+    "dIcoInk": "#D490D4",
+    "dChip": "#391D39",
+    "dChipInk": "#DB93DB",
+    "dHero": "#352135"
+   }
+  },
+  {
+   "key": "greed",
+   "tag": "#T:greed",
+   "en": "Greed & Contentment",
+   "fa": "طمع و قناعت",
+   "intro": "سیری‌ناپذیری، حسادت و راضی بودن.",
+   "colors": {
+    "hero": "#354A26",
+    "sub": "#B9D0A8",
+    "txt": "#D9E5D1",
+    "ico": "#E3F1D9",
+    "icoInk": "#457622",
+    "chip": "#EEF8E7",
+    "chipInk": "#498220",
+    "dIco": "#304421",
+    "dIcoInk": "#ACD490",
+    "dChip": "#29391D",
+    "dChipInk": "#B1DB93",
+    "dHero": "#29371F"
+   }
+  },
+  {
+   "key": "wisdom",
+   "tag": "#T:wisdom",
+   "en": "Experience & Wisdom",
+   "fa": "تجربه و دانایی",
+   "intro": "تجربه، دانش و کاردانی.",
+   "colors": {
+    "hero": "#203F55",
+    "sub": "#A8C0D0",
+    "txt": "#D1DCE5",
+    "ico": "#D9E7F1",
+    "icoInk": "#225376",
+    "chip": "#E7F1F8",
+    "chipInk": "#205982",
+    "dIco": "#213544",
+    "dIcoInk": "#90B8D4",
+    "dChip": "#1D2D39",
+    "dChipInk": "#93BDDB",
+    "dHero": "#1A2E3B"
+   }
+  },
+  {
+   "key": "trouble",
+   "tag": "#T:trouble",
+   "en": "Trouble & Bad Luck",
+   "fa": "گرفتاری",
+   "intro": "بدبیاری روی بدبیاری، گیر افتادن، بن‌بست.",
+   "colors": {
+    "hero": "#612727",
+    "sub": "#D0A8A8",
+    "txt": "#E5D1D1",
+    "ico": "#F1D9D9",
+    "icoInk": "#762222",
+    "chip": "#F8E7E7",
+    "chipInk": "#822020",
+    "dIco": "#442121",
+    "dIcoInk": "#D49090",
+    "dChip": "#391D1D",
+    "dChipInk": "#DB9393",
+    "dHero": "#3A1B1B"
+   }
+  },
+  {
+   "key": "justice",
+   "tag": "#T:justice",
+   "en": "Consequences & Karma",
+   "fa": "عمل و عکس‌العمل",
+   "intro": "هر کاری بکنی برمی‌گردد.",
+   "colors": {
+    "hero": "#204A43",
+    "sub": "#A8D0C9",
+    "txt": "#D1E5E1",
+    "ico": "#D9F1ED",
+    "icoInk": "#227668",
+    "chip": "#E7F8F5",
+    "chipInk": "#208272",
+    "dIco": "#21443E",
+    "dIcoInk": "#90D4C9",
+    "dChip": "#1D3934",
+    "dChipInk": "#93DBCF",
+    "dHero": "#1C3A35"
+   }
+  },
+  {
+   "key": "futile",
+   "tag": "#T:futile",
+   "en": "Pointless Effort",
+   "fa": "کار بیهوده",
+   "intro": "آب در هاون کوبیدن و زیره به کرمان بردن.",
+   "colors": {
+    "hero": "#524737",
+    "sub": "#D0C0A8",
+    "txt": "#E5DCD1",
+    "ico": "#F1E7D9",
+    "icoInk": "#765322",
+    "chip": "#F8F1E7",
+    "chipInk": "#825920",
+    "dIco": "#443521",
+    "dIcoInk": "#D4B890",
+    "dChip": "#392D1D",
+    "dChipInk": "#DBBD93",
+    "dHero": "#322C23"
+   }
+  },
+  {
+   "key": "character",
+   "tag": "#T:character",
+   "en": "Human Nature",
+   "fa": "طبیعت آدم‌ها",
+   "intro": "اخلاق و رفتار آدم‌ها — بیشترشان در آمریکا به‌صورت اصطلاح (idiom) می‌آیند نه ضرب‌المثل.",
+   "colors": {
+    "hero": "#2C2C52",
+    "sub": "#A8A8D0",
+    "txt": "#D1D1E5",
+    "ico": "#D9D9F1",
+    "icoInk": "#222276",
+    "chip": "#E7E7F8",
+    "chipInk": "#202082",
+    "dIco": "#212144",
+    "dIcoInk": "#9090D4",
+    "dChip": "#1D1D39",
+    "dChipInk": "#9393DB",
+    "dHero": "#202036"
+   }
+  }
+ ],
+ "proverbs": [
+  {
+   "n": 1,
+   "t": "effort",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "نابرده رنج، گنج میسر نمی‌شود",
+   "mean": "بدون زحمت به نتیجه نمی‌رسی.",
+   "en": "No pain, no gain.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "باشگاه، مربی ورزش، تمرین سخت، درس خواندن شب امتحان. لحن انگیزشی و کمی شوخی.",
+   "ex": "My legs are killing me after leg day, but hey — no pain, no gain.",
+   "alt": [
+    "Nothing worth having comes easy."
+   ],
+   "tag": "#M001"
+  },
+  {
+   "n": 2,
+   "t": "effort",
+   "where": [
+    "kids",
+    "family",
+    "friends"
+   ],
+   "fa": "کار نیکو کردن از پر کردن است",
+   "mean": "مهارت با تکرار به دست می‌آید.",
+   "en": "Practice makes perfect.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پدر و مادر به بچه سر کلاس پیانو یا ورزش؛ معلم‌ها. مربی‌ها گاهی می‌گویند: Perfect practice makes perfect.",
+   "ex": "Keep practicing your free throws, buddy — practice makes perfect.",
+   "ex_work": "Keep doing those coding drills — practice makes perfect.",
+   "alt": [
+    "Practice makes progress."
+   ],
+   "note": "Practice makes progress نسخه‌ی مدرسه‌های آمریکایی است تا بچه از «کامل» نترسد.",
+   "tag": "#M002"
+  },
+  {
+   "n": 3,
+   "t": "effort",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "از تو حرکت، از خدا برکت",
+   "mean": "تو تلاشت را بکن، نتیجه می‌آید.",
+   "en": "God helps those who help themselves.",
+   "m": "exact",
+   "amer": "known",
+   "us": "در محیط مذهبی‌تر یا از زبان بزرگ‌ترها. نسل جوان بیشتر می‌گوید You make your own luck.",
+   "ex": "I'm not waiting for a miracle. God helps those who help themselves.",
+   "alt": [
+    "You make your own luck."
+   ],
+   "tag": "#M003"
+  },
+  {
+   "n": 4,
+   "t": "effort",
+   "where": [
+    "neighbors",
+    "friends"
+   ],
+   "fa": "قطره قطره جمع گردد، وانگهی دریا شود",
+   "mean": "چیزهای کوچک کم‌کم زیاد می‌شوند.",
+   "en": "Every little bit helps.",
+   "m": "close",
+   "amer": "daily",
+   "us": "جمع‌آوری کمک خیریه، پس‌انداز، صندوق‌های «round up» در سوپرمارکت.",
+   "ex": "Even five bucks makes a difference — every little bit helps.",
+   "alt": [
+    "Little by little.",
+    "It all adds up."
+   ],
+   "note": "Many a little makes a mickle بریتانیایی و قدیمی است.",
+   "tag": "#M004"
+  },
+  {
+   "n": 5,
+   "t": "effort",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "رهرو آن است که آهسته و پیوسته رود",
+   "mean": "پیوستگی از سرعت مهم‌تر است.",
+   "en": "Slow and steady wins the race.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "از قصه‌ی لاک‌پشت و خرگوش؛ برای رژیم، یادگیری زبان، پروژه‌های طولانی.",
+   "ex": "I'm only doing ten minutes of Spanish a day, but slow and steady wins the race.",
+   "tag": "#M005"
+  },
+  {
+   "n": 6,
+   "t": "effort",
+   "where": [
+    "family",
+    "partner"
+   ],
+   "fa": "کار امروز را به فردا میفکن",
+   "mean": "کار را عقب نینداز.",
+   "en": "Don't put off till tomorrow what you can do today.",
+   "m": "exact",
+   "amer": "known",
+   "us": "کمی نصیحت‌گونه؛ در محاوره بیشتر می‌گویند Quit procrastinating یا Just get it done.",
+   "ex": "Just file your taxes now. Don't put off till tomorrow what you can do today.",
+   "alt": [
+    "Quit procrastinating.",
+    "Just get it done."
+   ],
+   "tag": "#M006"
+  },
+  {
+   "n": 7,
+   "t": "effort",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "خواستن توانستن است",
+   "mean": "اراده باشد، راه پیدا می‌شود.",
+   "en": "Where there's a will, there's a way.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "انگیزشی؛ وقتی کسی با منابع کم کاری را پیش می‌برد.",
+   "ex": "She worked nights and still finished her degree. Where there's a will, there's a way.",
+   "tag": "#M007"
+  },
+  {
+   "n": 8,
+   "t": "effort",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "سحرخیز باش تا کامروا باشی",
+   "mean": "زود شروع کن تا برنده باشی.",
+   "en": "The early bird gets the worm.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "صف بلک‌فرایدی، ثبت‌نام زود، اول صبح سر کار. آمریکایی‌ها gets می‌گویند، catches هم درست است.",
+   "ex": "I showed up at 6 a.m. and got the last one — early bird gets the worm.",
+   "note": "شوخی رایج در جواب: But the second mouse gets the cheese.",
+   "tag": "#M008"
+  },
+  {
+   "n": 9,
+   "t": "effort",
+   "where": [
+    "family",
+    "neighbors",
+    "friends"
+   ],
+   "fa": "یک دست صدا ندارد",
+   "mean": "کار بزرگ با همکاری پیش می‌رود.",
+   "en": "Many hands make light work.",
+   "m": "close",
+   "amer": "known",
+   "us": "در شرکت‌ها بیشتر Teamwork makes the dream work (کمی شوخی و کلیشه‌ای) شنیده می‌شود.",
+   "ex": "Grab a box, everyone — many hands make light work.",
+   "alt": [
+    "Teamwork makes the dream work.",
+    "It takes a village."
+   ],
+   "note": "It takes two to tango هم هست، ولی فقط وقتی تقصیر گردن هر دو طرف است.",
+   "tag": "#M009"
+  },
+  {
+   "n": 10,
+   "t": "effort",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "هر که طاووس خواهد، جور هندوستان کشد",
+   "mean": "چیز ارزشمند سختی هم دارد.",
+   "en": "If you want the rainbow, you've got to put up with the rain.",
+   "m": "close",
+   "amer": "known",
+   "us": "جمله‌ی مشهور دالی پارتون، خواننده‌ی کانتری؛ روی پوستر و اینستاگرام زیاد است.",
+   "ex": "Grad school is rough, but if you want the rainbow, you've got to put up with the rain.",
+   "alt": [
+    "Nothing worth having comes easy."
+   ],
+   "tag": "#M010"
+  },
+  {
+   "n": 11,
+   "t": "effort",
+   "where": [
+    "friends"
+   ],
+   "fa": "آب که یک‌جا بماند، می‌گندد",
+   "mean": "بی‌حرکتی آدم و مهارت را خراب می‌کند.",
+   "en": "Use it or lose it.",
+   "m": "close",
+   "amer": "daily",
+   "us": "مهارت، زبان خارجی، عضله، حتی مرخصی سالانه‌ای که اگر نگیری می‌سوزد (use-it-or-lose-it PTO).",
+   "ex": "I haven't spoken French in years — use it or lose it, I guess.",
+   "note": "A rolling stone gathers no moss نزدیک است ولی در آمریکا گاهی معنای منفی (آدم بی‌ثبات) دارد.",
+   "tag": "#M011"
+  },
+  {
+   "n": 12,
+   "t": "effort",
+   "where": [
+    "friends",
+    "kids"
+   ],
+   "fa": "کار را که کرد؟ آن‌که تمام کرد",
+   "mean": "شروع کردن هنر نیست، تمام کردن است.",
+   "en": "It's not how you start, it's how you finish.",
+   "m": "close",
+   "amer": "daily",
+   "us": "مربی‌ها و گزارشگرهای ورزشی، بیشتر بسکتبال و فوتبال آمریکایی.",
+   "ex": "We were down at halftime, but it's not how you start, it's how you finish.",
+   "alt": [
+    "Finish what you started.",
+    "It ain't over till it's over."
+   ],
+   "tag": "#M012"
+  },
+  {
+   "n": 13,
+   "t": "effort",
+   "where": [
+    "family",
+    "friends",
+    "work"
+   ],
+   "fa": "عقل که نباشد، جان در عذاب است",
+   "mean": "بی‌فکری یعنی زحمت بیشتر.",
+   "en": "Work smarter, not harder.",
+   "m": "close",
+   "amer": "daily",
+   "us": "محیط کار و استارتاپ‌ها؛ وقتی کسی کار را دستی و تکراری انجام می‌دهد.",
+   "ex": "Grab a cart instead of carrying the bags one by one. Work smarter, not harder.",
+   "ex_work": "Write a script for it instead of copying 500 rows by hand. Work smarter, not harder.",
+   "tag": "#M013"
+  },
+  {
+   "n": 14,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "صبر تلخ است، ولیکن بر شیرین دارد",
+   "mean": "صبر نتیجه‌ی خوب دارد.",
+   "en": "Good things come to those who wait.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی کسی بی‌تاب است. گاهی به شوخی هم.",
+   "ex": "We were on the waitlist for that puppy for six months, but good things come to those who wait.",
+   "ex_work": "The job offer took three months, but good things come to those who wait.",
+   "tag": "#M014"
+  },
+  {
+   "n": 15,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "گر صبر کنی، ز غوره حلوا سازی",
+   "mean": "با صبر، کار ناممکن هم ممکن می‌شود.",
+   "en": "Rome wasn't built in a day.",
+   "m": "close",
+   "amer": "daily",
+   "us": "برای پروژه‌ی طولانی یا کسی که زود ناامید شده.",
+   "ex": "You've only been playing guitar for a week. Rome wasn't built in a day.",
+   "ex_work": "Your business won't be profitable in month one. Rome wasn't built in a day.",
+   "alt": [
+    "Patience is a virtue."
+   ],
+   "tag": "#M015"
+  },
+  {
+   "n": 16,
+   "t": "patience",
+   "where": [
+    "family",
+    "shopping"
+   ],
+   "fa": "عجله کار شیطان است",
+   "mean": "عجله باعث خرابی است.",
+   "en": "Haste makes waste.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کارگاه، آشپزخانه، امضای قرارداد. در محاوره: Slow down.",
+   "ex": "Read the lease before you sign it — haste makes waste.",
+   "ex_work": "Double-check the numbers before you send it — haste makes waste.",
+   "alt": [
+    "Slow down, you'll get there."
+   ],
+   "tag": "#M016"
+  },
+  {
+   "n": 17,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family",
+    "online"
+   ],
+   "fa": "دیر رسیدن بهتر از هرگز نرسیدن است",
+   "mean": "دیر بهتر از هیچ‌وقت.",
+   "en": "Better late than never.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ پیام تبریک دیرهنگام، فارغ‌التحصیلی در سن بالا. گاهی کنایه.",
+   "ex": "Happy belated birthday! Better late than never, right?",
+   "tag": "#M017"
+  },
+  {
+   "n": 18,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "جوجه را آخر پاییز می‌شمارند",
+   "mean": "قبل از نتیجه‌ی نهایی جشن نگیر.",
+   "en": "Don't count your chickens before they hatch.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "قبل از بسته شدن قرارداد، قبل از اعلام نتیجه‌ی مصاحبه یا انتخابات.",
+   "ex": "She said yes to coffee, not marriage. Don't count your chickens before they hatch.",
+   "ex_work": "They said the offer's coming, but don't count your chickens before they hatch.",
+   "alt": [
+    "It ain't over till the fat lady sings."
+   ],
+   "note": "It ain't over till the fat lady sings شوخی ورزشی است و ممکن است بی‌ادبانه به نظر برسد.",
+   "tag": "#M018"
+  },
+  {
+   "n": 19,
+   "t": "patience",
+   "where": [
+    "family",
+    "friends",
+    "kids"
+   ],
+   "fa": "آب ریخته را نمی‌شود جمع کرد",
+   "mean": "کاری که شده برگشت ندارد؛ غصه فایده ندارد.",
+   "en": "There's no use crying over spilled milk.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آمریکایی spilled، بریتانیایی spilt. در محاوره کوتاه: It's water under the bridge یا What's done is done.",
+   "ex": "The vase is broken. No use crying over spilled milk — let's just clean it up.",
+   "ex_work": "We lost the client. No use crying over spilled milk — let's fix the process.",
+   "alt": [
+    "What's done is done.",
+    "It's water under the bridge."
+   ],
+   "tag": "#M019"
+  },
+  {
+   "n": 20,
+   "t": "patience",
+   "where": [
+    "family",
+    "friends",
+    "partner"
+   ],
+   "fa": "هر چیزی به وقتش",
+   "mean": "هر کاری زمان مناسب خودش را دارد.",
+   "en": "There's a time and a place for everything.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "وقتی کسی حرف یا شوخی نابه‌جا می‌کند؛ یا وقتی می‌خواهی بگویی الان نه.",
+   "ex": "Not at the dinner table, Mom. There's a time and a place.",
+   "ex_work": "Don't bring up salary in the first five minutes. There's a time and a place.",
+   "alt": [
+    "All in good time."
+   ],
+   "tag": "#M020"
+  },
+  {
+   "n": 21,
+   "t": "patience",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "تا تنور گرم است، باید نان را چسباند",
+   "mean": "فرصت را تا داغ است دریاب.",
+   "en": "Strike while the iron is hot.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "مذاکره، فروش، وقتی مشتری یا کارفرما مشتاق است.",
+   "ex": "The seller just dropped the price. Make an offer now — strike while the iron is hot.",
+   "ex_work": "They loved the demo — send the proposal today. Strike while the iron is hot.",
+   "alt": [
+    "Make hay while the sun shines."
+   ],
+   "tag": "#M021"
+  },
+  {
+   "n": 22,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "ماهی را هر وقت از آب بگیری تازه است",
+   "mean": "برای شروع هیچ‌وقت دیر نیست.",
+   "en": "It's never too late.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "شروع رشته‌ی تازه در چهل‌سالگی، مهاجرت، یادگیری زبان.",
+   "ex": "Switching careers at 45? It's never too late.",
+   "alt": [
+    "Better late than never."
+   ],
+   "tag": "#M022"
+  },
+  {
+   "n": 23,
+   "t": "patience",
+   "where": [
+    "friends",
+    "family",
+    "partner"
+   ],
+   "fa": "شب آبستن است تا چه زاید سحر",
+   "mean": "آینده معلوم نیست؛ باید صبر کرد و دید.",
+   "en": "Time will tell.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج و خنثی؛ درباره‌ی نتیجه‌ی هر چیز نامعلوم.",
+   "ex": "Will those two last? Time will tell.",
+   "ex_work": "Will the new manager work out? Time will tell.",
+   "alt": [
+    "We'll see.",
+    "Only time will tell."
+   ],
+   "tag": "#M023"
+  },
+  {
+   "n": 24,
+   "t": "patience",
+   "where": [
+    "partner",
+    "friends",
+    "online"
+   ],
+   "fa": "تا گوساله گاو شود، دل صاحبش آب شود",
+   "mean": "انتظار طولانی آدم را از پا می‌اندازد.",
+   "en": "A watched pot never boils.",
+   "m": "close",
+   "amer": "known",
+   "us": "وقتی کسی مدام منتظر جواب ایمیل یا نتیجه است و مرتب چک می‌کند.",
+   "ex": "Stop checking if he texted back. A watched pot never boils.",
+   "ex_work": "Stop refreshing your inbox — a watched pot never boils.",
+   "note": "معنای انگلیسی: وقتی چشم‌به‌راهی، زمان کندتر می‌گذرد. معنای فارسی بیشتر «طول کشیدن» است.",
+   "tag": "#M024"
+  },
+  {
+   "n": 25,
+   "t": "money",
+   "where": [
+    "friends",
+    "work"
+   ],
+   "fa": "پول، پول می‌آورد",
+   "mean": "برای پول درآوردن سرمایه لازم است.",
+   "en": "It takes money to make money.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بیزنس، استارتاپ، سرمایه‌گذاری ملک.",
+   "ex": "You'll need a marketing budget. It takes money to make money.",
+   "tag": "#M025"
+  },
+  {
+   "n": 26,
+   "t": "money",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "هر که بامش بیش، برفش بیشتر",
+   "mean": "امکانات بیشتر، دردسر و مسئولیت بیشتر.",
+   "en": "More money, more problems.",
+   "m": "close",
+   "amer": "daily",
+   "us": "عامیانه، از ترانه‌ی رپ دهه‌ی ۹۰. نسخه‌ی جدی‌تر: Heavy is the head that wears the crown.",
+   "ex": "He bought a second rental and now he's fixing toilets at midnight. More money, more problems.",
+   "alt": [
+    "Heavy is the head that wears the crown.",
+    "With great power comes great responsibility."
+   ],
+   "tag": "#M026"
+  },
+  {
+   "n": 27,
+   "t": "money",
+   "where": [
+    "friends",
+    "shopping"
+   ],
+   "fa": "مفت باشد، کوفت باشد",
+   "mean": "چیز مجانی را هر چه باشد برمی‌دارند.",
+   "en": "If it's free, it's for me.",
+   "m": "close",
+   "amer": "daily",
+   "us": "عامیانه و شوخی؛ نمونه‌ی مجانی در فروشگاه، غذای مجانی در دفتر کار.",
+   "ex": "Free samples at Costco? If it's free, it's for me.",
+   "ex_work": "Free pizza in the break room? If it's free, it's for me.",
+   "tag": "#M027"
+  },
+  {
+   "n": 28,
+   "t": "money",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "ارزان‌خری، انبان‌خری",
+   "mean": "جنس ارزان آخرش گران تمام می‌شود.",
+   "en": "You get what you pay for.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی جنس ارزان زود خراب شد.",
+   "ex": "The $10 charger died in a week. You get what you pay for.",
+   "alt": [
+    "Buy cheap, buy twice."
+   ],
+   "note": "Buy cheap, buy twice بیشتر بریتانیایی است.",
+   "tag": "#M028"
+  },
+  {
+   "n": 29,
+   "t": "money",
+   "where": [
+    "family",
+    "partner",
+    "friends"
+   ],
+   "fa": "پایت را به اندازه‌ی گلیمت دراز کن",
+   "mean": "به اندازه‌ی درآمدت خرج کن.",
+   "en": "Live within your means.",
+   "m": "close",
+   "amer": "daily",
+   "us": "مشاوره‌ی مالی، بدهی کارت اعتباری. ضرب‌المثل اصلی Cut your coat according to your cloth بریتانیایی است.",
+   "ex": "Skip the new car for now — live within your means.",
+   "alt": [
+    "Don't spend what you don't have."
+   ],
+   "note": "Cut your coat according to your cloth در آمریکا تقریباً شنیده نمی‌شود.",
+   "tag": "#M029"
+  },
+  {
+   "n": 30,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "حساب حساب است، کاکا برادر",
+   "mean": "رابطه‌ی خانوادگی جدا، حساب مالی جدا.",
+   "en": "Business is business.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "معامله با دوست و فامیل. alt برای مخلوط نکردن کار و رابطه است.",
+   "ex": "I love you, man, but business is business — I need the rent by Friday.",
+   "alt": [
+    "Don't mix business with pleasure.",
+    "Friends are friends, but business is business."
+   ],
+   "tag": "#M030"
+  },
+  {
+   "n": 31,
+   "t": "money",
+   "where": [
+    "kids",
+    "family"
+   ],
+   "fa": "پول علف خرس نیست",
+   "mean": "پول راحت به دست نمی‌آید؛ ولخرجی نکن.",
+   "en": "Money doesn't grow on trees.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کلاسیک پدر و مادرها به بچه‌ها.",
+   "ex": "No, we're not getting another video game. Money doesn't grow on trees.",
+   "tag": "#M031"
+  },
+  {
+   "n": 32,
+   "t": "money",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "با پول همه کار می‌شود کرد",
+   "mean": "پول در را باز می‌کند.",
+   "en": "Money talks.",
+   "m": "close",
+   "amer": "daily",
+   "us": "سیاست، لابی، مذاکره. کامل‌تر و رکیک‌ترش: Money talks, BS walks.",
+   "ex": "The guy who slipped the host twenty bucks got a table right away. Money talks.",
+   "ex_work": "They'll approve it if the sponsor's paying. Money talks.",
+   "tag": "#M032"
+  },
+  {
+   "n": 33,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "دندان اسب پیشکشی را نمی‌شمارند",
+   "mean": "از هدیه ایراد نگیر.",
+   "en": "Don't look a gift horse in the mouth.",
+   "m": "exact",
+   "amer": "known",
+   "us": "کمی قدیمی ولی همه می‌فهمند؛ معادل فارسی از همین ترجمه شده.",
+   "ex": "They're giving you a free laptop? Don't look a gift horse in the mouth.",
+   "tag": "#M033"
+  },
+  {
+   "n": 34,
+   "t": "money",
+   "where": [
+    "friends"
+   ],
+   "fa": "خرج که از کیسه‌ی مهمان بود، حاتم‌طایی شدن آسان بود",
+   "mean": "با پول دیگران دست‌ودل‌باز بودن هنر نیست.",
+   "en": "It's easy to be generous with other people's money.",
+   "m": "close",
+   "amer": "daily",
+   "us": "انتقاد از دولت، مدیرانی که با بودجه‌ی شرکت ولخرجی می‌کنند.",
+   "ex": "Sure, he's generous — with his dad's credit card. It's easy to be generous with other people's money.",
+   "ex_work": "Sure, he tips big on the company card. It's easy to be generous with other people's money.",
+   "note": "ضرب‌المثل ثابت نیست، ولی همین جمله را آمریکایی‌ها زیاد می‌گویند.",
+   "tag": "#M034"
+  },
+  {
+   "n": 35,
+   "t": "money",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "پز عالی، جیب خالی",
+   "mean": "ادا و اطوار پولدارها بدون پول.",
+   "en": "Champagne taste on a beer budget.",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی رایج درباره‌ی کسی که سلیقه‌ی گران دارد ولی پولش را ندارد.",
+   "ex": "She wants a Tesla on a barista's salary — champagne taste on a beer budget.",
+   "tag": "#M035"
+  },
+  {
+   "n": 36,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "آب از دستش نمی‌چکد",
+   "mean": "خیلی خسیس است.",
+   "en": "He's a real penny-pincher.",
+   "m": "close",
+   "amer": "daily",
+   "us": "اصطلاح، نه ضرب‌المثل. شوخی‌تر: He's so cheap he squeaks. یا tight-fisted.",
+   "ex": "He split a $12 bill to the cent. Total penny-pincher.",
+   "alt": [
+    "He's so cheap he squeaks.",
+    "tight-fisted"
+   ],
+   "tag": "#M036"
+  },
+  {
+   "n": 37,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "کفگیرش به ته دیگ خورده",
+   "mean": "پول یا منابعش تمام شده.",
+   "en": "Running on fumes.",
+   "m": "close",
+   "amer": "daily",
+   "us": "هم برای پول (آخر ماه) هم برای انرژی (خستگی). از باک بنزین خالی.",
+   "ex": "Payday's Friday and I'm running on fumes.",
+   "alt": [
+    "scraping the bottom of the barrel",
+    "broke"
+   ],
+   "note": "scraping the bottom of the barrel یعنی سراغ بدترین گزینه‌های باقیمانده رفتن، نه فقط بی‌پولی.",
+   "tag": "#M037"
+  },
+  {
+   "n": 38,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "هم از توبره می‌خورد، هم از آخور",
+   "mean": "از دو جا هم‌زمان سود می‌برد.",
+   "en": "Double-dipping.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کسی که از دو منبع برای یک کار پول می‌گیرد (حقوق دولتی و بازنشستگی). از فرو کردن دوباره‌ی چیپس در سس.",
+   "ex": "Hey, no double-dipping — you already bit that chip!",
+   "ex_work": "He's billing both clients for the same hours. That's double-dipping.",
+   "tag": "#M038"
+  },
+  {
+   "n": 39,
+   "t": "money",
+   "where": [
+    "neighbors",
+    "work"
+   ],
+   "fa": "نان کسی را آجر کردن",
+   "mean": "منبع درآمد کسی را از بین بردن.",
+   "en": "Take food off someone's table.",
+   "m": "close",
+   "amer": "daily",
+   "us": "در بحث اخراج، اتوماسیون، رقابت ناجوانمردانه.",
+   "ex": "Cutting their hours takes food off their families' tables.",
+   "tag": "#M039"
+  },
+  {
+   "n": 40,
+   "t": "money",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "قرض، دوستی را می‌بُرد",
+   "mean": "به دوست پول قرض نده.",
+   "en": "Never lend money to friends.",
+   "m": "close",
+   "amer": "daily",
+   "us": "نسخه‌ی ادبی: Neither a borrower nor a lender be (شکسپیر) که known است.",
+   "ex": "I learned the hard way — never lend money to friends.",
+   "alt": [
+    "Neither a borrower nor a lender be."
+   ],
+   "tag": "#M040"
+  },
+  {
+   "n": 41,
+   "t": "speech",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "سکوت علامت رضاست",
+   "mean": "کسی که اعتراض نکند، یعنی موافق است.",
+   "en": "Silence gives consent.",
+   "m": "exact",
+   "amer": "known",
+   "us": "رسمی و حقوقی‌تر. در محاوره: If nobody objects, we'll go ahead. یا در عروسی: Speak now or forever hold your peace.",
+   "ex": "Nobody said no to pizza, so pizza it is. Silence means yes!",
+   "ex_work": "No one objected in the meeting, and silence gives consent.",
+   "alt": [
+    "Speak now or forever hold your peace."
+   ],
+   "tag": "#M041"
+  },
+  {
+   "n": 42,
+   "t": "speech",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "زبان سرخ سر سبز می‌دهد بر باد",
+   "mean": "حرف نسنجیده سرت را به باد می‌دهد.",
+   "en": "Loose lips sink ships.",
+   "m": "close",
+   "amer": "known",
+   "us": "از پوسترهای جنگ جهانی دوم آمریکا؛ امروز درباره‌ی لو دادن اطلاعات شرکت یا راز.",
+   "ex": "Don't tell your sister about the surprise party. Loose lips sink ships.",
+   "ex_work": "Don't post about the merger. Loose lips sink ships.",
+   "alt": [
+    "Watch your mouth."
+   ],
+   "tag": "#M042"
+  },
+  {
+   "n": 43,
+   "t": "speech",
+   "where": [
+    "kids",
+    "partner",
+    "family"
+   ],
+   "fa": "اول اندیشه، وانگهی گفتار",
+   "mean": "قبل از حرف زدن فکر کن.",
+   "en": "Think before you speak.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج، مخصوصاً به بچه‌ها و در محیط کار.",
+   "ex": "That came out wrong. I should think before I speak.",
+   "tag": "#M043"
+  },
+  {
+   "n": 44,
+   "t": "speech",
+   "where": [
+    "family",
+    "neighbors"
+   ],
+   "fa": "دیوار موش دارد، موش هم گوش دارد",
+   "mean": "مراقب باش، کسی می‌شنود.",
+   "en": "The walls have ears.",
+   "m": "exact",
+   "amer": "known",
+   "us": "شوخی‌وار در دفتر کار وقتی کسی غیبت می‌کند.",
+   "ex": "Let's talk about it outside. The walls have ears.",
+   "tag": "#M044"
+  },
+  {
+   "n": 45,
+   "t": "speech",
+   "where": [
+    "friends",
+    "family",
+    "neighbors"
+   ],
+   "fa": "یک کلاغ، چهل کلاغ",
+   "mean": "خبر دهان‌به‌دهان بزرگ و تحریف می‌شود.",
+   "en": "It's like a game of telephone.",
+   "m": "close",
+   "amer": "daily",
+   "us": "از بازی بچگانه‌ی Telephone (در بریتانیا Chinese whispers). در شایعه‌های اداری.",
+   "ex": "By the time the story got to Grandma, it was a totally different story — like a game of telephone.",
+   "ex_work": "By the time it got to HR, it was a totally different story — a game of telephone.",
+   "note": "Chinese whispers بریتانیایی است و امروزه در آمریکا نامناسب حساب می‌شود.",
+   "tag": "#M045"
+  },
+  {
+   "n": 46,
+   "t": "speech",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "حرف حق تلخ است",
+   "mean": "حقیقت شنیدنش سخت است.",
+   "en": "The truth hurts.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ گاهی با لحن نیش‌دار بعد از یک انتقاد.",
+   "ex": "I know you don't want to hear it, but the truth hurts.",
+   "tag": "#M046"
+  },
+  {
+   "n": 47,
+   "t": "speech",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "دو صد گفته چون نیم کردار نیست",
+   "mean": "عمل از حرف مهم‌تر است.",
+   "en": "Actions speak louder than words.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رابطه‌ها، مدیریت، سیاست — خیلی رایج.",
+   "ex": "He keeps saying he's sorry. Actions speak louder than words.",
+   "tag": "#M047"
+  },
+  {
+   "n": 48,
+   "t": "speech",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "حرف که خرجی ندارد",
+   "mean": "حرف زدن راحت است، عمل مهم است.",
+   "en": "Talk is cheap.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "مذاکره، وعده‌ی سیاستمدارها، تبلیغات.",
+   "ex": "He keeps saying he'll pay me back. Talk is cheap.",
+   "ex_work": "Everyone says they'll invest. Talk is cheap — show me the check.",
+   "tag": "#M048"
+  },
+  {
+   "n": 49,
+   "t": "speech",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "تا مرد سخن نگفته باشد، عیب و هنرش نهفته باشد",
+   "mean": "با حرف زدن، اندازه‌ی آدم معلوم می‌شود.",
+   "en": "Better to remain silent and be thought a fool than to speak and remove all doubt.",
+   "m": "close",
+   "amer": "known",
+   "us": "منسوب به لینکلن یا مارک تواین؛ شوخی نیش‌دار درباره‌ی کسی که حرف بی‌ربط زد.",
+   "ex": "He should've stayed quiet. Better to be thought a fool than to open your mouth and remove all doubt.",
+   "tag": "#M049"
+  },
+  {
+   "n": 50,
+   "t": "speech",
+   "where": [
+    "online"
+   ],
+   "fa": "جواب ابلهان خاموشی است",
+   "mean": "با آدم نادان بحث نکن.",
+   "en": "Don't feed the trolls.",
+   "m": "close",
+   "amer": "daily",
+   "us": "فضای اینترنت و شبکه‌های اجتماعی. نسخه‌ی کلاسیک: Never argue with a fool.",
+   "ex": "Just ignore his comments. Don't feed the trolls.",
+   "alt": [
+    "Never argue with a fool.",
+    "Never wrestle with a pig — you both get dirty and the pig likes it."
+   ],
+   "tag": "#M050"
+  },
+  {
+   "n": 51,
+   "t": "speech",
+   "where": [
+    "kids",
+    "family",
+    "friends"
+   ],
+   "fa": "شنیدن کی بود مانند دیدن",
+   "mean": "باید با چشم خودت ببینی.",
+   "en": "Seeing is believing.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی خبر باورنکردنی است.",
+   "ex": "You say you cleaned your room? Seeing is believing.",
+   "ex_work": "They say the new office is huge. Well, seeing is believing.",
+   "alt": [
+    "I'll believe it when I see it."
+   ],
+   "tag": "#M051"
+  },
+  {
+   "n": 52,
+   "t": "speech",
+   "where": [
+    "family",
+    "neighbors",
+    "friends"
+   ],
+   "fa": "در دروازه را می‌شود بست، در دهان مردم را نه",
+   "mean": "نمی‌شود جلوی حرف مردم را گرفت.",
+   "en": "People will talk.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "وقتی کسی نگران قضاوت دیگران است؛ معمولاً با Let them.",
+   "ex": "So what if they gossip? People will talk. Let them.",
+   "tag": "#M052"
+  },
+  {
+   "n": 53,
+   "t": "speech",
+   "where": [
+    "partner",
+    "family",
+    "friends"
+   ],
+   "fa": "حرفی که از دهان درآمد، دیگر برنمی‌گردد",
+   "mean": "حرف زده‌شده را نمی‌شود پس گرفت.",
+   "en": "You can't unring a bell.",
+   "m": "exact",
+   "amer": "known",
+   "us": "اصطلاح دادگاهی آمریکا (وقتی هیئت منصفه چیزی را شنیده)؛ در زندگی هم برای حرف بد.",
+   "ex": "He apologized, but you can't unring a bell.",
+   "alt": [
+    "You can't take it back."
+   ],
+   "tag": "#M053"
+  },
+  {
+   "n": 54,
+   "t": "speech",
+   "where": [
+    "friends",
+    "work"
+   ],
+   "fa": "مشک آن است که خود ببوید، نه آن‌که عطار بگوید",
+   "mean": "کار خوب خودش را نشان می‌دهد، نیازی به تعریف نیست.",
+   "en": "Let your work speak for itself.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "محیط کار، مصاحبه، پرتفوی. معادل کلاسیک: The proof is in the pudding.",
+   "ex": "You don't need to brag about your cooking — let it speak for itself.",
+   "ex_work": "Don't oversell yourself in the interview — let your work speak for itself.",
+   "alt": [
+    "The proof is in the pudding."
+   ],
+   "tag": "#M054"
+  },
+  {
+   "n": 55,
+   "t": "speech",
+   "where": [
+    "kids",
+    "family",
+    "partner"
+   ],
+   "fa": "زبانم مو درآورد",
+   "mean": "از بس گفتم خسته شدم.",
+   "en": "Until I'm blue in the face.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پدر و مادر، مدیر، همکار — با لحن کلافه.",
+   "ex": "I've told him until I'm blue in the face to put the toilet seat down.",
+   "ex_work": "I've told him until I'm blue in the face to back up his files.",
+   "tag": "#M055"
+  },
+  {
+   "n": 56,
+   "t": "speech",
+   "where": [
+    "online",
+    "friends"
+   ],
+   "fa": "به در می‌گوید که دیوار بشنود",
+   "mean": "حرف را به کس دیگری می‌زند تا طرف اصلی بفهمد.",
+   "en": "Subtweeting.",
+   "m": "none",
+   "amer": "daily",
+   "us": "انگلیسی ضرب‌المثل ندارد. اینترنتی‌ها می‌گویند subtweet؛ در محاوره: That was a dig at you یا He was throwing shade.",
+   "ex": "She didn't name anyone, but that post was totally a dig at her ex.",
+   "alt": [
+    "That was a dig at you.",
+    "throwing shade"
+   ],
+   "tag": "#M056"
+  },
+  {
+   "n": 57,
+   "t": "speech",
+   "where": [
+    "partner",
+    "family"
+   ],
+   "fa": "آفتاب همیشه پشت ابر نمی‌ماند",
+   "mean": "حقیقت بالاخره معلوم می‌شود.",
+   "en": "The truth will come out.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رسوایی‌ها، دعوای حقوقی، دروغ در رابطه.",
+   "ex": "He can deny it all he wants. The truth will come out.",
+   "alt": [
+    "The truth will out."
+   ],
+   "note": "The truth will out ادبی و قدیمی است.",
+   "tag": "#M057"
+  },
+  {
+   "n": 58,
+   "t": "speech",
+   "where": [
+    "partner",
+    "kids",
+    "friends"
+   ],
+   "fa": "دروغگو کم‌حافظه است",
+   "mean": "دروغگو حرف‌هایش را یادش می‌رود و لو می‌رود.",
+   "en": "Liars need good memories.",
+   "m": "exact",
+   "amer": "known",
+   "us": "جمله‌ی مشهور: If you tell the truth, you don't have to remember anything (منسوب به مارک تواین).",
+   "ex": "His story changed three times. Liars need good memories.",
+   "tag": "#M058"
+  },
+  {
+   "n": 59,
+   "t": "speech",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "راستی کن که راستان رستند",
+   "mean": "راستگو همیشه سربلند است.",
+   "en": "Honesty is the best policy.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ گاهی با کنایه وقتی راستگویی دردسر ساخته.",
+   "ex": "Just tell her you forgot her birthday. Honesty is the best policy.",
+   "ex_work": "Just tell your boss you missed the deadline. Honesty is the best policy.",
+   "tag": "#M059"
+  },
+  {
+   "n": 60,
+   "t": "speech",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "کم گوی و گزیده گوی چون دُر",
+   "mean": "کوتاه و سنجیده حرف بزن.",
+   "en": "Less is more.",
+   "m": "close",
+   "amer": "daily",
+   "us": "طراحی، رزومه، ارائه. نسخه‌ی ادبی: Brevity is the soul of wit.",
+   "ex": "Two toppings, not seven. Less is more.",
+   "ex_work": "Cut the slide to three bullets. Less is more.",
+   "alt": [
+    "Brevity is the soul of wit.",
+    "Keep it short and sweet."
+   ],
+   "tag": "#M060"
+  },
+  {
+   "n": 61,
+   "t": "speech",
+   "where": [
+    "friends",
+    "family",
+    "neighbors"
+   ],
+   "fa": "حلال‌زاده به دایی‌اش می‌رود",
+   "mean": "(به شوخی) همین الان حرفش بود که پیدایش شد.",
+   "en": "Speak of the devil.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی کسی که درباره‌اش حرف می‌زدید وارد می‌شود. شوخی است، توهین نیست.",
+   "ex": "Speak of the devil — we were just talking about you!",
+   "note": "معنای اصلی فارسی شباهت به دایی است، ولی کاربرد روزمره‌اش همین است.",
+   "tag": "#M061"
+  },
+  {
+   "n": 62,
+   "t": "friends",
+   "where": [
+    "friends"
+   ],
+   "fa": "دوست آن باشد که گیرد دست دوست، در پریشان‌حالی و درماندگی",
+   "mean": "دوست واقعی در سختی معلوم می‌شود.",
+   "en": "A friend in need is a friend indeed.",
+   "m": "exact",
+   "amer": "known",
+   "us": "کمی قدیمی؛ در محاوره بیشتر: You find out who your real friends are when things go wrong.",
+   "ex": "He drove four hours to help me move. A friend in need is a friend indeed.",
+   "alt": [
+    "You find out who your real friends are."
+   ],
+   "tag": "#M062"
+  },
+  {
+   "n": 63,
+   "t": "friends",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "کبوتر با کبوتر، باز با باز",
+   "mean": "هر کس با هم‌جنس خودش.",
+   "en": "Birds of a feather flock together.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خنثی یا منفی؛ درباره‌ی گروه دوستان شبیه هم.",
+   "ex": "All his friends are into crypto too. Birds of a feather.",
+   "tag": "#M063"
+  },
+  {
+   "n": 64,
+   "t": "friends",
+   "where": [
+    "kids",
+    "friends"
+   ],
+   "fa": "تو اول بگو با کیان دوستی، پس آنگه بگویم که تو کیستی",
+   "mean": "از دوستانت معلوم می‌شود چه کسی هستی.",
+   "en": "You are the company you keep.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "نصیحت پدر و مادر به نوجوان‌ها؛ در کار: Show me your friends and I'll show you your future.",
+   "ex": "Be careful who you hang out with. You are the company you keep.",
+   "alt": [
+    "Show me your friends and I'll tell you who you are."
+   ],
+   "tag": "#M064"
+  },
+  {
+   "n": 65,
+   "t": "friends",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "دوستی خاله‌خرسه",
+   "mean": "دوستی که با کمکش ضرر می‌زند.",
+   "en": "With friends like these, who needs enemies?",
+   "m": "close",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج؛ وقتی دوست ناخواسته خرابکاری کرده.",
+   "ex": "She told my crush I liked him. With friends like these, who needs enemies?",
+   "ex_work": "He 'helped' by telling my boss I was job hunting. With friends like these, who needs enemies?",
+   "tag": "#M065"
+  },
+  {
+   "n": 66,
+   "t": "friends",
+   "where": [
+    "neighbors",
+    "family"
+   ],
+   "fa": "دوری و دوستی",
+   "mean": "فاصله رابطه را سالم نگه می‌دارد.",
+   "en": "Good fences make good neighbors.",
+   "m": "close",
+   "amer": "known",
+   "us": "از شعر رابرت فراست؛ درباره‌ی حد و مرز با همسایه و فامیل.",
+   "ex": "We love my in-laws, but they live an hour away. Good fences make good neighbors.",
+   "alt": [
+    "Familiarity breeds contempt."
+   ],
+   "note": "Absence makes the heart grow fonder معنای دیگری دارد: دوری علاقه را بیشتر می‌کند.",
+   "tag": "#M066"
+  },
+  {
+   "n": 67,
+   "t": "friends",
+   "where": [
+    "friends",
+    "partner",
+    "family"
+   ],
+   "fa": "از دل برود هر آن‌که از دیده برفت",
+   "mean": "کسی که دور شود فراموش می‌شود.",
+   "en": "Out of sight, out of mind.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رابطه‌ی از راه دور، شبکه‌سازی، حتی مدیریت کار (وسایل را جلوی چشم بگذار).",
+   "ex": "Call your grandma more often — out of sight, out of mind.",
+   "ex_work": "Keep following up with recruiters — out of sight, out of mind.",
+   "tag": "#M067"
+  },
+  {
+   "n": 68,
+   "t": "friends",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "نمک خوردن و نمکدان شکستن",
+   "mean": "به کسی که به تو خوبی کرده خیانت کردن.",
+   "en": "Bite the hand that feeds you.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کارمندی که از شرکت بد می‌گوید، کسی که به حامی‌اش پشت می‌کند.",
+   "ex": "Your parents pay your rent and you're yelling at them? Don't bite the hand that feeds you.",
+   "ex_work": "Trashing the company that sponsored your visa? Don't bite the hand that feeds you.",
+   "tag": "#M068"
+  },
+  {
+   "n": 69,
+   "t": "friends",
+   "where": [
+    "family",
+    "friends",
+    "partner"
+   ],
+   "fa": "هر چه از دوست رسد نیکوست",
+   "mean": "هدیه‌ی دوست، هر چه باشد، عزیز است.",
+   "en": "It's the thought that counts.",
+   "m": "close",
+   "amer": "daily",
+   "us": "هدیه دادن؛ گاهی با کنایه وقتی هدیه بد است.",
+   "ex": "He got me socks again, but hey, it's the thought that counts.",
+   "tag": "#M069"
+  },
+  {
+   "n": 70,
+   "t": "friends",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "مهمان تا سه روز عزیز است",
+   "mean": "مهمانی طولانی دلزدگی می‌آورد.",
+   "en": "Guests, like fish, begin to smell after three days.",
+   "m": "exact",
+   "amer": "known",
+   "us": "از بنجامین فرانکلین؛ به شوخی وقتی فامیل زیادی مانده.",
+   "ex": "My cousin's been on our couch for two weeks. Guests and fish, man — three days.",
+   "tag": "#M070"
+  },
+  {
+   "n": 71,
+   "t": "friends",
+   "where": [
+    "friends"
+   ],
+   "fa": "دوست همه کس، دوست هیچ کس",
+   "mean": "کسی که با همه رفیق است، رفیق واقعی کسی نیست.",
+   "en": "A friend to all is a friend to none.",
+   "m": "exact",
+   "amer": "known",
+   "us": "ادبی‌تر؛ درباره‌ی آدم‌هایی که با همه خوب‌اند و به هیچ‌کس وفادار نیستند.",
+   "ex": "He agrees with whoever's in the room. A friend to all is a friend to none.",
+   "tag": "#M071"
+  },
+  {
+   "n": 72,
+   "t": "friends",
+   "where": [
+    "friends",
+    "partner",
+    "family"
+   ],
+   "fa": "خدا در و تخته را خوب به هم جور کرده",
+   "mean": "این دو نفر عین هم‌اند (معمولاً با کنایه).",
+   "en": "A match made in heaven.",
+   "m": "close",
+   "amer": "daily",
+   "us": "هم تعریف، هم کنایه درباره‌ی زوجی که هر دو مشکل دارند.",
+   "ex": "He's always late and she never checks the time. A match made in heaven.",
+   "alt": [
+    "They deserve each other.",
+    "Two peas in a pod."
+   ],
+   "note": "They deserve each other نزدیک‌ترین به لحن کنایه‌دار فارسی است.",
+   "tag": "#M072"
+  },
+  {
+   "n": 73,
+   "t": "family",
+   "where": [
+    "family",
+    "neighbors",
+    "kids"
+   ],
+   "fa": "تره به تخمش می‌رود، حسنی به باباش",
+   "mean": "بچه شبیه پدر و مادرش است.",
+   "en": "The apple doesn't fall far from the tree.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ هم تعریف هم کنایه.",
+   "ex": "His dad's an engineer too. The apple doesn't fall far from the tree.",
+   "alt": [
+    "Like father, like son.",
+    "Like mother, like daughter."
+   ],
+   "tag": "#M073"
+  },
+  {
+   "n": 74,
+   "t": "family",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "آشپز که دو تا شد، آش یا شور می‌شود یا بی‌نمک",
+   "mean": "وقتی چند نفر تصمیم بگیرند، کار خراب می‌شود.",
+   "en": "Too many cooks spoil the broth.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پروژه با مدیران متعدد، طراحی گروهی. آمریکایی‌ها اغلب کوتاه می‌گویند: Too many cooks in the kitchen.",
+   "ex": "Mom, Grandma and Aunt Lisa all cooking Thanksgiving dinner? Too many cooks in the kitchen.",
+   "ex_work": "Five people editing the same slide? Too many cooks in the kitchen.",
+   "alt": [
+    "Too many cooks in the kitchen."
+   ],
+   "tag": "#M074"
+  },
+  {
+   "n": 75,
+   "t": "family",
+   "where": [
+    "family"
+   ],
+   "fa": "گوشت هم را بخورند، استخوان هم را دور نمی‌ریزند",
+   "mean": "خانواده با هم دعوا می‌کند ولی همدیگر را رها نمی‌کند.",
+   "en": "Blood is thicker than water.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "وفاداری خانوادگی، ارث، دعوای فامیلی.",
+   "ex": "We fight all the time, but he's my brother. Blood is thicker than water.",
+   "tag": "#M075"
+  },
+  {
+   "n": 76,
+   "t": "family",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "مثل سیبی که از وسط نصف کرده باشند",
+   "mean": "خیلی شبیه هم‌اند.",
+   "en": "Two peas in a pod.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "دوقلوها، دو دوست جدانشدنی. برای شباهت صورت: the spitting image of.",
+   "ex": "Look at those two — like two peas in a pod.",
+   "alt": [
+    "the spitting image of"
+   ],
+   "tag": "#M076"
+  },
+  {
+   "n": 77,
+   "t": "family",
+   "where": [
+    "shopping",
+    "friends",
+    "online"
+   ],
+   "fa": "عروس تعریفی آخرش شلخته از آب درمی‌آید",
+   "mean": "چیزی که زیادی تعریفش را کرده‌اند، ناامیدت می‌کند.",
+   "en": "Too good to be true.",
+   "m": "close",
+   "amer": "daily",
+   "us": "محصول پرسروصدا، کارمند خیلی تعریفی. جوان‌ترها: Don't believe the hype.",
+   "ex": "A free iPhone just for answering a survey? If it sounds too good to be true, it probably is.",
+   "ex_work": "Everyone raved about the new hire, but he can't code. Don't believe the hype.",
+   "alt": [
+    "Don't believe the hype.",
+    "If it sounds too good to be true, it probably is."
+   ],
+   "tag": "#M077"
+  },
+  {
+   "n": 78,
+   "t": "family",
+   "where": [
+    "family"
+   ],
+   "fa": "چراغی که به خانه رواست، به مسجد حرام است",
+   "mean": "اول خانواده‌ی خودت، بعد دیگران.",
+   "en": "Charity begins at home.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "وقتی کسی به غریبه کمک می‌کند و خانواده‌اش محتاج است.",
+   "ex": "Help your mom with her bills before you donate. Charity begins at home.",
+   "note": "نسخه‌ی دیگر فارسی: اول خویش، بعد درویش.",
+   "tag": "#M078"
+  },
+  {
+   "n": 79,
+   "t": "family",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "عاقبت گرگ‌زاده گرگ شود",
+   "mean": "ذات آدم عوض نمی‌شود.",
+   "en": "A leopard can't change its spots.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "درباره‌ی کسی که قول داده عوض شود ولی دوباره همان کار را کرده.",
+   "ex": "He cheated again? A leopard can't change its spots.",
+   "alt": [
+    "Once a cheater, always a cheater."
+   ],
+   "tag": "#M079"
+  },
+  {
+   "n": 80,
+   "t": "caution",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "کار از محکم‌کاری عیب نمی‌کند",
+   "mean": "احتیاط اضافه ضرر ندارد.",
+   "en": "Better safe than sorry.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ بکاپ گرفتن، بیمه، چتر برداشتن.",
+   "ex": "Take an umbrella. Better safe than sorry.",
+   "ex_work": "I made two backups of the database. Better safe than sorry.",
+   "tag": "#M080"
+  },
+  {
+   "n": 81,
+   "t": "caution",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "همه‌ی تخم‌مرغ‌هایت را در یک سبد نگذار",
+   "mean": "ریسک را پخش کن.",
+   "en": "Don't put all your eggs in one basket.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "سرمایه‌گذاری، کاریابی (فقط به یک شرکت درخواست نده).",
+   "ex": "Don't put all your savings into one stock. Don't put all your eggs in one basket.",
+   "ex_work": "Apply to more than one company. Don't put all your eggs in one basket.",
+   "tag": "#M081"
+  },
+  {
+   "n": 82,
+   "t": "caution",
+   "where": [
+    "family",
+    "kids"
+   ],
+   "fa": "علاج واقعه را قبل از وقوع باید کرد",
+   "mean": "پیشگیری بهتر از درمان است.",
+   "en": "An ounce of prevention is worth a pound of cure.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "از بنجامین فرانکلین؛ پزشکی، ایمنی، نگهداری سیستم‌ها. بریتانیایی‌ها: Prevention is better than cure.",
+   "ex": "Get the flu shot now. An ounce of prevention is worth a pound of cure.",
+   "ex_work": "Patch the server now. An ounce of prevention is worth a pound of cure.",
+   "alt": [
+    "Prevention is better than cure."
+   ],
+   "tag": "#M082"
+  },
+  {
+   "n": 83,
+   "t": "caution",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "صد بار گز کن، یک بار پاره کن",
+   "mean": "قبل از کار برگشت‌ناپذیر خوب بسنج.",
+   "en": "Measure twice, cut once.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "نجاری و DIY، ولی در مهندسی و نرم‌افزار هم رایج (قبل از DELETE روی دیتابیس).",
+   "ex": "Check the address twice before you send the deposit. Measure twice, cut once.",
+   "ex_work": "Run it on staging first. Measure twice, cut once.",
+   "alt": [
+    "Look before you leap."
+   ],
+   "tag": "#M083"
+  },
+  {
+   "n": 84,
+   "t": "caution",
+   "where": [
+    "neighbors",
+    "friends"
+   ],
+   "fa": "تا نباشد چیزکی، مردم نگویند چیزها",
+   "mean": "شایعه بی‌دلیل نیست.",
+   "en": "Where there's smoke, there's fire.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رسوایی‌ها، شایعه‌ی اخراج در شرکت.",
+   "ex": "Everyone says that restaurant got shut down twice. Where there's smoke, there's fire.",
+   "ex_work": "Three people quit this month. Where there's smoke, there's fire.",
+   "tag": "#M084"
+  },
+  {
+   "n": 85,
+   "t": "caution",
+   "where": [
+    "family",
+    "work"
+   ],
+   "fa": "آهسته برو، آهسته بیا که گربه شاخت نزند",
+   "mean": "سرت به کار خودت باشد، جلب توجه نکن.",
+   "en": "Keep your head down.",
+   "m": "close",
+   "amer": "daily",
+   "us": "محیط کار، دوره‌ی آزمایشی، سیاست اداری. alt: Fly under the radar.",
+   "ex": "When politics comes up at family dinners, I just keep my head down.",
+   "ex_work": "New boss, lots of drama — I'm just keeping my head down.",
+   "alt": [
+    "Fly under the radar."
+   ],
+   "tag": "#M085"
+  },
+  {
+   "n": 86,
+   "t": "caution",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "کاچی بهتر از هیچی است",
+   "mean": "کم بهتر از هیچ است.",
+   "en": "Something is better than nothing.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پیشنهاد حقوق پایین، تخفیف کم.",
+   "ex": "They only refunded half, but something is better than nothing.",
+   "ex_work": "It's only a part-time contract, but something is better than nothing.",
+   "alt": [
+    "Half a loaf is better than none.",
+    "Beggars can't be choosers."
+   ],
+   "tag": "#M086"
+  },
+  {
+   "n": 87,
+   "t": "caution",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "سیلی نقد به از حلوای نسیه",
+   "mean": "چیز کمِ قطعی بهتر از وعده‌ی زیاد است.",
+   "en": "A bird in the hand is worth two in the bush.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پیشنهاد کار فعلی در برابر وعده‌ی نامطمئن؛ معامله.",
+   "ex": "Sell the car to the guy offering cash today. A bird in the hand is worth two in the bush.",
+   "ex_work": "Take the offer you have. A bird in the hand is worth two in the bush.",
+   "tag": "#M087"
+  },
+  {
+   "n": 88,
+   "t": "caution",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "جلوی ضرر را از هر جا بگیری، منفعت است",
+   "mean": "هر وقت جلوی ضرر را بگیری، سود کرده‌ای.",
+   "en": "Cut your losses.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بورس، پروژه‌ی شکست‌خورده، رابطه‌ی بی‌آینده.",
+   "ex": "The stock's down 40%. Time to cut your losses.",
+   "alt": [
+    "Don't throw good money after bad."
+   ],
+   "tag": "#M088"
+  },
+  {
+   "n": 89,
+   "t": "caution",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "سری که درد نمی‌کند، دستمال نمی‌بندند",
+   "mean": "خودت را بی‌دلیل گرفتار نکن؛ چیزی که سالم است را دست نزن.",
+   "en": "If it ain't broke, don't fix it.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج در مهندسی و IT. ain't عمداً عامیانه است.",
+   "ex": "Why are you changing Grandma's recipe? If it ain't broke, don't fix it.",
+   "ex_work": "The legacy system works fine. If it ain't broke, don't fix it.",
+   "alt": [
+    "Let sleeping dogs lie.",
+    "Don't go looking for trouble."
+   ],
+   "tag": "#M089"
+  },
+  {
+   "n": 90,
+   "t": "caution",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "با دم شیر بازی کردن",
+   "mean": "کار خطرناک کردن.",
+   "en": "Playing with fire.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "ریسک مالی، رابطه‌ی خطرناک، دست زدن به سیستم production.",
+   "ex": "Texting your ex at 2 a.m.? You're playing with fire.",
+   "ex_work": "Editing prod directly on a Friday? You're playing with fire.",
+   "tag": "#M090"
+  },
+  {
+   "n": 91,
+   "t": "caution",
+   "where": [
+    "kids",
+    "family",
+    "work"
+   ],
+   "fa": "گربه را دم حجله کشتن",
+   "mean": "از روز اول قاطعیت نشان بده.",
+   "en": "Set the tone from day one.",
+   "m": "close",
+   "amer": "daily",
+   "us": "مدیر تازه، معلم سر کلاس اول، قرارداد. بریتانیایی: Start as you mean to go on.",
+   "ex": "New babysitter? Set the tone from day one.",
+   "ex_work": "New team lead? Set the tone from day one.",
+   "alt": [
+    "Lay down the law early.",
+    "Start as you mean to go on."
+   ],
+   "tag": "#M091"
+  },
+  {
+   "n": 92,
+   "t": "caution",
+   "where": [
+    "shopping",
+    "neighbors"
+   ],
+   "fa": "جنگ اول، به از صلح آخر",
+   "mean": "اول کار شرط‌ها را روشن کن تا بعداً دعوا نشود.",
+   "en": "Get it in writing.",
+   "m": "close",
+   "amer": "daily",
+   "us": "قرارداد، اجاره، قول شفاهی کارفرما.",
+   "ex": "The landlord says he'll fix the heater? Get it in writing.",
+   "ex_work": "He promised a raise in six months? Get it in writing.",
+   "alt": [
+    "Better to argue now than fight later."
+   ],
+   "tag": "#M092"
+  },
+  {
+   "n": 93,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "هر چه پیش آید، خوش آید",
+   "mean": "هر چه بشود را می‌پذیرم.",
+   "en": "Go with the flow.",
+   "m": "close",
+   "amer": "daily",
+   "us": "آرام و بی‌خیال؛ سفر، برنامه‌ی عوض‌شده. ترانه‌ی Que sera, sera هم شناخته‌شده است.",
+   "ex": "No plans this weekend. Just going with the flow.",
+   "alt": [
+    "Whatever will be, will be.",
+    "Roll with the punches."
+   ],
+   "tag": "#M093"
+  },
+  {
+   "n": 94,
+   "t": "fate",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "قسمت نبود",
+   "mean": "سرنوشت نخواست.",
+   "en": "It wasn't meant to be.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رد شدن در مصاحبه، رابطه‌ی تمام‌شده، خانه‌ای که نخریدید.",
+   "ex": "We broke up. Guess it wasn't meant to be.",
+   "ex_work": "I didn't get the job. Guess it wasn't meant to be.",
+   "tag": "#M094"
+  },
+  {
+   "n": 95,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "فرصت یک بار در خانه را می‌زند",
+   "mean": "فرصت را از دست نده.",
+   "en": "Opportunity only knocks once.",
+   "m": "exact",
+   "amer": "known",
+   "us": "پیشنهاد کاری خاص. جوان‌ترها: You only live once (YOLO) یا Seize the day.",
+   "ex": "Tickets to the World Series? Opportunity only knocks once.",
+   "ex_work": "An offer from Google? Opportunity only knocks once.",
+   "alt": [
+    "Seize the day.",
+    "Carpe diem."
+   ],
+   "tag": "#M095"
+  },
+  {
+   "n": 96,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "از این ستون به آن ستون فرج است",
+   "mean": "با کمی زمان، شاید گشایشی بشود.",
+   "en": "Tomorrow is another day.",
+   "m": "close",
+   "amer": "daily",
+   "us": "بعد از یک روز بد؛ از فیلم «بربادرفته». alt برای تعویق تصمیم: Live to fight another day.",
+   "ex": "Rough day? Get some sleep. Tomorrow is another day.",
+   "ex_work": "Rough interview, but tomorrow is another day.",
+   "alt": [
+    "Live to fight another day."
+   ],
+   "tag": "#M096"
+  },
+  {
+   "n": 97,
+   "t": "fate",
+   "where": [
+    "shopping",
+    "friends"
+   ],
+   "fa": "به ما که رسید، آسمان تپید",
+   "mean": "نوبت ما که شد، شانس برگشت.",
+   "en": "Just my luck.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کوتاه و کلافه؛ وقتی درست نوبت تو تمام شد.",
+   "ex": "They sold out right before I got to the counter. Just my luck.",
+   "tag": "#M097"
+  },
+  {
+   "n": 98,
+   "t": "fate",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "هر شب، شب قدر نیست",
+   "mean": "شانس بزرگ هر بار تکرار نمی‌شود.",
+   "en": "Lightning doesn't strike twice.",
+   "m": "close",
+   "amer": "daily",
+   "us": "بعد از یک موفقیت شانسی؛ گاهی هم مثبت (اتفاق بد دوباره نمی‌افتد).",
+   "ex": "We got lucky with that viral post. Don't expect lightning to strike twice.",
+   "alt": [
+    "Don't push your luck."
+   ],
+   "tag": "#M098"
+  },
+  {
+   "n": 99,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "تا سه نشه، بازی نشه",
+   "mean": "بار سوم موفق می‌شوی.",
+   "en": "Third time's the charm.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ امتحان رانندگی، درخواست سوم.",
+   "ex": "Failed the road test twice. Third time's the charm!",
+   "note": "بریتانیایی: Third time lucky.",
+   "tag": "#M099"
+  },
+  {
+   "n": 100,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "یک سیب را که بیندازی بالا، تا بیاید پایین هزار چرخ می‌خورد",
+   "mean": "تا نتیجه معلوم شود، خیلی چیزها ممکن است عوض شود.",
+   "en": "A lot can happen between now and then.",
+   "m": "close",
+   "amer": "daily",
+   "us": "درباره‌ی انتخابات، قرارداد، برنامه‌ی آینده. شوخی اینترنتی: Life comes at you fast.",
+   "ex": "The wedding's next year — a lot can happen between now and then.",
+   "ex_work": "The deal closes in March, but a lot can happen between now and then.",
+   "alt": [
+    "Life comes at you fast.",
+    "Anything can happen."
+   ],
+   "tag": "#M100"
+  },
+  {
+   "n": 101,
+   "t": "fate",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "کور از خدا چه می‌خواهد؟ دو چشم بینا",
+   "mean": "معلوم است که می‌خواهم!",
+   "en": "Is the Pope Catholic?",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی رایج در جواب یک سؤال بدیهی. ساده‌تر: You don't have to ask me twice.",
+   "ex": "'Want a free upgrade?' 'Is the Pope Catholic?'",
+   "alt": [
+    "You don't have to ask me twice.",
+    "Does a bear sleep in the woods?"
+   ],
+   "tag": "#M101"
+  },
+  {
+   "n": 102,
+   "t": "fate",
+   "where": [
+    "neighbors",
+    "friends"
+   ],
+   "fa": "مار از پونه بدش می‌آید، دم لانه‌اش سبز می‌شود",
+   "mean": "چیزی که از آن بدت می‌آید درست جلوی چشمت پیدا می‌شود.",
+   "en": "Murphy's Law.",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی مهندس‌ها و برنامه‌نویس‌ها: Anything that can go wrong will go wrong.",
+   "ex": "Of course my ex moved in next door. Murphy's Law.",
+   "alt": [
+    "Of course it would happen to me."
+   ],
+   "tag": "#M102"
+  },
+  {
+   "n": 103,
+   "t": "appearance",
+   "where": [
+    "shopping",
+    "partner",
+    "online"
+   ],
+   "fa": "هر گردی گردو نیست",
+   "mean": "ظاهر شبیه، ولی ذات فرق دارد.",
+   "en": "All that glitters is not gold.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آمریکایی‌ها اغلب می‌گویند Not everything that glitters is gold. نزدیک: Don't judge a book by its cover.",
+   "ex": "Fancy car, fancy watch, three maxed-out credit cards. All that glitters is not gold.",
+   "ex_work": "That startup looks shiny, but all that glitters is not gold.",
+   "alt": [
+    "Don't judge a book by its cover."
+   ],
+   "tag": "#M103"
+  },
+  {
+   "n": 104,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "family",
+    "partner"
+   ],
+   "fa": "رنگ رخساره خبر می‌دهد از سرّ درون",
+   "mean": "حالت از صورتت پیداست.",
+   "en": "It's written all over your face.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی کسی نمی‌تواند هیجان یا ناراحتی‌اش را پنهان کند.",
+   "ex": "You're in love, aren't you? It's written all over your face.",
+   "ex_work": "You got the job, didn't you? It's written all over your face.",
+   "tag": "#M104"
+  },
+  {
+   "n": 105,
+   "t": "appearance",
+   "where": [
+    "shopping",
+    "online"
+   ],
+   "fa": "گربه محض رضای خدا موش نمی‌گیرد",
+   "mean": "هر کس کاری می‌کند، نفعی در آن دارد.",
+   "en": "There's no such thing as a free lunch.",
+   "m": "close",
+   "amer": "daily",
+   "us": "اقتصاددان‌ها و آدم‌های بدبین. سؤال رایج: What's in it for them?",
+   "ex": "A free cruise? There's no such thing as a free lunch.",
+   "alt": [
+    "What's in it for them?",
+    "Nobody does anything for nothing."
+   ],
+   "tag": "#M105"
+  },
+  {
+   "n": 106,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "family",
+    "partner"
+   ],
+   "fa": "دیگ به دیگ می‌گوید رویت سیاه",
+   "mean": "کسی که خودش همان عیب را دارد، ایراد می‌گیرد.",
+   "en": "That's the pot calling the kettle black.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج و کمی شوخی؛ بحث‌ها و دعواهای سیاسی.",
+   "ex": "He called me lazy? That's the pot calling the kettle black.",
+   "tag": "#M106"
+  },
+  {
+   "n": 107,
+   "t": "appearance",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "تو که لالایی بلدی، چرا خوابت نمی‌برد؟",
+   "mean": "نصیحتت را اول به خودت بکن.",
+   "en": "Practice what you preach.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج. نسخه‌ی کتاب‌مقدسی: Physician, heal thyself.",
+   "ex": "You tell everyone to save money but you just bought a boat. Practice what you preach.",
+   "alt": [
+    "Physician, heal thyself."
+   ],
+   "tag": "#M107"
+  },
+  {
+   "n": 108,
+   "t": "appearance",
+   "where": [
+    "family",
+    "kids",
+    "partner"
+   ],
+   "fa": "یک بام و دو هوا",
+   "mean": "با یک موضوع دو جور برخورد کردن.",
+   "en": "That's a double standard.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بحث برابری، قوانین اداری، تربیت بچه‌ها.",
+   "ex": "My brother gets to stay out till midnight and I don't? That's a double standard.",
+   "ex_work": "I get written up for being late but he doesn't? That's a double standard.",
+   "tag": "#M108"
+  },
+  {
+   "n": 109,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "آفتابه لگن هفت دست، شام و ناهار هیچی",
+   "mean": "ظاهر پرزرق‌وبرق، توخالی.",
+   "en": "All hat and no cattle.",
+   "m": "exact",
+   "amer": "known",
+   "us": "اصطلاح تگزاسی: کابوی با کلاه گران ولی بی‌گله. رایج‌تر در بیزنس: All sizzle, no steak.",
+   "ex": "He talks about fishing all the time but never catches anything. All hat and no cattle.",
+   "ex_work": "Their pitch deck is beautiful but they have zero customers. All hat and no cattle.",
+   "alt": [
+    "All sizzle, no steak.",
+    "All talk, no action.",
+    "All show and no go."
+   ],
+   "tag": "#M109"
+  },
+  {
+   "n": 110,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "زیر کاسه نیم کاسه‌ای است",
+   "mean": "یک نقشه‌ی پنهانی در کار است.",
+   "en": "Something's fishy.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج. alt قدیمی‌تر و قوی‌تر: I smell a rat.",
+   "ex": "Why is he suddenly being so nice? Something's fishy.",
+   "alt": [
+    "I smell a rat.",
+    "Something doesn't add up."
+   ],
+   "tag": "#M110"
+  },
+  {
+   "n": 111,
+   "t": "appearance",
+   "where": [
+    "kids",
+    "family",
+    "partner"
+   ],
+   "fa": "خود را به کوچه‌ی علی‌چپ زدن",
+   "mean": "خود را به نفهمیدن زدن.",
+   "en": "Play dumb.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "اصطلاح رایج؛ بازجویی، بچه‌ای که کار بدی کرده.",
+   "ex": "Don't play dumb — I know you ate my sandwich.",
+   "tag": "#M111"
+  },
+  {
+   "n": 112,
+   "t": "appearance",
+   "where": [
+    "friends"
+   ],
+   "fa": "شتر دیدی، ندیدی",
+   "mean": "هر چه دیدی، به کسی نگو.",
+   "en": "What happens in Vegas stays in Vegas.",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی؛ سفر، مهمانی. جدی‌تر: You didn't see anything یا Keep it between us.",
+   "ex": "Bachelor party rules: what happens in Vegas stays in Vegas.",
+   "alt": [
+    "You didn't see anything.",
+    "Keep it between us."
+   ],
+   "tag": "#M112"
+  },
+  {
+   "n": 113,
+   "t": "appearance",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "کاسه‌ی داغ‌تر از آش",
+   "mean": "کسی که از صاحب اصلی دلسوزتر یا متعصب‌تر است.",
+   "en": "More Catholic than the Pope.",
+   "m": "exact",
+   "amer": "known",
+   "us": "درباره‌ی کارمندی که از مدیر سخت‌گیرتر است یا طرفداری که از خود قهرمان متعصب‌تر است.",
+   "ex": "Mom said we could have dessert, but my sister still won't let me. More Catholic than the Pope.",
+   "ex_work": "The CEO said it's fine, but my manager still says no. More Catholic than the Pope.",
+   "alt": [
+    "More royalist than the king."
+   ],
+   "tag": "#M113"
+  },
+  {
+   "n": 114,
+   "t": "appearance",
+   "where": [
+    "shopping",
+    "neighbors"
+   ],
+   "fa": "شاه می‌بخشد، شیخ‌علی‌خان نمی‌بخشد",
+   "mean": "رئیس اجازه داده ولی زیردست سخت می‌گیرد.",
+   "en": "Petty bureaucrat.",
+   "m": "none",
+   "amer": "daily",
+   "us": "ضرب‌المثل دقیق ندارد. می‌گویند He's on a power trip یا petty bureaucrat (کارمند دولت که اذیت می‌کند).",
+   "ex": "The director approved it, but the clerk won't stamp it. Total power trip.",
+   "alt": [
+    "He's on a power trip.",
+    "More Catholic than the Pope."
+   ],
+   "tag": "#M114"
+  },
+  {
+   "n": 115,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "یکی به نعل می‌زند، یکی به میخ",
+   "mean": "هر دو طرف را راضی نگه می‌دارد، موضع روشن ندارد.",
+   "en": "Straddle the fence.",
+   "m": "close",
+   "amer": "daily",
+   "us": "سیاستمدارها؛ fence-sitter کسی است که طرف هیچ‌کس را نمی‌گیرد.",
+   "ex": "Mom and Dad are arguing again, and my brother's straddling the fence as usual.",
+   "ex_work": "The senator keeps straddling the fence on this bill.",
+   "alt": [
+    "Play both sides.",
+    "Sit on the fence."
+   ],
+   "tag": "#M115"
+  },
+  {
+   "n": 116,
+   "t": "appearance",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "شریک دزد و رفیق قافله",
+   "mean": "با هر دو طرف دعوا همدست است.",
+   "en": "Playing both sides.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "معامله‌گر، سیاست، رقابت شرکت‌ها. بریتانیایی و قدیمی: Run with the hare and hunt with the hounds.",
+   "ex": "He's telling both of us what we want to hear — he's playing both sides.",
+   "ex_work": "He's advising both bidders — he's playing both sides.",
+   "alt": [
+    "Run with the hare and hunt with the hounds."
+   ],
+   "tag": "#M116"
+  },
+  {
+   "n": 117,
+   "t": "greed",
+   "where": [
+    "friends",
+    "partner",
+    "neighbors"
+   ],
+   "fa": "مرغ همسایه غاز است",
+   "mean": "مال دیگران همیشه بهتر به نظر می‌رسد.",
+   "en": "The grass is always greener on the other side.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ عوض کردن شغل، شهر، رابطه.",
+   "ex": "She moved to LA for the sunshine and now she misses the snow. The grass is always greener.",
+   "ex_work": "He quit for a startup and regrets it. The grass is always greener.",
+   "tag": "#M117"
+  },
+  {
+   "n": 118,
+   "t": "greed",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "گربه دستش به گوشت نمی‌رسد، می‌گوید بو می‌دهد",
+   "mean": "چیزی که به دستش نمی‌رسد را بد جلوه می‌دهد.",
+   "en": "Sour grapes.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "از قصه‌ی روباه و انگور؛ کسی که رد شده و حالا از آن شرکت بد می‌گوید.",
+   "ex": "He says the party was lame because he wasn't invited. Sounds like sour grapes.",
+   "ex_work": "He says Google is overrated now that they rejected him. Sounds like sour grapes.",
+   "tag": "#M118"
+  },
+  {
+   "n": 119,
+   "t": "greed",
+   "where": [
+    "family",
+    "partner"
+   ],
+   "fa": "قناعت توانگر کند مرد را",
+   "mean": "راضی بودن ثروت واقعی است.",
+   "en": "Be happy with what you've got.",
+   "m": "close",
+   "amer": "daily",
+   "us": "ضرب‌المثل رایج آمریکایی ندارد؛ نسخه‌های قدیمی: Contentment is wealth, Enough is as good as a feast (بریتانیایی).",
+   "ex": "You don't need the bigger house. Be happy with what you've got.",
+   "alt": [
+    "Count your blessings.",
+    "Enough is as good as a feast."
+   ],
+   "tag": "#M119"
+  },
+  {
+   "n": 120,
+   "t": "greed",
+   "where": [
+    "family",
+    "kids",
+    "friends"
+   ],
+   "fa": "چشمش از شکمش گرسنه‌تر است",
+   "mean": "بیش از ظرفیتش برمی‌دارد.",
+   "en": "His eyes are bigger than his stomach.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بوفه‌ی غذا، بچه‌ای که بشقابش را پر کرده؛ مجازی برای پروژه‌ی زیادی بزرگ هم.",
+   "ex": "Three plates at the buffet and he can't finish one. His eyes were bigger than his stomach.",
+   "tag": "#M120"
+  },
+  {
+   "n": 121,
+   "t": "greed",
+   "where": [
+    "friends"
+   ],
+   "fa": "از هول حلیم افتاد توی دیگ",
+   "mean": "از زیادی عجله و طمع، به دردسر افتاد.",
+   "en": "Pigs get fat, hogs get slaughtered.",
+   "m": "close",
+   "amer": "known",
+   "us": "اصطلاح وال‌استریت؛ معامله‌گری که زیادی حریص شد و باخت. ساده‌تر: Greed got the better of him.",
+   "ex": "He wanted 10x and lost everything. Pigs get fat, hogs get slaughtered.",
+   "alt": [
+    "Greed got the better of him.",
+    "Don't get greedy."
+   ],
+   "tag": "#M121"
+  },
+  {
+   "n": 122,
+   "t": "greed",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "دندان طمع را کشیدن",
+   "mean": "از چیزی کاملاً قطع امید کردن.",
+   "en": "Kiss it goodbye.",
+   "m": "close",
+   "amer": "daily",
+   "us": "پول قرض‌داده، بازپرداخت بیمه، ترفیع.",
+   "ex": "You lent him $500? Kiss it goodbye.",
+   "alt": [
+    "Forget about it.",
+    "Write it off."
+   ],
+   "tag": "#M122"
+  },
+  {
+   "n": 123,
+   "t": "greed",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "هم خدا را می‌خواهد، هم خرما را",
+   "mean": "هر دو چیز متضاد را با هم می‌خواهد.",
+   "en": "You can't have your cake and eat it too.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آمریکایی‌ها too را آخرش می‌گذارند. کوتاه‌تر: You can't have it both ways.",
+   "ex": "You want to go out every night and save for a house? You can't have your cake and eat it too.",
+   "ex_work": "You want remote work and a corner office? You can't have your cake and eat it too.",
+   "alt": [
+    "You can't have it both ways."
+   ],
+   "tag": "#M123"
+  },
+  {
+   "n": 124,
+   "t": "greed",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "شتر در خواب بیند پنبه‌دانه",
+   "mean": "آرزوی محال در سر دارد.",
+   "en": "Dream on.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج؛ alt: In your dreams.",
+   "ex": "He thinks she'll call him back? Dream on.",
+   "ex_work": "He thinks they'll double his salary? Dream on.",
+   "alt": [
+    "In your dreams.",
+    "Keep dreaming."
+   ],
+   "tag": "#M124"
+  },
+  {
+   "n": 125,
+   "t": "greed",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "حلوا حلوا گفتن، دهان شیرین نمی‌کند",
+   "mean": "فقط آرزو کردن چیزی را عوض نمی‌کند.",
+   "en": "Wishing won't make it so.",
+   "m": "close",
+   "amer": "known",
+   "us": "نسخه‌ی قدیمی: If wishes were horses, beggars would ride.",
+   "ex": "Talking about getting fit won't do it. Wishing won't make it so.",
+   "alt": [
+    "If wishes were horses, beggars would ride."
+   ],
+   "tag": "#M125"
+  },
+  {
+   "n": 126,
+   "t": "wisdom",
+   "where": [
+    "online",
+    "partner",
+    "friends"
+   ],
+   "fa": "مار گزیده از ریسمان سیاه و سفید می‌ترسد",
+   "mean": "کسی که یک بار آسیب دیده، از هر چیز شبیه می‌ترسد.",
+   "en": "Once bitten, twice shy.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بعد از کلاهبرداری، رابطه‌ی بد، سرمایه‌گذاری شکست‌خورده.",
+   "ex": "After the last scam, I'm not wiring money to anyone. Once bitten, twice shy.",
+   "tag": "#M126"
+  },
+  {
+   "n": 127,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "مؤمن از یک سوراخ دو بار گزیده نمی‌شود",
+   "mean": "آدم عاقل یک اشتباه را تکرار نمی‌کند.",
+   "en": "Fool me once, shame on you; fool me twice, shame on me.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ معمولاً فقط نیمه‌ی اول را می‌گویند و بقیه را رها می‌کنند.",
+   "ex": "He flaked on me again? Fool me once, shame on you…",
+   "tag": "#M127"
+  },
+  {
+   "n": 128,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "آزموده را آزمودن خطاست",
+   "mean": "چیزی که یک بار جواب نداده را دوباره امتحان نکن.",
+   "en": "Insanity is doing the same thing over and over and expecting different results.",
+   "m": "close",
+   "amer": "daily",
+   "us": "منسوب (به اشتباه) به اینشتین؛ جلسه‌های کاری و انگیزشی.",
+   "ex": "You keep dating the same kind of guy and expecting it to work out? That's the definition of insanity.",
+   "ex_work": "Same strategy, third year in a row? Insanity is doing the same thing and expecting different results.",
+   "tag": "#M128"
+  },
+  {
+   "n": 129,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "کار از کار گذشته",
+   "mean": "دیگر دیر است.",
+   "en": "That ship has sailed.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "فرصت از دست رفته؛ خیلی رایج در محیط کار.",
+   "ex": "You want to ask her out now? Sorry, that ship has sailed — she's engaged.",
+   "ex_work": "You wanted to apply? Sorry, that ship has sailed.",
+   "tag": "#M129"
+  },
+  {
+   "n": 130,
+   "t": "wisdom",
+   "where": [
+    "partner",
+    "family"
+   ],
+   "fa": "نوشدارو پس از مرگ سهراب",
+   "mean": "کمکی که خیلی دیر رسید.",
+   "en": "Too little, too late.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "عذرخواهی دیرهنگام، کمک دولتی دیرهنگام، اصلاح بعد از ورشکستگی.",
+   "ex": "They apologized after the lawsuit. Too little, too late.",
+   "tag": "#M130"
+  },
+  {
+   "n": 131,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "kids"
+   ],
+   "fa": "دست بالای دست بسیار است",
+   "mean": "همیشه کسی قوی‌تر از تو هست.",
+   "en": "There's always a bigger fish.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رقابت، مغرور شدن. از جمله‌ی مشهور جنگ ستارگان هم هست.",
+   "ex": "Think you're the best player on the court? There's always a bigger fish.",
+   "ex_work": "You think you're the best coder here? There's always a bigger fish.",
+   "tag": "#M131"
+  },
+  {
+   "n": 132,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "با یک گل بهار نمی‌شود",
+   "mean": "یک نشانه‌ی خوب یعنی هنوز همه‌چیز درست نشده.",
+   "en": "One swallow doesn't make a summer.",
+   "m": "exact",
+   "amer": "uk",
+   "us": "بیشتر بریتانیایی. آمریکایی‌ها می‌گویند One good quarter doesn't make a trend یا Don't read too much into it.",
+   "ex": "One good date doesn't mean he's the one. Let's not read too much into it.",
+   "ex_work": "One good month of sales — let's not read too much into it.",
+   "alt": [
+    "Don't read too much into it.",
+    "One data point isn't a trend."
+   ],
+   "tag": "#M132"
+  },
+  {
+   "n": 133,
+   "t": "wisdom",
+   "where": [
+    "family"
+   ],
+   "fa": "آن‌چه در آینه جوان بیند، پیر در خشت خام آن بیند",
+   "mean": "تجربه‌ی پیرها چیزی می‌بیند که جوان نمی‌بیند.",
+   "en": "With age comes wisdom.",
+   "m": "close",
+   "amer": "daily",
+   "us": "احترام به تجربه؛ گاهی به شوخی: Older and wiser.",
+   "ex": "Grandpa saw the housing crash coming. With age comes wisdom.",
+   "alt": [
+    "Older and wiser."
+   ],
+   "tag": "#M133"
+  },
+  {
+   "n": 134,
+   "t": "wisdom",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "دود از کنده بلند می‌شود",
+   "mean": "آدم باتجربه و مسن هنوز کارآمد است.",
+   "en": "There's life in the old dog yet.",
+   "m": "close",
+   "amer": "known",
+   "us": "بیشتر بریتانیایی است؛ آمریکایی‌ها به شوخی می‌گویند Still got it! یا Old but gold.",
+   "ex": "Sixty and still beat everyone at the 5K — still got it!",
+   "alt": [
+    "Still got it.",
+    "Old but gold."
+   ],
+   "tag": "#M134"
+  },
+  {
+   "n": 135,
+   "t": "wisdom",
+   "where": [
+    "friends"
+   ],
+   "fa": "خر پیر و افسار رنگی",
+   "mean": "آدم مسنی که ادای جوان‌ها را درمی‌آورد.",
+   "en": "Mutton dressed as lamb.",
+   "m": "exact",
+   "amer": "uk",
+   "us": "بریتانیایی و توهین‌آمیز. آمریکایی‌ها می‌گویند trying too hard to look young؛ برای مرد: midlife crisis.",
+   "ex": "New sports car, leather jacket, earring at 55 — classic midlife crisis.",
+   "alt": [
+    "trying too hard",
+    "midlife crisis"
+   ],
+   "tag": "#M135"
+  },
+  {
+   "n": 136,
+   "t": "wisdom",
+   "where": [
+    "neighbors",
+    "shopping",
+    "family"
+   ],
+   "fa": "کار را باید به کاردان سپرد",
+   "mean": "هر کاری را به متخصصش بده.",
+   "en": "Leave it to the pros.",
+   "m": "close",
+   "amer": "daily",
+   "us": "تعمیر خانه، حقوق، مالیات.",
+   "ex": "Don't do your own electrical work. Leave it to the pros.",
+   "alt": [
+    "Let the experts handle it."
+   ],
+   "tag": "#M136"
+  },
+  {
+   "n": 137,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "هر کسی را بهر کاری ساختند",
+   "mean": "هر کس برای کاری مناسب است.",
+   "en": "Horses for courses.",
+   "m": "exact",
+   "amer": "uk",
+   "us": "بریتانیایی. آمریکایی‌ها می‌گویند Everybody's got their thing یا Different people, different strengths.",
+   "ex": "Dad cooks, Mom fixes the car. Everybody's got their thing.",
+   "ex_work": "She's great with clients, he's great with code. Everybody's got their thing.",
+   "alt": [
+    "Everybody's got their thing.",
+    "To each their own."
+   ],
+   "note": "To each their own بیشتر یعنی «سلیقه‌ها فرق دارد»، نه «توانایی‌ها».",
+   "tag": "#M137"
+  },
+  {
+   "n": 138,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "work"
+   ],
+   "fa": "همه‌کاره و هیچ‌کاره",
+   "mean": "کسی که از همه‌چیز کمی بلد است ولی در هیچ‌چیز استاد نیست.",
+   "en": "Jack of all trades, master of none.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رزومه، مصاحبه. نکته: بعضی‌ها نیمه‌ی دوم را حذف می‌کنند تا تعریف شود (I'm a jack of all trades).",
+   "ex": "He does design, sales and code — jack of all trades, master of none.",
+   "note": "در مصاحبه‌ی آمریکایی generalist را مثبت جلوه بده، نه با این ضرب‌المثل.",
+   "tag": "#M138"
+  },
+  {
+   "n": 139,
+   "t": "wisdom",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "کوزه‌گر از کوزه‌ی شکسته آب می‌خورد",
+   "mean": "متخصص برای خودش از تخصصش استفاده نمی‌کند.",
+   "en": "The cobbler's children have no shoes.",
+   "m": "exact",
+   "amer": "known",
+   "us": "شوخی رایج در IT: کامپیوتر خودِ آدم IT همیشه داغان است؛ طراح سایتی که سایت ندارد.",
+   "ex": "Mom's a dentist and I've got three cavities. The cobbler's children have no shoes.",
+   "ex_work": "I fix everyone's network but my home Wi-Fi is a mess. The cobbler's children have no shoes.",
+   "tag": "#M139"
+  },
+  {
+   "n": 140,
+   "t": "wisdom",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "ز گهواره تا گور دانش بجوی",
+   "mean": "آموختن سن ندارد.",
+   "en": "You're never too old to learn.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آموزش بزرگسالان، تغییر شغل.",
+   "ex": "Learning Python at 50? You're never too old to learn.",
+   "alt": [
+    "Lifelong learning."
+   ],
+   "tag": "#M140"
+  },
+  {
+   "n": 141,
+   "t": "wisdom",
+   "where": [
+    "shopping",
+    "family"
+   ],
+   "fa": "توانا بود هر که دانا بود",
+   "mean": "دانش قدرت است.",
+   "en": "Knowledge is power.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آموزش، کتابخانه‌ها، تبلیغات مدرسه.",
+   "ex": "Read the contract before you sign. Knowledge is power.",
+   "tag": "#M141"
+  },
+  {
+   "n": 142,
+   "t": "wisdom",
+   "where": [
+    "family",
+    "shopping",
+    "partner"
+   ],
+   "fa": "بزک نمیر بهار میاد، کمبزه با خیار میاد",
+   "mean": "منتظر وعده‌ای نباش که نمی‌آید.",
+   "en": "Don't hold your breath.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج؛ درباره‌ی وعده‌ی شرکت، تعمیرکار، دولت.",
+   "ex": "He said he'd clean out the garage this weekend. Don't hold your breath.",
+   "ex_work": "They said the raise is coming next year. Don't hold your breath.",
+   "tag": "#M142"
+  },
+  {
+   "n": 143,
+   "t": "wisdom",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "وعده‌ی سر خرمن",
+   "mean": "وعده‌ای که معلوم نیست عمل شود.",
+   "en": "Pie in the sky.",
+   "m": "close",
+   "amer": "daily",
+   "us": "برنامه یا وعده‌ی غیرواقعی؛ جلسه‌ی کاری و سیاست.",
+   "ex": "Retiring at 35 on a teacher's salary? That's pie in the sky.",
+   "ex_work": "Stock options at a pre-revenue startup? That's pie in the sky.",
+   "alt": [
+    "I'll believe it when I see it."
+   ],
+   "tag": "#M143"
+  },
+  {
+   "n": 144,
+   "t": "trouble",
+   "where": [
+    "partner",
+    "neighbors"
+   ],
+   "fa": "از چاله درآمد، افتاد توی چاه",
+   "mean": "از یک گرفتاری به گرفتاری بدتر.",
+   "en": "Out of the frying pan, into the fire.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "عوض کردن شغل یا رابطه‌ی بد با بدتر.",
+   "ex": "She left one bad roommate for an even worse one. Out of the frying pan, into the fire.",
+   "ex_work": "He left a toxic boss for an even worse one. Out of the frying pan, into the fire.",
+   "tag": "#M144"
+  },
+  {
+   "n": 145,
+   "t": "trouble",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "هر جا سنگ است، مال پای لنگ است",
+   "mean": "بدبختی سراغ بدبخت می‌آید.",
+   "en": "When it rains, it pours.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ چند خبر بد پشت سر هم.",
+   "ex": "Lost my job, then my car broke down. When it rains, it pours.",
+   "tag": "#M145"
+  },
+  {
+   "n": 146,
+   "t": "trouble",
+   "where": [
+    "friends",
+    "shopping"
+   ],
+   "fa": "قوز بالای قوز",
+   "mean": "بدبختی روی بدبختی.",
+   "en": "Adding insult to injury.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "اخبار و محاوره؛ وقتی چیزی وضع بد را بدتر می‌کند.",
+   "ex": "My flight got canceled, and to add insult to injury, they lost my bag.",
+   "ex_work": "They fired him — and to add insult to injury, they did it by text.",
+   "tag": "#M146"
+  },
+  {
+   "n": 147,
+   "t": "trouble",
+   "where": [
+    "friends",
+    "shopping"
+   ],
+   "fa": "آب که از سر گذشت، چه یک وجب چه صد وجب",
+   "mean": "حالا که کار خراب شده، کمی بیشترش فرقی نمی‌کند.",
+   "en": "In for a penny, in for a pound.",
+   "m": "exact",
+   "amer": "known",
+   "us": "بریتانیایی‌الاصل ولی آمریکایی‌ها می‌فهمند؛ محاوره‌ی آمریکایی: Might as well go all in یا In for a dime, in for a dollar.",
+   "ex": "We already paid for the hotel — might as well go all in and get the good seats.",
+   "ex_work": "We're already over budget — might as well go all in.",
+   "alt": [
+    "Might as well go all in.",
+    "In for a dime, in for a dollar."
+   ],
+   "tag": "#M147"
+  },
+  {
+   "n": 148,
+   "t": "trouble",
+   "where": [
+    "partner",
+    "family",
+    "friends"
+   ],
+   "fa": "مرگ یک بار، شیون یک بار",
+   "mean": "کار سخت را یک‌باره تمام کن.",
+   "en": "Just rip the Band-Aid off.",
+   "m": "close",
+   "amer": "daily",
+   "us": "خیلی رایج؛ خبر بد دادن، استعفا، جدایی.",
+   "ex": "Just tell her you're quitting. Rip the Band-Aid off.",
+   "alt": [
+    "Bite the bullet."
+   ],
+   "tag": "#M148"
+  },
+  {
+   "n": 149,
+   "t": "trouble",
+   "where": [
+    "friends"
+   ],
+   "fa": "مثل خر در گل ماندن",
+   "mean": "گیر افتادن و راه نداشتن.",
+   "en": "Up a creek without a paddle.",
+   "m": "close",
+   "amer": "daily",
+   "us": "آمریکایی و شوخی. نسخه‌ی رکیک‌ترش با کلمه‌ای دیگر هم رایج است. ساده‌تر: stuck.",
+   "ex": "Missed the last train with a dead phone — totally up a creek without a paddle.",
+   "alt": [
+    "stuck",
+    "between a rock and a hard place"
+   ],
+   "tag": "#M149"
+  },
+  {
+   "n": 150,
+   "t": "trouble",
+   "where": [
+    "family",
+    "kids"
+   ],
+   "fa": "کارد به استخوانش رسیده",
+   "mean": "دیگر تحملش تمام شده.",
+   "en": "At the end of my rope.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آمریکایی rope، بریتانیایی tether. نزدیک: That's the last straw.",
+   "ex": "The baby hasn't slept in three nights. I'm at the end of my rope.",
+   "ex_work": "Three all-nighters this week — I'm at the end of my rope.",
+   "alt": [
+    "fed up",
+    "That's the last straw."
+   ],
+   "tag": "#M150"
+  },
+  {
+   "n": 151,
+   "t": "trouble",
+   "where": [
+    "shopping",
+    "family"
+   ],
+   "fa": "خر بیار و باقالی بار کن",
+   "mean": "آشفته‌بازار، بی‌نظمی کامل.",
+   "en": "It's a total circus.",
+   "m": "close",
+   "amer": "daily",
+   "us": "محاوره: It's a zoo / a madhouse / a mess. نسخه‌ی رکیک نظامی هم رایج است.",
+   "ex": "Black Friday at the mall? It's a total zoo.",
+   "alt": [
+    "It's a zoo.",
+    "a madhouse"
+   ],
+   "tag": "#M151"
+  },
+  {
+   "n": 152,
+   "t": "trouble",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "گاومان زایید",
+   "mean": "(به شوخی) به دردسر بزرگی افتادیم.",
+   "en": "Houston, we have a problem.",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی از فیلم آپولو ۱۳؛ در دفتر کار وقتی چیزی خراب شد. جدی‌تر: We're in trouble.",
+   "ex": "The turkey's still frozen and the guests arrive in an hour. Houston, we have a problem.",
+   "ex_work": "The client just saw the bug in the demo. Houston, we have a problem.",
+   "alt": [
+    "We're in trouble now.",
+    "Uh-oh."
+   ],
+   "tag": "#M152"
+  },
+  {
+   "n": 153,
+   "t": "trouble",
+   "where": [
+    "kids",
+    "family"
+   ],
+   "fa": "آش نخورده و دهان سوخته",
+   "mean": "بدون این‌که سودی ببری، تاوانش را دادی.",
+   "en": "Take the rap for something you didn't do.",
+   "m": "close",
+   "amer": "daily",
+   "us": "محاوره: take the fall / take the heat. شوخی: All the blame and none of the fun.",
+   "ex": "I wasn't even at the party and I got grounded. I took the rap for my brother.",
+   "alt": [
+    "take the fall",
+    "All the blame and none of the fun."
+   ],
+   "tag": "#M153"
+  },
+  {
+   "n": 154,
+   "t": "trouble",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "آش کشک خاله‌ته، بخوری پاته، نخوری پاته",
+   "mean": "در هر صورت گیر افتاده‌ای.",
+   "en": "Damned if you do, damned if you don't.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ تصمیمی که هر دو گزینه‌اش بد است.",
+   "ex": "If I report it, I'm a snitch; if I don't, I'm complicit. Damned if I do, damned if I don't.",
+   "alt": [
+    "a no-win situation",
+    "between a rock and a hard place"
+   ],
+   "tag": "#M154"
+  },
+  {
+   "n": 155,
+   "t": "trouble",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "علی ماند و حوضش",
+   "mean": "همه رفتند و او تنها با گرفتاری ماند.",
+   "en": "Left holding the bag.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آمریکایی؛ وقتی شرکا فرار کرده‌اند و یک نفر مسئول بدهی یا خرابی مانده.",
+   "ex": "Everyone bailed after the party and I was left holding the bag — and the mess.",
+   "ex_work": "Everyone quit before the deadline and I was left holding the bag.",
+   "tag": "#M155"
+  },
+  {
+   "n": 156,
+   "t": "justice",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "هر کس خربزه می‌خورد، پای لرزش هم می‌نشیند",
+   "mean": "کسی که کاری کرده باید عواقبش را هم بپذیرد.",
+   "en": "You made your bed, now lie in it.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "پدر و مادرها، دوستان رک؛ وقتی کسی از عواقب انتخاب خودش شکایت می‌کند.",
+   "ex": "You signed the two-year lease. You made your bed, now lie in it.",
+   "alt": [
+    "Actions have consequences."
+   ],
+   "tag": "#M156"
+  },
+  {
+   "n": 157,
+   "t": "justice",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "دنیا دار مکافات است",
+   "mean": "هر کار بدی برمی‌گردد.",
+   "en": "What goes around comes around.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج. محاوره‌ی جوان‌ها: That's karma. نسخه‌ی رکیک: Karma's a b****.",
+   "ex": "He cheated on her, and now someone cheated on him. What goes around comes around.",
+   "ex_work": "He got fired for the same thing he did to me. What goes around comes around.",
+   "alt": [
+    "That's karma."
+   ],
+   "tag": "#M157"
+  },
+  {
+   "n": 158,
+   "t": "justice",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "از هر دست بدهی، از همان دست پس می‌گیری",
+   "mean": "هر چه بکاری همان را درو می‌کنی.",
+   "en": "You reap what you sow.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کتاب‌مقدسی ولی کاملاً روزمره. alt: You get what you give.",
+   "ex": "He never called his parents, and now his kids never call him. You reap what you sow.",
+   "ex_work": "He was rude to everyone on the way up. You reap what you sow.",
+   "alt": [
+    "You get what you give."
+   ],
+   "tag": "#M158"
+  },
+  {
+   "n": 159,
+   "t": "justice",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "چاه مکن بهر کسی، اول خودت، دوم کسی",
+   "mean": "کسی که برای دیگری نقشه می‌کشد، خودش گرفتار می‌شود.",
+   "en": "It backfired on him.",
+   "m": "close",
+   "amer": "daily",
+   "us": "ضرب‌المثل ادبی‌اش Hoist by his own petard (شکسپیر) known است؛ در محاوره backfire.",
+   "ex": "He tried to make her jealous, but it backfired on him.",
+   "ex_work": "He tried to get her fired, but it backfired and he got demoted.",
+   "alt": [
+    "Hoist by his own petard.",
+    "He dug his own grave."
+   ],
+   "tag": "#M159"
+  },
+  {
+   "n": 160,
+   "t": "justice",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "چوب خدا صدا ندارد",
+   "mean": "مجازات بی‌صدا و ناگهان می‌رسد.",
+   "en": "Karma will catch up with them.",
+   "m": "close",
+   "amer": "daily",
+   "us": "بعد از بی‌عدالتی. نسخه‌ی قدیمی: The mills of God grind slowly.",
+   "ex": "Don't worry about him. Karma will catch up with him eventually.",
+   "alt": [
+    "The mills of God grind slowly."
+   ],
+   "tag": "#M160"
+  },
+  {
+   "n": 161,
+   "t": "justice",
+   "where": [
+    "work",
+    "family"
+   ],
+   "fa": "خشت اول چون نهد معمار کج، تا ثریا می‌رود دیوار کج",
+   "mean": "شروع اشتباه همه‌چیز را خراب می‌کند.",
+   "en": "Garbage in, garbage out.",
+   "m": "close",
+   "amer": "daily",
+   "us": "اصطلاح IT و داده؛ عمومی‌تر: Start off on the wrong foot.",
+   "ex": "Junk food all week and you wonder why you feel bad? Garbage in, garbage out.",
+   "ex_work": "The model is only as good as the data. Garbage in, garbage out.",
+   "alt": [
+    "Get off on the wrong foot.",
+    "A house built on sand."
+   ],
+   "tag": "#M161"
+  },
+  {
+   "n": 162,
+   "t": "justice",
+   "where": [
+    "work",
+    "neighbors"
+   ],
+   "fa": "ماهی از سر گنده گردد",
+   "mean": "فساد از بالا شروع می‌شود.",
+   "en": "A fish rots from the head down.",
+   "m": "exact",
+   "amer": "known",
+   "us": "بیزنس و سیاست؛ وقتی فرهنگ بد شرکت از مدیریت است. نسخه‌ی فارسی دیگر: آب از سرچشمه گل‌آلود است.",
+   "ex": "The coach yells at the refs, so of course the kids do too. A fish rots from the head down.",
+   "ex_work": "The whole team cuts corners because the CEO does. A fish rots from the head down.",
+   "tag": "#M162"
+  },
+  {
+   "n": 163,
+   "t": "justice",
+   "where": [
+    "kids"
+   ],
+   "fa": "بار کج به منزل نمی‌رسد",
+   "mean": "کار نادرست به نتیجه نمی‌رسد.",
+   "en": "Cheaters never prosper.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "بیشتر به بچه‌ها و در بازی؛ بزرگ‌ترها با کمی کنایه.",
+   "ex": "He got caught copying the exam. Cheaters never prosper.",
+   "tag": "#M163"
+  },
+  {
+   "n": 164,
+   "t": "justice",
+   "where": [
+    "friends",
+    "family",
+    "neighbors",
+    "shopping"
+   ],
+   "fa": "یک سوزن به خودت بزن، یک جوالدوز به مردم",
+   "mean": "قبل از آزار دیگران، دردش را روی خودت امتحان کن.",
+   "en": "Put yourself in their shoes.",
+   "m": "close",
+   "amer": "daily",
+   "us": "همدلی؛ نسخه‌ی کامل‌تر: Walk a mile in someone's shoes. قانون طلایی: Treat others the way you want to be treated.",
+   "ex": "Before you yell at the waiter, put yourself in his shoes.",
+   "alt": [
+    "Walk a mile in someone's shoes.",
+    "Treat others the way you want to be treated."
+   ],
+   "tag": "#M164"
+  },
+  {
+   "n": 165,
+   "t": "justice",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "چیزی که عوض دارد، گله ندارد",
+   "mean": "تلافی کردم، حق نداری شکایت کنی.",
+   "en": "Turnabout is fair play.",
+   "m": "exact",
+   "amer": "known",
+   "us": "شوخی بعد از تلافی. ساده‌تر: Fair's fair.",
+   "ex": "You pranked me last week — turnabout is fair play.",
+   "alt": [
+    "Fair's fair.",
+    "Tit for tat."
+   ],
+   "tag": "#M165"
+  },
+  {
+   "n": 166,
+   "t": "justice",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "آتش که گرفت، خشک و تر می‌سوزد",
+   "mean": "در بحران، بی‌گناه هم آسیب می‌بیند.",
+   "en": "Collateral damage.",
+   "m": "close",
+   "amer": "daily",
+   "us": "اصطلاح نظامی که در محاوره رایج است؛ تعدیل نیرو، دعوای خانوادگی.",
+   "ex": "My parents' divorce hit the dog the hardest. Total collateral damage.",
+   "ex_work": "The layoffs hit the good teams too. Collateral damage.",
+   "tag": "#M166"
+  },
+  {
+   "n": 167,
+   "t": "justice",
+   "where": [
+    "family",
+    "work"
+   ],
+   "fa": "سنگ‌ها را بسته‌اند و سگ‌ها را رها کرده‌اند",
+   "mean": "نظم وارونه شده؛ خطاکارها آزادند.",
+   "en": "The inmates are running the asylum.",
+   "m": "close",
+   "amer": "known",
+   "us": "انتقاد از مدیریت یا دولت بی‌کفایت. کمی تند است.",
+   "ex": "The kids are deciding what's for dinner? The inmates are running the asylum.",
+   "ex_work": "Interns approving budgets? The inmates are running the asylum.",
+   "tag": "#M167"
+  },
+  {
+   "n": 168,
+   "t": "justice",
+   "where": [
+    "neighbors"
+   ],
+   "fa": "هر چه بگندد نمکش می‌زنند، وای به روزی که بگندد نمک",
+   "mean": "اگر ناظر و اصلاح‌کننده خودش فاسد شود، دیگر چاره‌ای نیست.",
+   "en": "Who watches the watchmen?",
+   "m": "close",
+   "amer": "known",
+   "us": "بحث پلیس، نهادهای نظارتی، دادگاه. ترجمه‌ی جمله‌ی لاتین؛ از کمیک Watchmen هم مشهور شد.",
+   "ex": "The HOA president is the one breaking the rules. Who watches the watchmen?",
+   "ex_work": "The auditor was in on the fraud. Who watches the watchmen?",
+   "tag": "#M168"
+  },
+  {
+   "n": 169,
+   "t": "justice",
+   "where": [
+    "partner",
+    "family"
+   ],
+   "fa": "دست پیش را گرفتن که پس نیفتی",
+   "mean": "قبل از این‌که متهم شوی، حمله کن.",
+   "en": "The best defense is a good offense.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "از ورزش؛ در بحث و سیاست وقتی کسی اول اتهام می‌زند.",
+   "ex": "He blamed me before I could say anything. The best defense is a good offense.",
+   "tag": "#M169"
+  },
+  {
+   "n": 170,
+   "t": "futile",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "آب در هاون کوبیدن",
+   "mean": "کار بی‌نتیجه کردن.",
+   "en": "Beating a dead horse.",
+   "m": "close",
+   "amer": "daily",
+   "us": "آمریکایی beating، بریتانیایی flogging. بیشتر برای ادامه دادن بحثی که تمام شده.",
+   "ex": "We already picked the restaurant. Stop beating a dead horse.",
+   "ex_work": "We already decided. Bringing it up again is beating a dead horse.",
+   "alt": [
+    "spinning your wheels",
+    "a waste of time"
+   ],
+   "note": "spinning your wheels برای تلاش بی‌نتیجه دقیق‌تر است.",
+   "tag": "#M170"
+  },
+  {
+   "n": 171,
+   "t": "futile",
+   "where": [
+    "friends"
+   ],
+   "fa": "زیره به کرمان بردن",
+   "mean": "چیزی را به جایی بردن که خودش پر از آن است.",
+   "en": "Carrying coals to Newcastle.",
+   "m": "exact",
+   "amer": "uk",
+   "us": "بریتانیایی؛ آمریکایی‌ها کمتر می‌فهمند. محاوره: Like bringing sand to the beach.",
+   "ex": "Bringing wine to Napa? That's like bringing sand to the beach.",
+   "alt": [
+    "Like bringing sand to the beach."
+   ],
+   "note": "دام: Selling ice to Eskimos معنی دیگری دارد (فروشنده‌ی خیلی زبردست)، معادل این نیست.",
+   "tag": "#M171"
+  },
+  {
+   "n": 172,
+   "t": "futile",
+   "where": [
+    "kids",
+    "family"
+   ],
+   "fa": "یاسین به گوش خر خواندن",
+   "mean": "نصیحت به کسی که گوش نمی‌دهد.",
+   "en": "It's like talking to a brick wall.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ بچه‌ها، همکار لجباز، پشتیبانی مشتری.",
+   "ex": "I've explained it five times. It's like talking to a brick wall.",
+   "tag": "#M172"
+  },
+  {
+   "n": 173,
+   "t": "futile",
+   "where": [
+    "kids"
+   ],
+   "fa": "از این گوش می‌گیرد، از آن گوش درمی‌کند",
+   "mean": "حرف را نمی‌شنود و فراموش می‌کند.",
+   "en": "In one ear and out the other.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ پدر و مادر درباره‌ی بچه.",
+   "ex": "I tell him to wear a jacket, but it goes in one ear and out the other.",
+   "tag": "#M173"
+  },
+  {
+   "n": 174,
+   "t": "futile",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "ما را باش که از بز دنبه می‌خواستیم",
+   "mean": "از کسی چیزی می‌خواستیم که ندارد.",
+   "en": "You can't get blood from a stone.",
+   "m": "exact",
+   "amer": "known",
+   "us": "آمریکایی‌ها turnip هم می‌گویند (blood from a turnip)، بیشتر در جنوب.",
+   "ex": "He's broke. Suing him won't help — you can't get blood from a stone.",
+   "alt": [
+    "You can't squeeze blood from a turnip."
+   ],
+   "tag": "#M174"
+  },
+  {
+   "n": 175,
+   "t": "futile",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "کوه موش زایید",
+   "mean": "آن همه سروصدا و نتیجه‌ای ناچیز.",
+   "en": "Much ado about nothing.",
+   "m": "close",
+   "amer": "known",
+   "us": "عنوان نمایشنامه‌ی شکسپیر؛ محاوره: All that for nothing? یا What a letdown.",
+   "ex": "All that drama in the group chat over who brings the chips? Much ado about nothing.",
+   "ex_work": "Six months of hype for a logo change? Much ado about nothing.",
+   "alt": [
+    "What a letdown.",
+    "All that for nothing?"
+   ],
+   "note": "معنای انگلیسی بیشتر «جنجال سر هیچ» است؛ فارسی تأکید بر نتیجه‌ی ناچیز دارد.",
+   "tag": "#M175"
+  },
+  {
+   "n": 176,
+   "t": "futile",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "سنگ مفت، گنجشک مفت",
+   "mean": "هزینه‌ای ندارد؛ امتحانش ضرر ندارد.",
+   "en": "What have you got to lose?",
+   "m": "close",
+   "amer": "daily",
+   "us": "تشویق به امتحان کردن؛ درخواست کار، پیام دادن.",
+   "ex": "Just ask her out. What have you got to lose?",
+   "ex_work": "Apply anyway. What have you got to lose?",
+   "alt": [
+    "Nothing to lose.",
+    "Worth a shot."
+   ],
+   "tag": "#M176"
+  },
+  {
+   "n": 177,
+   "t": "futile",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "دیگی که برای من نجوشد، می‌خواهم سر سگ در آن بجوشد",
+   "mean": "چیزی که به من ربطی ندارد، برایم مهم نیست.",
+   "en": "Not my circus, not my monkeys.",
+   "m": "close",
+   "amer": "daily",
+   "us": "شوخی رایج اینترنتی (از ضرب‌المثل لهستانی). لحن فارسی تلخ‌تر و بی‌اعتناتر است.",
+   "ex": "My cousins are fighting over the will again. Not my circus, not my monkeys.",
+   "ex_work": "The sales team's drama? Not my circus, not my monkeys.",
+   "alt": [
+    "Not my problem."
+   ],
+   "tag": "#M177"
+  },
+  {
+   "n": 178,
+   "t": "futile",
+   "where": [
+    "family",
+    "partner"
+   ],
+   "fa": "آب در کوزه و ما تشنه‌لبان می‌گردیم",
+   "mean": "چیزی که دنبالش هستیم کنار خودمان است.",
+   "en": "It's right under your nose.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کلید گم‌شده، فرصتی که نزدیک است.",
+   "ex": "Looking for your glasses? They're right under your nose — on your head!",
+   "ex_work": "You've been looking for a mentor? Your manager's right under your nose.",
+   "tag": "#M178"
+  },
+  {
+   "n": 179,
+   "t": "futile",
+   "where": [
+    "family",
+    "work"
+   ],
+   "fa": "خانه از پای‌بست ویران است، خواجه در بند نقش ایوان است",
+   "mean": "مشکل اساسی است و او به ظاهر می‌رسد.",
+   "en": "Rearranging deck chairs on the Titanic.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج در بیزنس: شرکت در حال غرق شدن، مدیر لوگو عوض می‌کند.",
+   "ex": "The roof is leaking and he's repainting the mailbox? That's rearranging deck chairs on the Titanic.",
+   "ex_work": "We're losing customers and they're redesigning the logo? That's rearranging deck chairs on the Titanic.",
+   "alt": [
+    "putting lipstick on a pig"
+   ],
+   "tag": "#M179"
+  },
+  {
+   "n": 180,
+   "t": "futile",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "یک دیوانه سنگی در چاه می‌اندازد، صد عاقل نمی‌توانند درش بیاورند",
+   "mean": "خرابکاری یک نادان را جمعی از عاقل‌ها نمی‌توانند جبران کنند.",
+   "en": "One fool can make a mess that a hundred wise people can't fix.",
+   "m": "none",
+   "amer": "daily",
+   "us": "ضرب‌المثل انگلیسی ندارد؛ جمله‌ی en بازنویسی است. نزدیک: It takes seconds to break and years to fix.",
+   "ex": "One dumb comment from my uncle and the whole family's been fighting for a month. Easy to break, hard to fix.",
+   "ex_work": "One bad commit and the whole team spent a week cleaning up. Easy to break, hard to fix.",
+   "alt": [
+    "Easy to break, hard to fix."
+   ],
+   "tag": "#M180"
+  },
+  {
+   "n": 181,
+   "t": "character",
+   "where": [
+    "neighbors",
+    "friends"
+   ],
+   "fa": "خواهی نشوی رسوا، همرنگ جماعت شو",
+   "mean": "با رسم و رفتار جمع هماهنگ شو.",
+   "en": "When in Rome, do as the Romans do.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "سفر، مهاجرت، فرهنگ شرکت جدید. کوتاه: When in Rome.",
+   "ex": "Everyone here takes off their shoes. When in Rome!",
+   "tag": "#M181"
+  },
+  {
+   "n": 182,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "نه به آن شوری شوری، نه به این بی‌نمکی",
+   "mean": "از یک افراط به افراط دیگر.",
+   "en": "From one extreme to the other.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "رژیم غذایی، مدیریت، سیاست.",
+   "ex": "He went from eating only junk to eating only kale. From one extreme to the other.",
+   "ex_work": "He went from micromanaging to totally ignoring us. From one extreme to the other.",
+   "tag": "#M182"
+  },
+  {
+   "n": 183,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "سنگ بزرگ علامت نزدن است",
+   "mean": "کسی که کار خیلی بزرگ را قبول می‌کند، قصد انجامش را ندارد یا نمی‌تواند.",
+   "en": "Bite off more than you can chew.",
+   "m": "close",
+   "amer": "daily",
+   "us": "پروژه‌ی زیادی بزرگ، قبول کار زیاد.",
+   "ex": "Hosting Thanksgiving for 30 people? You've bitten off more than you can chew.",
+   "ex_work": "Three side projects and a full-time job? You've bitten off more than you can chew.",
+   "tag": "#M183"
+  },
+  {
+   "n": 184,
+   "t": "character",
+   "where": [
+    "neighbors",
+    "friends"
+   ],
+   "fa": "کوه به کوه نمی‌رسد، آدم به آدم می‌رسد",
+   "mean": "آدم‌ها دوباره به هم برمی‌خورند (گاهی با تهدید).",
+   "en": "It's a small world.",
+   "m": "close",
+   "amer": "daily",
+   "us": "دیدن آشنا در جای غیرمنتظره. نسخه‌ی تهدیدآمیز: Our paths will cross again یا Don't burn bridges.",
+   "ex": "You went to high school with my cousin? Small world!",
+   "ex_work": "You know my old boss too? Small world!",
+   "alt": [
+    "Our paths will cross again.",
+    "Don't burn your bridges."
+   ],
+   "tag": "#M184"
+  },
+  {
+   "n": 185,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "لقمه را دور سرش چرخاندن",
+   "mean": "کار ساده را از راه پیچیده انجام دادن.",
+   "en": "Go around your elbow to get to your thumb.",
+   "m": "exact",
+   "amer": "known",
+   "us": "اصطلاح جنوب آمریکا. عمومی‌تر: overcomplicate it یا beat around the bush (برای حرف).",
+   "ex": "Just call him instead of asking his sister to ask his mom. Don't go around your elbow to get to your thumb.",
+   "ex_work": "Just email him directly instead of going around your elbow to get to your thumb.",
+   "alt": [
+    "overcomplicate things",
+    "beat around the bush"
+   ],
+   "tag": "#M185"
+  },
+  {
+   "n": 186,
+   "t": "character",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "مثل گاو پیشانی‌سفید",
+   "mean": "زیادی به چشم می‌آید.",
+   "en": "Sticks out like a sore thumb.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ لباس نامتناسب، خطای واضح در کد یا متن.",
+   "ex": "A tux at a backyard barbecue? You'll stick out like a sore thumb.",
+   "ex_work": "Wearing a suit to a startup? You'll stick out like a sore thumb.",
+   "tag": "#M186"
+  },
+  {
+   "n": 187,
+   "t": "character",
+   "where": [
+    "partner",
+    "friends"
+   ],
+   "fa": "دل به دریا زدن",
+   "mean": "ریسک کردن و تصمیم گرفتن.",
+   "en": "Take the plunge.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "ازدواج، مهاجرت، استعفا، استارتاپ.",
+   "ex": "After years of thinking about it, I finally took the plunge and moved to Toronto.",
+   "alt": [
+    "Go for it.",
+    "Take a leap of faith."
+   ],
+   "tag": "#M187"
+  },
+  {
+   "n": 188,
+   "t": "character",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "دستش نمک ندارد",
+   "mean": "به هر کس خوبی می‌کند، بدی می‌بیند.",
+   "en": "No good deed goes unpunished.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج؛ وقتی کمک کردن برایت دردسر شد.",
+   "ex": "I gave him a ride once and now he expects one every day. No good deed goes unpunished.",
+   "ex_work": "I covered his shift and now I'm blamed for his mistakes. No good deed goes unpunished.",
+   "tag": "#M188"
+  },
+  {
+   "n": 189,
+   "t": "character",
+   "where": [
+    "partner",
+    "family"
+   ],
+   "fa": "ریگی به کفش داشتن",
+   "mean": "چیزی را پنهان کردن؛ بی‌گناه نبودن.",
+   "en": "Have skeletons in the closet.",
+   "m": "close",
+   "amer": "daily",
+   "us": "سیاستمدارها، استخدام. محاوره: He's hiding something.",
+   "ex": "Every family has a few skeletons in the closet.",
+   "ex_work": "Why won't he do a background check? He must have skeletons in the closet.",
+   "alt": [
+    "He's hiding something."
+   ],
+   "tag": "#M189"
+  },
+  {
+   "n": 190,
+   "t": "character",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "سر و ته یک کرباس‌اند",
+   "mean": "هر دو یک‌جورند (معمولاً بد).",
+   "en": "Cut from the same cloth.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خنثی یا منفی؛ درباره‌ی دو سیاستمدار یا دو برادر.",
+   "ex": "Don't expect his brother to be any different. They're cut from the same cloth.",
+   "ex_work": "Don't expect the new manager to be different. They're cut from the same cloth.",
+   "tag": "#M190"
+  },
+  {
+   "n": 191,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "سگ زرد برادر شغال است",
+   "mean": "هیچ‌کدام بهتر از دیگری نیست.",
+   "en": "Six of one, half a dozen of the other.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ وقتی دو گزینه فرقی ندارند. کوتاه‌تر: Same difference.",
+   "ex": "Take the 5 or the 101 — six of one, half a dozen of the other.",
+   "alt": [
+    "Same difference.",
+    "Tomato, tomahto."
+   ],
+   "tag": "#M191"
+  },
+  {
+   "n": 192,
+   "t": "character",
+   "where": [
+    "friends"
+   ],
+   "fa": "از دماغ فیل افتاده",
+   "mean": "خیلی مغرور و از خودراضی است.",
+   "en": "He thinks he's all that.",
+   "m": "close",
+   "amer": "daily",
+   "us": "عامیانه؛ alt: stuck-up یا too good for everyone.",
+   "ex": "She won't even say hi. Thinks she's all that.",
+   "alt": [
+    "stuck-up",
+    "thinks he's too good for us"
+   ],
+   "tag": "#M192"
+  },
+  {
+   "n": 193,
+   "t": "character",
+   "where": [
+    "family",
+    "kids"
+   ],
+   "fa": "پایش را از گلیمش درازتر کرد",
+   "mean": "از حد خودش فراتر رفت.",
+   "en": "Too big for his britches.",
+   "m": "exact",
+   "amer": "known",
+   "us": "آمریکایی و کمی روستایی/قدیمی؛ درباره‌ی جوان مغرور. امروزی‌تر: He's overstepping.",
+   "ex": "Twelve years old and telling Grandpa how to drive? Getting a little too big for his britches.",
+   "ex_work": "Two weeks on the job and he's telling the VP what to do? Getting too big for his britches.",
+   "alt": [
+    "overstep",
+    "get ahead of yourself"
+   ],
+   "tag": "#M193"
+  },
+  {
+   "n": 194,
+   "t": "character",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "مثل کبک سرش را زیر برف کرده",
+   "mean": "مشکل را نمی‌بیند یا نمی‌خواهد ببیند.",
+   "en": "Bury your head in the sand.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ بدهی، بیماری، مشکل شرکت. (انگلیسی شترمرغ است نه کبک.)",
+   "ex": "Ignoring the credit card bills won't make them go away. Stop burying your head in the sand.",
+   "ex_work": "Ignoring the audit won't make it go away. Stop burying your head in the sand.",
+   "tag": "#M194"
+  },
+  {
+   "n": 195,
+   "t": "character",
+   "where": [
+    "friends",
+    "kids"
+   ],
+   "fa": "آب پاکی روی دستش ریخت",
+   "mean": "امیدش را کاملاً قطع کرد؛ جواب قطعی منفی داد.",
+   "en": "Burst his bubble.",
+   "m": "close",
+   "amer": "daily",
+   "us": "خبر ناامیدکننده. رسمی‌تر: gave him a flat no.",
+   "ex": "I hate to burst your bubble, but the concert's sold out.",
+   "ex_work": "I hate to burst your bubble, but the position's been filled.",
+   "alt": [
+    "gave him a flat no",
+    "Let him down easy."
+   ],
+   "tag": "#M195"
+  },
+  {
+   "n": 196,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "سایه‌اش را با تیر می‌زند",
+   "mean": "خیلی ترسو و بدگمان است.",
+   "en": "Afraid of his own shadow.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "آدم بیش‌ازحد محتاط یا ترسو.",
+   "ex": "He won't even try the roller coaster. He's afraid of his own shadow.",
+   "ex_work": "He won't approve anything risky. He's afraid of his own shadow.",
+   "tag": "#M196"
+  },
+  {
+   "n": 197,
+   "t": "character",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "آب از آب تکان نخورد",
+   "mean": "هیچ واکنشی نشان داده نشد.",
+   "en": "Nobody batted an eye.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خبر عجیب که کسی واکنش نشان نداد. نسخه‌ی دیگر: without batting an eye.",
+   "ex": "I told my parents I was moving to Canada and nobody batted an eye.",
+   "ex_work": "He announced he was quitting and nobody batted an eye.",
+   "tag": "#M197"
+  },
+  {
+   "n": 198,
+   "t": "character",
+   "where": [
+    "family",
+    "partner"
+   ],
+   "fa": "شاخ غول را شکسته",
+   "mean": "(کنایه) کار خیلی مهمی نکرده.",
+   "en": "What do you want, a medal?",
+   "m": "close",
+   "amer": "daily",
+   "us": "کنایه‌ی رایج آمریکایی. کوتاه‌تر: Big whoop. یا Big deal.",
+   "ex": "You loaded the dishwasher once? What do you want, a medal?",
+   "alt": [
+    "Big whoop.",
+    "Big deal."
+   ],
+   "tag": "#M198"
+  },
+  {
+   "n": 199,
+   "t": "character",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "سنگ روی یخ شد",
+   "mean": "جلوی دیگران خجالت‌زده شد.",
+   "en": "Ended up with egg on his face.",
+   "m": "close",
+   "amer": "daily",
+   "us": "اشتباه علنی، پیش‌بینی غلط.",
+   "ex": "He bragged about the deal, then it fell through. Egg on his face.",
+   "tag": "#M199"
+  },
+  {
+   "n": 200,
+   "t": "character",
+   "where": [
+    "friends"
+   ],
+   "fa": "زد به سیم آخر",
+   "mean": "بی‌محابا و بی‌اعتنا به عواقب کاری کرد.",
+   "en": "Threw caution to the wind.",
+   "m": "close",
+   "amer": "daily",
+   "us": "تصمیم ناگهانی و پرریسک. برای عصبانیت: He snapped یا went off the deep end.",
+   "ex": "She threw caution to the wind and booked a one-way ticket to Lisbon.",
+   "alt": [
+    "He snapped.",
+    "went off the deep end"
+   ],
+   "tag": "#M200"
+  },
+  {
+   "n": 201,
+   "t": "character",
+   "where": [
+    "friends",
+    "online"
+   ],
+   "fa": "نان را به نرخ روز خوردن",
+   "mean": "هر بار طرف کسی را گرفتن که قدرت دارد.",
+   "en": "Jump on the bandwagon.",
+   "m": "close",
+   "amer": "daily",
+   "us": "سیاست و ورزش (bandwagon fan: طرفدار تیمی که تازه برنده شده). دقیق‌تر: a fair-weather friend.",
+   "ex": "Now that they're winning, everyone's jumping on the bandwagon.",
+   "alt": [
+    "go whichever way the wind blows",
+    "fair-weather friend"
+   ],
+   "tag": "#M201"
+  },
+  {
+   "n": 202,
+   "t": "character",
+   "where": [
+    "friends",
+    "partner"
+   ],
+   "fa": "ماست‌ها را کیسه کرد",
+   "mean": "ترسید و عقب‌نشینی کرد.",
+   "en": "He chickened out.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ alt: backed down یا got cold feet (قبل از ازدواج/تصمیم بزرگ).",
+   "ex": "He was going to ask her to dance but chickened out.",
+   "ex_work": "He was going to ask for a raise but chickened out.",
+   "alt": [
+    "backed down",
+    "got cold feet"
+   ],
+   "tag": "#M202"
+  },
+  {
+   "n": 203,
+   "t": "character",
+   "where": [
+    "friends",
+    "family",
+    "kids"
+   ],
+   "fa": "مثل آب خوردن",
+   "mean": "خیلی آسان.",
+   "en": "Piece of cake.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج. alt: Easy as pie یا a walk in the park.",
+   "ex": "The exam? Piece of cake.",
+   "alt": [
+    "Easy as pie.",
+    "a walk in the park"
+   ],
+   "tag": "#M203"
+  },
+  {
+   "n": 204,
+   "t": "character",
+   "where": [
+    "friends"
+   ],
+   "fa": "مستی و راستی",
+   "mean": "آدم مست حرف دلش را می‌زند.",
+   "en": "Drunk words are sober thoughts.",
+   "m": "close",
+   "amer": "daily",
+   "us": "جمله‌ی رایج شبکه‌های اجتماعی. نسخه‌ی لاتین: In vino veritas.",
+   "ex": "After three beers he told me he still loves his ex. Drunk words are sober thoughts.",
+   "ex_work": "He told me he hates his job after three beers. Drunk words are sober thoughts.",
+   "alt": [
+    "In vino veritas."
+   ],
+   "tag": "#M204"
+  },
+  {
+   "n": 205,
+   "t": "character",
+   "where": [
+    "friends",
+    "neighbors"
+   ],
+   "fa": "مرد است و قولش",
+   "mean": "آدم درست به قولش عمل می‌کند.",
+   "en": "My word is my bond.",
+   "m": "exact",
+   "amer": "known",
+   "us": "رسمی و قدیمی‌تر؛ در محاوره: I'm a man of my word یا A deal's a deal.",
+   "ex": "I said I'd help you move, and I'm a man of my word.",
+   "alt": [
+    "A man of his word.",
+    "A deal's a deal."
+   ],
+   "tag": "#M205"
+  },
+  {
+   "n": 206,
+   "t": "character",
+   "where": [
+    "partner",
+    "friends",
+    "shopping"
+   ],
+   "fa": "ریش و قیچی دست خودت است",
+   "mean": "تصمیم با توست.",
+   "en": "The ball's in your court.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج؛ مذاکره، رابطه، بعد از ارسال پیشنهاد.",
+   "ex": "I texted him first. The ball's in his court now.",
+   "ex_work": "I sent my best offer. The ball's in your court.",
+   "alt": [
+    "It's your call.",
+    "Up to you."
+   ],
+   "tag": "#M206"
+  },
+  {
+   "n": 207,
+   "t": "character",
+   "where": [
+    "friends"
+   ],
+   "fa": "تیر در تاریکی",
+   "mean": "حدس بی‌پشتوانه.",
+   "en": "A shot in the dark.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "حدس زدن؛ درخواست کار بدون آشنایی.",
+   "ex": "I don't know the answer — this is just a shot in the dark.",
+   "tag": "#M207"
+  },
+  {
+   "n": 208,
+   "t": "character",
+   "where": [
+    "family",
+    "friends"
+   ],
+   "fa": "با یک تیر دو نشان زدن",
+   "mean": "با یک کار دو هدف را برآوردن.",
+   "en": "Kill two birds with one stone.",
+   "m": "exact",
+   "amer": "daily",
+   "us": "خیلی رایج. نسخه‌ی مهربان‌تر جدید: Feed two birds with one scone.",
+   "ex": "I'll drop off the package on my way to the gym — kill two birds with one stone.",
+   "tag": "#M208"
+  },
+  {
+   "n": 209,
+   "t": "character",
+   "where": [
+    "neighbors",
+    "online"
+   ],
+   "fa": "از آب گل‌آلود ماهی گرفتن",
+   "mean": "از آشفتگی به نفع خود سوءاستفاده کردن.",
+   "en": "Fish in troubled waters.",
+   "m": "exact",
+   "amer": "known",
+   "us": "ادبی‌تر؛ محاوره‌ی آمریکایی: take advantage of the chaos یا profiteering.",
+   "ex": "Price gouging during the storm? That's fishing in troubled waters.",
+   "alt": [
+    "take advantage of the chaos"
+   ],
+   "tag": "#M209"
+  },
+  {
+   "n": 210,
+   "t": "character",
+   "where": [
+    "friends",
+    "family"
+   ],
+   "fa": "کار هر بز نیست خرمن کوفتن",
+   "mean": "هر کسی از پس هر کاری برنمی‌آید.",
+   "en": "Not everyone is cut out for it.",
+   "m": "close",
+   "amer": "daily",
+   "us": "کار سخت، شغل‌های پرفشار (پرستاری، استارتاپ).",
+   "ex": "Babysitting triplets all weekend? Not everyone is cut out for it.",
+   "ex_work": "ER nursing is intense. Not everyone is cut out for it.",
+   "alt": [
+    "Not for the faint of heart."
+   ],
+   "tag": "#M210"
+  }
+ ]
+}

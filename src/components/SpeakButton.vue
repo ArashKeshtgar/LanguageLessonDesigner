@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { speak, speechAvailable } from '../lib/speak'
 
-const props = defineProps<{ text: string }>()
+const props = defineProps<{ text: string; lang?: string }>()
 
 function onClick() {
-  speak(props.text)
+  speak(props.text, 1, props.lang)
 }
 </script>
 

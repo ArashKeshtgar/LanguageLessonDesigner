@@ -1,10 +1,13 @@
 // English TTS via the browser's own speechSynthesis — same voice-picking logic as
 // the original Python engine's SPEAK script (gen.py), ported to a Vue-callable helper.
 
-function pickVoice(): SpeechSynthesisVoice | undefined {
+// lessons speak Canadian English; the proverbs section asks for 'en-US'
+function pickVoice(lang: string): SpeechSynthesisVoice | undefined {
   const voices = speechSynthesis.getVoices()
+  const want = new RegExp(lang.replace('-', '[-_]'), 'i')
   return (
-    voices.find((v) => /en[-_]CA/i.test(v.lang)) ||
+    voices.find((v) => want.test(v.lang) && /Natural|Online/i.test(v.name)) ||
+    voices.find((v) => want.test(v.lang)) ||
     voices.find((v) => /Aria|Jenny|Guy|Natural/i.test(v.name)) ||
     voices.find((v) => /^en/i.test(v.lang)) ||
     voices[0]
@@ -21,7 +24,7 @@ export function stripForSpeech(s: string): string {
 
 let primed = false
 
-export function speak(text: string, rate = 1): void {
+export function speak(text: string, rate = 1, lang = 'en-CA'): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
   if (!primed) {
     speechSynthesis.getVoices() // warms up the voice list on first use
@@ -30,8 +33,8 @@ export function speak(text: string, rate = 1): void {
   speechSynthesis.cancel()
   const utter = new SpeechSynthesisUtterance(stripForSpeech(text))
   utter.rate = rate
-  utter.lang = 'en-CA'
-  const voice = pickVoice()
+  utter.lang = lang
+  const voice = pickVoice(lang)
   if (voice) utter.voice = voice
   speechSynthesis.speak(utter)
 }

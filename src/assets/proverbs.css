@@ -1,0 +1,47 @@
+/* Proverbs section — same look as the engine's Prov_*.html (Proverbs/engine/prov.py). */
+
+.pv { border-top: 1px solid #eef0f2; padding: .7em 0; overflow-wrap: anywhere; border-radius: 6px; transition: background .6s; }
+.pv:first-of-type, .pv-today .pv, .pv-card .pv { border-top: 0; }
+.pv-tag { font: 700 .78em Consolas, 'Cascadia Mono', monospace; color: #8c5a2b; background: #f4ece3; border: 1px solid #8c5a2b;
+          border-radius: 4px; padding: 0 .4em; direction: ltr; unicode-bidi: isolate; }
+.pv-fa { font: 700 1.35em/1.5 'B Nazanin', 'B Yekan', serif; }
+.pv-where { display: flex; flex-wrap: wrap; gap: .3em; margin-top: .2em; }
+.pv-where span { font-size: .74em; background: #efeaf5; color: #5a3f7a; border-radius: 1em; padding: 0 .6em; }
+.pv-mean { color: #4a5562; margin-top: .15em; }
+.pv-en { font: 700 1.15em/1.45 Calibri, Carlito, Arial, sans-serif; color: #14432e; direction: ltr; text-align: left;
+         display: flex; flex-wrap: wrap; align-items: center; gap: .45em; margin-top: .3em; }
+.pv-en .badge { font-size: .58em; }
+.pv-us { background: #f7e9e8; border-right: 3px solid #b4534e; border-radius: 4px; padding: .25em .7em; margin-top: .35em; line-height: 1.85; }
+.pv-us b { color: #8e3a35; }
+.pv-ex { font: italic 1em/1.55 Calibri, Carlito, Arial, sans-serif; color: #3f4b58; direction: ltr; text-align: left;
+         margin-top: .35em; padding-left: .8em; border-left: 2px solid #d6cfc2; display: flex; align-items: center; gap: .45em; }
+.pv-exw { color: #6b7580; font-size: .92em; border-left-style: dashed; }
+.pv-exw i { font: 600 .72em Calibri, Carlito, Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #8a94a0; font-style: normal; }
+.pv-alt { display: flex; flex-wrap: wrap; gap: .3em; margin-top: .35em; direction: ltr; }
+.pv-alt span { font: .86em Calibri, Carlito, Arial, sans-serif; background: #e6f1ea; color: #235339; border-radius: 1em; padding: .05em .65em; }
+.pv-note { color: #7a5a12; background: #fbf4df; border-radius: 4px; padding: .2em .7em; margin-top: .35em; font-size: .93em; }
+
+.pv-today { border-top: 4px solid #8c5a2b; }
+.pv-today-h { display: flex; align-items: center; justify-content: space-between; gap: .6em; font: 700 1.15em 'B Nazanin', 'B Yekan', serif; }
+.pv-today-h .btn { font-family: 'B Yekan', Tahoma, sans-serif; font-weight: 400; text-decoration: none; }
+
+.pv-filters { display: flex; flex-direction: column; gap: .6em; }
+.pv-q { border: 1px solid var(--line); border-radius: 7px; padding: .55em .8em; font: inherit; font-size: 1.02em; unicode-bidi: plaintext; }
+.pv-who { display: flex; flex-wrap: wrap; align-items: center; gap: .35em; }
+.pv-who-l { font: 700 1.05em 'B Nazanin', 'B Yekan', serif; margin-left: .3em; }
+.pv-who .btn small { opacity: .6; font-size: .8em; direction: ltr; }
+.pv-row { display: flex; flex-wrap: wrap; align-items: center; gap: .8em; }
+.pv-row select { font: inherit; font-size: .9em; padding: .3em .5em; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.pv-check { display: inline-flex; align-items: center; gap: .35em; font-size: .9em; cursor: pointer; }
+.pv-count { margin-right: auto; font: 600 .85em Calibri, Carlito, Arial, sans-serif; color: #8a94a0; direction: ltr; }
+
+.pv-card { border-top: 4px solid #8c5a2b; }
+.pv-card .pv-fa { font-size: 1.7em; }
+.pv-step { font: 600 .8em Calibri, Carlito, Arial, sans-serif; color: #8a94a0; direction: ltr; text-align: left; }
+.pv-actions { display: flex; flex-wrap: wrap; gap: .5em; margin-top: .9em; }
+.pv-actions .btn { font-size: 1em; padding: .5em 1.1em; }
+
+@media (max-width: 640px) {
+  .topbar .tab { padding: .45em .7em .4em; }
+  .pv-today-h { flex-direction: column; align-items: flex-start; }
+}
