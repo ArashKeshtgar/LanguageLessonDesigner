@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { START_LOCATION, createRouter, createWebHashHistory } from 'vue-router'
 import LessonListView from '../views/LessonListView.vue'
 import LessonView from '../views/LessonView.vue'
 import LessonEditView from '../views/LessonEditView.vue'
@@ -22,6 +22,12 @@ const router = createRouter({
   scrollBehavior(to, from) {
     return to.path === from.path ? false : { top: 0 }
   },
+})
+
+// The private ctx.<domain> copy (the phone's home-screen app) opens on Context;
+// only the first navigation, so the Lessons tab still works there.
+router.beforeEach((to, from) => {
+  if (from === START_LOCATION && to.path === '/' && location.hostname.startsWith('ctx.')) return '/context'
 })
 
 export default router

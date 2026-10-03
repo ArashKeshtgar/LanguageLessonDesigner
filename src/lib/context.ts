@@ -1,24 +1,29 @@
 import { ref } from 'vue'
 import type { ContextData } from '../types/context'
 
-// The context data holds personal information, so it is never bundled: the
-// dev server reads it from the context engine on request (vite.config.ts,
-// /api/context). A static build (GitHub Pages) has no such endpoint and the
-// Context section just says it is local-only.
+// The context data holds personal information, so it is never bundled. It
+// always comes from /api/context: in dev the Vite server reads it from the
+// context engine (vite.config.ts); on the server only the private ctx.<domain>
+// site answers it (Caddy, behind basic auth, a copy pushed by
+// push-context.ps1). Anywhere else (GitHub Pages, the public english.<domain>)
+// it 404s and the Context section just says it is local-only.
 export const ctx = ref<ContextData | null>(null)
 export const ctxError = ref('')
 export const ctxLoading = ref(false)
+// Rebuilding runs the Python engine, which only the dev server can do.
+export const canRebuild = import.meta.env.DEV
 
 export async function loadContext(force = false): Promise<void> {
   if (ctx.value && !force) return
-  if (!import.meta.env.DEV) {
-    ctxError.value = 'local-only'
-    return
-  }
   ctxLoading.value = true
   ctxError.value = ''
   try {
     const res = await fetch('/api/context', { cache: 'no-store' })
+    const isJson = (res.headers.get('content-type') || '').includes('json')
+    if (!import.meta.env.DEV && (res.status === 404 || !isJson)) {
+      ctxError.value = 'local-only'
+      return
+    }
     const data = await res.json()
     if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`)
     ctx.value = data as ContextData

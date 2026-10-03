@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
-import { ctx, rebuildContext, resolveTag } from '../lib/context'
+import { canRebuild, ctx, rebuildContext, resolveTag } from '../lib/context'
 import CtxGate from '../components/ctx/CtxGate.vue'
 import CtxSection from '../components/ctx/CtxSection.vue'
 import TagChip from '../components/ctx/TagChip.vue'
@@ -96,7 +96,7 @@ async function rebuild() {
         </CtxSection>
       </template>
 
-      <p class="fs" style="margin-top:1em">
+      <p v-if="canRebuild" class="fs" style="margin-top:1em">
         <button class="btn" :disabled="busy" @click="rebuild">{{ busy ? 'در حال ساخت…' : 'ساخت دوباره از موتور' }}</button>
         <span style="margin-right:.6em">{{ msg }}</span>
       </p>
