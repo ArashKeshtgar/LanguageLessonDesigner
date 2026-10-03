@@ -18,7 +18,10 @@ const fields: [string, keyof BugItem][] = [['نشانه', 'sym'], ['علت', 'ca
       <template v-if="showPacks"><TagChip v-for="p in item.p" :key="p" :tag="`#P:${p}`" /></template>
     </div>
     <div class="en sub">{{ item.en }}</div>
-    <div v-if="!bug" class="fs">{{ (item as WorkItem).did }}</div>
+    <template v-if="!bug">
+      <div class="fs">{{ (item as WorkItem).did }}</div>
+      <div v-if="(item as WorkItem).did_en" class="en sub did-en" dir="ltr">{{ (item as WorkItem).did_en }}</div>
+    </template>
     <template v-else>
       <div class="kv">
         <template v-for="[label, key] in fields" :key="key">

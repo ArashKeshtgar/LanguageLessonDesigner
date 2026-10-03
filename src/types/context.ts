@@ -57,6 +57,7 @@ export interface WorkItem {
   en: string
   fa: string
   did: string
+  did_en?: string
   commit?: string
   facts?: string[]
   gaps?: string[]
