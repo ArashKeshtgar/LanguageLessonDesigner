@@ -80,6 +80,27 @@ export interface BugItem {
   gaps?: string[]
 }
 
+export interface RecruitItem {
+  id: string
+  tag: string // #R:pitch.dev
+  g: string
+  fa: string
+  en: string
+  when: string
+  say: string // what to say/write, English; {Name} {Agency} {Role} … are blanks
+  why: string
+  facts?: string[]
+  refs?: string[]
+  limit?: number
+  dont?: string[]
+}
+export interface Agency { id: string; tag: string; name: string; url: string; focus: string; how: string }
+export interface RecruitData {
+  groups: { key: string; tag: string; fa: string; en: string; icon: string }[]
+  items: RecruitItem[]
+  agencies: Agency[]
+}
+
 export interface ContextData {
   generated: string
   kinds: Record<string, KindMeta>
@@ -89,5 +110,6 @@ export interface ContextData {
   gaps: Gap[]
   work: WorkItem[]
   bugs: BugItem[]
+  recruit?: RecruitData
   counts: Record<string, number>
 }

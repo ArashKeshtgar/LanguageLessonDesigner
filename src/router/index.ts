@@ -19,11 +19,15 @@ const router = createRouter({
     { path: '/context/gaps', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'gaps' } },
     { path: '/context/bugs', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'bugs' } },
     { path: '/context/work', component: () => import('../views/ContextListView.vue'), meta: { section: 'context', list: 'work' } },
+    { path: '/context/recruit', component: () => import('../views/ContextRecruitView.vue'), meta: { section: 'context' } },
     // Proverbs: public data, bundled as its own lazy chunk (src/data/proverbs.json from the proverb engine).
     { path: '/proverbs', name: 'proverbs', component: () => import('../views/ProverbsView.vue'), meta: { section: 'proverbs' } },
     { path: '/proverbs/practice', component: () => import('../views/ProverbsPracticeView.vue'), meta: { section: 'proverbs' } },
   ],
   scrollBehavior(to, from) {
+    // ?at=<id> links scroll to that row themselves (jumpTo); jumping to the top here
+    // would cancel their smooth scroll half-way.
+    if (to.query.at) return false
     return to.path === from.path ? false : { top: 0 }
   },
 })

@@ -57,6 +57,17 @@ export function resolveTag(raw: string, d: ContextData | null): Resolved {
     const row = (k === 'B' ? d.bugs : d.work).find((x) => x.n === n)
     return row ? { kind: k, route: `/context/${k === 'B' ? 'bugs' : 'work'}?at=${row.tag.slice(1)}`, label: row.fa } : null
   }
+  m = s.match(/^[Rr]:(.+)$/)
+  if (m) {
+    const v = m[1].trim()
+    const r = d.recruit
+    const it = r?.items.find((x) => x.id === v)
+    if (it) return { kind: 'R', route: `/context/recruit?at=R-${it.id}`, label: it.fa }
+    const ag = r?.agencies.find((a) => 'agency.' + a.id === v)
+    if (ag) return { kind: 'R', route: `/context/recruit?at=R-agency.${ag.id}`, label: ag.name }
+    const g = r?.groups.find((x) => x.key === v)
+    return g ? { kind: 'R', route: `/context/recruit?g=${g.key}`, label: g.fa } : null
+  }
   m = s.match(/^([PpFfGgIi]):(.+)$/)
   const kind = m ? m[1].toUpperCase() : ''
   const v = m ? m[2].trim() : s

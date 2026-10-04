@@ -19,7 +19,7 @@ const GROUPS: [string, string, string][] = [
   ['bank', 'بقیه‌ی بانک حقیقت', 'Truth bank'],
 ]
 const LEGEND: [string, string][] = [['P', '#P:rebiomed'], ['F', '#F:proj.x.y'], ['G', '#G:app-security'],
-                                   ['W', '#W07'], ['B', '#B07'], ['I', '#I:servers.db']]
+                                   ['W', '#W07'], ['B', '#B07'], ['I', '#I:servers.db'], ['R', '#R:pitch.dev']]
 
 const hit = computed(() => (q.value.trim() ? resolveTag(q.value, ctx.value) : null))
 const textHits = computed(() => {
@@ -30,6 +30,7 @@ const textHits = computed(() => {
     if ((f.claim + ' ' + f.fa).toLowerCase().includes(s)) out.push({ tag: f.tag, text: f.fa || f.claim })
   for (const b of ctx.value.bugs) if ((b.en + b.fa + b.cause + b.lesson).toLowerCase().includes(s)) out.push({ tag: b.tag, text: b.fa })
   for (const w of ctx.value.work) if ((w.en + w.fa + w.did).toLowerCase().includes(s)) out.push({ tag: w.tag, text: w.fa })
+  for (const x of ctx.value.recruit?.items || []) if ((x.en + x.fa + x.say).toLowerCase().includes(s)) out.push({ tag: x.tag, text: x.fa })
   for (const g of ctx.value.gaps) if ((g.slug + g.label).toLowerCase().includes(s)) out.push({ tag: g.tag, text: g.label })
   return out.slice(0, 25)
 })
@@ -61,7 +62,7 @@ async function rebuild() {
 
       <div class="sec">
         <form class="ctx-search" @submit.prevent="go">
-          <input v-model="q" type="text" placeholder="#B07 · #P:rebiomed · #I:servers.db · یا یک کلمه مثل managed identity" />
+          <input v-model="q" type="text" placeholder="#B07 · #P:rebiomed · #R:pitch.dev · یا یک کلمه مثل managed identity" />
           <button class="btn btn-primary" type="submit" :disabled="!hit">برو</button>
         </form>
         <div v-if="hit" class="fs" style="margin-top:.4em">→ <RouterLink :to="hit.route">{{ hit.label }}</RouterLink></div>
@@ -69,7 +70,7 @@ async function rebuild() {
           <div v-for="h in uniqueHits" :key="h.tag" class="hit"><TagChip :tag="h.tag" /> <span>{{ h.text }}</span></div>
         </div>
         <div class="leg ctx-leg">
-          <span v-for="[k, ex] in LEGEND" :key="k"><TagChip :tag="ex" /> {{ ctx.kinds[k].fa }}</span>
+          <span v-for="[k, ex] in LEGEND.filter(([k]) => ctx!.kinds[k])" :key="k"><TagChip :tag="ex" /> {{ ctx.kinds[k].fa }}</span>
         </div>
       </div>
 
@@ -80,6 +81,8 @@ async function rebuild() {
           <b>{{ ctx.counts.bugs }}</b> باگ<small>Bugs found</small></RouterLink>
         <RouterLink to="/context/work" class="qk" :style="{ '--k': ctx.kinds.W.color, '--t': ctx.kinds.W.tint }">
           <b>{{ ctx.counts.work }}</b> کار<small>Work log</small></RouterLink>
+        <RouterLink v-if="ctx.kinds.R" to="/context/recruit" class="qk" :style="{ '--k': ctx.kinds.R.color, '--t': ctx.kinds.R.tint }">
+          <b>{{ ctx.counts.recruit }}</b> ریکروتر<small>Recruiters + interview</small></RouterLink>
       </div>
 
       <template v-for="[kind, fa, en] in GROUPS" :key="kind">
