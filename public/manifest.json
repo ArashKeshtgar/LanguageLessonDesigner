@@ -1,13 +1,24 @@
 {
-  "name": "Arash · Workbench",
-  "short_name": "Context",
+  "name": "English Lessons",
+  "short_name": "English",
+  "description": "English lessons, daily spaced-repetition review and Persian→American proverbs",
+  "lang": "en",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#22303d",
-  "theme_color": "#22303d",
+  "background_color": "#1f4d3a",
+  "theme_color": "#1f4d3a",
   "icons": [
-    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

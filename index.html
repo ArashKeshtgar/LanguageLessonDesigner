@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Home-screen app on the phone (ctx.<domain>); the manifest sits behind
-         the same basic auth there, so it is fetched with credentials. -->
-    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="description" content="English lessons for working in Canada and the US: collocations, grammar, daily spaced-repetition review and Persian proverbs with their American equivalents." />
+    <!-- Home-screen app. english.<domain> is the English app; ctx.<domain> (the
+         owner's private Context reader) swaps in its own name, icon and manifest
+         below. There the manifest sits behind basic auth, hence use-credentials. -->
+    <link id="manifest" rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+    <link id="touch-icon" rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Context" />
-    <meta name="theme-color" content="#22303d" />
-    <title>Lessons + Context</title>
+    <meta id="app-title" name="apple-mobile-web-app-title" content="English" />
+    <meta id="theme" name="theme-color" content="#1f4d3a" />
+    <title>English Lessons · درس‌های انگلیسی</title>
+    <script>
+      if (location.hostname.startsWith('ctx.')) {
+        document.getElementById('manifest').href = '/manifest-ctx.json'
+        document.getElementById('touch-icon').href = '/ctx-apple-touch-icon.png'
+        document.getElementById('app-title').content = 'Context'
+        document.getElementById('theme').content = '#22303d'
+        document.title = 'Context'
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>

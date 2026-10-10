@@ -4,12 +4,13 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 
 const route = useRoute()
 const section = computed(() => route.meta.section)
+const brand = location.hostname.startsWith('ctx.') ? 'Arash · Workbench' : 'English · Lessons'
 </script>
 
 <template>
   <nav class="topbar">
     <div class="topbar-in">
-      <span class="brand">Arash · Workbench</span>
+      <span class="brand">{{ brand }}</span>
       <RouterLink to="/" class="tab" :class="{ on: section === 'lessons' }">
         <b>درس‌ها</b><small>Lessons</small>
       </RouterLink>

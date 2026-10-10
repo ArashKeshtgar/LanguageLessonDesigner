@@ -2,6 +2,7 @@ import { START_LOCATION, createRouter, createWebHashHistory } from 'vue-router'
 import LessonListView from '../views/LessonListView.vue'
 import LessonView from '../views/LessonView.vue'
 import LessonEditView from '../views/LessonEditView.vue'
+import { getUnit } from '../lib/units'
 
 // Hash history (e.g. #/lesson/u201) — works unmodified on GitHub Pages and
 // any other static host, with no server rewrite rules needed for deep links.
@@ -39,6 +40,22 @@ const router = createRouter({
 // only the first navigation, so the Lessons tab still works there.
 router.beforeEach((to, from) => {
   if (from === START_LOCATION && to.path === '/' && location.hostname.startsWith('ctx.')) return '/context'
+})
+
+// Browser tab title: what you're looking at, then the app's name (Context on ctx.<domain>).
+const APP = location.hostname.startsWith('ctx.') ? 'Context' : 'English Lessons'
+const SECTION: Record<string, string> = { lessons: 'Lessons', review: 'Daily review', proverbs: 'Proverbs', context: 'Context' }
+router.afterEach((to) => {
+  const sec = SECTION[String(to.meta.section)] || ''
+  let page = to.path === '/' ? '' : sec
+  if (to.name === 'lesson' || to.name === 'lesson-edit') {
+    const u = getUnit(String(to.params.id))
+    if (u) page = `${u.en}${to.name === 'lesson-edit' ? ' (edit)' : ''}`
+  }
+  if (to.path === '/review/session') page = 'Review session'
+  if (to.path === '/proverbs/practice') page = 'Proverb flashcards'
+  const home = APP === 'Context' ? APP : 'English Lessons · درس‌های انگلیسی'
+  document.title = page && page !== APP ? `${page} · ${APP}` : home
 })
 
 export default router
