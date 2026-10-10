@@ -25,3 +25,4 @@ dist-ssr
 
 # scratch PDF exports from the Python engine (public/pdf/ is the served, committed copy)
 /exports/
+server/data/

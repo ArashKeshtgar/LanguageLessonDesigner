@@ -109,3 +109,11 @@
   .topbar .brand { display: none; }
   .topbar .tab { padding: .55em .65em .5em; }
 }
+
+/* sync */
+.rv-h4 { margin: 0; font: 700 1em 'B Yekan', Tahoma, sans-serif; }
+.rv-key { flex: 1 1 220px; font: 1em Consolas, 'Cascadia Mono', monospace; padding: .4em .6em; border: 1px solid var(--line); border-radius: 6px; }
+.rv-sync { display: inline-block; margin-top: .6em; background: none; border: 0; padding: 0; cursor: pointer; font: .8em 'B Yekan', Tahoma, sans-serif; color: var(--grey); }
+.rv-sync.ok, .rv-sync-st.ok { color: #2e6b4a; }
+.rv-sync.error, .rv-sync-st.error { color: #b4534e; }
+.rv-sync-st { font-size: .9em; }

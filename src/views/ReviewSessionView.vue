@@ -4,6 +4,7 @@ import { RouterLink } from 'vue-router'
 import type { Card } from '../lib/review/cards'
 import { KIND_FA } from '../lib/review/cards'
 import { grade, log, plan, store, type Grade } from '../lib/review/srs'
+import '../lib/review/sync' // keeps syncing while you study
 import { mark } from '../lib/mark'
 import { speak } from '../lib/speak'
 import SpeakButton from '../components/SpeakButton.vue'

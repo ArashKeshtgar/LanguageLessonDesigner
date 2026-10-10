@@ -179,6 +179,8 @@ function lessonApiPlugin(): Plugin {
 export default defineConfig({
   plugins: [vue(), lessonApiPlugin(), contextApiPlugin()],
   server: {
+    // Review sync: `npm run sync` starts server/sync.mjs on :8787 (key in server/data/key).
+    proxy: { '/api/sync': 'http://127.0.0.1:8787' },
     watch: {
       // PDFs aren't part of the module graph — writing one (e.g. from the
       // publish API above) shouldn't trigger a full page reload.

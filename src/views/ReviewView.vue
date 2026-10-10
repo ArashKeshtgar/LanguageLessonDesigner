@@ -2,9 +2,10 @@
 import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import {
-  dayToDate, doneToday, exportJson, forecast, importJson, plan, progressBySource,
+  dayToDate, dayTotal, doneToday, exportJson, forecast, importJson, plan, progressBySource,
   reminderIcs, resetAll, store, streak, today,
 } from '../lib/review/srs'
+import { connect, disconnect, sync, syncNow } from '../lib/review/sync'
 
 // Today's plan, built from the spaced-repetition state: what's due, what's new,
 // your streak, the next 7 days, and per-lesson progress.
@@ -17,15 +18,15 @@ const st = computed(() => streak())
 const fc = computed(() => forecast(7))
 const fcMax = computed(() => Math.max(1, ...fc.value))
 const prog = computed(() => progressBySource())
-const acc = computed(() => { const l = store.days[today()]; return l && l.n + l.r ? Math.round((l.ok / (l.n + l.r)) * 100) : null })
+const acc = computed(() => { const l = dayTotal(today()); return l.n + l.r ? Math.round((l.ok / (l.n + l.r)) * 100) : null })
 const dayName = (k: number) => k === 0 ? 'امروز' : k === 1 ? 'فردا'
   : dayToDate(today() + k).toLocaleDateString('fa-IR', { weekday: 'short' })
 
 // Last 28 days as a small heat strip.
 const heat = computed(() => Array.from({ length: 28 }, (_, k) => {
   const d = today() - 27 + k
-  const l = store.days[d]
-  const n = l ? l.n + l.r : 0
+  const l = dayTotal(d)
+  const n = l.n + l.r
   return { d, n, lvl: n === 0 ? 0 : n < goal.value / 2 ? 1 : n < goal.value ? 2 : 3 }
 }))
 
@@ -52,6 +53,17 @@ function restore(e: Event) {
     try { msg.value = importJson(t) ? 'پیشرفت بازیابی شد ✓' : 'این فایل پشتیبان مرور نیست.' } catch { msg.value = 'فایل خراب است.' }
   })
 }
+const keyInput = ref('')
+const syncLabel = computed(() => {
+  if (sync.state === 'busy') return 'در حال همگام‌سازی…'
+  if (sync.state === 'error') return sync.msg
+  if (sync.state === 'ok') return `همگام شد · ${new Date(sync.last).toLocaleTimeString('fa-IR', { hour: '2-digit', minute: '2-digit' })}`
+  return ''
+})
+async function doConnect() {
+  if (await connect(keyInput.value)) { keyInput.value = ''; msg.value = 'وصل شد ✓ — پیشرفت این دستگاه با سرور یکی شد.' }
+}
+
 function reset() {
   if (window.confirm('همه‌ی پیشرفت مرور پاک شود؟ (قبلش پشتیبان بگیر)')) resetAll()
 }
@@ -80,6 +92,7 @@ function reset() {
           شروع مرور ({{ left }} کارت · حدود {{ Math.max(1, Math.round(left * 0.25)) }} دقیقه)
         </RouterLink>
         <p v-else class="fs rv-done">امروز تمام است ✓ — فردا کارت‌های تازه و مرورها خودشان می‌آیند.</p>
+        <button v-if="sync.key" class="rv-sync" :class="sync.state" @click="syncNow">☁ {{ syncLabel }}</button>
       </div>
     </div>
 
@@ -126,12 +139,30 @@ function reset() {
         </div>
         <p class="rv-note">روی آیفون فایل را باز کن و «Add All» بزن — تقویم هر روز همان ساعت یادآوری می‌کند و با لمسش اپ باز می‌شود.</p>
         <hr />
+        <h4 class="rv-h4">☁ همگام‌سازی گوشی و کامپیوتر</h4>
+        <template v-if="sync.key">
+          <div class="rv-row">
+            <span class="rv-sync-st" :class="sync.state">{{ syncLabel || 'وصل' }}</span>
+            <button class="btn" @click="syncNow">همگام‌سازی الان</button>
+            <button class="btn btn-danger" @click="disconnect">قطع اتصال این دستگاه</button>
+          </div>
+          <p class="rv-note">هر جوابی که می‌دهی چند ثانیه بعد روی سرور می‌رود؛ دستگاه دیگر وقتی باز شود آن را می‌گیرد.</p>
+        </template>
+        <template v-else>
+          <form class="rv-row" @submit.prevent="doConnect">
+            <input v-model="keyInput" class="rv-key" type="password" dir="ltr" autocomplete="off" placeholder="sync key" />
+            <button class="btn btn-primary" type="submit" :disabled="!keyInput.trim() || sync.state === 'busy'">وصل شو</button>
+          </form>
+          <p class="rv-note">کلید را یک بار روی هر دستگاه وارد کن. پیشرفت فعلی این دستگاه با سرور ادغام می‌شود (چیزی پاک نمی‌شود).</p>
+          <p v-if="sync.state === 'error'" class="rv-note"><b>{{ sync.msg }}</b></p>
+        </template>
+        <hr />
         <div class="rv-row">
           <button class="btn" @click="backup">⬇ پشتیبان پیشرفت</button>
           <label class="btn">⬆ بازیابی <input type="file" accept="application/json,.json" hidden @change="restore" /></label>
           <button class="btn btn-danger" @click="reset">پاک کردن همه</button>
         </div>
-        <p class="rv-note">پیشرفت فقط روی همین دستگاه ذخیره می‌شود؛ برای بردن به دستگاه دیگر از پشتیبان/بازیابی استفاده کن.</p>
+        <p class="rv-note">پشتیبان یک فایل از پیشرفت این دستگاه است. «پاک کردن همه» بعد از همگام‌سازی، دستگاه‌های دیگر را هم پاک می‌کند.</p>
         <p v-if="msg" class="rv-note"><b>{{ msg }}</b></p>
       </div>
     </div>
