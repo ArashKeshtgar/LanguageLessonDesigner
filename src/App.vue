@@ -13,6 +13,9 @@ const section = computed(() => route.meta.section)
       <RouterLink to="/" class="tab" :class="{ on: section === 'lessons' }">
         <b>درس‌ها</b><small>Lessons</small>
       </RouterLink>
+      <RouterLink to="/review" class="tab" :class="{ on: section === 'review' }">
+        <b>مرور</b><small>Review</small>
+      </RouterLink>
       <RouterLink to="/context" class="tab" :class="{ on: section === 'context' }">
         <b>کانتکست</b><small>Context</small>
       </RouterLink>
